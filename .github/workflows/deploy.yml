@@ -57,6 +57,9 @@ jobs:
           # e.g. SITE=https://user.github.io, BASE=/dragonwilds-crafting — or a custom domain with BASE=/
           SITE: ${{ steps.pages.outputs.origin }}
           BASE: ${{ steps.pages.outputs.base_path || '/' }}
+          PUBLIC_GOOGLE_SITE_VERIFICATION: ${{ secrets.GOOGLE_SITE_VERIFICATION }}
+          PUBLIC_BING_SITE_VERIFICATION: ${{ secrets.BING_SITE_VERIFICATION }}
+          PUBLIC_CLOUDFLARE_ANALYTICS_TOKEN: ${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}
 
       - uses: actions/upload-pages-artifact@v5
         with:

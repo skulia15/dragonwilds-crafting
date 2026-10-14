@@ -5,7 +5,7 @@ import RecipeCard from "../../components/RecipeCard.astro";
 import Base from "../../layouts/Base.astro";
 import { getCategory, getCraftedAt, getItem, getRecipesTaughtBy, type Item, items, subgraph } from "../../lib/db";
 import { renderTotals, renderTree } from "../../lib/tree";
-import { href, wikiUrl } from "../../lib/wiki";
+import { href, iconUrl, wikiUrl } from "../../lib/wiki";
 import "../../styles/tree.css";
 
 export function getStaticPaths() {
@@ -31,13 +31,69 @@ const title = primary
 	: `${item.name} — Where to Find | Dragonwilds`;
 const truncate = (s: string, n: number) => (s.length > n ? `${s.slice(0, n - 1).trimEnd()}…` : s);
 const description = primary
-	? `How to craft ${item.name} in RuneScape: Dragonwilds: ${primary.materials
-			.map((m) => `${m.qty}× ${m.label}`)
-			.join(", ")}${primary.station ? ` at the ${primary.station.name}` : ""}. Full crafting tree and base materials.`
+	? truncate(
+			`How to craft ${item.name} in RuneScape: Dragonwilds: ${primary.materials
+				.map((m) => `${m.qty}× ${m.label}`)
+				.join(", ")}${primary.station ? ` at the ${primary.station.name}` : ""}. Full recipe and material tree.`,
+			160,
+		)
 	: truncate(item.extract || item.description || `Where to find ${item.name} in RuneScape: Dragonwilds.`, 160);
+const pageUrl = new URL(href(`/item/${item.slug}/`), Astro.site).href;
+const categoryUrl = category && new URL(href(`/category/${category.slug}/`), Astro.site).href;
+const image = iconUrl(item.icon);
+const breadcrumbs = [
+	{ "@type": "ListItem", position: 1, name: "Home", item: new URL(href("/"), Astro.site).href },
+	...(category && categoryUrl
+		? [{ "@type": "ListItem", position: 2, name: category.name, item: categoryUrl }]
+		: []),
+	{ "@type": "ListItem", position: category ? 3 : 2, name: item.name, item: pageUrl },
+];
+const structuredData = {
+	"@context": "https://schema.org",
+	"@graph": [
+		{
+			"@type": "WebPage",
+			"@id": pageUrl,
+			url: pageUrl,
+			name: title,
+			description,
+			...(image && { primaryImageOfPage: { "@type": "ImageObject", url: image } }),
+			...(primary && { mainEntity: { "@id": `${pageUrl}#how-to` } }),
+		},
+		{ "@type": "BreadcrumbList", itemListElement: breadcrumbs },
+		...(primary
+			? [
+					{
+						"@type": "HowTo",
+						"@id": `${pageUrl}#how-to`,
+						name: `How to craft ${item.name} in RuneScape: Dragonwilds`,
+						description,
+						...(image && { image }),
+						supply: primary.materials.map((material) => ({
+							"@type": "HowToSupply",
+							name: material.label,
+							requiredQuantity: material.qty,
+						})),
+						...(primary.station && {
+							tool: [{ "@type": "HowToTool", name: primary.station.name }],
+						}),
+						step: [
+							{
+								"@type": "HowToStep",
+								name: `Craft ${item.name}`,
+								text: `Use ${primary.materials.map((m) => `${m.qty} ${m.label}`).join(", ")}${
+									primary.station ? ` at the ${primary.station.name}` : ""
+								}.`,
+							},
+						],
+					},
+				]
+			: []),
+	],
+};
 ---
 
-<Base title={title} description={description}>
+<Base title={title} description={description} image={image} structuredData={structuredData}>
 	<nav class="crumbs small" aria-label="Breadcrumb">
 		<a href={href("/")}>Home</a>
 		<span aria-hidden="true">/</span>

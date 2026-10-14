@@ -38,3 +38,20 @@ Deployed to GitHub Pages by `.github/workflows/deploy.yml`:
 - **weekly (Mon) / manual** → `wiki:sync` → `wiki:check` (aborts if items/recipes drop >10%) → commit `db.json` if changed → build + deploy
 
 One-time setup: repo **Settings → Pages → Source: GitHub Actions**. `SITE`/`BASE` are derived automatically, including custom domains.
+
+## Search visibility
+
+The build generates canonical URLs, a sitemap, `robots.txt`, social metadata and JSON-LD structured data for item and category pages.
+
+After deploying:
+
+1. Add the site to [Google Search Console](https://search.google.com/search-console/) and
+   [Bing Webmaster Tools](https://www.bing.com/webmasters/).
+2. Submit `/sitemap-index.xml` in both services.
+3. Optionally add repository secrets `GOOGLE_SITE_VERIFICATION` and `BING_SITE_VERIFICATION` with their HTML-tag
+   verification tokens.
+4. For free, cookie-free traffic measurement, create a
+   [Cloudflare Web Analytics](https://www.cloudflare.com/web-analytics/) site and add its token as the
+   `CLOUDFLARE_ANALYTICS_TOKEN` repository secret.
+
+When sharing, link to useful item pages—not only the homepage—and follow each community's self-promotion rules.
