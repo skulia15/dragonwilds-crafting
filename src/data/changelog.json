@@ -1,1 +1,21 @@
-[]
+[
+	{
+		"date": "2026-10-14",
+		"added": [
+			{
+				"slug": "large-compost-bucket",
+				"name": "Large Compost Bucket"
+			},
+			{
+				"slug": "ultra-compost",
+				"name": "Ultra Compost"
+			},
+			{
+				"slug": "ultra-compost-bin",
+				"name": "Ultra Compost Bin"
+			}
+		],
+		"removed": [],
+		"changed": []
+	}
+]

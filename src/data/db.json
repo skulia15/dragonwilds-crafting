@@ -1,5 +1,5 @@
 {
-	"fetchedAt": "2026-10-14T13:49:05.459Z",
+	"fetchedAt": "2026-10-14T20:05:00.352Z",
 	"categories": [
 		{
 			"slug": "weapons",
@@ -58,8 +58,8 @@
 		{
 			"slug": "materials",
 			"name": "Materials",
-			"count": 335,
-			"craftable": 63
+			"count": 337,
+			"craftable": 64
 		},
 		{
 			"slug": "potions",
@@ -88,8 +88,8 @@
 		{
 			"slug": "buildings",
 			"name": "Buildings & Decor",
-			"count": 504,
-			"craftable": 504
+			"count": 505,
+			"craftable": 505
 		},
 		{
 			"slug": "seeds",
@@ -34433,7 +34433,7 @@
 					"skills": [
 						{
 							"name": "Artisan",
-							"xp": 0
+							"xp": 40
 						}
 					],
 					"materials": [
@@ -37649,7 +37649,8 @@
 			"extract": "Gypsum is a basic Mining material mined from gypsum nodes, found scattered across the Umbral Sands.",
 			"recipes": [],
 			"usedIn": [
-				"ground-gypsum"
+				"ground-gypsum",
+				"ultra-compost-bin"
 			],
 			"drops": [
 				{
@@ -43890,6 +43891,46 @@
 			"unlockedBy": []
 		},
 		{
+			"slug": "large-compost-bucket",
+			"name": "Large Compost Bucket",
+			"wiki": "Large Compost Bucket",
+			"icon": "Large Compost Bucket.png",
+			"type": "Basic Item",
+			"category": "materials",
+			"description": "An upgraded wooden bucket with room for extra Compost. Fewer trips, more fertilizing - just try not to strain your back! Pour its contents over a Farming Plot to Fertilize your plants.",
+			"extract": "The large compost bucket is a tool created at the crafting table. Level 65 Farming is required to unlock the recipe. It can be used to take out compost, super compost and ultra compost from the compost bin, super compost bin and ultra compost bin, respectively, at a maximum of 300 units per bucket held in the inventory.\nWhen used on a farming plot, 10 units of either compost, super compost or ultra compost will be used until a total of 50 units have been used to fully fertilize a plot.",
+			"recipes": [
+				{
+					"outputLabel": "Large Compost Bucket",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [
+						{
+							"name": "Farming",
+							"xp": 0
+						}
+					],
+					"materials": [
+						{
+							"label": "Yew Logs",
+							"qty": 5,
+							"icon": "Yew Logs.png",
+							"slug": "yew-logs"
+						}
+					],
+					"id": "64f22b7a0b",
+					"station": {
+						"name": "Crafting Table",
+						"slug": "crafting-table"
+					}
+				}
+			],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": []
+		},
+		{
 			"slug": "large-desert-vase",
 			"name": "Large Desert Vase",
 			"wiki": "Large Desert Vase",
@@ -46930,7 +46971,7 @@
 			"type": "Resource",
 			"category": "materials",
 			"description": "Cut from maple trees. Can be crafted into various equipment.",
-			"extract": "Maple logs are obtained by chopping down maple trees, with a mithril logging axe  or better.",
+			"extract": "Maple logs are obtained by chopping down maple trees, with a mithril logging axe  or better. It can now been used to make super compost!",
 			"recipes": [],
 			"usedIn": [
 				"adamant-logging-axe",
@@ -87164,6 +87205,67 @@
 			"unlockedBy": []
 		},
 		{
+			"slug": "ultra-compost",
+			"name": "Ultra Compost",
+			"wiki": "Ultra Compost",
+			"icon": "Ultra Compost.png",
+			"type": "Resource",
+			"category": "materials",
+			"description": "Fertilizing a plot with this is beneficial to its yield. Like, suspiciously beneficial. Wow!",
+			"extract": "Ultra compost is an item made at the ultra compost bin at a rate of 10 units per item composted, which can be gathered and used via the compost bucket. Applying ultra compost to a patch provides 50 Farming experience, decreases the disease chance to 12.5%, and multiplies the yield by 2.5.",
+			"recipes": [],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": []
+		},
+		{
+			"slug": "ultra-compost-bin",
+			"name": "Ultra Compost Bin",
+			"wiki": "Ultra Compost Bin",
+			"icon": "Ultra Compost Bin.png",
+			"type": null,
+			"category": "buildings",
+			"description": "",
+			"extract": "An ultra compost bin is a buildable object unlocked at level 69 Farming.",
+			"recipes": [
+				{
+					"outputLabel": "Ultra Compost Bin",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [
+						{
+							"name": "Construction",
+							"xp": 12
+						}
+					],
+					"materials": [
+						{
+							"label": "Yew Logs",
+							"qty": 8,
+							"icon": "Yew Logs.png",
+							"slug": "yew-logs"
+						},
+						{
+							"label": "Gypsum",
+							"qty": 4,
+							"icon": "Gypsum.png",
+							"slug": "gypsum"
+						}
+					],
+					"id": "d125b0d18a",
+					"station": {
+						"name": "Build Menu",
+						"slug": null
+					}
+				}
+			],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": []
+		},
+		{
 			"slug": "ulvs-longbow",
 			"name": "Ulv's Longbow",
 			"wiki": "Ulv's Longbow",
@@ -94800,12 +94902,14 @@
 				"advanced-tannery",
 				"charcoal",
 				"large-awning-roof",
+				"large-compost-bucket",
 				"master-wand",
 				"masters-staff",
 				"medium-awning-roof",
 				"moon-garou-sunshade-01",
 				"moon-garou-sunshade-02",
 				"rune-logging-axe",
+				"ultra-compost-bin",
 				"umbral-vulture-perch",
 				"yew-farming-plot",
 				"yew-longbow",
