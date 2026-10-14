@@ -184,3 +184,38 @@ th {
 		padding: 0.45rem 0.35rem;
 	}
 }
+
+.btn {
+	padding: 0.45rem 0.9rem;
+	font: inherit;
+	font-size: 0.9rem;
+	font-weight: 500;
+	color: #1a1408;
+	background: var(--gold);
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+}
+.btn:hover {
+	background: #e8bb5f;
+}
+.btn.ghost {
+	color: var(--text);
+	background: none;
+	border: 1px solid var(--line-strong);
+}
+input[type="number"] {
+	padding: 0.4rem 0.5rem;
+	font: inherit;
+	font-size: max(16px, 1em);
+	color: var(--text);
+	background: var(--bg-sunk);
+	border: 1px solid var(--line-strong);
+	border-radius: 6px;
+}
+@media (pointer: coarse) {
+	.btn,
+	input[type="number"] {
+		min-height: 44px;
+	}
+}

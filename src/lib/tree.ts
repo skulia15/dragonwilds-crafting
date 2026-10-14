@@ -85,18 +85,29 @@ function nodes(graph: Graph, recipe: TreeRecipe, crafts: number, path: string[],
 	return `<ul class="tree">${items.join("")}</ul>`;
 }
 
-/** Tree HTML for one craft of `root`. Quantities are per branch, as you'd read them top-down. */
-export function renderTree(graph: Graph, root: string, prefs: Prefs): string {
+/** Tree HTML for `qty` of `root`. Quantities are per branch, as you'd read them top-down. */
+export function renderTree(graph: Graph, root: string, prefs: Prefs, qty = 1): string {
 	const recipe = recipeFor(graph, root, prefs);
 	if (!recipe) return "";
-	return picker(graph, root, prefs) + nodes(graph, recipe, 1, [root], prefs);
+	return picker(graph, root, prefs) + nodes(graph, recipe, Math.ceil(qty / recipe.outputQty), [root], prefs);
+}
+
+export interface PlanStep {
+	slug: string;
+	crafts: number;
+	station: string | null;
 }
 
 /**
- * Raw materials for `qty` of `root`. Demand for shared intermediates is summed across the whole
- * tree before rounding crafts up, so two branches needing 1 bar each cost one 2-bar craft, not two.
+ * Raw materials + craft steps for several targets at once (planner) or one target × qty (item page).
+ * Demand for shared intermediates is summed across everything before rounding crafts up, so two
+ * branches needing 1 bar each cost one 2-bar craft, not two.
  */
-export function totals(graph: Graph, root: string, prefs: Prefs, qty = 1): { slug: string; qty: number }[] {
+export function plan(
+	graph: Graph,
+	targets: { slug: string; qty: number }[],
+	prefs: Prefs,
+): { raw: { slug: string; qty: number }[]; steps: PlanStep[] } {
 	// DFS for a topological order of the expansion graph; an edge back to an ancestor (recipe cycle,
 	// e.g. bar ⇄ salvage) is cut and that material is counted as raw instead.
 	const order: string[] = [];
@@ -117,12 +128,14 @@ export function totals(graph: Graph, root: string, prefs: Prefs, qty = 1): { slu
 		state.set(slug, "done");
 		order.push(slug);
 	};
-	visit(root, 0);
+	for (const t of targets) if (!state.has(t.slug)) visit(t.slug, 0);
 	order.reverse();
 
-	const demand = new Map<string, number>([[root, qty]]);
-	const raw = new Map<string, number>();
 	const add = (map: Map<string, number>, slug: string, n: number) => map.set(slug, (map.get(slug) ?? 0) + n);
+	const demand = new Map<string, number>();
+	for (const t of targets) add(demand, t.slug, t.qty);
+	const raw = new Map<string, number>();
+	const steps: PlanStep[] = [];
 	for (const slug of order) {
 		const need = demand.get(slug) ?? 0;
 		if (!need) continue;
@@ -132,17 +145,25 @@ export function totals(graph: Graph, root: string, prefs: Prefs, qty = 1): { slu
 			continue;
 		}
 		const crafts = Math.ceil(need / recipe.outputQty);
+		steps.push({ slug, crafts, station: recipe.station });
 		for (const m of recipe.materials) {
 			add(backEdges.has(`${slug}>${m.slug}`) ? raw : demand, m.slug, m.qty * crafts);
 		}
 	}
-	return [...raw]
-		.map(([slug, n]) => ({ slug, qty: n }))
-		.sort((a, b) => b.qty - a.qty || graph[a.slug].name.localeCompare(graph[b.slug].name));
+	return {
+		raw: [...raw]
+			.map(([slug, n]) => ({ slug, qty: n }))
+			.sort((a, b) => b.qty - a.qty || graph[a.slug].name.localeCompare(graph[b.slug].name)),
+		// Topological order is root-first; reverse so ingredients are crafted before what uses them.
+		steps: steps.reverse(),
+	};
 }
 
-export function renderTotals(graph: Graph, root: string, prefs: Prefs): string {
-	return totals(graph, root, prefs)
+export const totals = (graph: Graph, root: string, prefs: Prefs, qty = 1) =>
+	plan(graph, [{ slug: root, qty }], prefs).raw;
+
+export function renderTotals(graph: Graph, root: string, prefs: Prefs, qty = 1): string {
+	return totals(graph, root, prefs, qty)
 		.map(
 			({ slug, qty }) =>
 				`<li>${icon(graph[slug].icon, 26)}<span class="qty">${qty}×</span><a href="${href(`/item/${slug}/`)}">${esc(

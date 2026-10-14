@@ -19,8 +19,10 @@ pnpm dev
 ## Refresh wiki data
 
 ```sh
-pnpm wiki:sync    # fetch (network → data/raw/, gitignored) + build (→ src/data/db.json)
+pnpm wiki:sync    # fetch (network → data/raw/, gitignored) + build (→ src/data/db.json) + icons (→ public/icons/)
 pnpm wiki:build   # rebuild db.json from cached raw data only (e.g. after editing categories)
+pnpm wiki:icons   # download any missing icons (96px WebP, self-hosted)
+pnpm wiki:changelog # append a "What's new" entry by diffing db.json against the last commit
 ```
 
 Category rules live in `scripts/build-data.mjs` (`CATEGORIES`, first match wins).
@@ -55,3 +57,8 @@ After deploying:
    `CLOUDFLARE_ANALYTICS_TOKEN` repository secret.
 
 When sharing, link to useful item pages—not only the homepage—and follow each community's self-promotion rules.
+
+## Support link
+
+Footer "Chip in" link + yearly cost line are off by default. Set `supportUrl` and `costs` in `src/data/site.ts`
+(Ko-fi or GitHub Sponsors). Keep it tips-only: the wiki data is CC BY-NC-SA (non-commercial), so no ads.

@@ -1,0 +1,94 @@
+---
+import Base from "../layouts/Base.astro";
+import changelog from "../data/changelog.json";
+import { fetchedAt } from "../lib/db";
+import { href } from "../lib/wiki";
+
+interface Entry {
+	date: string;
+	added: { slug: string; name: string }[];
+	removed: string[];
+	changed: { slug: string; name: string }[];
+}
+const entries = changelog as Entry[];
+const fmt = (d: string) => new Date(d).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
+---
+
+<Base
+	title="What's New — Recipe Changes by Patch | Dragonwilds Crafting"
+	description="New items and changed crafting recipes in RuneScape: Dragonwilds, updated weekly from the wiki."
+>
+	<h1>What's new</h1>
+	<p class="muted">
+		New items and changed recipes, checked against the wiki every week. Data last changed {fmt(fetchedAt)}.
+	</p>
+
+	{entries.length === 0 && <p>No changes since launch yet — check back after the next game update.</p>}
+
+	{
+		entries.map((e) => (
+			<section>
+				<h2>{fmt(e.date)}</h2>
+				{e.added.length > 0 && (
+					<>
+						<h3>New items · {e.added.length}</h3>
+						<ul class="chips">
+							{e.added.map((i) => (
+								<li>
+									<a href={href(`/item/${i.slug}/`)}>{i.name}</a>
+								</li>
+							))}
+						</ul>
+					</>
+				)}
+				{e.changed.length > 0 && (
+					<>
+						<h3>Recipes changed · {e.changed.length}</h3>
+						<ul class="chips">
+							{e.changed.map((i) => (
+								<li>
+									<a href={href(`/item/${i.slug}/`)}>{i.name}</a>
+								</li>
+							))}
+						</ul>
+					</>
+				)}
+				{e.removed.length > 0 && (
+					<>
+						<h3>Removed · {e.removed.length}</h3>
+						<ul class="chips muted">
+							{e.removed.map((n) => (
+								<li>{n}</li>
+							))}
+						</ul>
+					</>
+				)}
+			</section>
+		))
+	}
+</Base>
+
+<style>
+	h3 {
+		margin: 1rem 0 0.5rem;
+		font-size: 1rem;
+	}
+	.chips {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.4rem;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	.chips li {
+		padding: 0.2rem 0.6rem;
+		background: var(--bg-raised);
+		border: 1px solid var(--line);
+		border-radius: 999px;
+		font-size: 0.9rem;
+	}
+	.chips a {
+		text-decoration: none;
+	}
+</style>

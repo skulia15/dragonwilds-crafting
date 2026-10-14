@@ -40,7 +40,7 @@
       patch X" — timely posts get the most traffic.
 - [ ] Share item-page links, not the homepage — they answer specific questions and rank for long-tail searches.
 
-## Phase 3 — Be worth returning to (month 2–3)
+## Phase 3 — Be worth returning to (month 2–3) ✅ planner, quantity, self-hosted icons, what's new
 
 Prioritised by "what makes players come back" vs. effort:
 
@@ -54,7 +54,7 @@ Prioritised by "what makes players come back" vs. effort:
    free shareable content each patch.
 6. Light **PWA** (installable, offline) for second-screen use.
 
-## Phase 4 — Cover costs (after traction, month 3+)
+## Phase 4 — Cover costs (after traction, month 3+) — wired up, off until `supportUrl` is set in `src/data/site.ts`
 
 - [ ] Ko-fi / GitHub Sponsors link in footer: "Free & ad-free. Tips cover the domain." Transparent cost line
       (e.g. "This year's costs: $12 — covered ✓").

@@ -1,5 +1,8 @@
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 import db from "../data/db.json";
 import type { Graph } from "./tree";
+import { localIcon } from "./wiki";
 
 export interface Material {
 	label: string;
@@ -42,7 +45,16 @@ export interface Category {
 	craftable: number;
 }
 
+// Icons are self-hosted (scripts/fetch-icons.mjs). Drop references to ones that failed to download
+// (mostly files missing on the wiki itself) so pages show a placeholder instead of a broken image.
+// cwd, not import.meta.url: this module gets bundled into a build chunk elsewhere.
+const ICON_DIR = join(process.cwd(), "public", "icons");
+const hasIcon = (file: string | null) => (file && existsSync(join(ICON_DIR, localIcon(file))) ? file : null);
 export const items = db.items as Item[];
+for (const item of items) {
+	item.icon = hasIcon(item.icon);
+	for (const r of item.recipes) for (const m of r.materials) m.icon = hasIcon(m.icon);
+}
 export const categories = db.categories as Category[];
 export const fetchedAt = db.fetchedAt;
 
@@ -104,5 +116,12 @@ export function subgraph(slug: string): Graph {
 		for (const r of item.recipes) for (const m of r.materials) visit(m.slug);
 	};
 	visit(slug);
+	return graph;
+}
+
+/** Every item's tree data — loaded by the planner, which can combine anything. */
+export function fullGraph(): Graph {
+	const graph: Graph = {};
+	for (const item of items) Object.assign(graph, subgraph(item.slug));
 	return graph;
 }
