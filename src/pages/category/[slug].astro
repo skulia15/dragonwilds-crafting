@@ -48,7 +48,8 @@ const structuredData = {
 			"@id": `${pageUrl}#items`,
 			name: `${category.name} items`,
 			numberOfItems: members.length,
-			itemListElement: members.map((item, index) => ({
+			// Capped: listing all ~500 buildings bloated the page; crawlers follow the visible links anyway.
+			itemListElement: members.slice(0, 50).map((item, index) => ({
 				"@type": "ListItem",
 				position: index + 1,
 				name: item.name,
