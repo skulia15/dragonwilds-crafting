@@ -90,7 +90,7 @@ const analyticsToken = import.meta.env.PUBLIC_CLOUDFLARE_ANALYTICS_TOKEN;
 					<p class="support">
 						Free &amp; ad-free.{" "}
 						{support.costs.amount > 0 &&
-							`${support.costs.year} costs: ${support.costs.currency}${support.costs.amount} — ${
+							`${support.costs.year} costs (${support.costs.label}): ${support.costs.currency}${support.costs.amount} — ${
 								support.costs.covered >= support.costs.amount
 									? "covered ✓"
 									: `${support.costs.currency}${support.costs.covered} covered so far`
