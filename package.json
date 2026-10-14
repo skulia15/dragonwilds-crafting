@@ -10,8 +10,10 @@
 		"check": "astro check",
 		"wiki:fetch": "node scripts/fetch-wiki.mjs",
 		"wiki:build": "node scripts/build-data.mjs",
-		"wiki:sync": "node scripts/fetch-wiki.mjs && node scripts/build-data.mjs",
-		"wiki:check": "node scripts/check-data.mjs"
+		"wiki:sync": "node scripts/fetch-wiki.mjs && node scripts/build-data.mjs && node scripts/fetch-icons.mjs",
+		"wiki:check": "node scripts/check-data.mjs",
+		"wiki:icons": "node scripts/fetch-icons.mjs",
+		"wiki:changelog": "node scripts/changelog.mjs"
 	},
 	"dependencies": {
 		"@astrojs/sitemap": "3.7.4",
@@ -19,6 +21,7 @@
 	},
 	"devDependencies": {
 		"@astrojs/check": "^0.9.10",
+		"sharp": "^0.35.5",
 		"typescript": "^6.0.3"
 	},
 	"packageManager": "pnpm@10.28.2"

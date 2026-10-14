@@ -40,7 +40,8 @@ const description = primary
 	: truncate(item.extract || item.description || `Where to find ${item.name} in RuneScape: Dragonwilds.`, 160);
 const pageUrl = new URL(href(`/item/${item.slug}/`), Astro.site).href;
 const categoryUrl = category && new URL(href(`/category/${category.slug}/`), Astro.site).href;
-const image = iconUrl(item.icon);
+// Social/structured-data images must be absolute.
+const image = item.icon && new URL(iconUrl(item.icon)!, Astro.site).href;
 const breadcrumbs = [
 	{ "@type": "ListItem", position: 1, name: "Home", item: new URL(href("/"), Astro.site).href },
 	...(category && categoryUrl
@@ -80,6 +81,20 @@ const structuredData = {
 				<span class:list={["badge", { craftable: primary }]}>{primary ? "Craftable" : "Not craftable"}</span>
 				<a class="small" href={wikiUrl(item.wiki)} rel="noopener">View on wiki ↗</a>
 			</div>
+			{
+				primary && (
+					<div class="plan-actions">
+						<label class="qty-field">
+							<span>Quantity</span>
+							<input type="number" id="craft-qty" min="1" max="9999" value="1" inputmode="numeric" />
+						</label>
+						<button type="button" class="btn" id="add-to-planner" data-slug={item.slug}>
+							Add to planner
+						</button>
+						<span class="small muted" id="planner-status" aria-live="polite" />
+					</div>
+				)
+			}
 			{
 				item.unlockedBy.length > 0 && (
 					<ul class="unlocks">
@@ -253,8 +268,20 @@ const structuredData = {
 
 
 <script>
+	import { addToPlanner, clampQty } from "../../lib/planner";
 	import { loadPrefs, PREFS_KEY, savePrefs } from "../../lib/prefs";
+	import { href } from "../../lib/wiki";
 	import { type Graph, renderTotals, renderTree, usesCustomRecipes } from "../../lib/tree";
+
+	const qtyInput = document.getElementById("craft-qty") as HTMLInputElement | null;
+	const qty = () => clampQty(qtyInput?.value);
+
+	const addBtn = document.getElementById("add-to-planner");
+	const status = document.getElementById("planner-status");
+	addBtn?.addEventListener("click", () => {
+		addToPlanner(addBtn.dataset.slug!, qty());
+		if (status) status.innerHTML = `Added ✓ <a href="${href("/planner/")}">Open planner</a>`;
+	});
 
 	const data = document.getElementById("craft-graph");
 	const treeEl = document.getElementById("craft-tree");
@@ -270,12 +297,12 @@ const structuredData = {
 			const openState = new Map(
 				[...treeEl.querySelectorAll<HTMLDetailsElement>("details[data-path]")].map((d) => [d.dataset.path, d.open]),
 			);
-			treeEl.innerHTML = renderTree(graph, root, prefs);
+			treeEl.innerHTML = renderTree(graph, root, prefs, qty());
 			for (const d of treeEl.querySelectorAll<HTMLDetailsElement>("details[data-path]")) {
 				const open = openState.get(d.dataset.path);
 				if (open !== undefined) d.open = open;
 			}
-			totalsEl.innerHTML = renderTotals(graph, root, prefs);
+			totalsEl.innerHTML = renderTotals(graph, root, prefs, qty());
 			note.hidden = !usesCustomRecipes(graph, root, prefs);
 		};
 
@@ -294,6 +321,7 @@ const structuredData = {
 			savePrefs({});
 			render();
 		});
+		qtyInput?.addEventListener("input", render);
 		// Another tab changed prefs.
 		addEventListener("storage", (e) => e.key === PREFS_KEY && render());
 
@@ -336,6 +364,23 @@ const structuredData = {
 	}
 	.tags a {
 		color: var(--text-dim);
+	}
+	.plan-actions {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 0.6rem;
+		margin-top: 0.8rem;
+	}
+	.qty-field {
+		display: flex;
+		align-items: center;
+		gap: 0.4rem;
+		font-size: 0.85rem;
+		color: var(--text-dim);
+	}
+	.qty-field input {
+		width: 5.5rem;
 	}
 	.unlocks {
 		margin: 0.6rem 0 0;

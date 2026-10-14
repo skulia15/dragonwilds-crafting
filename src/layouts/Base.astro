@@ -1,5 +1,6 @@
 ---
 import Search from "../components/Search.astro";
+import { support } from "../data/site";
 import { fetchedAt } from "../lib/db";
 import { href } from "../lib/wiki";
 import "../styles/global.css";
@@ -48,7 +49,6 @@ const analyticsToken = import.meta.env.PUBLIC_CLOUDFLARE_ANALYTICS_TOKEN;
 		<link rel="apple-touch-icon" href={href("/apple-touch-icon.png")} />
 		<meta name="theme-color" content="#121417" />
 		<link rel="sitemap" href={href("/sitemap-index.xml")} />
-		<link rel="preconnect" href="https://dragonwilds.runescape.wiki" />
 		{structuredData && (
 			<script type="application/ld+json" set:html={JSON.stringify(structuredData).replace(/</g, "\\u003c")} />
 		)}
@@ -68,6 +68,10 @@ const analyticsToken = import.meta.env.PUBLIC_CLOUDFLARE_ANALYTICS_TOKEN;
 					<span class="brand-mark" aria-hidden="true">⚒</span>
 					<span>Dragonwilds <em>Crafting</em></span>
 				</a>
+				<nav class="nav" aria-label="Main">
+					<a href={href("/planner/")}>Planner</a>
+					<a href={href("/whats-new/")}>What's new</a>
+				</nav>
 				{!hideSearch && <Search />}
 			</div>
 		</header>
@@ -81,6 +85,20 @@ const analyticsToken = import.meta.env.PUBLIC_CLOUDFLARE_ANALYTICS_TOKEN;
 					new Date(fetchedAt).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })
 				}.
 			</p>
+			{
+				support.supportUrl && (
+					<p class="support">
+						Free &amp; ad-free.{" "}
+						{support.costs.amount > 0 &&
+							`${support.costs.year} costs: ${support.costs.currency}${support.costs.amount} — ${
+								support.costs.covered >= support.costs.amount
+									? "covered ✓"
+									: `${support.costs.currency}${support.costs.covered} covered so far`
+							}. `}
+						<a href={support.supportUrl} rel="noopener">Chip in to keep it running</a>
+					</p>
+				)
+			}
 			<p>Built by Skúli Arnarsson. Fan-made, not affiliated with Jagex. RuneScape is a trademark of Jagex Ltd.</p>
 		</footer>
 	</body>
@@ -121,14 +139,38 @@ const analyticsToken = import.meta.env.PUBLIC_CLOUDFLARE_ANALYTICS_TOKEN;
 		color: var(--gold);
 		font-size: 1.3rem;
 	}
+	.nav {
+		display: flex;
+		gap: 1rem;
+		font-size: 0.92rem;
+	}
+	.nav a {
+		color: var(--text-dim);
+		text-decoration: none;
+		white-space: nowrap;
+	}
+	.nav a:hover {
+		color: var(--gold);
+	}
+	.support {
+		color: var(--text);
+	}
 	.inner :global(.search) {
 		flex: 1;
 		max-width: 480px;
 		margin-left: auto;
 	}
 	@media (max-width: 560px) {
-		.brand span:last-child {
-			display: none;
+		.inner {
+			flex-wrap: wrap;
+			gap: 0.5rem 1rem;
+		}
+		.nav {
+			margin-left: auto;
+		}
+		.inner :global(.search) {
+			flex-basis: 100%;
+			max-width: none;
 		}
 	}
 	.site-footer {

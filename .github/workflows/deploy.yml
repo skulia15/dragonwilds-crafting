@@ -35,15 +35,19 @@ jobs:
         if: github.event_name != 'push'
         run: pnpm wiki:check
 
+      - name: Update what's-new changelog
+        if: github.event_name != 'push'
+        run: pnpm wiki:changelog
+
       - name: Commit refreshed data
         if: github.event_name != 'push'
         run: |
-          if git diff --quiet -- src/data/db.json; then
+          if git diff --quiet -- src/data && [ -z "$(git status --porcelain -- public/icons)" ]; then
             echo "Wiki data unchanged."
           else
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add src/data/db.json
+            git add src/data/db.json src/data/changelog.json public/icons
             git commit -m "chore(data): sync wiki data"
             git push
           fi
