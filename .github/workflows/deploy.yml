@@ -72,9 +72,23 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    outputs:
+      page_url: ${{ steps.deployment.outputs.page_url }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
         uses: actions/deploy-pages@v5
+
+  # Tell Bing & co. about new/changed pages right away (IndexNow). Skipped on plain pushes — data only changes on syncs.
+  indexnow:
+    needs: deploy
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: jdx/mise-action@v5
+      - run: node scripts/indexnow.mjs
+        env:
+          SITE_URL: ${{ needs.deploy.outputs.page_url }}

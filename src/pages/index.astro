@@ -15,7 +15,8 @@ const iconFor = (slug: string) => {
 };
 const stations = items.filter((i) => i.category === "crafting-stations");
 const craftableCount = items.filter((i) => i.recipes.length).length;
-const title = "Dragonwilds Crafting — Recipes, Stations & Materials for RuneScape: Dragonwilds";
+// ≤70 chars: Bing/Google truncate longer titles.
+const title = "Dragonwilds Crafting — Recipes & Crafting Trees for RS Dragonwilds";
 const description = `Search ${craftableCount} RuneScape: Dragonwilds crafting recipes. See materials, crafting stations, full crafting trees and where to find every resource.`;
 const pageUrl = new URL(href("/"), Astro.site).href;
 const structuredData = {
