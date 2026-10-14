@@ -58,37 +58,8 @@ const structuredData = {
 			name: title,
 			description,
 			...(image && { primaryImageOfPage: { "@type": "ImageObject", url: image } }),
-			...(primary && { mainEntity: { "@id": `${pageUrl}#how-to` } }),
 		},
 		{ "@type": "BreadcrumbList", itemListElement: breadcrumbs },
-		...(primary
-			? [
-					{
-						"@type": "HowTo",
-						"@id": `${pageUrl}#how-to`,
-						name: `How to craft ${item.name} in RuneScape: Dragonwilds`,
-						description,
-						...(image && { image }),
-						supply: primary.materials.map((material) => ({
-							"@type": "HowToSupply",
-							name: material.label,
-							requiredQuantity: material.qty,
-						})),
-						...(primary.station && {
-							tool: [{ "@type": "HowToTool", name: primary.station.name }],
-						}),
-						step: [
-							{
-								"@type": "HowToStep",
-								name: `Craft ${item.name}`,
-								text: `Use ${primary.materials.map((m) => `${m.qty} ${m.label}`).join(", ")}${
-									primary.station ? ` at the ${primary.station.name}` : ""
-								}.`,
-							},
-						],
-					},
-				]
-			: []),
 	],
 };
 ---

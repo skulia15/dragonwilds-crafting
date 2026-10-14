@@ -41,7 +41,7 @@ One-time setup: repo **Settings → Pages → Source: GitHub Actions**. `SITE`/`
 
 ## Search visibility
 
-The build generates canonical URLs, a sitemap, `robots.txt`, social metadata and JSON-LD structured data for item and category pages.
+The build generates canonical URLs, a sitemap, social metadata and JSON-LD structured data for item and category pages.
 
 After deploying:
 
