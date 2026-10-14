@@ -5,5 +5,5 @@ export const support = {
 	/** Optional second link shown next to the main one. */
 	sponsorsUrl: "https://github.com/sponsors/skulia15" as string | null,
 	/** Running costs for the current year — shown so supporters see exactly what tips pay for. */
-	costs: { year: 2026, amount: 0, covered: 0, currency: "$" },
+	costs: { year: 2026, amount: 20, covered: 0, currency: "$", label: "AI dev tools" },
 };
