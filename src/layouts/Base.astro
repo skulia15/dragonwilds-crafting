@@ -43,7 +43,10 @@ const analyticsToken = import.meta.env.PUBLIC_CLOUDFLARE_ANALYTICS_TOKEN;
 		<meta name="twitter:title" content={title} />
 		<meta name="twitter:description" content={description} />
 		{image && <meta name="twitter:image" content={image} />}
+		<link rel="icon" href={href("/favicon.ico")} sizes="48x48" />
 		<link rel="icon" type="image/svg+xml" href={href("/favicon.svg")} />
+		<link rel="apple-touch-icon" href={href("/apple-touch-icon.png")} />
+		<meta name="theme-color" content="#121417" />
 		<link rel="sitemap" href={href("/sitemap-index.xml")} />
 		<link rel="preconnect" href="https://dragonwilds.runescape.wiki" />
 		{structuredData && (
