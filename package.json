@@ -2,6 +2,7 @@
 	"name": "dragonwilds-crafting",
 	"private": true,
 	"type": "module",
+	"author": "Skúli Arnarsson",
 	"scripts": {
 		"dev": "astro dev",
 		"build": "astro build",

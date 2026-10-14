@@ -4,6 +4,8 @@
 
 Static crafting lookup for RuneScape: Dragonwilds — search items, see recipes + crafting stations, drill into ingredients, find where raw resources come from, browse by category.
 
+Developed by Skúli Arnarsson.
+
 Data comes from the [Dragonwilds Wiki](https://dragonwilds.runescape.wiki/) (CC BY-NC-SA 3.0) via its Bucket API.
 
 ## Develop

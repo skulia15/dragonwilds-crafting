@@ -22,6 +22,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>{title}</title>
 		<meta name="description" content={description} />
+		<meta name="author" content="Skúli Arnarsson" />
 		<link rel="canonical" href={canonical} />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
@@ -51,7 +52,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
 					new Date(fetchedAt).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })
 				}.
 			</p>
-			<p>Fan-made, not affiliated with Jagex. RuneScape is a trademark of Jagex Ltd.</p>
+			<p>Built by Skúli Arnarsson. Fan-made, not affiliated with Jagex. RuneScape is a trademark of Jagex Ltd.</p>
 		</footer>
 	</body>
 </html>
