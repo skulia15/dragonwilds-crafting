@@ -15,11 +15,45 @@ const iconFor = (slug: string) => {
 };
 const stations = items.filter((i) => i.category === "crafting-stations");
 const craftableCount = items.filter((i) => i.recipes.length).length;
+const title = "Dragonwilds Crafting — Recipes, Stations & Materials for RuneScape: Dragonwilds";
+const description = `Search ${craftableCount} RuneScape: Dragonwilds crafting recipes. See materials, crafting stations, full crafting trees and where to find every resource.`;
+const pageUrl = new URL(href("/"), Astro.site).href;
+const structuredData = {
+	"@context": "https://schema.org",
+	"@graph": [
+		{
+			"@type": "WebSite",
+			"@id": `${pageUrl}#website`,
+			url: pageUrl,
+			name: "Dragonwilds Crafting",
+			description,
+			inLanguage: "en",
+			publisher: { "@id": `${pageUrl}#author` },
+		},
+		{
+			"@type": "Person",
+			"@id": `${pageUrl}#author`,
+			name: "Skúli Arnarsson",
+		},
+		{
+			"@type": "ItemList",
+			name: "Dragonwilds crafting categories",
+			numberOfItems: categories.length,
+			itemListElement: categories.map((category, index) => ({
+				"@type": "ListItem",
+				position: index + 1,
+				name: category.name,
+				url: new URL(href(`/category/${category.slug}/`), Astro.site).href,
+			})),
+		},
+	],
+};
 ---
 
 <Base
-	title="Dragonwilds Crafting — Recipes, Stations & Materials for RuneScape: Dragonwilds"
-	description={`Search ${craftableCount} RuneScape: Dragonwilds crafting recipes. See materials, crafting stations, full crafting trees and where to find every resource.`}
+	title={title}
+	description={description}
+	structuredData={structuredData}
 	hideSearch
 >
 	<section class="hero">

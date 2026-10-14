@@ -22,12 +22,44 @@ for (const item of members.filter((i) => i.recipes.length)) {
 }
 const groups = [...byStation].sort((a, b) => b[1].length - a[1].length);
 const notCraftable = members.filter((i) => !i.recipes.length);
+const title = `${category.name} — Crafting Recipes | Dragonwilds`;
+const description = `Browse ${category.count} ${category.name.toLowerCase()} in RuneScape: Dragonwilds, with crafting recipes, stations and materials.`;
+const pageUrl = new URL(href(`/category/${category.slug}/`), Astro.site).href;
+const structuredData = {
+	"@context": "https://schema.org",
+	"@graph": [
+		{
+			"@type": "CollectionPage",
+			"@id": pageUrl,
+			url: pageUrl,
+			name: title,
+			description,
+			mainEntity: { "@id": `${pageUrl}#items` },
+		},
+		{
+			"@type": "BreadcrumbList",
+			itemListElement: [
+				{ "@type": "ListItem", position: 1, name: "Home", item: new URL(href("/"), Astro.site).href },
+				{ "@type": "ListItem", position: 2, name: category.name, item: pageUrl },
+			],
+		},
+		{
+			"@type": "ItemList",
+			"@id": `${pageUrl}#items`,
+			name: `${category.name} items`,
+			numberOfItems: members.length,
+			itemListElement: members.map((item, index) => ({
+				"@type": "ListItem",
+				position: index + 1,
+				name: item.name,
+				url: new URL(href(`/item/${item.slug}/`), Astro.site).href,
+			})),
+		},
+	],
+};
 ---
 
-<Base
-	title={`${category.name} — Crafting Recipes | Dragonwilds`}
-	description={`All ${category.count} ${category.name.toLowerCase()} in RuneScape: Dragonwilds, with crafting recipes, stations and materials.`}
->
+<Base title={title} description={description} structuredData={structuredData}>
 	<nav class="small crumbs"><a href={href("/")}>Home</a></nav>
 	<h1>{category.name}</h1>
 	<p class="muted">

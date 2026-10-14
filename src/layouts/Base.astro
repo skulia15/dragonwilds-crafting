@@ -9,10 +9,16 @@ interface Props {
 	description: string;
 	/** Hide the header search (the home page renders its own, larger one). */
 	hideSearch?: boolean;
+	image?: string | null;
+	robots?: string;
+	structuredData?: Record<string, unknown>;
 }
 
-const { title, description, hideSearch = false } = Astro.props;
+const { title, description, hideSearch = false, image, robots = "index, follow", structuredData } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
+const googleVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
+const bingVerification = import.meta.env.PUBLIC_BING_SITE_VERIFICATION;
+const analyticsToken = import.meta.env.PUBLIC_CLOUDFLARE_ANALYTICS_TOKEN;
 ---
 
 <!doctype html>
@@ -23,14 +29,34 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
 		<title>{title}</title>
 		<meta name="description" content={description} />
 		<meta name="author" content="Skúli Arnarsson" />
+		<meta name="robots" content={robots} />
+		{googleVerification && <meta name="google-site-verification" content={googleVerification} />}
+		{bingVerification && <meta name="msvalidate.01" content={bingVerification} />}
 		<link rel="canonical" href={canonical} />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content={canonical} />
+		<meta property="og:site_name" content="Dragonwilds Crafting" />
+		{image && <meta property="og:image" content={image} />}
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		{image && <meta name="twitter:image" content={image} />}
 		<link rel="icon" type="image/svg+xml" href={href("/favicon.svg")} />
 		<link rel="sitemap" href={href("/sitemap-index.xml")} />
 		<link rel="preconnect" href="https://dragonwilds.runescape.wiki" />
+		{structuredData && (
+			<script type="application/ld+json" set:html={JSON.stringify(structuredData).replace(/</g, "\\u003c")} />
+		)}
+		{analyticsToken && (
+			<script
+				is:inline
+				defer
+				src="https://static.cloudflareinsights.com/beacon.min.js"
+				data-cf-beacon={JSON.stringify({ token: analyticsToken })}
+			/>
+		)}
 	</head>
 	<body>
 		<header class="site-header">
