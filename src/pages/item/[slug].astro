@@ -1,0 +1,359 @@
+---
+import ItemCard from "../../components/ItemCard.astro";
+import ItemIcon from "../../components/ItemIcon.astro";
+import RecipeCard from "../../components/RecipeCard.astro";
+import Base from "../../layouts/Base.astro";
+import { getCategory, getCraftedAt, getItem, getRecipesTaughtBy, type Item, items, subgraph } from "../../lib/db";
+import { renderTotals, renderTree } from "../../lib/tree";
+import { href, wikiUrl } from "../../lib/wiki";
+import "../../styles/tree.css";
+
+export function getStaticPaths() {
+	return items.map((item) => ({ params: { slug: item.slug }, props: { item } }));
+}
+
+interface Props {
+	item: Item;
+}
+const { item } = Astro.props;
+const category = getCategory(item.category);
+const primary = item.recipes[0];
+// A tree only adds anything over the recipe cards if some recipe has a craftable ingredient.
+const hasSubRecipes = item.recipes.some((r) => r.materials.some((m) => getItem(m.slug).recipes.length > 0));
+const graph = hasSubRecipes ? subgraph(item.slug) : null;
+const craftedHere = getCraftedAt(item.slug);
+const taughtRecipes = getRecipesTaughtBy(item.slug);
+const usedIn = item.usedIn.map(getItem);
+const hasSources = item.drops.length > 0 || item.shops.length > 0;
+
+const title = primary
+	? `${item.name} — How to Craft, Recipe & Materials | Dragonwilds`
+	: `${item.name} — Where to Find | Dragonwilds`;
+const truncate = (s: string, n: number) => (s.length > n ? `${s.slice(0, n - 1).trimEnd()}…` : s);
+const description = primary
+	? `How to craft ${item.name} in RuneScape: Dragonwilds: ${primary.materials
+			.map((m) => `${m.qty}× ${m.label}`)
+			.join(", ")}${primary.station ? ` at the ${primary.station.name}` : ""}. Full crafting tree and base materials.`
+	: truncate(item.extract || item.description || `Where to find ${item.name} in RuneScape: Dragonwilds.`, 160);
+---
+
+<Base title={title} description={description}>
+	<nav class="crumbs small" aria-label="Breadcrumb">
+		<a href={href("/")}>Home</a>
+		<span aria-hidden="true">/</span>
+		{category && <a href={href(`/category/${category.slug}/`)}>{category.name}</a>}
+	</nav>
+
+	<header class="item-head">
+		<div class="item-icon"><ItemIcon file={item.icon} size={72} /></div>
+		<div>
+			<h1>{item.name}</h1>
+			<div class="tags">
+				{item.type && <span class="badge">{item.type}</span>}
+				<span class:list={["badge", { craftable: primary }]}>{primary ? "Craftable" : "Not craftable"}</span>
+				<a class="small" href={wikiUrl(item.wiki)} rel="noopener">View on wiki ↗</a>
+			</div>
+			{
+				item.unlockedBy.length > 0 && (
+					<ul class="unlocks">
+						{item.unlockedBy.map((u) => (
+							<li title={u.description}>
+								Unlocked at <strong>{u.skill}{u.level != null && ` ${u.level}`}</strong> —{" "}
+								<a href={wikiUrl(u.perk)} rel="noopener">
+									{u.perk}
+								</a>
+							</li>
+						))}
+					</ul>
+				)
+			}
+			{item.description && <p class="flavour">“{item.description}”</p>}
+		</div>
+	</header>
+
+	{item.extract && <p class="extract">{item.extract}</p>}
+
+	{
+		primary && (
+			<section>
+				<h2>
+					How to craft
+					{item.recipes.length > 1 && <span class="muted small"> · {item.recipes.length} recipes</span>}
+				</h2>
+				<div class="recipes">
+					{item.recipes.map((r) => (
+						<div>
+							{r.outputLabel !== item.name && <p class="variant small muted">Makes: {r.outputLabel}</p>}
+							<RecipeCard recipe={r} />
+						</div>
+					))}
+				</div>
+			</section>
+		)
+	}
+
+	{
+		graph && (
+			<section class="breakdown">
+				<div>
+					<h2>Crafting tree</h2>
+					<p class="small muted">
+						Everything needed for one craft. Items with several recipes can be switched — your choice is remembered
+						on every page.
+					</p>
+					<p class="pref-note small" id="pref-note" hidden>
+						Using your recipe choices. <button type="button" id="pref-reset">Reset all to default</button>
+					</p>
+					<div class="tree-root" id="craft-tree" set:html={renderTree(graph, item.slug, {})} />
+				</div>
+				<aside>
+					<h2>Base materials</h2>
+					<ul class="totals" id="craft-totals" set:html={renderTotals(graph, item.slug, {})} />
+					<p class="small muted">Shared ingredients are combined before rounding up crafts.</p>
+				</aside>
+				<script type="application/json" id="craft-graph" data-root={item.slug} set:html={JSON.stringify(graph).replace(/</g, "\\u003c")} />
+			</section>
+		)
+	}
+
+	{
+		(hasSources || !primary) && (
+			<section>
+				<h2>Where to find</h2>
+				{!hasSources && (
+					<p class="muted">
+						No drop or shop data on the wiki yet — see the <a href={wikiUrl(item.wiki)}>wiki page</a> for details.
+					</p>
+				)}
+				{item.drops.length > 0 && (
+					<table>
+						<thead>
+							<tr>
+								<th>Source</th>
+								<th>Quantity</th>
+								<th>Rarity</th>
+							</tr>
+						</thead>
+						<tbody>
+							{item.drops.map((d) => (
+								<tr>
+									<td>
+										<a href={wikiUrl(d.source)} rel="noopener">
+											{d.source}
+										</a>
+									</td>
+									<td>{d.qty}</td>
+									<td>{d.rarity}</td>
+								</tr>
+							))}
+						</tbody>
+					</table>
+				)}
+				{item.shops.length > 0 && (
+					<>
+						<h3>Shops</h3>
+						<table>
+							<thead>
+								<tr>
+									<th>Seller</th>
+									<th>Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								{item.shops.map((s) => (
+									<tr>
+										<td>
+											<a href={wikiUrl(s.seller)} rel="noopener">
+												{s.seller}
+											</a>
+										</td>
+										<td>{s.cost != null ? `${s.cost} ${s.currency ?? ""}` : "—"}</td>
+									</tr>
+								))}
+							</tbody>
+						</table>
+					</>
+				)}
+			</section>
+		)
+	}
+
+	{
+		taughtRecipes.length > 0 && (
+			<section>
+				<h2>
+					Unlocks recipe for <span class="muted small">· {taughtRecipes.length}</span>
+				</h2>
+				<div class="grid">
+					{taughtRecipes.map((i) => (
+						<ItemCard item={i} />
+					))}
+				</div>
+			</section>
+		)
+	}
+
+	{
+		craftedHere.length > 0 && (
+			<section>
+				<h2>
+					Crafted at this station <span class="muted small">· {craftedHere.length}</span>
+				</h2>
+				<div class="grid">
+					{craftedHere.map((i) => (
+						<ItemCard item={i} sub={getCategory(i.category)?.name} />
+					))}
+				</div>
+			</section>
+		)
+	}
+
+	{
+		usedIn.length > 0 && (
+			<section>
+				<h2>
+					Used to craft <span class="muted small">· {usedIn.length}</span>
+				</h2>
+				<div class="grid">
+					{usedIn.map((i) => (
+						<ItemCard item={i} />
+					))}
+				</div>
+			</section>
+		)
+	}
+</Base>
+
+
+<script>
+	import { loadPrefs, PREFS_KEY, savePrefs } from "../../lib/prefs";
+	import { type Graph, renderTotals, renderTree, usesCustomRecipes } from "../../lib/tree";
+
+	const data = document.getElementById("craft-graph");
+	const treeEl = document.getElementById("craft-tree");
+	const totalsEl = document.getElementById("craft-totals");
+	const note = document.getElementById("pref-note");
+	if (data && treeEl && totalsEl && note) {
+		const graph = JSON.parse(data.textContent!) as Graph;
+		const root = data.dataset.root!;
+
+		const render = () => {
+			const prefs = loadPrefs();
+			// Keep the player's expand/collapse state across re-renders.
+			const openState = new Map(
+				[...treeEl.querySelectorAll<HTMLDetailsElement>("details[data-path]")].map((d) => [d.dataset.path, d.open]),
+			);
+			treeEl.innerHTML = renderTree(graph, root, prefs);
+			for (const d of treeEl.querySelectorAll<HTMLDetailsElement>("details[data-path]")) {
+				const open = openState.get(d.dataset.path);
+				if (open !== undefined) d.open = open;
+			}
+			totalsEl.innerHTML = renderTotals(graph, root, prefs);
+			note.hidden = !usesCustomRecipes(graph, root, prefs);
+		};
+
+		treeEl.addEventListener("change", (e) => {
+			const select = e.target as HTMLSelectElement;
+			const slug = select.dataset.slug;
+			if (!slug) return;
+			const prefs = loadPrefs();
+			// Choosing the default clears the pref, so future default changes in the data apply.
+			if (select.value === graph[slug].recipes[0].id) delete prefs[slug];
+			else prefs[slug] = select.value;
+			savePrefs(prefs);
+			render();
+		});
+		document.getElementById("pref-reset")?.addEventListener("click", () => {
+			savePrefs({});
+			render();
+		});
+		// Another tab changed prefs.
+		addEventListener("storage", (e) => e.key === PREFS_KEY && render());
+
+		// Static HTML shows defaults; only re-render if saved choices affect this tree.
+		if (usesCustomRecipes(graph, root, loadPrefs())) render();
+	}
+</script>
+
+<style>
+	.crumbs {
+		display: flex;
+		gap: 0.5rem;
+		margin-bottom: 1rem;
+		color: var(--text-dim);
+	}
+	.crumbs a {
+		color: var(--text-dim);
+	}
+	.item-head {
+		display: flex;
+		gap: 1.25rem;
+		align-items: flex-start;
+	}
+	.item-icon {
+		display: grid;
+		place-items: center;
+		width: 96px;
+		height: 96px;
+		flex: none;
+		background: radial-gradient(circle at 50% 40%, #2c2a24, var(--bg-sunk));
+		border: 1px solid var(--line-strong);
+		border-radius: 12px;
+	}
+	.tags {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 0.5rem;
+		margin-top: 0.5rem;
+	}
+	.tags a {
+		color: var(--text-dim);
+	}
+	.unlocks {
+		margin: 0.6rem 0 0;
+		padding: 0;
+		list-style: none;
+		font-size: 0.9rem;
+	}
+	.unlocks strong {
+		color: var(--gold);
+		font-weight: 600;
+	}
+	.flavour {
+		margin: 0.6rem 0 0;
+		font-family: var(--serif);
+		font-style: italic;
+		color: var(--text-dim);
+	}
+	.extract {
+		max-width: 70ch;
+		margin: 1.25rem 0 0;
+	}
+	.recipes {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr));
+		gap: 1rem;
+	}
+	.variant {
+		margin: 0 0 0.3rem;
+	}
+	.breakdown {
+		display: grid;
+		grid-template-columns: 1fr 300px;
+		gap: 0 2rem;
+	}
+	/* Grid items default to min-width:auto; long <select> option text would otherwise widen the page. */
+	.breakdown > * {
+		min-width: 0;
+	}
+	@media (max-width: 800px) {
+		.breakdown {
+			grid-template-columns: 1fr;
+		}
+	}
+	h3 {
+		margin: 1.5rem 0 0.5rem;
+		font-size: 1.05rem;
+	}
+</style>

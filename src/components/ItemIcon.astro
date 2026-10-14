@@ -1,0 +1,27 @@
+---
+import { iconUrl } from "../lib/wiki";
+
+interface Props {
+	file: string | null;
+	size?: number;
+}
+const { file, size = 32 } = Astro.props;
+const src = iconUrl(file);
+---
+
+{
+	src ? (
+		<img class="icon" src={src} alt="" width={size} height={size} loading="lazy" decoding="async" />
+	) : (
+		<span class="icon placeholder" style={`width:${size}px;height:${size}px`} aria-hidden="true" />
+	)
+}
+
+<style>
+	.placeholder {
+		display: inline-block;
+		flex: none;
+		border-radius: 6px;
+		background: var(--line);
+	}
+</style>

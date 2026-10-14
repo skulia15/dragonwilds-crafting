@@ -1,0 +1,96 @@
+---
+import ItemCard from "../../components/ItemCard.astro";
+import Base from "../../layouts/Base.astro";
+import { type Category, categories, items } from "../../lib/db";
+import { href } from "../../lib/wiki";
+
+export function getStaticPaths() {
+	return categories.map((category) => ({ params: { slug: category.slug }, props: { category } }));
+}
+
+interface Props {
+	category: Category;
+}
+const { category } = Astro.props;
+const members = items.filter((i) => i.category === category.slug);
+
+// Group craftables by the station of their first recipe — mirrors how you'd browse in-game.
+const byStation = new Map<string, typeof members>();
+for (const item of members.filter((i) => i.recipes.length)) {
+	const station = item.recipes[0].station?.name ?? "Other";
+	byStation.set(station, [...(byStation.get(station) ?? []), item]);
+}
+const groups = [...byStation].sort((a, b) => b[1].length - a[1].length);
+const notCraftable = members.filter((i) => !i.recipes.length);
+---
+
+<Base
+	title={`${category.name} — Crafting Recipes | Dragonwilds`}
+	description={`All ${category.count} ${category.name.toLowerCase()} in RuneScape: Dragonwilds, with crafting recipes, stations and materials.`}
+>
+	<nav class="small crumbs"><a href={href("/")}>Home</a></nav>
+	<h1>{category.name}</h1>
+	<p class="muted">
+		{category.craftable} craftable{notCraftable.length > 0 && ` · ${notCraftable.length} found in the world`}
+	</p>
+
+	{
+		groups.map(([station, list]) => (
+			<section>
+				<h2>
+					{station} <span class="muted small">· {list.length}</span>
+				</h2>
+				<div class="grid">
+					{list.map((i) => (
+						<ItemCard item={i} sub={i.type ?? undefined} />
+					))}
+				</div>
+			</section>
+		))
+	}
+
+	{
+		notCraftable.length > 0 && (
+			<section>
+				<details open={groups.length === 0}>
+					<summary>
+						<h2>
+							Not craftable <span class="muted small">· {notCraftable.length}</span>
+						</h2>
+					</summary>
+					<div class="grid">
+						{notCraftable.map((i) => (
+							<ItemCard item={i} />
+						))}
+					</div>
+				</details>
+			</section>
+		)
+	}
+</Base>
+
+<style>
+	.crumbs {
+		margin-bottom: 1rem;
+	}
+	.crumbs a {
+		color: var(--text-dim);
+	}
+	p {
+		margin: 0.4rem 0 0;
+	}
+	summary {
+		cursor: pointer;
+		list-style: none;
+	}
+	summary::-webkit-details-marker {
+		display: none;
+	}
+	summary h2::after {
+		content: " ▸";
+		color: var(--gold-dim);
+	}
+	details[open] summary h2::after {
+		content: " ▾";
+	}
+</style>

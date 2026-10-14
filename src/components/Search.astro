@@ -1,0 +1,234 @@
+---
+interface Props {
+	large?: boolean;
+	autofocus?: boolean;
+}
+const { large = false, autofocus = false } = Astro.props;
+---
+
+<div class:list={["search", { large }]}>
+	<label class="visually-hidden" for="search-input">Search items</label>
+	<input
+		id="search-input"
+		type="search"
+		role="combobox"
+		aria-expanded="false"
+		aria-controls="search-results"
+		aria-autocomplete="list"
+		autocomplete="off"
+		spellcheck="false"
+		placeholder="Search items… e.g. bronze bar"
+		autofocus={autofocus}
+	/>
+	<kbd aria-hidden="true">/</kbd>
+	<ul id="search-results" role="listbox" hidden></ul>
+</div>
+
+<script>
+	import type { SearchRow } from "../pages/search-index.json";
+	import { href, iconUrl } from "../lib/wiki";
+
+	const MAX_RESULTS = 12;
+
+	const root = document.querySelector<HTMLElement>(".search");
+	if (root) {
+		const input = root.querySelector("input")!;
+		const list = root.querySelector("ul")!;
+		let index: SearchRow[] | null = null;
+		let loading: Promise<SearchRow[]> | null = null;
+		let active = -1;
+
+		// Fetched lazily so pages stay light until someone actually searches.
+		const loadIndex = () =>
+			(loading ??= fetch(href("/search-index.json"))
+				.then((r) => r.json() as Promise<SearchRow[]>)
+				.then((rows) => (index = rows)));
+
+		const norm = (s: string) => s.toLowerCase().replace(/[’']/g, "");
+
+		// Lower is better. Every query word must appear somewhere in the name.
+		const score = (name: string, q: string, words: string[]) => {
+			const n = norm(name);
+			if (!words.every((w) => n.includes(w))) return null;
+			if (n === q) return 0;
+			if (n.startsWith(q)) return 1;
+			if (n.split(/[\s(-]+/).some((part) => part.startsWith(words[0]))) return 2;
+			return 3;
+		};
+
+		const search = (raw: string) => {
+			const q = norm(raw.trim());
+			if (!q || !index) return [];
+			const words = q.split(/\s+/);
+			return index
+				.map((row) => ({ row, s: score(row[0], q, words) }))
+				.filter((r): r is { row: SearchRow; s: number } => r.s !== null)
+				.sort((a, b) => a.s - b.s || b.row[4] - a.row[4] || a.row[0].length - b.row[0].length)
+				.slice(0, MAX_RESULTS)
+				.map((r) => r.row);
+		};
+
+		const setActive = (i: number) => {
+			const options = list.querySelectorAll<HTMLElement>("[role=option]");
+			active = options.length ? (i + options.length) % options.length : -1;
+			options.forEach((el, n) => el.setAttribute("aria-selected", String(n === active)));
+			options[active]?.scrollIntoView({ block: "nearest" });
+		};
+
+		const close = () => {
+			list.hidden = true;
+			input.setAttribute("aria-expanded", "false");
+			active = -1;
+		};
+
+		const render = () => {
+			const results = search(input.value);
+			list.replaceChildren();
+			if (!input.value.trim()) return close();
+			if (!results.length) {
+				const li = document.createElement("li");
+				li.className = "empty";
+				li.textContent = index ? "No items found" : "Loading…";
+				list.append(li);
+			}
+			for (const [name, slug, icon, category, craftable] of results) {
+				const li = document.createElement("li");
+				li.setAttribute("role", "option");
+				const a = document.createElement("a");
+				a.href = href(`/item/${slug}/`);
+				a.tabIndex = -1;
+				if (icon) {
+					const img = document.createElement("img");
+					img.src = iconUrl(icon)!;
+					img.alt = "";
+					img.width = img.height = 28;
+					img.className = "icon";
+					a.append(img);
+				}
+				const label = document.createElement("span");
+				label.className = "label";
+				label.textContent = name;
+				const meta = document.createElement("span");
+				meta.className = "meta";
+				meta.textContent = craftable ? `${category} · craftable` : category;
+				a.append(label, meta);
+				li.append(a);
+				list.append(li);
+			}
+			list.hidden = false;
+			input.setAttribute("aria-expanded", "true");
+			setActive(results.length ? 0 : -1);
+		};
+
+		input.addEventListener("focus", () => {
+			// On phones the keyboard covers half the screen: bring the box to the top so results fit below it.
+			if (matchMedia("(max-width: 640px)").matches && input.getBoundingClientRect().top > 120) {
+				input.scrollIntoView({ block: "start", behavior: "smooth" });
+			}
+			void loadIndex().then(render);
+		});
+		input.addEventListener("input", () => (index ? render() : void loadIndex().then(render)));
+		input.addEventListener("keydown", (e) => {
+			if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+				e.preventDefault();
+				setActive(active + (e.key === "ArrowDown" ? 1 : -1));
+			} else if (e.key === "Enter") {
+				const link = list.querySelectorAll("a")[Math.max(active, 0)];
+				if (link) location.href = link.href;
+			} else if (e.key === "Escape") {
+				close();
+			}
+		});
+		document.addEventListener("click", (e) => {
+			if (!root.contains(e.target as Node)) close();
+		});
+		// "/" focuses search from anywhere, like GitHub/YouTube.
+		document.addEventListener("keydown", (e) => {
+			const target = e.target as HTMLElement;
+			if (e.key === "/" && !/^(INPUT|TEXTAREA|SELECT)$/.test(target.tagName) && !target.isContentEditable) {
+				e.preventDefault();
+				input.focus();
+			}
+		});
+	}
+</script>
+
+<style>
+	.search {
+		position: relative;
+	}
+	input {
+		width: 100%;
+		padding: 0.55rem 2.2rem 0.55rem 0.9rem;
+		font: inherit;
+		font-size: max(16px, 1em); /* <16px makes iOS zoom the page on focus */
+		color: var(--text);
+		background: var(--bg-sunk);
+		border: 1px solid var(--line-strong);
+		border-radius: var(--radius);
+		outline: none;
+	}
+	input:focus {
+		border-color: var(--gold-dim);
+		box-shadow: 0 0 0 3px rgb(217 169 74 / 0.15);
+	}
+	input::-webkit-search-cancel-button {
+		display: none;
+	}
+	kbd {
+		position: absolute;
+		right: 0.6rem;
+		top: 50%;
+		translate: 0 -50%;
+		padding: 0 0.4rem;
+		font: 0.75rem var(--sans);
+		color: var(--text-dim);
+		border: 1px solid var(--line-strong);
+		border-radius: 4px;
+		pointer-events: none;
+	}
+	.large input {
+		padding: 0.9rem 2.6rem 0.9rem 1.1rem;
+		font-size: 1.15rem;
+	}
+	ul {
+		position: absolute;
+		z-index: 20;
+		top: calc(100% + 6px);
+		left: 0;
+		right: 0;
+		/* dvh shrinks with the on-screen keyboard, so results stay reachable on phones. */
+		max-height: min(60dvh, 520px);
+		overflow-y: auto;
+		margin: 0;
+		padding: 0.3rem;
+		list-style: none;
+		background: var(--bg-raised);
+		border: 1px solid var(--line-strong);
+		border-radius: var(--radius);
+		box-shadow: 0 12px 32px rgb(0 0 0 / 0.5);
+	}
+	ul :global(a) {
+		display: flex;
+		align-items: center;
+		gap: 0.65rem;
+		padding: 0.4rem 0.55rem;
+		border-radius: 6px;
+		text-decoration: none;
+	}
+	ul :global([aria-selected="true"] a) {
+		background: #2a2e35;
+	}
+	ul :global(.label) {
+		flex: 1;
+	}
+	ul :global(.meta) {
+		font-size: 0.78rem;
+		color: var(--text-dim);
+		white-space: nowrap;
+	}
+	ul :global(.empty) {
+		padding: 0.6rem;
+		color: var(--text-dim);
+	}
+</style>

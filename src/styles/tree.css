@@ -1,0 +1,125 @@
+/* Global (not component-scoped): tree + totals markup is injected via set:html and re-rendered client-side. */
+.tree-root {
+	overflow-x: auto;
+	padding: 0.5rem 0;
+}
+.tree-root > .tree {
+	border-left: none;
+	padding-left: 1rem;
+}
+.tree {
+	list-style: none;
+	margin: 0;
+	padding-left: 1.1rem;
+	border-left: 1px dashed var(--line-strong);
+}
+.tree li {
+	margin: 0.15rem 0;
+}
+.tree summary {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	list-style: none;
+}
+.tree summary::-webkit-details-marker {
+	display: none;
+}
+.tree summary::before {
+	content: "▸";
+	display: inline-block;
+	width: 1rem;
+	margin-left: -1rem;
+	color: var(--gold-dim);
+	transition: rotate 0.12s;
+}
+.tree details[open] > summary::before {
+	rotate: 90deg;
+}
+.tree .row,
+.totals li {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+.tree .row {
+	padding: 0.2rem 0.4rem;
+}
+.tree .qty,
+.totals .qty {
+	min-width: 2.5ch;
+	font-variant-numeric: tabular-nums;
+	font-weight: 600;
+	color: var(--gold);
+}
+.tree .hint {
+	font-size: 0.8rem;
+	color: var(--text-dim);
+}
+.tree .custom,
+.pref-note {
+	color: var(--gold);
+}
+.icon.placeholder {
+	display: inline-block;
+	flex: none;
+	border-radius: 6px;
+	background: var(--line);
+}
+
+.pick {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	margin: 0.2rem 0 0.4rem 0.4rem;
+	font-size: 0.85rem;
+	color: var(--text-dim);
+}
+.pick select {
+	min-width: 0;
+	max-width: min(100%, 460px);
+	padding: 0.3rem 0.5rem;
+	font: inherit;
+	color: var(--text);
+	background: var(--bg-sunk);
+	border: 1px solid var(--line-strong);
+	border-radius: 6px;
+}
+.pick select:focus-visible {
+	outline: 2px solid var(--gold-dim);
+}
+
+.pref-note button {
+	padding: 0;
+	font: inherit;
+	color: var(--text);
+	background: none;
+	border: none;
+	text-decoration: underline;
+	text-decoration-color: var(--gold-dim);
+	text-underline-offset: 3px;
+	cursor: pointer;
+}
+
+.totals {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.totals li {
+	display: flex;
+	padding: 0.3rem 0;
+	border-bottom: 1px solid var(--line);
+}
+
+/* Touch: 44px targets for everything you tap in the tree. */
+@media (pointer: coarse) {
+	.tree .row,
+	.totals li {
+		min-height: 44px;
+	}
+	.pick select {
+		min-height: 44px;
+		font-size: 16px; /* <16px makes iOS zoom the page on focus */
+	}
+}

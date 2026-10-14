@@ -1,0 +1,22 @@
+---
+import type { Item } from "../lib/db";
+import { href } from "../lib/wiki";
+import ItemIcon from "./ItemIcon.astro";
+
+interface Props {
+	item: Item;
+	/** Secondary line; defaults to the station(s) the item is crafted at. */
+	sub?: string;
+}
+const { item, sub } = Astro.props;
+const stations = [...new Set(item.recipes.map((r) => r.station?.name).filter(Boolean))].join(" / ");
+const subtitle = sub ?? (stations || (item.type ?? ""));
+---
+
+<a class="card-link" href={href(`/item/${item.slug}/`)} data-craftable={item.recipes.length > 0}>
+	<ItemIcon file={item.icon} size={36} />
+	<span>
+		<span class="name">{item.name}</span>
+		{subtitle && <span class="sub">{subtitle}</span>}
+	</span>
+</a>

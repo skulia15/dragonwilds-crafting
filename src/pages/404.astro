@@ -1,0 +1,9 @@
+---
+import Base from "../layouts/Base.astro";
+import { href } from "../lib/wiki";
+---
+
+<Base title="Not found | Dragonwilds Crafting" description="Page not found.">
+	<h1>Nothing to craft here</h1>
+	<p class="muted">That page doesn't exist. Try the search above, or <a href={href("/")}>go home</a>.</p>
+</Base>

@@ -1,0 +1,75 @@
+---
+import ItemCard from "../components/ItemCard.astro";
+import ItemIcon from "../components/ItemIcon.astro";
+import Search from "../components/Search.astro";
+import Base from "../layouts/Base.astro";
+import { categories, items } from "../lib/db";
+import { href } from "../lib/wiki";
+
+// Representative icon per category: its most-used craftable item, else the first one.
+const iconFor = (slug: string) => {
+	const members = items.filter((i) => i.category === slug && i.icon);
+	const craftable = members.filter((i) => i.recipes.length);
+	const pool = craftable.length ? craftable : members;
+	return pool.reduce((best, i) => (i.usedIn.length > best.usedIn.length ? i : best), pool[0])?.icon ?? null;
+};
+const stations = items.filter((i) => i.category === "crafting-stations");
+const craftableCount = items.filter((i) => i.recipes.length).length;
+---
+
+<Base
+	title="Dragonwilds Crafting — Recipes, Stations & Materials for RuneScape: Dragonwilds"
+	description={`Search ${craftableCount} RuneScape: Dragonwilds crafting recipes. See materials, crafting stations, full crafting trees and where to find every resource.`}
+	hideSearch
+>
+	<section class="hero">
+		<h1>What do you want to craft?</h1>
+		<p class="muted">
+			Recipes, stations and full material trees for {craftableCount} items in RuneScape: Dragonwilds.
+		</p>
+		<Search large autofocus />
+	</section>
+
+	<section>
+		<h2>Browse by category</h2>
+		<div class="categories">
+			{
+				categories.map((c) => (
+					<a class="card-link" href={href(`/category/${c.slug}/`)}>
+						<ItemIcon file={iconFor(c.slug)} size={40} />
+						<span>
+							<span class="name">{c.name}</span>
+							<span class="sub">{c.craftable ? `${c.craftable} craftable` : `${c.count} items`}</span>
+						</span>
+					</a>
+				))
+			}
+		</div>
+	</section>
+
+	<section>
+		<h2>Crafting stations</h2>
+		<div class="grid">
+			{stations.map((s) => <ItemCard item={s} sub={undefined} />)}
+		</div>
+	</section>
+</Base>
+
+<style>
+	.hero {
+		max-width: 640px;
+		margin: 3rem auto 1rem;
+		text-align: center;
+	}
+	.hero p {
+		margin: 0.5rem 0 1.5rem;
+	}
+	.hero :global(.search) {
+		text-align: left;
+	}
+	.categories {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		gap: 0.6rem;
+	}
+</style>

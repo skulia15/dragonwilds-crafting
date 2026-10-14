@@ -1,0 +1,73 @@
+name: Sync wiki & deploy
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 6 * * 1" # Mondays 06:17 UTC (off the hour to dodge cron congestion)
+  workflow_dispatch:
+
+permissions:
+  contents: write # commit refreshed wiki data
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: jdx/mise-action@v5 # Node version from mise.toml
+      - uses: pnpm/action-setup@v6 # pnpm version from package.json "packageManager"
+      - run: pnpm install --frozen-lockfile
+
+      # Pushes deploy the committed data as-is; only scheduled/manual runs hit the wiki.
+      - name: Sync wiki data
+        if: github.event_name != 'push'
+        run: pnpm wiki:sync
+
+      - name: Guard against data loss
+        if: github.event_name != 'push'
+        run: pnpm wiki:check
+
+      - name: Commit refreshed data
+        if: github.event_name != 'push'
+        run: |
+          if git diff --quiet -- src/data/db.json; then
+            echo "Wiki data unchanged."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add src/data/db.json
+            git commit -m "chore(data): sync wiki data"
+            git push
+          fi
+
+      - id: pages
+        uses: actions/configure-pages@v6
+
+      - name: Build
+        run: pnpm build
+        env:
+          # e.g. SITE=https://user.github.io, BASE=/dragonwilds-crafting — or a custom domain with BASE=/
+          SITE: ${{ steps.pages.outputs.origin }}
+          BASE: ${{ steps.pages.outputs.base_path || '/' }}
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

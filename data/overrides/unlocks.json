@@ -1,0 +1,15 @@
+{
+	"$comment": "Corrections to skill-perk → item matching in scripts/build-data.mjs. Keys are perk names; values are craftable item names, '*' matches any text.",
+	"add": {
+		"Fire Starter": ["* Fire Arrow"],
+		"Toxic Behaviour": ["Poisoned * Arrow"],
+		"Make 'Em Bleed": ["* Barbed Arrow"],
+		"Enchanted Crossbow Bolts": ["Enchanted *"],
+		"Experienced Angler": ["Angler's Hat"]
+	},
+	"remove": {
+		"Teamonger": ["Stone Range"],
+		"Amateur Culinromancer": ["Stone Range"],
+		"Adept Culinromancer": ["Stone Range"]
+	}
+}

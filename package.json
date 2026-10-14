@@ -1,0 +1,24 @@
+{
+	"name": "dragonwilds-crafting",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"check": "astro check",
+		"wiki:fetch": "node scripts/fetch-wiki.mjs",
+		"wiki:build": "node scripts/build-data.mjs",
+		"wiki:sync": "node scripts/fetch-wiki.mjs && node scripts/build-data.mjs",
+		"wiki:check": "node scripts/check-data.mjs"
+	},
+	"dependencies": {
+		"@astrojs/sitemap": "3.7.4",
+		"astro": "7.3.8"
+	},
+	"devDependencies": {
+		"@astrojs/check": "^0.9.10",
+		"typescript": "^6.0.3"
+	},
+	"packageManager": "pnpm@10.28.2"
+}

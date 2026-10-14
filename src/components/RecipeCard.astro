@@ -1,0 +1,154 @@
+---
+import { getItem, type Recipe } from "../lib/db";
+import { href, wikiUrl } from "../lib/wiki";
+import ItemIcon from "./ItemIcon.astro";
+
+interface Props {
+	recipe: Recipe;
+}
+const { recipe } = Astro.props;
+const station = recipe.station;
+const stationItem = station?.slug ? getItem(station.slug) : null;
+---
+
+<article class="recipe">
+	<header>
+		<div class="station">
+			<span class="label">Crafted at</span>
+			{
+				stationItem ? (
+					<a href={href(`/item/${stationItem.slug}/`)} class="station-name">
+						<ItemIcon file={stationItem.icon} size={28} />
+						{station!.name}
+					</a>
+				) : station ? (
+					<a href={wikiUrl(station.name === "Build Menu" ? "Buildings" : station.name)} class="station-name">
+						{station.name}
+					</a>
+				) : (
+					<span class="station-name muted">Unknown</span>
+				)
+			}
+		</div>
+		<div class="meta">
+			{recipe.outputQty > 1 && <span class="badge">Makes {recipe.outputQty}</span>}
+			{
+				recipe.skills.map((s) => (
+					<span class="badge">
+						{s.name} {s.xp > 0 && `· ${s.xp} XP`}
+					</span>
+				))
+			}
+		</div>
+	</header>
+	{
+		recipe.requires && (
+			<p class="requires">
+				<span class="label">Requires</span>
+				{recipe.requires.slug ? (
+					<a href={href(`/item/${recipe.requires.slug}/`)}>{recipe.requires.label}</a>
+				) : (
+					<a href={wikiUrl(recipe.requires.label)}>{recipe.requires.label}</a>
+				)}
+			</p>
+		)
+	}
+	<ul class="materials">
+		{
+			recipe.materials.map((m) => {
+				const mat = getItem(m.slug);
+				return (
+					<li>
+						<a href={href(`/item/${m.slug}/`)}>
+							<ItemIcon file={m.icon ?? mat.icon} size={36} />
+							<span class="qty">{m.qty}×</span>
+							<span class="mat-name">{m.label}</span>
+							<span class:list={["badge", { craftable: mat.recipes.length }]}>
+								{mat.recipes.length ? "Craftable" : "Gathered"}
+							</span>
+						</a>
+					</li>
+				);
+			})
+		}
+	</ul>
+</article>
+
+<style>
+	.recipe {
+		background: var(--bg-raised);
+		border: 1px solid var(--line);
+		border-radius: var(--radius);
+		overflow: hidden;
+	}
+	header {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0.5rem 1rem;
+		padding: 0.75rem 1rem;
+		background: var(--bg-sunk);
+		border-bottom: 1px solid var(--line);
+	}
+	.station {
+		display: flex;
+		align-items: center;
+		gap: 0.6rem;
+	}
+	.label {
+		font-size: 0.8rem;
+		color: var(--text-dim);
+		text-transform: uppercase;
+		letter-spacing: 0.06em;
+	}
+	.station-name {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.4rem;
+		font-family: var(--serif);
+		font-size: 1.1rem;
+		font-weight: 600;
+		color: var(--gold);
+	}
+	.meta {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.4rem;
+	}
+	.requires {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		gap: 0.6rem;
+		margin: 0;
+		padding: 0.6rem 1rem;
+		border-bottom: 1px solid var(--line);
+		background: rgb(217 169 74 / 0.06);
+	}
+	.materials {
+		list-style: none;
+		margin: 0;
+		padding: 0.4rem;
+	}
+	.materials a {
+		display: flex;
+		align-items: center;
+		gap: 0.7rem;
+		padding: 0.45rem 0.6rem;
+		border-radius: 6px;
+		text-decoration: none;
+	}
+	.materials a:hover {
+		background: #23272e;
+	}
+	.qty {
+		min-width: 2.5ch;
+		font-variant-numeric: tabular-nums;
+		font-weight: 600;
+		color: var(--gold);
+	}
+	.mat-name {
+		flex: 1;
+	}
+</style>

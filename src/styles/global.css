@@ -1,0 +1,186 @@
+:root {
+	--bg: #121417;
+	--bg-raised: #1a1d22;
+	--bg-sunk: #0d0f11;
+	--line: #2b3038;
+	--line-strong: #3b424d;
+	--text: #e7e2d6;
+	--text-dim: #a29d91;
+	--gold: #d9a94a;
+	--gold-dim: #9c7a36;
+	--green: #8fbf6a;
+	--radius: 8px;
+	--serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+	--sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+	color-scheme: dark;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	background: var(--bg);
+	color: var(--text);
+	font: 16px/1.5 var(--sans);
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background:
+		radial-gradient(1200px 500px at 50% -200px, #2a2418 0%, transparent 70%),
+		var(--bg);
+}
+
+main {
+	flex: 1;
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 1.5rem 1rem 4rem;
+}
+
+h1,
+h2,
+h3 {
+	font-family: var(--serif);
+	font-weight: 600;
+	line-height: 1.2;
+	letter-spacing: 0.01em;
+}
+
+h1 {
+	font-size: clamp(1.8rem, 4vw, 2.5rem);
+	margin: 0;
+}
+
+h2 {
+	font-size: 1.35rem;
+	margin: 2.5rem 0 1rem;
+	padding-bottom: 0.4rem;
+	border-bottom: 1px solid var(--line);
+	color: var(--gold);
+}
+
+a {
+	color: var(--text);
+	text-decoration-color: var(--gold-dim);
+	text-underline-offset: 3px;
+}
+
+a:hover {
+	color: var(--gold);
+}
+
+img.icon {
+	object-fit: contain;
+	flex: none;
+}
+
+.muted {
+	color: var(--text-dim);
+}
+
+.small {
+	font-size: 0.875rem;
+}
+
+.badge {
+	display: inline-block;
+	padding: 0.1rem 0.55rem;
+	border: 1px solid var(--line-strong);
+	border-radius: 999px;
+	font-size: 0.78rem;
+	color: var(--text-dim);
+	white-space: nowrap;
+}
+
+.badge.craftable {
+	border-color: #3f5a2e;
+	color: var(--green);
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+	gap: 0.6rem;
+}
+
+.card-link {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	padding: 0.6rem 0.75rem;
+	background: var(--bg-raised);
+	border: 1px solid var(--line);
+	border-radius: var(--radius);
+	text-decoration: none;
+	transition: border-color 0.12s, background 0.12s;
+}
+
+.card-link:hover {
+	border-color: var(--gold-dim);
+	background: #20242a;
+	color: var(--text);
+}
+
+.card-link .name {
+	font-weight: 500;
+	line-height: 1.25;
+}
+
+.card-link .sub {
+	display: block;
+	font-size: 0.8rem;
+	color: var(--text-dim);
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 0.92rem;
+}
+
+th,
+td {
+	text-align: left;
+	padding: 0.45rem 0.6rem;
+	border-bottom: 1px solid var(--line);
+}
+
+th {
+	color: var(--text-dim);
+	font-weight: 500;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	white-space: nowrap;
+}
+
+@media (pointer: coarse) {
+	.card-link {
+		min-height: 52px;
+	}
+}
+
+@media (max-width: 560px) {
+	main {
+		padding: 1rem 0.75rem 3rem;
+	}
+	h2 {
+		margin-top: 2rem;
+	}
+	th,
+	td {
+		padding: 0.45rem 0.35rem;
+	}
+}
