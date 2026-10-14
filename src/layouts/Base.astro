@@ -96,6 +96,14 @@ const analyticsToken = import.meta.env.PUBLIC_CLOUDFLARE_ANALYTICS_TOKEN;
 									: `${support.costs.currency}${support.costs.covered} covered so far`
 							}. `}
 						<a href={support.supportUrl} rel="noopener">Chip in to keep it running</a>
+						{support.sponsorsUrl && (
+							<>
+								{" "}or{" "}
+								<a href={support.sponsorsUrl} rel="noopener">
+									sponsor on GitHub
+								</a>
+							</>
+						)}
 					</p>
 				)
 			}
