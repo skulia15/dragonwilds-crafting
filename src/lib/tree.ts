@@ -14,6 +14,7 @@ export interface TreeItem {
 	icon: string | null;
 	/** First known drop/shop source, shown on leaves. */
 	source: string | null;
+	weight: number | null;
 	recipes: TreeRecipe[];
 }
 
@@ -21,6 +22,8 @@ export interface TreeItem {
 export type Graph = Record<string, TreeItem>;
 /** Item slug → chosen recipe id. Missing/unknown ids fall back to the item's first recipe. */
 export type Prefs = Record<string, string>;
+/** Item slug → how many the player already has. Shared across pages, like Prefs. */
+export type Have = Record<string, number>;
 
 const MAX_DEPTH = 8;
 
@@ -60,12 +63,16 @@ function icon(file: string | null, size: number) {
 		: `<span class="icon placeholder" style="width:${size}px;height:${size}px"></span>`;
 }
 
-function nodes(graph: Graph, recipe: TreeRecipe, crafts: number, path: string[], prefs: Prefs): string {
+function nodes(graph: Graph, recipe: TreeRecipe, crafts: number, path: string[], prefs: Prefs, left: Have): string {
 	const items = recipe.materials.map((m) => {
 		const mat = graph[m.slug];
 		const need = m.qty * crafts;
+		// Inventory is spent top-down in tree order, so an owned intermediate also skips its whole subtree.
+		const used = Math.min(left[m.slug] ?? 0, need);
+		if (used) left[m.slug] -= used;
 		const sub = mat.recipes.length ? recipeFor(graph, m.slug, prefs) : undefined;
-		const expandable = sub && !path.includes(m.slug) && path.length < MAX_DEPTH;
+		const expandable = sub && used < need && !path.includes(m.slug) && path.length < MAX_DEPTH;
+		const owned = used ? `<span class="owned">${used === need ? "✓ have all" : `have ${used}`}</span>` : "";
 		const hint = sub
 			? `at ${esc(sub.station ?? "?")}${isCustom(graph, m.slug, prefs) ? ' <span class="custom">your recipe</span>' : ""}`
 			: mat.source
@@ -73,29 +80,50 @@ function nodes(graph: Graph, recipe: TreeRecipe, crafts: number, path: string[],
 				: "";
 		const row = `<span class="row">${icon(m.icon ?? mat.icon, 26)}<span class="qty">${need}×</span><a href="${href(
 			`/item/${m.slug}/`,
-		)}">${esc(m.label)}</a>${hint && `<span class="hint">${hint}</span>`}</span>`;
+		)}">${esc(m.label)}</a>${owned}${hint && `<span class="hint">${hint}</span>`}</span>`;
 		if (!expandable) return `<li><div class="leaf">${row}</div></li>`;
 		const nextPath = [...path, m.slug];
 		return `<li><details data-path="${nextPath.join("/")}"${path.length < 2 ? " open" : ""}><summary>${row}</summary>${picker(
 			graph,
 			m.slug,
 			prefs,
-		)}${nodes(graph, sub, Math.ceil(need / sub.outputQty), nextPath, prefs)}</details></li>`;
+		)}${nodes(graph, sub, Math.ceil((need - used) / sub.outputQty), nextPath, prefs, left)}</details></li>`;
 	});
 	return `<ul class="tree">${items.join("")}</ul>`;
 }
 
 /** Tree HTML for `qty` of `root`. Quantities are per branch, as you'd read them top-down. */
-export function renderTree(graph: Graph, root: string, prefs: Prefs, qty = 1): string {
+export function renderTree(graph: Graph, root: string, prefs: Prefs, qty = 1, have: Have = {}): string {
 	const recipe = recipeFor(graph, root, prefs);
 	if (!recipe) return "";
-	return picker(graph, root, prefs) + nodes(graph, recipe, Math.ceil(qty / recipe.outputQty), [root], prefs);
+	return (
+		picker(graph, root, prefs) + nodes(graph, recipe, Math.ceil(qty / recipe.outputQty), [root], prefs, { ...have })
+	);
 }
 
 export interface PlanStep {
 	slug: string;
 	crafts: number;
 	station: string | null;
+	/** Total needed, before inventory. */
+	need: number;
+	/** Taken from inventory. */
+	used: number;
+	/** Made beyond what's needed (recipe makes several per craft). */
+	surplus: number;
+}
+
+export interface PlanRaw {
+	slug: string;
+	/** Still to gather. */
+	qty: number;
+	need: number;
+	used: number;
+}
+
+export interface Plan {
+	raw: PlanRaw[];
+	steps: PlanStep[];
 }
 
 /**
@@ -107,7 +135,8 @@ export function plan(
 	graph: Graph,
 	targets: { slug: string; qty: number }[],
 	prefs: Prefs,
-): { raw: { slug: string; qty: number }[]; steps: PlanStep[] } {
+	have: Have = {},
+): Plan {
 	// DFS for a topological order of the expansion graph; an edge back to an ancestor (recipe cycle,
 	// e.g. bar ⇄ salvage) is cut and that material is counted as raw instead.
 	const order: string[] = [];
@@ -135,7 +164,9 @@ export function plan(
 	const demand = new Map<string, number>();
 	for (const t of targets) add(demand, t.slug, t.qty);
 	const raw = new Map<string, number>();
+	const usedBySteps = new Map<string, number>();
 	const steps: PlanStep[] = [];
+	// Topological order: all demand for `slug` is known before it's processed, so inventory is spent once.
 	for (const slug of order) {
 		const need = demand.get(slug) ?? 0;
 		if (!need) continue;
@@ -144,33 +175,97 @@ export function plan(
 			add(raw, slug, need);
 			continue;
 		}
-		const crafts = Math.ceil(need / recipe.outputQty);
-		steps.push({ slug, crafts, station: recipe.station });
+		const used = Math.min(have[slug] ?? 0, need);
+		usedBySteps.set(slug, used);
+		const crafts = Math.ceil((need - used) / recipe.outputQty);
+		steps.push({
+			slug,
+			crafts,
+			station: recipe.station,
+			need,
+			used,
+			surplus: crafts * recipe.outputQty - (need - used),
+		});
 		for (const m of recipe.materials) {
 			add(backEdges.has(`${slug}>${m.slug}`) ? raw : demand, m.slug, m.qty * crafts);
 		}
 	}
 	return {
 		raw: [...raw]
-			.map(([slug, n]) => ({ slug, qty: n }))
-			.sort((a, b) => b.qty - a.qty || graph[a.slug].name.localeCompare(graph[b.slug].name)),
+			.map(([slug, need]) => {
+				// A back-edge material can also be a step; don't spend the same inventory twice.
+				const used = Math.min(Math.max(0, (have[slug] ?? 0) - (usedBySteps.get(slug) ?? 0)), need);
+				return { slug, qty: need - used, need, used };
+			})
+			.sort((a, b) => b.need - a.need || graph[a.slug].name.localeCompare(graph[b.slug].name)),
 		// Topological order is root-first; reverse so ingredients are crafted before what uses them.
 		steps: steps.reverse(),
 	};
 }
 
-export const totals = (graph: Graph, root: string, prefs: Prefs, qty = 1) =>
-	plan(graph, [{ slug: root, qty }], prefs).raw;
+const plural = (n: number) => (Number.isInteger(n) ? String(n) : n.toFixed(1));
 
-export function renderTotals(graph: Graph, root: string, prefs: Prefs, qty = 1): string {
-	return totals(graph, root, prefs, qty)
+function haveInput(graph: Graph, slug: string, have: Have) {
+	return `<label class="have"><span>have</span><input type="number" min="0" max="99999" inputmode="numeric" data-have="${slug}" value="${
+		have[slug] || ""
+	}" placeholder="0" aria-label="${esc(graph[slug].name)} you already have"></label>`;
+}
+
+/** Shopping list rows: gathered checkbox, still-needed count, inventory input. */
+export function renderRaw(graph: Graph, raw: PlanRaw[], have: Have): string {
+	return raw
+		.map(({ slug, qty, need, used }) => {
+			const done = qty === 0;
+			return `<li class="mat${done ? " done" : ""}"><input type="checkbox" data-gather="${slug}" data-need="${need}"${
+				done ? " checked" : ""
+			} aria-label="Gathered all ${esc(graph[slug].name)}">${icon(graph[slug].icon, 26)}<span class="qty">${qty}×</span><a href="${href(
+				`/item/${slug}/`,
+			)}">${esc(graph[slug].name)}</a>${used ? `<span class="hint">of ${need}</span>` : ""}${haveInput(graph, slug, have)}</li>`;
+		})
+		.join("");
+}
+
+/** Crafting steps in order, with leftovers and inventory input. */
+export function renderSteps(graph: Graph, steps: PlanStep[], have: Have): string {
+	return steps
 		.map(
-			({ slug, qty }) =>
-				`<li>${icon(graph[slug].icon, 26)}<span class="qty">${qty}×</span><a href="${href(`/item/${slug}/`)}">${esc(
-					graph[slug].name,
-				)}</a></li>`,
+			(s) =>
+				`<li class="${s.crafts ? "" : "done"}"><label><input type="checkbox"${s.crafts ? "" : " checked disabled"}><span class="qty">${
+					s.crafts
+				}×</span><span>craft <a href="${href(`/item/${s.slug}/`)}">${esc(graph[s.slug].name)}</a> <span class="hint">at ${esc(
+					s.station ?? "?",
+				)}${s.surplus ? ` · +${s.surplus} spare` : ""}</span></span></label>${haveInput(graph, s.slug, have)}</li>`,
 		)
 		.join("");
+}
+
+/** "3/5 gathered · weight 12 of 40 left" for the shopping list. */
+export function gatherSummary(graph: Graph, raw: PlanRaw[]): string {
+	const done = raw.filter((r) => r.qty === 0).length;
+	let left = 0;
+	let total = 0;
+	let unknown = false;
+	for (const r of raw) {
+		const w = graph[r.slug].weight;
+		if (w == null) unknown = true;
+		left += (w ?? 0) * r.qty;
+		total += (w ?? 0) * r.need;
+	}
+	const weight = total ? ` · weight ${plural(left)} of ${plural(total)} left${unknown ? " (some unknown)" : ""}` : "";
+	return `${done}/${raw.length} gathered${weight}`;
+}
+
+/** Plain-text list for the clipboard (Discord, notes). */
+export function planText(graph: Graph, title: string, { raw, steps }: Plan): string {
+	const lines = [title, "", "Gather:"];
+	for (const r of raw) if (r.qty) lines.push(`- ${r.qty}× ${graph[r.slug].name}`);
+	if (raw.every((r) => !r.qty)) lines.push("- nothing, you have it all");
+	const todo = steps.filter((s) => s.crafts);
+	if (todo.length) {
+		lines.push("", "Craft:");
+		for (const s of todo) lines.push(`- ${s.crafts}× ${graph[s.slug].name}${s.station ? ` (${s.station})` : ""}`);
+	}
+	return lines.join("\n");
 }
 
 /** True if any item that actually appears in the current tree uses a non-default recipe. */

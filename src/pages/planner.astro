@@ -41,27 +41,35 @@ const craftable = items.filter((i) => i.recipes.length).map((i) => ({ name: i.na
 
 	<div id="planner-body" hidden>
 		<section>
-			<h2>Your plan <button class="btn ghost small" type="button" id="planner-clear">Clear all</button></h2>
+			<h2 class="list-head">Your plan <button class="btn ghost small" type="button" id="planner-clear">Clear all</button></h2>
 			<ul class="plan-list" id="planner-list"></ul>
 		</section>
-		<section class="cols">
+		<section class="cols" id="planner-lists">
 			<div>
-				<h2>Shopping list</h2>
+				<h2 class="list-head">
+					Shopping list <button type="button" class="btn ghost small" id="planner-copy">Copy list</button>
+				</h2>
+				<p class="small muted" id="planner-summary"></p>
 				<ul class="totals" id="planner-raw"></ul>
 			</div>
 			<div>
 				<h2>Crafting steps</h2>
-				<p class="small muted">In order — ingredients first. Uses your saved recipe choices.</p>
+				<p class="small muted">In order — ingredients first. Uses your saved recipe choices; enter what you already have to skip it.</p>
 				<ol class="steps" id="planner-steps"></ol>
 			</div>
 		</section>
+		<p class="small muted" id="planner-inventory-note" hidden>
+			Counting what you have — shared with item pages.{" "}
+			<button type="button" class="link-btn" id="planner-inventory-reset">Clear inventory</button>
+		</p>
 	</div>
 </Base>
 
 <script>
+	import { bindInventory, copyText, INVENTORY_KEY, loadHave, saveHave } from "../lib/inventory";
 	import { clampQty, loadPlanner, PLANNER_KEY, savePlanner } from "../lib/planner";
 	import { loadPrefs } from "../lib/prefs";
-	import { type Graph, plan } from "../lib/tree";
+	import { gatherSummary, type Graph, plan, planText, renderRaw, renderSteps } from "../lib/tree";
 	import { href, iconUrl } from "../lib/wiki";
 
 	const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
@@ -88,18 +96,28 @@ const craftable = items.filter((i) => i.recipes.length).map((i) => ({ name: i.na
 			)
 			.join("");
 
-		const { raw, steps } = plan(graph!, list, loadPrefs());
-		$("planner-raw").innerHTML = raw
-			.map((r) => `<li>${icon(graph![r.slug].icon)}<span class="qty">${r.qty}×</span>${link(r.slug)}</li>`)
-			.join("");
-		$("planner-steps").innerHTML = steps
-			.map(
-				(s) =>
-					`<li><label><input type="checkbox"> <span class="qty">${s.crafts}×</span> craft ${link(s.slug)}
-					<span class="muted small">at ${esc(s.station ?? "?")}</span></label></li>`,
-			)
-			.join("");
+		const have = loadHave();
+		const { raw, steps } = plan(graph!, list, loadPrefs(), have);
+		$("planner-summary").innerHTML = gatherSummary(graph!, raw);
+		$("planner-raw").innerHTML = renderRaw(graph!, raw, have);
+		$("planner-steps").innerHTML = renderSteps(graph!, steps, have);
+		$("planner-inventory-note").hidden = Object.keys(have).length === 0;
 	}
+
+	const currentPlan = () => plan(graph!, loadPlanner().filter((e) => graph![e.slug]), loadPrefs(), loadHave());
+	bindInventory($("planner-lists"), () => graph && render());
+	$("planner-inventory-reset").addEventListener("click", () => {
+		saveHave({});
+		render();
+	});
+	const copyBtn = $("planner-copy");
+	copyBtn.addEventListener("click", () => {
+		const title = loadPlanner()
+			.filter((e) => graph![e.slug])
+			.map((e) => `${e.qty}× ${graph![e.slug].name}`)
+			.join(", ");
+		copyText(planText(graph!, `Dragonwilds plan: ${title}`, currentPlan()), copyBtn);
+	});
 
 	// Lightweight suggestions (a 1k-option <datalist> is sluggish and awkward on phones).
 	const itemInput = $<HTMLInputElement>("planner-item");
@@ -165,7 +183,7 @@ const craftable = items.filter((i) => i.recipes.length).map((i) => ({ name: i.na
 		savePlanner([]);
 		render();
 	});
-	addEventListener("storage", (e) => e.key === PLANNER_KEY && graph && render());
+	addEventListener("storage", (e) => (e.key === PLANNER_KEY || e.key === INVENTORY_KEY) && graph && render());
 
 	// One fetch of every recipe; only the planner needs it.
 	fetch(href("/graph.json"))
@@ -230,12 +248,7 @@ const craftable = items.filter((i) => i.recipes.length).map((i) => ({ name: i.na
 	#planner-qty {
 		width: 5.5rem;
 	}
-	h2 .btn {
-		float: right;
-		font-family: var(--sans);
-	}
-	.plan-list,
-	.steps {
+	.plan-list {
 		margin: 0;
 		padding: 0;
 		list-style: none;
@@ -252,32 +265,5 @@ const craftable = items.filter((i) => i.recipes.length).map((i) => ({ name: i.na
 	}
 	.plan-list :global(input) {
 		width: 5rem;
-	}
-	.steps :global(li) {
-		padding: 0.35rem 0;
-		border-bottom: 1px solid var(--line);
-	}
-	.steps :global(label) {
-		display: flex;
-		align-items: center;
-		gap: 0.5rem;
-		cursor: pointer;
-	}
-	.steps :global(input:checked ~ *) {
-		opacity: 0.45;
-		text-decoration: line-through;
-	}
-	.cols {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 0 2rem;
-	}
-	.cols > * {
-		min-width: 0;
-	}
-	@media (max-width: 800px) {
-		.cols {
-			grid-template-columns: 1fr;
-		}
 	}
 </style>

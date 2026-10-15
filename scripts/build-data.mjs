@@ -7,8 +7,8 @@ const RAW = new URL("../data/raw/", import.meta.url);
 const OUT = new URL("../src/data/db.json", import.meta.url);
 const load = async (name) => JSON.parse(await readFile(new URL(`${name}.json`, RAW), "utf8"));
 
-const [rawItems, rawRecipes, rawDrops, rawStores, rawPerks, pages, meta] = await Promise.all(
-	["items", "recipes", "drops", "stores", "perks", "pages", "meta"].map(load),
+const [rawItems, rawRecipes, rawDrops, rawStores, rawPerks, pages, rawStats, meta] = await Promise.all(
+	["items", "recipes", "drops", "stores", "perks", "pages", "stats", "meta"].map(load),
 );
 const unlockOverrides = JSON.parse(await readFile(new URL("../data/overrides/unlocks.json", import.meta.url), "utf8"));
 
@@ -52,6 +52,9 @@ function item(name) {
 			recipes: [],
 			usedIn: new Set(),
 			unlockedBy: [],
+			weight: null,
+			power: null,
+			stats: [],
 			drops: [],
 			shops: [],
 		};
@@ -60,6 +63,47 @@ function item(name) {
 	return it;
 }
 
+// Stats: combat/tool ones come from {{Infobox Weapon|Armour|…}} (see fetch-wiki.mjs). Label order = display order.
+const STAT_ALIASES = { "special effect": "specialeffect", "base damage": "basedmg", durabiliity: "durability", rangedefence: "rangeddefence" };
+const EQUIPMENT_STATS = {
+	damagetype: "Damage type",
+	attackstyle: "Attack style",
+	basedmg: "Base damage",
+	runedamage: "Rune damage",
+	additionaldmg: "Additional damage",
+	damagemulti: "Damage multiplier",
+	criticalchance: "Critical chance",
+	reloadspeed: "Reload speed",
+	block: "Block",
+	combo: "Combo",
+	meleedefence: "Melee defence",
+	rangeddefence: "Ranged defence",
+	magicdefence: "Magic defence",
+	digvalue: "Dig value",
+	carryweight: "Carry weight",
+	durability: "Durability",
+	specialaction: "Special action",
+	specialeffect: "Special effect",
+	setbonus1: "Set bonus",
+	setbonus2: "Set bonus",
+	setbonus3: "Set bonus",
+};
+const CONSUMABLE_STATS = { health: "Health", sustenance: "Sustenance", hydration: "Hydration", duration: "Duration", stacklimit: "Stack size" };
+// "[[Overhead Chop]]" → "Overhead Chop"; "( [[File:…]] 33)" → "(33)"
+const plainText = (v) =>
+	String(v)
+		.replace(/\[\[File:[^\]]*\]\]/g, "")
+		.replace(/\[\[(?:[^|\]]*\|)?([^\]]*)\]\]/g, "$1")
+		.replace(/<br\s*\/?>/gi, " ")
+		.replace(/<[^>]+>/g, "")
+		.replace(/\(\s+/g, "(")
+		.replace(/\s+/g, " ")
+		.trim();
+const statRows = (labels, params) =>
+	Object.entries(labels)
+		.map(([key, label]) => ({ label, value: params[key] == null ? "" : plainText(params[key]) }))
+		// Stack size 1 just means "doesn't stack" — noise on gear.
+		.filter((r) => r.value && !(r.label === "Stack size" && r.value === "1"));
 // Infoboxes: a page can hold several versions (e.g. trimmed/untrimmed cape); first one wins.
 for (const row of rawItems) {
 	const it = item(row.page_name);
@@ -68,6 +112,20 @@ for (const row of rawItems) {
 	it.type = row.item_type?.trim() || null;
 	it.description = j.description ?? "";
 	it.icon = j.image_raw ?? fileFromWikitext(j.image) ?? null;
+	const weight = Number.parseFloat(j.weight);
+	it.weight = Number.isFinite(weight) ? weight : null;
+	it.stats = statRows(CONSUMABLE_STATS, j);
+}
+
+// Combat/tool stats; consumable rows (set above) go last.
+for (const [page, raw] of Object.entries(rawStats)) {
+	const key = canonical(page);
+	if (!items.has(key)) continue;
+	const params = Object.fromEntries(Object.entries(raw).map(([k, v]) => [STAT_ALIASES[k] ?? k, v]));
+	const it = items.get(key);
+	const power = Number.parseInt(params.power, 10);
+	it.power = Number.isFinite(power) ? power : null;
+	it.stats = [...statRows(EQUIPMENT_STATS, params), ...it.stats];
 }
 
 // Recipes
@@ -250,6 +308,9 @@ const out = [...items.values()]
 		drops: it.drops,
 		shops: it.shops,
 		unlockedBy: it.unlockedBy,
+		weight: it.weight,
+		power: it.power,
+		stats: it.stats,
 	}))
 	.sort((a, b) => a.name.localeCompare(b.name));
 

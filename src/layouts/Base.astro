@@ -73,6 +73,7 @@ const analyticsToken = import.meta.env.PUBLIC_CLOUDFLARE_ANALYTICS_TOKEN;
 					<span>Dragonwilds <em>Crafting</em></span>
 				</a>
 				<nav class="nav" aria-label="Main">
+					<a href={href("/equipment/")}>Equipment</a>
 					<a href={href("/planner/")}>Planner</a>
 					<a href={href("/whats-new/")}>What's new</a>
 				</nav>
@@ -94,7 +95,7 @@ const analyticsToken = import.meta.env.PUBLIC_CLOUDFLARE_ANALYTICS_TOKEN;
 					<p class="support">
 						Free &amp; ad-free.{" "}
 						{support.costs.amount > 0 &&
-							`${support.costs.year} costs (${support.costs.label}): ${support.costs.currency}${support.costs.amount} — ${
+							`${support.costs.year} costs: ${support.costs.currency}${support.costs.amount} — ${
 								support.costs.covered >= support.costs.amount
 									? "covered ✓"
 									: `${support.costs.currency}${support.costs.covered} covered so far`
