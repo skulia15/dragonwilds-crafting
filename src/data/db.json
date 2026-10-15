@@ -1,5 +1,5 @@
 {
-	"fetchedAt": "2026-10-15T06:37:29.044Z",
+	"fetchedAt": "2026-10-15T10:30:22.922Z",
 	"categories": [
 		{
 			"slug": "weapons",
@@ -87549,7 +87549,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "",
-			"extract": "The shard of smoky glass is a vestige that players can consume, receiving the recipe to create the shadow sword. It should be noted that only Zogres found within Fellhollow are able to drop this item.",
+			"extract": "The shard of smoky glass is a vestige that players can consume, receiving the recipe to create the shadow sword. Only Zogres found within Fellhollow are able to drop this item.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [
@@ -105494,7 +105494,7 @@
 			"type": null,
 			"category": "buildings",
 			"description": "",
-			"extract": "An ultra compost bin is a buildable object unlocked at level 69 Farming.",
+			"extract": "An ultra compost bin is a buildable object unlocked at level 69 Farming. It mainly uses plants and foods from Umbral Sands and takes 11 minutes and 40 seconds of processing to produce 1000 units of ultra compost (or instantly during sleep).",
 			"recipes": [
 				{
 					"outputLabel": "Ultra Compost Bin",
