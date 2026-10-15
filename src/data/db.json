@@ -1,5 +1,5 @@
 {
-	"fetchedAt": "2026-10-14T20:05:00.352Z",
+	"fetchedAt": "2026-10-15T10:27:02.578Z",
 	"categories": [
 		{
 			"slug": "weapons",
@@ -4861,7 +4861,7 @@
 			"type": null,
 			"category": "crafting-stations",
 			"description": "",
-			"extract": "The advanced spinning wheel is a crafting station.",
+			"extract": "The advanced spinning wheel is a crafting station that can be used to craft Vis Fibres.",
 			"recipes": [
 				{
 					"outputLabel": "Advanced Spinning Wheel",
@@ -14215,7 +14215,7 @@
 			"type": "Ranged Weapon",
 			"category": "weapons",
 			"description": "This ancient bow is a relic of Elidnis: Goddess of the Moon, Rivers, Growth and Fertility.",
-			"extract": "The bow of Elidinis is a power level 7 masterwork longbow that can be crafted at a fletching bench. The recipe is received as a reward for completing the Mapping The Sands II quest. It can be ascended at the mystic forge using ascension cores.\nIts first special effect is Blessing of Elidinis, which makes arrows also deal water magic damage in addition to ranged damage. Kills with water magic have a chance to drop water orbs that provide some health and a little hydration when picked up. Its special action is Lunar Rain, which costs 6 stamina and deals water magic damage over the targeted area for a short time. This is considered a Magic attack rather than a Ranged one, providing Magic XP and benefitting from the lesser magic potion and 3/3 magic armour's set effect increasing the chance of getting critical strikes instead of Ranged XP and weakpoint modifiers. However, its other special effect is Purity of the Moon, which is supposed to prevent the use of barbed, poisoned, and fire arrows when using this bow. However, this does not work, and all of those arrows can be fired from this weapon.\nSimilar to the zombie axe, when using normal, barbed, or poisoned arrows, this weapon deals both ranged and water damage simultaneously. Unlike most other damage modifiers, this damage is additive, which means that attacking an enemy weak to one but resistant to the other will result in more damage done than expected, but less than an enemy neither weak nor resistant to either. However, when using fire arrows, the water damage is replaced with fire. When comparing this bow to the hunter stagbow against KotHaar specifically, it deals slightly more, but the stagbow fires slightly faster. Therefore, when not using Astral Rain, in all other situations, the hunter stagbow is the ideal longbow to ascend.",
+			"extract": "The bow of Elidinis is a power level 7 masterwork longbow that can be crafted at a fletching bench. The recipe is received as a reward for completing the Mapping The Sands II quest. It can be ascended at the mystic forge using ascension cores.\nIts first special effect is Blessing of Elidinis, which makes arrows also deal water magic damage in addition to ranged damage. Kills with water magic have a chance to drop water orbs that provide some health and a little hydration when picked up. Its special action is Lunar Rain, which costs 6 stamina and deals water magic damage over the targeted area for a short time. This is considered a Magic attack rather than a Ranged one, providing Magic XP and benefitting from the lesser magic potion and 3/3 magic armour's set effect increasing the chance of getting critical strikes instead of Ranged XP and weakpoint modifiers. However, its other special effect is Purity of the Moon, which prevents the use of barbed, poisoned, and fire arrows when using this bow.\nSimilar to the zombie axe, this weapon deals both ranged and water damage simultaneously. Unlike most other damage modifiers, this damage is additive, which means that attacking an enemy weak to one but resistant to the other will result in more damage done than expected, but less than an enemy neither weak nor resistant to either. When comparing this bow to the hunter stagbow against KotHaar specifically, it deals slightly more, but the stagbow fires slightly faster. Therefore, when not using Astral Rain, in all other situations, the hunter stagbow is the ideal longbow to ascend.",
 			"recipes": [
 				{
 					"outputLabel": "Bow of Elidinis",
@@ -25637,7 +25637,7 @@
 			"type": "Melee Weapon",
 			"category": "weapons",
 			"description": "A razor-sharp dragon scimitar favoured by warriors who value speed as much as strength.",
-			"extract": "The dragon scimitar is a Power level 9 weapon that can be received after completing the Scorned Wilderness raid and opening the Queenslayer's Reward Pack. Unlike many other weapons in the game, this scimitar is both uncraftable and has a passive full durability.\nBug: Despite the special effect stating an increase to damage against dragons, this weapon does not currently get a damage boost against dragons.",
+			"extract": "The dragon scimitar is a Power level 9 weapon that can be received after completing the Scorned Wilderness raid and opening the Queenslayer's Reward Pack. Unlike many other weapons in the game, this scimitar is both uncraftable and has a passive full durability.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [
@@ -43674,7 +43674,7 @@
 			"type": "Resource",
 			"category": "materials",
 			"description": "A bitter green herb used to make potions.",
-			"extract": "Kwuarm is a herb that must be farmed using kwuarm seeds found in Goblin, Garou, or skeleton packs.",
+			"extract": "Kwuarm is a herb that must be farmed using kwuarm seeds found in Garou or skeleton packs.",
 			"recipes": [],
 			"usedIn": [
 				"weapon-poison"
@@ -58011,7 +58011,7 @@
 			"type": "Magic Weapon",
 			"category": "weapons",
 			"description": "This ancient and powerful weapon lets the wielder channel its sovereign authority into mind-controlling powers.",
-			"extract": "The pharaoh's sceptre is a power level 7 staff that can be crafted at a mystic forge. The recipe is learned from the Icthlarian fetish, the reward from the quest Contact!. It can be ascended at the mystic forge using ascension cores.\nIts special effect is Royal Mandate: While holding the Sceptre, the wielder is able to use the Confuse spell without consuming runes. Its special action is Sworn Servant: This summons Buddy, a friendly kalphite to attack and distract enemies in combat. Buddy can be used for up to 3 minutes as long as it is still alive, and will take another five minutes for it to respawn when recasting the sceptre's special action. However, due to Hollow Vessel, while Buddy is active, the wielder regains stamina 10% slower than normal.\n\nBug: There is currently a bug where Buddy will not respawn, or spawn in a online world.",
+			"extract": "The pharaoh's sceptre is a power level 7 staff that can be crafted at a mystic forge. The recipe is learned from the Icthlarian fetish, the reward from the quest Contact!. It can be ascended at the mystic forge using ascension cores.\nIts special effect is Royal Mandate: While holding the Sceptre, the wielder is able to use the Confuse spell without consuming runes. Its special action is Sworn Servant: This summons Buddy, a friendly kalphite to attack and distract enemies in combat. Buddy can be used for up to 3 minutes as long as it is still alive, and will take another five minutes for it to respawn when recasting the sceptre's special action. However, due to Hollow Vessel, while Buddy is active, the wielder regains stamina much slower (90% slower than normal). Fighting while Buddy is out can be dangerous due to the lack of stamina regen.\n\nBug: There is currently a bug where Buddy will not respawn, or spawn in a online world.",
 			"recipes": [
 				{
 					"outputLabel": "Pharaoh's Sceptre",
@@ -71962,7 +71962,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "",
-			"extract": "The shard of smoky glass is a vestige that players can consume, receiving the recipe to create the shadow sword. It should be noted that only Zogres found within Fellhollow are able to drop this item.",
+			"extract": "The shard of smoky glass is a vestige that players can consume, receiving the recipe to create the shadow sword. Only Zogres found within Fellhollow are able to drop this item.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [
@@ -87227,7 +87227,7 @@
 			"type": null,
 			"category": "buildings",
 			"description": "",
-			"extract": "An ultra compost bin is a buildable object unlocked at level 69 Farming.",
+			"extract": "An ultra compost bin is a buildable object unlocked at level 69 Farming. It mainly uses plants and foods from Umbral Sands and takes 11 minutes and 40 seconds of processing to produce 1000 units of ultra compost (or instantly during sleep).",
 			"recipes": [
 				{
 					"outputLabel": "Ultra Compost Bin",
