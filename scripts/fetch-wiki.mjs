@@ -73,6 +73,41 @@ async function pageInfo(titles) {
 	return out;
 }
 
+// Combat stats live only in page wikitext ({{Infobox Weapon}}, {{Infobox Armour}}, …), not in a bucket.
+// Keep just those templates' params, keyed by page title.
+const parseTemplate = (body) =>
+	Object.fromEntries(
+		body
+			.split(/\n\s*\|/)
+			.slice(1)
+			.map((p) => p.split("=").map((s) => s.trim()))
+			.filter(([k, ...v]) => k && v.join("=").length)
+			.map(([k, ...v]) => [k.toLowerCase(), v.join("=").replace(/<!--.*?-->/gs, "").trim()]),
+	);
+async function pageStats(titles) {
+	const out = {};
+	const unique = [...new Set(titles)];
+	for (let i = 0; i < unique.length; i += 50) {
+		const { query } = await api({
+			action: "query",
+			prop: "revisions",
+			rvprop: "content",
+			rvslots: "main",
+			titles: unique.slice(i, i + 50).join("|"),
+		});
+		for (const page of Object.values(query.pages ?? {})) {
+			const text = page.revisions?.[0]?.slots?.main?.["*"] ?? "";
+			for (const m of text.matchAll(/\{\{\s*Infobox (Weapon|Armour|Shield|Trinket|Tool)\b([^]*?)\n\s*\}\}/gi)) {
+				out[page.title] ??= { template: m[1], ...parseTemplate(m[2]) };
+			}
+		}
+		process.stdout.write(`\r  stats ${Math.min(i + 50, unique.length)}/${unique.length}`);
+		await sleep(150);
+	}
+	process.stdout.write("\n");
+	return out;
+}
+
 await mkdir(OUT_DIR, { recursive: true });
 
 console.log("Fetching buckets…");
@@ -95,8 +130,10 @@ const titles = [
 ];
 console.log("Fetching page info…");
 const pages = await pageInfo(titles);
+console.log("Fetching stats…");
+const stats = await pageStats(items.map((i) => i.page_name));
 
-for (const [name, data] of Object.entries({ items, recipes, drops, stores, perks, pages })) {
+for (const [name, data] of Object.entries({ items, recipes, drops, stores, perks, pages, stats })) {
 	await writeFile(new URL(`${name}.json`, OUT_DIR), JSON.stringify(data));
 }
 await writeFile(new URL("meta.json", OUT_DIR), JSON.stringify({ fetchedAt: new Date().toISOString() }));

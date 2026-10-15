@@ -123,3 +123,94 @@
 		font-size: 16px; /* <16px makes iOS zoom the page on focus */
 	}
 }
+
+/* Shopping list + crafting steps (item pages and planner). */
+.cols {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0 2rem;
+	margin-top: 1rem;
+}
+.cols > * {
+	min-width: 0;
+}
+@media (max-width: 800px) {
+	.cols {
+		grid-template-columns: 1fr;
+	}
+}
+.list-head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+}
+.list-head .btn {
+	font-family: var(--sans);
+}
+.steps {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.steps li {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.35rem 0;
+	border-bottom: 1px solid var(--line);
+}
+.steps label {
+	display: flex;
+	flex: 1;
+	align-items: center;
+	gap: 0.5rem;
+	min-width: 0;
+	cursor: pointer;
+}
+.steps .qty {
+	min-width: 2.5ch;
+	font-variant-numeric: tabular-nums;
+	font-weight: 600;
+	color: var(--gold);
+}
+.steps .hint,
+.totals .hint {
+	font-size: 0.8rem;
+	color: var(--text-dim);
+}
+.steps input:checked ~ *,
+.totals li.done > :not(.have):not(input) {
+	opacity: 0.45;
+	text-decoration: line-through;
+}
+.totals li.mat {
+	gap: 0.5rem;
+}
+.have {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.3rem;
+	margin-left: auto;
+	font-size: 0.75rem;
+	color: var(--text-dim);
+}
+.have input {
+	width: 4.5rem;
+	padding: 0.2rem 0.4rem;
+}
+.tree .owned {
+	font-size: 0.8rem;
+	color: #7fb069;
+}
+.link-btn {
+	padding: 0;
+	font: inherit;
+	color: var(--text);
+	background: none;
+	border: none;
+	text-decoration: underline;
+	text-decoration-color: var(--gold-dim);
+	text-underline-offset: 3px;
+	cursor: pointer;
+}

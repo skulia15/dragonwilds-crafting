@@ -4,7 +4,7 @@ import ItemIcon from "../../components/ItemIcon.astro";
 import RecipeCard from "../../components/RecipeCard.astro";
 import Base from "../../layouts/Base.astro";
 import { getCategory, getCraftedAt, getItem, getRecipesTaughtBy, type Item, items, subgraph } from "../../lib/db";
-import { renderTotals, renderTree } from "../../lib/tree";
+import { gatherSummary, plan, renderRaw, renderSteps, renderTree } from "../../lib/tree";
 import { href, iconUrl, wikiUrl } from "../../lib/wiki";
 import "../../styles/tree.css";
 
@@ -25,6 +25,7 @@ const craftedHere = getCraftedAt(item.slug);
 const taughtRecipes = getRecipesTaughtBy(item.slug);
 const usedIn = item.usedIn.map(getItem);
 const hasSources = item.drops.length > 0 || item.shops.length > 0;
+const initialPlan = graph && plan(graph, [{ slug: item.slug, qty: 1 }], {});
 
 const title = primary
 	? `${item.name} — How to Craft, Recipe & Materials | Dragonwilds`
@@ -78,6 +79,7 @@ const structuredData = {
 			<h1>{item.name}</h1>
 			<div class="tags">
 				{item.type && <span class="badge">{item.type}</span>}
+				{item.power != null && <span class="badge power">Power level {item.power}</span>}
 				<span class:list={["badge", { craftable: primary }]}>{primary ? "Craftable" : "Not craftable"}</span>
 				<a class="small" href={wikiUrl(item.wiki)} rel="noopener">View on wiki ↗</a>
 			</div>
@@ -116,6 +118,36 @@ const structuredData = {
 	{item.extract && <p class="extract">{item.extract}</p>}
 
 	{
+		(item.stats.length > 0 || item.weight != null) && (
+			<section>
+				<h2>Stats</h2>
+				<dl class="stats">
+					{item.power != null && (
+						<div>
+							<dt>Power level</dt>
+							<dd>
+								<a href={href(`/equipment/#power-${item.power}`)}>{item.power}</a>
+							</dd>
+						</div>
+					)}
+					{item.stats.map((s) => (
+						<div>
+							<dt>{s.label}</dt>
+							<dd>{s.value}</dd>
+						</div>
+					))}
+					{item.weight != null && (
+						<div>
+							<dt>Weight</dt>
+							<dd>{item.weight}</dd>
+						</div>
+					)}
+				</dl>
+			</section>
+		)
+	}
+
+	{
 		primary && (
 			<section>
 				<h2>
@@ -135,25 +167,37 @@ const structuredData = {
 	}
 
 	{
-		graph && (
-			<section class="breakdown">
-				<div>
-					<h2>Crafting tree</h2>
-					<p class="small muted">
-						Everything needed for one craft. Items with several recipes can be switched — your choice is remembered
-						on every page.
-					</p>
-					<p class="pref-note small" id="pref-note" hidden>
-						Using your recipe choices. <button type="button" id="pref-reset">Reset all to default</button>
-					</p>
-					<div class="tree-root" id="craft-tree" set:html={renderTree(graph, item.slug, {})} />
+		graph && initialPlan && (
+			<section class="breakdown" id="breakdown">
+				<h2>Crafting tree</h2>
+				<p class="small muted">
+					Everything needed for the quantity above. Items with several recipes can be switched — your choice is
+					remembered on every page.
+				</p>
+				<p class="pref-note small" id="pref-note" hidden>
+					Using your recipe choices. <button type="button" id="pref-reset">Reset all to default</button>
+				</p>
+				<div class="tree-root" id="craft-tree" set:html={renderTree(graph, item.slug, {})} />
+				<div class="cols">
+					<div>
+						<h3 class="list-head">
+							Shopping list
+							<button type="button" class="btn ghost small" id="copy-list">Copy list</button>
+						</h3>
+						<p class="small muted" id="gather-summary" set:html={gatherSummary(graph, initialPlan.raw)} />
+						<ul class="totals" id="craft-totals" set:html={renderRaw(graph, initialPlan.raw, {})} />
+					</div>
+					<div>
+						<h3>Crafting steps</h3>
+						<p class="small muted">In order, ingredients first. Enter what you already have to skip it.</p>
+						<ol class="steps" id="craft-steps" set:html={renderSteps(graph, initialPlan.steps, {})} />
+					</div>
 				</div>
-				<aside>
-					<h2>Base materials</h2>
-					<ul class="totals" id="craft-totals" set:html={renderTotals(graph, item.slug, {})} />
-					<p class="small muted">Shared ingredients are combined before rounding up crafts.</p>
-				</aside>
-				<script type="application/json" id="craft-graph" data-root={item.slug} set:html={JSON.stringify(graph).replace(/</g, "\\u003c")} />
+				<p class="small muted" id="inventory-note" hidden>
+					Counting what you have — shared with the planner and other pages.{" "}
+					<button type="button" class="link-btn" id="inventory-reset">Clear inventory</button>
+				</p>
+				<script type="application/json" id="craft-graph" data-root={item.slug} data-name={item.name} set:html={JSON.stringify(graph).replace(/</g, "\\u003c")} />
 			</section>
 		)
 	}
@@ -268,10 +312,20 @@ const structuredData = {
 
 
 <script>
+	import { bindInventory, copyText, INVENTORY_KEY, loadHave, saveHave } from "../../lib/inventory";
 	import { addToPlanner, clampQty } from "../../lib/planner";
 	import { loadPrefs, PREFS_KEY, savePrefs } from "../../lib/prefs";
 	import { href } from "../../lib/wiki";
-	import { type Graph, renderTotals, renderTree, usesCustomRecipes } from "../../lib/tree";
+	import {
+		gatherSummary,
+		type Graph,
+		plan,
+		planText,
+		renderRaw,
+		renderSteps,
+		renderTree,
+		usesCustomRecipes,
+	} from "../../lib/tree";
 
 	const qtyInput = document.getElementById("craft-qty") as HTMLInputElement | null;
 	const qty = () => clampQty(qtyInput?.value);
@@ -286,25 +340,43 @@ const structuredData = {
 	const data = document.getElementById("craft-graph");
 	const treeEl = document.getElementById("craft-tree");
 	const totalsEl = document.getElementById("craft-totals");
+	const stepsEl = document.getElementById("craft-steps");
+	const summaryEl = document.getElementById("gather-summary");
 	const note = document.getElementById("pref-note");
-	if (data && treeEl && totalsEl && note) {
+	const inventoryNote = document.getElementById("inventory-note");
+	if (data && treeEl && totalsEl && stepsEl && summaryEl && note && inventoryNote) {
 		const graph = JSON.parse(data.textContent!) as Graph;
 		const root = data.dataset.root!;
 
+		const current = () => plan(graph, [{ slug: root, qty: qty() }], loadPrefs(), loadHave());
 		const render = () => {
 			const prefs = loadPrefs();
+			const have = loadHave();
 			// Keep the player's expand/collapse state across re-renders.
 			const openState = new Map(
 				[...treeEl.querySelectorAll<HTMLDetailsElement>("details[data-path]")].map((d) => [d.dataset.path, d.open]),
 			);
-			treeEl.innerHTML = renderTree(graph, root, prefs, qty());
+			treeEl.innerHTML = renderTree(graph, root, prefs, qty(), have);
 			for (const d of treeEl.querySelectorAll<HTMLDetailsElement>("details[data-path]")) {
 				const open = openState.get(d.dataset.path);
 				if (open !== undefined) d.open = open;
 			}
-			totalsEl.innerHTML = renderTotals(graph, root, prefs, qty());
+			const p = current();
+			totalsEl.innerHTML = renderRaw(graph, p.raw, have);
+			stepsEl.innerHTML = renderSteps(graph, p.steps, have);
+			summaryEl.innerHTML = gatherSummary(graph, p.raw);
 			note.hidden = !usesCustomRecipes(graph, root, prefs);
+			inventoryNote.hidden = !Object.keys(have).some((s) => s in graph);
 		};
+		bindInventory(document.getElementById("breakdown")!, render);
+		document.getElementById("inventory-reset")?.addEventListener("click", () => {
+			saveHave({});
+			render();
+		});
+		const copyBtn = document.getElementById("copy-list")!;
+		copyBtn.addEventListener("click", () =>
+			copyText(planText(graph, `${qty()}× ${data.dataset.name} — Dragonwilds`, current()), copyBtn),
+		);
 
 		treeEl.addEventListener("change", (e) => {
 			const select = e.target as HTMLSelectElement;
@@ -323,10 +395,10 @@ const structuredData = {
 		});
 		qtyInput?.addEventListener("input", render);
 		// Another tab changed prefs.
-		addEventListener("storage", (e) => e.key === PREFS_KEY && render());
+		addEventListener("storage", (e) => (e.key === PREFS_KEY || e.key === INVENTORY_KEY) && render());
 
-		// Static HTML shows defaults; only re-render if saved choices affect this tree.
-		if (usesCustomRecipes(graph, root, loadPrefs())) render();
+		// Static HTML shows defaults; only re-render if saved choices or inventory affect this tree.
+		if (usesCustomRecipes(graph, root, loadPrefs()) || Object.keys(loadHave()).some((s) => s in graph)) render();
 	}
 </script>
 
@@ -398,6 +470,30 @@ const structuredData = {
 		font-style: italic;
 		color: var(--text-dim);
 	}
+	.power {
+		color: var(--gold);
+		border-color: var(--gold-dim);
+	}
+	.stats {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(min(220px, 100%), 1fr));
+		gap: 0.5rem;
+		margin: 0;
+	}
+	.stats div {
+		padding: 0.5rem 0.75rem;
+		background: var(--bg-raised);
+		border: 1px solid var(--line);
+		border-radius: 8px;
+	}
+	.stats dt {
+		font-size: 0.75rem;
+		color: var(--text-dim);
+	}
+	.stats dd {
+		margin: 0.1rem 0 0;
+		font-weight: 600;
+	}
 	.extract {
 		max-width: 70ch;
 		margin: 1.25rem 0 0;
@@ -409,20 +505,6 @@ const structuredData = {
 	}
 	.variant {
 		margin: 0 0 0.3rem;
-	}
-	.breakdown {
-		display: grid;
-		grid-template-columns: 1fr 300px;
-		gap: 0 2rem;
-	}
-	/* Grid items default to min-width:auto; long <select> option text would otherwise widen the page. */
-	.breakdown > * {
-		min-width: 0;
-	}
-	@media (max-width: 800px) {
-		.breakdown {
-			grid-template-columns: 1fr;
-		}
 	}
 	h3 {
 		margin: 1.5rem 0 0.5rem;

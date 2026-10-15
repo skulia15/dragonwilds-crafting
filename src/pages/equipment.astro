@@ -1,0 +1,163 @@
+---
+import ItemIcon from "../components/ItemIcon.astro";
+import Base from "../layouts/Base.astro";
+import { type Item, items } from "../lib/db";
+import { href } from "../lib/wiki";
+
+// Combat style from the wiki item type; mis-typed gear ("Basic Item") lands in Other.
+const STYLES = ["Melee", "Ranged", "Magic", "Tools", "Other"] as const;
+type Style = (typeof STYLES)[number];
+const styleOf = (i: Item): Style =>
+	/^Melee|^Shield$/.test(i.type ?? "")
+		? "Melee"
+		: /^Ranged|^(Bow|Arrow|Ammo)$/.test(i.type ?? "")
+			? "Ranged"
+			: /^(Mage|Magic)/.test(i.type ?? "")
+				? "Magic"
+				: i.type === "Tool"
+					? "Tools"
+					: "Other";
+
+// The one number players compare at a glance: damage for weapons, defences for armour.
+const stat = (i: Item, label: string) => i.stats.find((s) => s.label === label)?.value;
+const keyStat = (i: Item) => {
+	const dmg = stat(i, "Base damage") ?? stat(i, "Rune damage");
+	if (dmg) return `${dmg} dmg`;
+	const def = ["Melee defence", "Ranged defence", "Magic defence"].map((l) => stat(i, l));
+	if (def.some(Boolean)) return `${def.map((d) => d ?? "–").join(" / ")} def`;
+	const dig = stat(i, "Dig value");
+	return dig ? `dig ${dig}` : "";
+};
+
+const gear = items
+	.filter((i) => i.power != null)
+	.map((i) => ({ item: i, style: styleOf(i), key: keyStat(i) }))
+	.sort((a, b) => STYLES.indexOf(a.style) - STYLES.indexOf(b.style) || a.item.name.localeCompare(b.item.name));
+const levels = [...new Set(gear.map((g) => g.item.power!))].sort((a, b) => a - b);
+const counts = Object.fromEntries(STYLES.map((s) => [s, gear.filter((g) => g.style === s).length]));
+---
+
+<Base
+	title="Equipment by Power Level — Weapons, Armour & Tools | Dragonwilds"
+	description={`All ${gear.length} RuneScape: Dragonwilds weapons, armour and tools by power level, with damage, defence and how to craft each one.`}
+>
+	<h1>Equipment by power level</h1>
+	<p class="muted">
+		Every weapon, armour piece and tool with a power level, lowest first. Defence is shown as melee / ranged / magic.
+	</p>
+
+	<div class="filters" role="group" aria-label="Filter by combat style">
+		<button type="button" class="chip" aria-pressed="true" data-style="">All <span>{gear.length}</span></button>
+		{
+			STYLES.filter((s) => counts[s]).map((s) => (
+				<button type="button" class="chip" aria-pressed="false" data-style={s}>
+					{s} <span>{counts[s]}</span>
+				</button>
+			))
+		}
+	</div>
+	<nav class="jump small" aria-label="Jump to power level">
+		{levels.map((l) => <a href={`#power-${l}`}>Lv {l}</a>)}
+	</nav>
+
+	{
+		levels.map((level) => (
+			<section class="level" id={`power-${level}`}>
+				<h2>Power level {level}</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Item</th>
+							<th>Type</th>
+							<th>Stats</th>
+							<th>Crafted at</th>
+						</tr>
+					</thead>
+					<tbody>
+						{gear
+							.filter((g) => g.item.power === level)
+							.map(({ item, style, key }) => (
+								<tr data-style={style}>
+									<td>
+										<a class="name" href={href(`/item/${item.slug}/`)}>
+											<ItemIcon file={item.icon} size={28} />
+											{item.name}
+										</a>
+									</td>
+									<td class="muted">{item.type === "Basic Item" ? style : item.type}</td>
+									<td>{key}</td>
+									<td class="muted">{item.recipes[0]?.station?.name ?? "Not craftable"}</td>
+								</tr>
+							))}
+					</tbody>
+				</table>
+			</section>
+		))
+	}
+</Base>
+
+<script>
+	const chips = [...document.querySelectorAll<HTMLButtonElement>(".chip")];
+	const apply = (style: string) => {
+		for (const c of chips) c.setAttribute("aria-pressed", String(c.dataset.style === style));
+		for (const row of document.querySelectorAll<HTMLTableRowElement>("tr[data-style]")) {
+			row.hidden = !!style && row.dataset.style !== style;
+		}
+		// Hide levels with nothing left to show.
+		for (const section of document.querySelectorAll<HTMLElement>(".level")) {
+			section.hidden = !section.querySelector("tr[data-style]:not([hidden])");
+		}
+	};
+	for (const c of chips) c.addEventListener("click", () => apply(c.dataset.style!));
+</script>
+
+<style>
+	.filters {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		margin: 1.25rem 0 0.75rem;
+	}
+	.chip {
+		padding: 0.35rem 0.8rem;
+		font: inherit;
+		font-size: 0.9rem;
+		color: var(--text);
+		background: none;
+		border: 1px solid var(--line-strong);
+		border-radius: 999px;
+		cursor: pointer;
+	}
+	.chip span {
+		color: var(--text-dim);
+	}
+	.chip[aria-pressed="true"] {
+		color: #1a1408;
+		background: var(--gold);
+		border-color: var(--gold);
+	}
+	.chip[aria-pressed="true"] span {
+		color: inherit;
+	}
+	.jump {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75rem;
+	}
+	.level {
+		scroll-margin-top: 1rem;
+	}
+	table {
+		width: 100%;
+	}
+	.name {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
+	@media (pointer: coarse) {
+		.chip {
+			min-height: 44px;
+		}
+	}
+</style>

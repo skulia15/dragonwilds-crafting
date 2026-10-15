@@ -36,6 +36,10 @@ export interface Item {
 	drops: { source: string; qty: string; rarity: string }[];
 	shops: { seller: string; cost: number | null; currency: string | null }[];
 	unlockedBy: { perk: string; skill: string; level: number | null; description: string }[];
+	weight: number | null;
+	/** Power level (gear tier), from the wiki's weapon/armour/tool stats box. */
+	power: number | null;
+	stats: { label: string; value: string }[];
 }
 
 export interface Category {
@@ -106,6 +110,7 @@ export function subgraph(slug: string): Graph {
 			name: item.name,
 			icon: item.icon,
 			source: bestSource(item),
+			weight: item.weight,
 			recipes: item.recipes.map((r) => ({
 				id: r.id,
 				station: r.station?.name ?? null,
