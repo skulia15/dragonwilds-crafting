@@ -64,6 +64,7 @@ jobs:
           PUBLIC_GOOGLE_SITE_VERIFICATION: ${{ secrets.GOOGLE_SITE_VERIFICATION }}
           PUBLIC_BING_SITE_VERIFICATION: ${{ secrets.BING_SITE_VERIFICATION }}
           PUBLIC_CLOUDFLARE_ANALYTICS_TOKEN: ${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}
+          PUBLIC_GOATCOUNTER_CODE: ${{ secrets.GOATCOUNTER_CODE }}
 
       - uses: actions/upload-pages-artifact@v5
         with:

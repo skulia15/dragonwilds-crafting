@@ -21,6 +21,7 @@ const ogImage = new URL(href("/og-image.png"), Astro.site).href;
 const googleVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
 const bingVerification = import.meta.env.PUBLIC_BING_SITE_VERIFICATION;
 const analyticsToken = import.meta.env.PUBLIC_CLOUDFLARE_ANALYTICS_TOKEN;
+const goatcounterCode = import.meta.env.PUBLIC_GOATCOUNTER_CODE;
 ---
 
 <!doctype html>
@@ -62,6 +63,14 @@ const analyticsToken = import.meta.env.PUBLIC_CLOUDFLARE_ANALYTICS_TOKEN;
 				defer
 				src="https://static.cloudflareinsights.com/beacon.min.js"
 				data-cf-beacon={JSON.stringify({ token: analyticsToken })}
+			/>
+		)}
+		{goatcounterCode && (
+			<script
+				is:inline
+				async
+				data-goatcounter={`https://${goatcounterCode}.goatcounter.com/count`}
+				src="https://gc.zgo.at/count.js"
 			/>
 		)}
 	</head>
