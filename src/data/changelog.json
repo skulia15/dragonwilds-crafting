@@ -1,5 +1,27 @@
 [
 	{
+		"date": "2026-10-19",
+		"added": [
+			{
+				"slug": "blue-dyad-cape",
+				"name": "Blue Dyad Cape"
+			},
+			{
+				"slug": "missing-letter",
+				"name": "Missing Letter"
+			},
+			{
+				"slug": "scarecrow-decoration",
+				"name": "Scarecrow (decoration)"
+			}
+		],
+		"removed": [
+			"Blue Dyed Cape",
+			"Scarecrow"
+		],
+		"changed": []
+	},
+	{
 		"date": "2026-10-14",
 		"added": [
 			{
