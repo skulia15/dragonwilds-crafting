@@ -1,5 +1,5 @@
 {
-	"fetchedAt": "2026-10-19T13:19:16.029Z",
+	"fetchedAt": "2026-10-26T13:06:08.331Z",
 	"categories": [
 		{
 			"slug": "weapons",
@@ -58,7 +58,7 @@
 		{
 			"slug": "materials",
 			"name": "Materials",
-			"count": 351,
+			"count": 352,
 			"craftable": 80
 		},
 		{
@@ -101,7 +101,7 @@
 			"slug": "quest",
 			"name": "Quest Items",
 			"count": 52,
-			"craftable": 5
+			"craftable": 6
 		},
 		{
 			"slug": "patterns",
@@ -2984,7 +2984,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "The rusted remains of a symbol of authority. Perhaps you could learn something from it.",
-			"extract": "A corroded serrated blade is a vestige that unlocks the creation of the chieftain's blade. This vestige is found by the chest near the Heartstrings' starting tree.",
+			"extract": "A corroded serrated blade is a vestige that unlocks the creation of the chieftain's blade. This vestige is found by the chest near the Heartstrings' starting tree.\n\n",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [
@@ -2992,40 +2992,6 @@
 					"source": "Chest (Fractured Plains)",
 					"qty": "1",
 					"rarity": "Always"
-				}
-			],
-			"shops": [],
-			"unlockedBy": [],
-			"weight": 0,
-			"power": null,
-			"stats": [
-				{
-					"label": "Stack size",
-					"value": "99"
-				}
-			]
-		},
-		{
-			"slug": "a-cracked-bronze-vanity-mirror",
-			"name": "A Cracked Bronze Vanity Mirror",
-			"wiki": "A Cracked Bronze Vanity Mirror",
-			"icon": "A Cracked Bronze Vanity Mirror.png",
-			"type": "Vestige",
-			"category": "vestiges",
-			"description": "Shows the worst possible side of yourself. Perhaps you could learn from it.",
-			"extract": "A cracked bronze vanity mirror is a vestige that unlocks the creation of the ring of recoil when studied.",
-			"recipes": [],
-			"usedIn": [],
-			"drops": [
-				{
-					"source": "Green Dragon",
-					"qty": "1",
-					"rarity": "1/40"
-				},
-				{
-					"source": "Blightscale",
-					"qty": "1",
-					"rarity": "1/40"
 				}
 			],
 			"shops": [],
@@ -3120,7 +3086,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "The remains of a longbow damaged in a dragon attack. Perhaps you could learn something from it.",
-			"extract": "A simple broken bow is a vestige that unlocks creation of the adventurer's longbow.",
+			"extract": "A simple broken bow is a vestige that unlocks creation of the adventurer's longbow.\n\n",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [
@@ -3410,7 +3376,7 @@
 			],
 			"shops": [],
 			"unlockedBy": [],
-			"weight": 1,
+			"weight": 3,
 			"power": null,
 			"stats": [
 				{
@@ -5293,7 +5259,7 @@
 			"type": "Tool",
 			"category": "tools",
 			"description": "A durable spade made from Adamantite.",
-			"extract": "An adamant spade is a power level 7 spade unlocked the first time the player picks up an adamant bar. It is crafted at the blacksmith's bench. When used to dig a farming plot, players will use 10 stamina and progress instantly to the next plot clearing stage.",
+			"extract": "An adamant spade is a power level 7 spade unlocked the first time the player picks up an adamant bar. It is crafted at the blacksmith's bench. When used to dig a farming plot, players will use 10 stamina and progress instantly to the next plot clearing stage. \nAn adamant spade is required to dig in yew farming plots.",
 			"recipes": [
 				{
 					"outputLabel": "Adamant Spade",
@@ -5689,7 +5655,7 @@
 			"type": null,
 			"category": "crafting-stations",
 			"description": "",
-			"extract": "The advanced spinning wheel is a crafting station that can be used to craft Vis Fibres.",
+			"extract": "The advanced spinning wheel is a crafting station that can be used to craft Vis Fibres in addition to all of its regular version products. The spinning wheel must be placed indoors or under a roof.",
 			"recipes": [
 				{
 					"outputLabel": "Advanced Spinning Wheel",
@@ -6403,6 +6369,11 @@
 					"source": "Buried Treasure (Brynmoor)",
 					"qty": "10–20",
 					"rarity": "12.5/100"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "50–70",
+					"rarity": "1/4"
 				}
 			],
 			"shops": [],
@@ -6467,7 +6438,7 @@
 			"type": "Trinket",
 			"category": "jewellery",
 			"description": "",
-			"extract": "The amulet of accuracy is an amulet that can be crafted at a jeweler's bench. While equipped, the amulet grants players a 15% increase in critical damage and critical weakpoint damage.",
+			"extract": "The amulet of accuracy is an amulet that can be crafted at a jeweler's bench. While equipped, the amulet grants players a 15% increase in weak point damage with Ranged weapons. Since hits with ranged weapons against the weak point are considered critical hits, this is functionally the same as ranged critical damage.\nThe recipe is unlocked through Death's Exchange by purchasing the Arrowhead of Ancient Origin vestige for 350 soul fragments.",
 			"recipes": [
 				{
 					"outputLabel": "Amulet of Accuracy",
@@ -6538,7 +6509,7 @@
 				},
 				{
 					"label": "Special effect",
-					"value": "Increased CRITICAL DAMAGE"
+					"value": "Increased WEAK POINT damage with RANGED weapons"
 				}
 			]
 		},
@@ -6550,7 +6521,7 @@
 			"type": "Trinket",
 			"category": "jewellery",
 			"description": "A mystical amulet that strengthens your defences.",
-			"extract": "The amulet of defence is an amulet that can be crafted at a jeweler's bench. While equipped, the amulet increases players' armour value of all three damage types by 5 for each piece (head, torso, and legs).",
+			"extract": "The amulet of defence is an amulet that can be crafted at a jeweler's bench. While equipped, the amulet increases players' armour value of all three damage types by 5 for each piece (head, torso, and legs).\nThe recipe is unlocked through Death's Exchange by purchasing the Hardy Weathered Shell vestige for 350 soul fragments.",
 			"recipes": [
 				{
 					"outputLabel": "Amulet of Defence",
@@ -6633,7 +6604,7 @@
 			"type": "Trinket",
 			"category": "jewellery",
 			"description": "",
-			"extract": "The amulet of glory is an amulet that boosts melee, magic, and ranged critical damage while also increasing defence. While worn, the amulet provides an additional +5 defence to all combat styles and a 12% increase to critical damage for magic, melee, and ranged attacks.\nTo unlock the recipe, players must find and study the commemorative coin vestige.",
+			"extract": "The amulet of glory is an amulet that boosts melee, magic, and ranged critical damage while also increasing defence. While worn, the amulet provides an additional +5 defence to all combat styles, a 12.5% increase to melee and magic damage, and a 15% increase to ranged critical damage.\nTo unlock the recipe, players must find and study the commemorative coin vestige.",
 			"recipes": [
 				{
 					"outputLabel": "Amulet of Glory",
@@ -6710,7 +6681,7 @@
 			"type": "Trinket",
 			"category": "jewellery",
 			"description": "",
-			"extract": "The amulet of Magic is an amulet that can be crafted at a jeweler's bench. While equipped, the amulet grants players increased magic damage by a factor of 12.5%. The recipe is unlocked through Death's Exchange for 350 soul fragments. There, it's called \"Softly Vibrating Orb\".",
+			"extract": "The amulet of Magic is an amulet that can be crafted at a jeweler's bench. While equipped, the amulet grants players increased magic damage by a factor of 12.5%. \nThe recipe is unlocked through Death's Exchange by purchasing the Softly Vibrating Orb vestige for 350 soul fragments.",
 			"recipes": [
 				{
 					"outputLabel": "Amulet of Magic",
@@ -6793,7 +6764,7 @@
 			"type": "Trinket",
 			"category": "jewellery",
 			"description": "",
-			"extract": "The amulet of strength is an amulet that can be crafted at a jeweler's bench. While equipped, the amulet increases the player's melee damage with both one-handed and two-handed weapons by 12.5% each. It will not increase unarmed damage.",
+			"extract": "The amulet of strength is an amulet that can be crafted at a jeweler's bench. While equipped, the amulet increases the player's melee damage with both one-handed and two-handed weapons by 12.5% each. It will not increase unarmed damage.\nThe recipe is unlocked through Death's Exchange by purchasing the Weighted Training Band vestige for 350 soul fragments.",
 			"recipes": [
 				{
 					"outputLabel": "Amulet of Strength",
@@ -6922,7 +6893,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "A crude wooden blade and handle, what's left of a child's toy turned to weaponry. Perhaps you could learn something from it.",
-			"extract": "An educational blade is a vestige that unlocks the creation of the wooden training sword. This is found on the eastern side of the Temple of Saradomin roof.",
+			"extract": "An educational blade is a vestige that unlocks the creation of the wooden training sword. This is found on the eastern side of the Temple of Saradomin roof.\n\n",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [
@@ -7624,7 +7595,7 @@
 			"type": "Basic Material",
 			"category": "materials",
 			"description": "A sturdy bone from a sizable creature.",
-			"extract": "Animal bones are retrieved from killing animals such as cows, deer, and sheep. They can also be found on the ground in a cave in the Stormtouched Highlands. Players can also receive it by casting Bark To Bones on a tree. Upon receiving a bone for the first time, players can unlock the tannery and the stone range.",
+			"extract": "Animal bones are retrieved from killing animals such as cows, deer, and sheep. They can also be found on the ground in a cave in the Stormtouched Highlands. Players can also receive it by casting Bark To Bones on a tree. Upon receiving a bone for the first time, players can unlock the tannery and the stone range.\n\n",
 			"recipes": [],
 			"usedIn": [
 				"bone-club",
@@ -8642,6 +8613,11 @@
 					"source": "Chest (Dowdun Reach)",
 					"qty": "1",
 					"rarity": "1.1/100"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "1–2",
+					"rarity": "1/8"
 				}
 			],
 			"shops": [],
@@ -9396,7 +9372,7 @@
 			"type": null,
 			"category": "buildings",
 			"description": "",
-			"extract": "An armour mannequin is a buildable object at level 40 Artisan, which players can mount up to five pieces of armour. Players can quickly swap armours at mannequins and can even store some capes on them (Pioneer's cape the dragonbane cape and Fellhollow cape). If a certain piece of equipment is already on a mannequin, players can add another piece of the same type. For example, if the reinforced helmet is on the mannequin, players can also add a Dragonkin mage hood. This results in only the latter being shown.\n\nIn addition, players cannot store the following:",
+			"extract": "An armour mannequin is a buildable object at level 40 Artisan, which players can mount up to five pieces of armour. Players can quickly swap armours at mannequins and can even store some capes on them. If a certain piece of equipment is already on a mannequin, players can add another piece of the same type. For example, if the reinforced helmet is on the mannequin, players can also add a Dragonkin mage hood. This results in only the latter being shown.\n\nIn addition, players cannot store the following:",
 			"recipes": [
 				{
 					"outputLabel": "Armour Mannequin",
@@ -9458,7 +9434,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "Still sharp. Perhaps you could learn from it.",
-			"extract": "The arrowhead of ancient origin is a vestige that unlocks creation of the amulet of accuracy.",
+			"extract": "The arrowhead of ancient origin is a vestige that unlocks creation of the amulet of accuracy.\nThe vestige can be obtained through Death's Exchange for 350 soul fragments.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -9553,7 +9529,7 @@
 			"type": "Basic Material",
 			"category": "materials",
 			"description": "Used to upgrade Masterwork Weapons and Vestiges from a lower Power level to Power Level 4.",
-			"extract": "Ascension cores are items used and crafted in the mystic forge to ascend masterwork weapons from their base power level to the next tier. They are made by combining ascension shards or by collecting them as rewards for completing Nightmare Crucible instances in Umbral Sands. For most cores, players can gain core shards by killing mini-bosses (such as red dragons, green dragons, and blue dragons).\nThe only core that cannot be crafted thus far is the power level 7 ascension core, which can only be acquired by completing the Nightmare Crucible.\n\nBug: After upgrading an item with a core, there is a visual bug where the stats will appear not to increase.",
+			"extract": "Ascension cores are items used and crafted in the mystic forge to ascend masterwork weapons from their base power level to the next tier. They are made by combining ascension shards or by collecting them as rewards for completing Nightmare Crucible instances in Umbral Sands. For most cores, players can gain core shards by killing mini-bosses (such as black dragons, green dragons, and blue dragons).\nThe only core that cannot be crafted thus far is the power level 7 ascension core, which can only be acquired by completing the Nightmare Crucible.\n\nBug: After upgrading an item with a core, there is a visual bug where the stats will appear not to increase.",
 			"recipes": [
 				{
 					"outputLabel": "Ascension Core",
@@ -9971,7 +9947,7 @@
 			"type": null,
 			"category": "buildings",
 			"description": "",
-			"extract": "The ash farming plot can be used to grow plants with seeds through the Farming skill. Ash farming plots must be placed on the ground without a roof overhead. In addition, ash farming plots have three stages of weeds that players must dig after setting an ash farming plot on the ground.\nIt is the best farming plot to plant the following: \n\nCabbage seeds\nFlax seeds\nHarralander seeds\nMarentill seeds\nPotato seeds\nRedberry seeds\nWheat seeds",
+			"extract": "The ash farming plot can be used to grow plants with seeds through the Farming skill. Ash farming plots must be placed on the ground without a roof overhead. In addition, ash farming plots have three stages of weeds that players must dig after setting an ash farming plot on the ground.\nA wooden spade or higher is required to dig in ash farming plots.\nIt is the best farming plot to plant the following: \n\nCabbage seeds\nFlax seeds\nHarralander seeds\nMarentill seeds\nPotato seeds\nRedberry seeds\nWheat seeds",
 			"recipes": [
 				{
 					"outputLabel": "Ash Farming Plot",
@@ -10605,6 +10581,7 @@
 				"medium-30-inverted-roof-support-wall",
 				"medium-30-roof-support-wall",
 				"medium-45-inverted-roof-support-wall",
+				"medium-45-roof",
 				"medium-45-roof-support-wall",
 				"medium-60-inverted-roof-support-wall",
 				"medium-60-roof-support-wall",
@@ -11110,6 +11087,11 @@
 					"source": "Buried Treasure (Brynmoor)",
 					"qty": "10–20",
 					"rarity": "12.5/100"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "50–70",
+					"rarity": "1/4"
 				}
 			],
 			"shops": [],
@@ -11240,7 +11222,7 @@
 			"type": "Basic Item",
 			"category": "materials",
 			"description": "A bagged chicken ready to serve you, magnet in claw. \n\nIncreases Arrow Recovery Chance and automatically picks up recovered arrows.",
-			"extract": "Ava's accumulator is an armour item equipped in the cape slot. It is a reward from Animal Magnetism, and additional ones can also be crafted via the Armour Bench after the quest. Ava's accumulator adds a 10% chance of recovering arrows when worn.",
+			"extract": "Ava's accumulator is an armour item equipped in the cape slot. It is a reward from Animal Magnetism, and additional ones can also be crafted via the Armour Bench after the quest. Ava's accumulator adds a 10% chance of recovering arrows when worn. Please note that it will not recover spectral arrows of any kind.",
 			"recipes": [
 				{
 					"outputLabel": "Ava's Accumulator",
@@ -12138,7 +12120,7 @@
 			"type": "Basic Item",
 			"category": "jewellery",
 			"description": "A goblin artefact, found on a druid.",
-			"extract": "Bandosian amulet is a quest item for Goblin Diplomacy. It is one of two amulets, found in a reliquary in some Bramblemead ruins, while the other is found on a garou druid in the Whispering Swamp caves.",
+			"extract": "Bandosian amulet is a quest item obtained during Goblin Diplomacy. It is found in a Reliquary either north near the Outlook Ruins or south near the Adventurer's Guild. The other one is found on a Garou Druid located in the Whispering Swamp caves.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [
@@ -12162,7 +12144,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "Perhaps you could learn from it<sup class=\"noprint\">&#91;<span class=\"fact-text\" title=\"no full stop\">sic</span>&#93;</sup>",
-			"extract": "The barbed appendage is a vestige that unlocks the kalphite carapace legs.",
+			"extract": "The barbed appendage is a vestige that unlocks the kalphite carapace legs.\n\nThe vestige can be obtained through Iasadair - The Merchant for 5000 Garou Chit.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -12666,7 +12648,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "An ancient book of spells by Agatha's mail-order magic service. \"Guaranteed to put warts on your nose, or your money back!\"",
-			"extract": "The bedraggled spellbook is a quest item that is found during the Mirror, Mirror quest. Players will need to return this book to Edna as well as 1 silver bar, 1 fine thread, 1 sacred oil, and 6 soul fragments.",
+			"extract": "The bedraggled spellbook is a quest item that is found during the Mirror, Mirror quest. Players will need to return this book to Edna as well as 1 silver bar, 1 fine thread, 1 sacred oil, and 6 soul fragments.\n\n",
 			"recipes": [],
 			"usedIn": [
 				"spectral-silver-thread"
@@ -12691,7 +12673,7 @@
 			"type": "Food",
 			"category": "food",
 			"description": "Hearty, healthy & delicious.",
-			"extract": "Beef & tomato stew is a consumable food item that provides 60 health and 65 sustenance. It is made with grilled tomatoes, steak, and dried redberries in a stone range or a cooking range, however a player must interact with a stone range first to learn the recipe.",
+			"extract": "Beef & tomato stew is a consumable food item that provides 60 health and 65 sustenance. It is made with grilled tomatoes, steak, and dried redberries in a stone range or a cooking range, however a player must interact with a stone range first and have grilled tomatoes in their inventory to learn the recipe.",
 			"recipes": [
 				{
 					"outputLabel": "Beef & Tomato Stew",
@@ -13071,7 +13053,7 @@
 			"type": "Raw Ingredient",
 			"category": "food",
 			"description": "A tasty mushroom. Can be used in a variety of cooking recipes.",
-			"extract": "Bittercap mushrooms are a power level 2 raw ingredient, which means they can be cooked at a campfire or grill into grilled mushrooms starting at Cooking Level 12, and not burnt into burnt mushroom at level 27. They can also be used to make weak antipoison potion. They can be gathered from bittercap mushroom (plant)s in the Whispering Swamp and Dowdun Reach.",
+			"extract": "Bittercap mushrooms are a power level 2 raw ingredient, which means they can be cooked at a campfire or grill into grilled mushrooms starting at Cooking Level 12, and not burnt into burnt mushroom at level 27. They can also be used to make weak antipoison potion. They can be gathered from bittercap mushroom (plant)s in the Whispering Swamp and Dowdun Reach. \n\n",
 			"recipes": [],
 			"usedIn": [
 				"burnt-mushroom",
@@ -13264,6 +13246,16 @@
 					"source": "Black Dragon",
 					"qty": "10–12",
 					"rarity": "Always"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "4–8",
+					"rarity": "1/8"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "4–8",
+					"rarity": "1/17.8"
 				}
 			],
 			"shops": [],
@@ -15068,7 +15060,7 @@
 			"type": "Basic Item",
 			"category": "capes",
 			"description": "A cloak commemorating a dragon's vengeance.",
-			"extract": "The Bloodblight cape is a craftable armour piece. The recipe is unlocked by acquiring the Bloodblight Cape Pattern, found in a chest behind a broken wall in the Bloodblight Castle.",
+			"extract": "The Bloodblight cape is a craftable armour piece. The recipe is unlocked by acquiring the Bloodblight Cape Pattern, found in a chest behind a broken wall in the Bloodblight Castle.  \n\n",
 			"recipes": [
 				{
 					"outputLabel": "Bloodblight Cape",
@@ -15206,7 +15198,7 @@
 			"type": "Resource",
 			"category": "materials",
 			"description": "Harvested from bloodwood trees found in the toxic swamp in Ghornfell.",
-			"extract": "Bloodwood sap can be found by logging the red formations on the bloodwood tree in the southernmost area of the Bloodblight Swamp, that is located in the middle of a garou camp.\nBloodwood sap is required for progression in the quest Dragon Slayer, as it is a component of the challenge horn.\nPlayers will need to use an iron logging axe or higher to harvest this material from the bloodwood tree.",
+			"extract": "Bloodwood sap can be found by logging the red formations on the bloodwood tree in the southernmost area of the Bloodblight Swamp, that is located in the middle of a garou camp.\nBloodwood sap is required for progression in the quest Dragon Slayer, as it is a component of the challenge horn.\nPlayers will need to use an iron logging axe or higher to harvest this material from the bloodwood tree.\n\n",
 			"recipes": [],
 			"usedIn": [
 				"challenge-horn"
@@ -15505,7 +15497,7 @@
 			"name": "Blue Dragon Scale Dust",
 			"wiki": "Blue Dragon Scale Dust",
 			"icon": "Blue Dragon Scale Dust.png",
-			"type": "Resource",
+			"type": "Basic Material",
 			"category": "materials",
 			"description": "Ground from blue dragon scales. Integral to making antifire potions.",
 			"extract": "Blue dragon scale dust is a processed material used to make antifire potions.",
@@ -15910,14 +15902,14 @@
 			"slug": "blue-dyad-cape",
 			"name": "Blue Dyad Cape",
 			"wiki": "Blue Dyad Cape",
-			"icon": "Blue Dyed Cape.png",
+			"icon": "Blue Dyad Cape.png",
 			"type": "Armour",
 			"category": "capes",
 			"description": "A cape made for its looks more than any kind of magical potency.",
 			"extract": "The blue dyad cape is a stylish cape that can be created by learning the vestige bought from Postie Pete in Evil Emporium.",
 			"recipes": [
 				{
-					"outputLabel": "Blue Dyed Cape",
+					"outputLabel": "Blue Dyad Cape",
 					"outputQty": 1,
 					"requires": {
 						"label": "Chewed Blue Cloth",
@@ -15925,7 +15917,7 @@
 					},
 					"skills": [],
 					"materials": [],
-					"id": "cf839678b6",
+					"id": "9212dd3a29",
 					"station": {
 						"name": "Armour Bench",
 						"slug": "armour-bench"
@@ -17437,7 +17429,7 @@
 			"type": "Basic Item",
 			"category": "capes",
 			"description": "A cloak to remember simpler times.",
-			"extract": "The Bramblemead cape is a craftable armour piece. The recipe is unlocked by acquiring the Bramblemead Cape Pattern, found in a chest atop the Runecrafting Guild. Using only Windstep to reach the chest is considerably difficult; it is recommended to do this in combination with building foundations.",
+			"extract": "The Bramblemead cape is a craftable armour piece. The recipe is unlocked by acquiring the Bramblemead Cape Pattern, found in a chest atop the Runecrafting Guild. Using only Windstep to reach the chest is considerably difficult; it is recommended to do this in combination with building foundations.\n\n",
 			"recipes": [
 				{
 					"outputLabel": "Bramblemead Cape",
@@ -19434,7 +19426,7 @@
 			"type": "Tool",
 			"category": "tools",
 			"description": "A basic Spade made from bronze.<br /><br />Used to clear farming plots.",
-			"extract": "A bronze spade is a power level 2 spade that can be crafted at a blacksmith's bench. When used to dig a farming plot, players will use 10 stamina and progress by 40% to the next plot clearing stage. Therefore, it will take three digs to progress one stage.",
+			"extract": "A bronze spade is a power level 2 spade that can be crafted at a blacksmith's bench. When used to dig a farming plot, players will use 10 stamina and progress by 40% to the next plot clearing stage. Therefore, it will take three digs to progress one stage.\nA bronze spade is required to dig in oak farming plots.",
 			"recipes": [
 				{
 					"outputLabel": "Bronze Spade",
@@ -20109,7 +20101,9 @@
 			"description": "A bucket of milk from a stubborn cow.",
 			"extract": "The bucket of milk is a quest item for the Cook's Assistant quest. To obtain it, players must interact with the cow just outside of the quest starting area, in a pen.",
 			"recipes": [],
-			"usedIn": [],
+			"usedIn": [
+				"glorious-cake"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -20166,7 +20160,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "[[Manktongue]] needs these undead twigs to make [[Ava's accumulator]]",
-			"extract": "A bundle of undead twigs is a quest item obtained during the quest Animal Magnetism. The item acquired upon interacting with the \"red\" undead tree in the middle of Bloodblight Swamp, near the abyssal demon.",
+			"extract": "A bundle of undead twigs is a quest item obtained during the quest Animal Magnetism. The item is acquired upon interacting with the \"red\" undead tree in the middle of Bloodblight Swamp, near the abyssal demon.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -20225,7 +20219,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "The ancient remnants of some sort of armour. Perhaps you could learn something from it.",
-			"extract": "Burnished belt buckle is a consumable item that unlocks creation of the necromancer's robe bottom.",
+			"extract": "Burnished belt buckle is a vestige that unlocks creation of the necromancer's robe bottom.\n\nThe vestige can be obtained through Death's Exchange for 300 soul fragments.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -21592,7 +21586,7 @@
 			"type": "Food",
 			"category": "food",
 			"description": "Too well done, but still edible.",
-			"extract": "Burnt maple syrup is a power level 4 consumable burnt food item that has a chance to be made when cooking maple sap at a campfire or grill, and guaranteed when cooking maple syrup. It requires a Cooking level lower than 50 to burn from maple sap, and guaranteed with a level lower than 41. It provides 15 sustenance when consumed. Despite being a power level 4 item, it can only be deposited into a compost bin and not a super compost bin.",
+			"extract": "Burnt maple syrup is a power level 4 consumable burnt food item that has a chance to be made when cooking maple sap at a campfire or grill, and guaranteed when cooking maple syrup. It requires a Cooking level lower than 50 to burn from maple sap, and guaranteed with a level lower than 41. It provides 15 sustenance when consumed. It can be deposited into a super compost bin.",
 			"recipes": [
 				{
 					"outputLabel": "Burnt Maple Syrup",
@@ -22084,7 +22078,7 @@
 			"type": "Food",
 			"category": "food",
 			"description": "Too well done, but still edible.",
-			"extract": "Burnt pumpkin is a consumable burnt food item that has a chance to be made when cooking pumpkin at a campfire or grill, provides 15 sustenance when consumed, and has no uses beyond being eaten for food.",
+			"extract": "Burnt pumpkin is a consumable burnt food item that has a chance to be made when cooking pumpkin at a campfire or grill, provides 15 sustenance when consumed. Beyond being eaten as food, its only other purpose is as super compost, meaning that if one plans on specifically using pumpkin to supply the super compost bin, one can intentionally double-cook the pumpkin for extra cooking XP first.",
 			"recipes": [
 				{
 					"outputLabel": "Burnt Pumpkin",
@@ -23036,7 +23030,7 @@
 			"type": "Raw Ingredient",
 			"category": "food",
 			"description": "Yuck I don't like cabbage.",
-			"extract": "Cabbages are a power level 2 raw ingredient, which means they can be cooked at a campfire or grill into fried cabbage starting at Cooking Level 12, and not burnt into burnt cabbage at level 27. They can also be used to make weak Focused Cooking potions and Focused Cooking potions. They can be gathered from cabbage plants in Bramblemead Valley and cabbage (Farming) from cabbage seeds.",
+			"extract": "Cabbages are a power level 2 raw ingredient, which means they can be cooked at a campfire or grill into fried cabbage starting at Cooking Level 12, and not burnt into burnt cabbage at level 27. They can also be used to make weak Focused Cooking potions and Focused Cooking potions. They can be gathered from cabbage plants in Bramblemead Valley and cabbage (Farming) from cabbage seeds.\n\n",
 			"recipes": [],
 			"usedIn": [
 				"burnt-cabbage",
@@ -24661,7 +24655,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "Perhaps you could learn from it<sup class=\"noprint\">&#91;<span class=\"fact-text\" title=\"no full stop\">sic</span>&#93;</sup>",
-			"extract": "The chitinous carapace is a vestige that unlocks the kalphite carapace chest.",
+			"extract": "The chitinous carapace is a vestige that unlocks the kalphite carapace chest.\n\nThe vestige can be obtained through Iasadair - The Merchant for 7500 Garou Chit.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -24899,7 +24893,7 @@
 					"skills": [
 						{
 							"name": "Artisan",
-							"xp": 25
+							"xp": 60
 						}
 					],
 					"materials": [
@@ -25962,7 +25956,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "A sealed scroll full of forbidden magics.",
-			"extract": "Coclear Malificarum is a quest item obtained on the ground by Ulgo the zogre. It is slightly north-west of the chest, by the large bones. It is one of three scrolls required to complete What Remains is Written. It is located in the north-east section of Coalridge Pass.",
+			"extract": "Coclear Malificarum is a quest item obtained on the ground by Ulgo the zogre. It is slightly north-west of the chest, by the large bones. It is one of three scrolls required to complete What Remains is Written. It is located in the north-east section of Coalridge Pass.\n\n",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -26028,7 +26022,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "Perhaps you could learn something from it.",
-			"extract": "The commemorative coin is a vestige that unlocks the recipe for the amulet of glory. It can be received as a drop from red dragon's in Umbral Sands.",
+			"extract": "The commemorative coin is a vestige that unlocks the recipe for the amulet of glory. It can be received as a drop from red dragon in Umbral Sands.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [
@@ -26965,7 +26959,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "A battered helmet. Perhaps you could learn something from it.",
-			"extract": "Corroded white visor is a vestige that unlocks the recipe for the white full helm.",
+			"extract": "Corroded white visor is a vestige that unlocks the recipe for the white full helm.\nThe vestige can be obtained through Death's Exchange for 200 soul fragments.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -26991,8 +26985,8 @@
 			"name": "Corrupted Essence Sample",
 			"wiki": "Corrupted Essence Sample",
 			"icon": "Corrupted Essence Sample.png",
-			"type": "Quest Item",
-			"category": "quest",
+			"type": "Basic Item",
+			"category": "materials",
 			"description": "A strange sickly essence, linked to the corruption in Dowdun Reach. It writhes as you look at it.",
 			"extract": "A corrupted essence sample is a quest item dropped by corrupted ravens. Collecting one can start the Biohazard secondary quest, but after the quest, you can turn in ten of these to Putrilius for infernal fragments.",
 			"recipes": [],
@@ -27004,6 +26998,29 @@
 					"rarity": "Always"
 				}
 			],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": 0,
+			"power": null,
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
+				}
+			]
+		},
+		{
+			"slug": "cracked-bronze-vanity-mirror",
+			"name": "Cracked Bronze Vanity Mirror",
+			"wiki": "Cracked Bronze Vanity Mirror",
+			"icon": "A Cracked Bronze Vanity Mirror.png",
+			"type": "Vestige",
+			"category": "vestiges",
+			"description": "Shows the worst possible side of yourself. Perhaps you could learn from it.",
+			"extract": "A cracked bronze vanity mirror is a vestige that unlocks the creation of the ring of recoil when studied.",
+			"recipes": [],
+			"usedIn": [],
+			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
 			"weight": 0,
@@ -27163,6 +27180,11 @@
 			"usedIn": [],
 			"drops": [
 				{
+					"source": "Fuzan",
+					"qty": "1",
+					"rarity": "1/4"
+				},
+				{
 					"source": "Red Dragon",
 					"qty": "1",
 					"rarity": "1/400"
@@ -27241,6 +27263,11 @@
 			"recipes": [],
 			"usedIn": [],
 			"drops": [
+				{
+					"source": "Fuzan",
+					"qty": "1",
+					"rarity": "1/4"
+				},
 				{
 					"source": "Red Dragon",
 					"qty": "1",
@@ -27321,6 +27348,11 @@
 			"usedIn": [],
 			"drops": [
 				{
+					"source": "Fuzan",
+					"qty": "1",
+					"rarity": "1/4"
+				},
+				{
 					"source": "Red Dragon",
 					"qty": "1",
 					"rarity": "1/400"
@@ -27399,6 +27431,11 @@
 			"recipes": [],
 			"usedIn": [],
 			"drops": [
+				{
+					"source": "Fuzan",
+					"qty": "1",
+					"rarity": "1/4"
+				},
 				{
 					"source": "Red Dragon",
 					"qty": "1",
@@ -27503,7 +27540,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "The ancient remnants of some sort of armour. Perhaps you could learn something from it.",
-			"extract": "Crushed White Cruisse is a vestige that is consumed, allowing players to craft white platelegs at a armour bench.",
+			"extract": "Crushed White Cruisse is a vestige that is consumed, allowing players to craft white platelegs at a armour bench.\nThe vestige can be obtained through Death's Exchange for 300 soul fragments.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -27644,7 +27681,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "The ancient remnants of some sort of armour. Perhaps you could learn something from it.",
-			"extract": "Curse carrying crown is a vestige that unlocks the necromancer's crown.",
+			"extract": "Curse carrying crown is a vestige that unlocks the necromancer's crown.\n\nThe vestige can be obtained through Death's Exchange for 200 soul fragments.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -28330,7 +28367,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "The ancient remnants of some sort of armour. Perhaps you could learn something from it.",
-			"extract": "The dented white pauldron is a vestige that unlocks the white platebody.",
+			"extract": "The dented white pauldron is a vestige that unlocks the white platebody.\nThe vestige can be obtained through Death's Exchange for 400 soul fragments.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -29004,7 +29041,7 @@
 			"type": "Basic Material",
 			"category": "materials",
 			"description": "A hearty plant native to the region. Can be spun into a durable thread",
-			"extract": "This article is about the resource. For the Plant itself, see Desert Weeds.\n\nDesert weed is a basic material gathered by picking up Desert Weeds located in the Umbral Sands region or by growing in any plot but grows best in a Yew Farming Plot.",
+			"extract": "This article is about the resource. For the Plant itself, see Desert Weeds.\n\nDesert weed is a basic material gathered by picking up Desert Weeds located in the Umbral Sands region or by growing in any plot but grows best in a Yew Farming Plot.\n\n",
 			"recipes": [],
 			"usedIn": [
 				"desert-thread"
@@ -29362,6 +29399,16 @@
 					"source": "Black Dragon",
 					"qty": "12–15",
 					"rarity": "Always"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "8–11",
+					"rarity": "1/8"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "8–11",
+					"rarity": "1/17.8"
 				}
 			],
 			"shops": [],
@@ -29594,7 +29641,7 @@
 			"type": "Ranged Weapon",
 			"category": "weapons",
 			"description": "The signature weapon of the Dorgeshuun Goblin tribe. It fires Bone bolts and is surprisingly well made!",
-			"extract": "The dorgeshuun crossbow is a power level 5 crossbow that can be crafted at a fletching bench. The recipe is obtained from the quest Even More Restless Ghosts. It can be ascended at a mystic forge using ascension cores.\nIts special effect is a hidden -25% Reload Duration, making it reload faster than other crossbows. It also can only fire bone bolts, which can similarly only be fired from this crossbow. Unlike other crossbows and bolts that split the damage between them, all of it is on the crossbow. This is to ensure that the weapon ascends correctly, and isn't forced to use weaker bolts than other crossbows. The bone bolts additionally build bleed, and with three hits in a short time, deal 40 damage. This damage does not scale with power level.\nExcluding the bleed damage from the bone bolts, this weapon has the same base damage, reload speed, and durability as the blurite crossbow at similar power levels. With that in mind, the choice comes down to what bolts are desired, particularly enchanted bolts, as the difference is entirely down to their effects. The shadow crossbow is a notable mention as it can squeeze more damage out of enchanted bolts with +15% weakpoint damage, but it does so far slower than this or the blurite crossbow.",
+			"extract": "The dorgeshuun crossbow is a power level 5 crossbow that can be crafted at a fletching bench. The recipe is unlocked from the quest Even More Restless Ghosts. It can be ascended at a mystic forge using ascension cores.\nIts special effect is a hidden -25% Reload Duration, making it reload faster than other crossbows. It also can only fire bone bolts, which can similarly only be fired from this crossbow. Unlike other crossbows and bolts that split the damage between them, all of it is on the crossbow. This is to ensure that the weapon ascends correctly, and isn't forced to use weaker bolts than other crossbows. The bone bolts additionally build bleed, and with three hits in a short time, deal 40 damage. This damage does not scale with power level.\nExcluding the bleed damage from the bone bolts, this weapon has the same base damage, reload speed, and durability as the blurite crossbow at similar power levels. With that in mind, the choice comes down to what bolts are desired, particularly enchanted bolts, as the difference is entirely down to their effects. The shadow crossbow is a notable mention as it can squeeze more damage out of enchanted bolts with +15% weakpoint damage, but it does so far slower than this or the blurite crossbow.",
 			"recipes": [
 				{
 					"outputLabel": "Dorgeshuun Crossbow",
@@ -30601,6 +30648,16 @@
 					"source": "Black Dragon",
 					"qty": "6–12",
 					"rarity": "Always"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "3–5",
+					"rarity": "1/8"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "3–5",
+					"rarity": "1/17.8"
 				}
 			],
 			"shops": [],
@@ -31005,7 +31062,7 @@
 			"type": "Basic Material",
 			"category": "materials",
 			"description": "A piece of dragon tooth, extracted from a dragon skull found in the Highlands.",
-			"extract": "Dragon teeth can be obtained either by mining teeth from the head of the dragon skull in the Stormtouched Highlands or by killing lesser dragons. It is one component of the challenge horn, which is used in the Dragon Slayer quest. Players will need to have an iron pickaxe to mine this item. Dragon teeth respawn after two in-game days, as long as the player is at least 100 metres away, and their built objects are not directly on the spawn area.\nBeyond the Ghornfell region, players can obtain this item as a mob drop from defeating lesser dragon mini-bosses.",
+			"extract": "Dragon teeth can be obtained either by mining teeth from the head of the dragon skull in the Stormtouched Highlands or by killing lesser dragons. It is one component of the challenge horn, which is used in the Dragon Slayer quest. Players will need to have an iron pickaxe to mine this item. Dragon teeth respawn after two in-game days, as long as the player is at least 100 metres away, and their built objects are not directly on the spawn area.\nBeyond the Ghornfell region, players can obtain this item as a mob drop from defeating lesser dragon mini-bosses.\n\n",
 			"recipes": [],
 			"usedIn": [
 				"black-dragon-trophy",
@@ -31049,6 +31106,16 @@
 					"source": "Black Dragon",
 					"qty": "6–12",
 					"rarity": "Always"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "2–4",
+					"rarity": "1/8"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "2–4",
+					"rarity": "1/17.8"
 				}
 			],
 			"shops": [],
@@ -33701,6 +33768,11 @@
 					"source": "Buried Treasure (Brynmoor)",
 					"qty": "10–20",
 					"rarity": "12.5/100"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "50–70",
+					"rarity": "1/4"
 				}
 			],
 			"shops": [],
@@ -33858,6 +33930,7 @@
 			"usedIn": [
 				"burnt-egg",
 				"fried-egg",
+				"glorious-cake",
 				"victoria-sponge-cake"
 			],
 			"drops": [
@@ -34800,6 +34873,11 @@
 					"source": "Chest (Dowdun Reach)",
 					"qty": "1",
 					"rarity": "1.1/100"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "1–2",
+					"rarity": "1/8"
 				}
 			],
 			"shops": [],
@@ -34878,7 +34956,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "A sealed scroll full of the worst things imaginable.",
-			"extract": "Eventide - A New Spawn is a quest item obtained on the desk in the ruins by Razlem, the Deranged. It is one of three scrolls required to complete What Remains is Written. The scroll located in the very south-eastern part of Silverthorn Keep.",
+			"extract": "Eventide - A New Spawn is a quest item obtained on the desk in the ruins by Razlem, the Deranged. It is one of three scrolls required to complete What Remains is Written. The scroll located in the very south-eastern part of Silverthorn Keep.\n\n",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -36373,6 +36451,11 @@
 					"source": "Chest (Dowdun Reach)",
 					"qty": "1",
 					"rarity": "1.1/100"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "1–2",
+					"rarity": "1/8"
 				}
 			],
 			"shops": [],
@@ -36451,7 +36534,7 @@
 			"type": "Basic Item",
 			"category": "materials",
 			"description": "A complex network of fibres and water reservoirs. Can be tanned to produce a durable material.",
-			"extract": "Fibrous pipe cactus can be found west of the Moon Garou tribe near a grove of yew trees, and can be used to make 3 cactus fibres in a tannery.",
+			"extract": "Fibrous pipe cactus can be found west of the Moon Garou tribe near a grove of yew trees, and can be used to make 3 cactus fibres in a tannery.\n\n",
 			"recipes": [],
 			"usedIn": [
 				"cactus-fibres"
@@ -37115,6 +37198,16 @@
 					"source": "Buried Treasure (Brynmoor)",
 					"qty": "10–20",
 					"rarity": "12.5/100"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "50–70",
+					"rarity": "1/4"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "50–70",
+					"rarity": "1/4"
 				}
 			],
 			"shops": [],
@@ -37456,7 +37549,7 @@
 			"type": "Resource",
 			"category": "materials",
 			"description": "Harvested from flax plants, essential for crafting linen and bowstrings.",
-			"extract": "Flax can be found by harvesting the flax plants in either Bramblemead Valley, Fractured Plains, or Stormtouched Highlands. It can be used on the spinning wheel to create coarse thread. Collecting flax for the first time unlocks the creation of the spinning wheel and fletching bench.",
+			"extract": "Flax can be found by harvesting the flax plants in either Bramblemead Valley, Fractured Plains, or Stormtouched Highlands. It can be used on the spinning wheel to create coarse thread. Collecting flax for the first time unlocks the creation of the spinning wheel and fletching bench.\n\n",
 			"recipes": [],
 			"usedIn": [
 				"advanced-spinning-wheel",
@@ -37716,6 +37809,11 @@
 					"source": "Chest (Dowdun Reach)",
 					"qty": "1",
 					"rarity": "1.1/100"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "1–2",
+					"rarity": "1/8"
 				}
 			],
 			"shops": [],
@@ -38609,7 +38707,7 @@
 			"type": "Container",
 			"category": "packs",
 			"description": "",
-			"extract": "Food & drink salvage are a type of salvage hotspot that can be looted to obtain various resources. They can be found in the Dowdun Reach.",
+			"extract": "Food & drink salvage are a type of salvage hotspot that can be looted to obtain various resources. They can be found in the Dowdun Reach.\n\n",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -38672,6 +38770,11 @@
 					"source": "Food & Drink Salvage",
 					"qty": "2–3",
 					"rarity": "4.17/100"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "1–2",
+					"rarity": "1/5"
 				}
 			],
 			"shops": [],
@@ -38705,7 +38808,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "An ancient garou scroll describing some kind of moon deity. An archaeologist will want this.",
-			"extract": "Forbidden Scroll - 'Moon Goddess' is a quest item that is obtained by digging up a mound with a piece of a scroll sticking up. Players will need to bring this to Lehran - The Archaeologist, along with the other three scrolls to complete The Dig Site subquest part of Icthlarin's Little Helper.",
+			"extract": "Forbidden Scroll - 'Moon Goddess' is a quest item that is obtained by digging up a mound with a piece of a scroll sticking up. Players will need to bring this to Lehran - The Archaeologist, along with the other three scrolls to complete The Dig Site subquest part of Icthlarin's Little Helper.\n\n",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -38723,7 +38826,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "An ancient garou scroll describing old Moon Garou kingdom. An archaeologist will want this.",
-			"extract": "Forbidden Scroll - 'Old Kingdom' is a quest item that is obtained by digging up a mound with a piece of a scroll sticking up. Players will need to bring this to Lehran - The Archaeologist, along with the other three scrolls to complete The Dig Site subquest part of Icthlarin's Little Helper.",
+			"extract": "Forbidden Scroll - 'Old Kingdom' is a quest item that is obtained by digging up a mound with a piece of a scroll sticking up. Players will need to bring this to Lehran - The Archaeologist, along with the other three scrolls to complete The Dig Site subquest part of Icthlarin's Little Helper.\n\n",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -38741,7 +38844,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "An ancient garou scroll describing a cruel, sun-themed demoness. An archaeologist will want this.",
-			"extract": "Forbidden Scroll - 'Sun Demon' is a quest item that is obtained by digging up a mound with a piece of a scroll sticking up. Players will need to bring this to Lehran - The Archaeologist, along with the other three scrolls to complete The Dig Site subquest part of Icthlarin's Little Helper.",
+			"extract": "Forbidden Scroll - 'Sun Demon' is a quest item that is obtained by digging up a mound with a piece of a scroll sticking up. Players will need to bring this to Lehran - The Archaeologist, along with the other three scrolls to complete The Dig Site subquest part of Icthlarin's Little Helper.\n\n",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -38759,7 +38862,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "An ancient Moon Garou scroll describing the schism that separated the garou. An archaeologist will want this.",
-			"extract": "Forbidden Scroll - 'The Schism' is a quest item that is obtained by digging up a mound with a piece of a scroll sticking up. Players will need to bring this to Lehran - The Archaeologist, along with the other three scrolls to complete The Dig Site subquest part of Icthlarin's Little Helper.",
+			"extract": "Forbidden Scroll - 'The Schism' is a quest item that is obtained by digging up a mound with a piece of a scroll sticking up. Players will need to bring this to Lehran - The Archaeologist, along with the other three scrolls to complete The Dig Site subquest part of Icthlarin's Little Helper.\n\n",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -38858,7 +38961,7 @@
 			"type": "Basic Item",
 			"category": "capes",
 			"description": "A cloak warning against the danger of hubris.",
-			"extract": "The fractured cape is a craftable armour piece.  The recipe is unlocked by acquiring the PATTERN: fractured cape, found in a chest at the north-north-east tip of the Fractured Plains.",
+			"extract": "The fractured cape is a craftable armour piece.  The recipe is unlocked by acquiring the PATTERN: fractured cape, found in a chest at the north-north-east tip of the Fractured Plains.\n\n",
 			"recipes": [
 				{
 					"outputLabel": "Fractured Cape",
@@ -39400,7 +39503,7 @@
 			"type": "Food",
 			"category": "food",
 			"description": "A fruit party, wrapped in golden pastry.",
-			"extract": "Fruit pie is a consumable food item that provides 90 health and 85 sustenance. It is made with dried redberries, dried dwellberries, and bread in a cooking range. Dried Cadavaberries are required to be held to unlock the recipe.",
+			"extract": "Fruit pie is a consumable food item that provides 90 health and 85 sustenance. It is made with dried redberries, dried dwellberries, and bread in a cooking range. Dried redberries or dried dwellberries are required in the player's inventory to unlock the recipe.",
 			"recipes": [
 				{
 					"outputLabel": "Fruit Pie",
@@ -39640,7 +39743,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "It's tempting to leave it out in the Scorch to give it a taste of its own medicine.",
-			"extract": "Fuzan's head is a quest item obtained during Icthlarin's Little Helper after defeating Fuzan. Players will need to hand this to Icthlarin to complete the quest.",
+			"extract": "Fuzan's Head is a quest item obtained by defeating Fuzan during the Icthlarin's Little Helper quest. Players must give Fuzan's Head to Icthlarin to complete the quest.\nAfter completing the quest, players can exchange additional Fuzan Heads with Icthlarin for a Smoldering Draconic Visage.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [
@@ -39669,7 +39772,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "A pair of well-preserved garou arms, the perfect gift for any mad scientist.",
-			"extract": "Garou Arms are a quest item used in The Great Body Robbery, where it is required to create Doctor Fenkenstrain's creature.",
+			"extract": "Garou Arms are a quest item used in The Great Body Robbery, where it is required to create Doctor Fenkenstrain's creature.\n\n",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -41007,7 +41110,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "An amulet you found in a well in Brynmoor.",
-			"extract": "The ghostspeak amulet is a quest item that is required to speak with the restless spirits that appear around the map during the night, during the quest, Restless Ghosts. The amulet can be found by interacting with a crumbling well in the ruins of the town of Brynmoor in Bramblemead Valley, near where the Wise Old Man can be found.",
+			"extract": "The ghostspeak amulet is a quest item that is required to speak with the restless spirits that appear around the map during the night, during the quest, Restless Ghosts. The amulet can be found by interacting with a crumbling well in the ruins of the town of Brynmoor in Bramblemead Valley, near where the Wise Old Man can be found.\nThis item is required for the following quests:\n\nRestless Ghosts\nEven More Restless Ghosts\nWhat Remains is Written",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [
@@ -41106,7 +41209,7 @@
 			"type": "Trinket",
 			"category": "jewellery",
 			"description": "While wearing this amulet, Warped Feathers are consumed to award additional XP while exploring the world. Additionally increases the amount of experience gained from courses.",
-			"extract": "The gilded gyrhawk amulet is an amulet that can be crafted at a jeweler's bench after obtaining gold record times on all available Agility courses. While equipped, the amulet grants +100% Agility experience when walking or sprinting by consuming warped feathers in the player's inventory, while also providing +25% Agility experience when training on Agility courses.\nThis item, thus far, is the only trinket in the game with an Agility level requirement to wear and craft at level 65 Agility.",
+			"extract": "The gilded gyrhawk amulet is an amulet that can be crafted at a jeweler's bench after obtaining gold record times on all available Agility courses. While equipped, the amulet slowly consumes warped feathers in order to grant +100% Agility experience when walking or sprinting, while also providing +25% Agility experience when training on Agility courses.\nThe feathers must be held in the inventory while wearing the amulet, otherwise the amulet has no effect. Note that wearing the gilded gyrhawk amulet whilst completing an agility course will not use warped feathers.\nThis item, thus far, is the only trinket in the game with an Agility level requirement to wear and craft, at level 65 Agility.",
 			"recipes": [
 				{
 					"outputLabel": "Gilded Gyrhawk Amulet",
@@ -41742,6 +41845,11 @@
 					"source": "Food & Drink Salvage",
 					"qty": "2–3",
 					"rarity": "4.17/100"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "1–2",
+					"rarity": "1/5"
 				}
 			],
 			"shops": [],
@@ -41766,6 +41874,61 @@
 					"value": "50"
 				}
 			]
+		},
+		{
+			"slug": "glorious-cake",
+			"name": "Glorious Cake",
+			"wiki": "Glorious Cake",
+			"icon": "Victoria Sponge Cake.png",
+			"type": "Quest Item",
+			"category": "quest",
+			"description": "A cake requested by Slopfinger, made by you, and intended for Manktongue.",
+			"extract": "The Glorious Cake is a quest item made exclusively at the Goblin Stove during the Cook's Assistant quest.\nThis item is required for the following quests:\n\nCook's Assistant",
+			"recipes": [
+				{
+					"outputLabel": "Glorious Cake",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [
+						{
+							"name": "Artisan",
+							"xp": 0
+						}
+					],
+					"materials": [
+						{
+							"label": "Egg",
+							"qty": 4,
+							"icon": "Egg.png",
+							"slug": "egg"
+						},
+						{
+							"label": "Wheat",
+							"qty": 6,
+							"icon": "Wheat.png",
+							"slug": "wheat"
+						},
+						{
+							"label": "Bucket of Milk",
+							"qty": 1,
+							"icon": "Bucket of Milk.png",
+							"slug": "bucket-of-milk"
+						}
+					],
+					"id": "7f6cf08f2b",
+					"station": {
+						"name": "Goblin Stove",
+						"slug": null
+					}
+				}
+			],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": null,
+			"power": null,
+			"stats": []
 		},
 		{
 			"slug": "goblin-swingslash",
@@ -41866,7 +42029,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "A pair of worryingly fresh goblin legs. Doctor Fenkenstrain will be interested in these.",
-			"extract": "Goblin legs are a quest item used in The Great Body Robbery, where it is required to create Doctor Fenkenstrain's creature.",
+			"extract": "Goblin legs are a quest item used in The Great Body Robbery, where it is required to create Doctor Fenkenstrain's creature.\n\n",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -45655,7 +45818,7 @@
 			"type": "Trinket",
 			"category": "jewellery",
 			"description": "",
-			"extract": "The gyrhawk amulet is an amulet that can be crafted at a crafting table. While equipped, the amulet grants +100% Agility experience when walking or sprinting but consumes warped feathers. To unlock the recipe, players must receive warped feathers in their inventory, found in reward packs after completing Agility courses. Note that wearing the gyrhawk amulet whilst completing an agility course will not use warped feathers.",
+			"extract": "The gyrhawk amulet is an amulet that can be crafted at a crafting table. While equipped, the amulet slowly consumes warped feathers in order to grant +100% Agility experience when walking or sprinting.\nThe feathers must be held in the inventory while wearing the amulet, otherwise the amulet has no effect. Note that wearing the gyrhawk amulet whilst completing an agility course will not use warped feathers.\nTo unlock the recipe for the amulet, players must receive warped feathers in their inventory, which are found in reward packs after completing Agility courses.",
 			"recipes": [
 				{
 					"outputLabel": "Gyrhawk Amulet",
@@ -46599,7 +46762,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "You can feel it pulling away from you. Perhaps you could learn from it.",
-			"extract": "The hardy weathered shell is a consumable item that unlocks the creation of the amulet of defence.",
+			"extract": "The hardy weathered shell is a consumable item that unlocks the creation of the amulet of defence.\nThe vestige can be obtained through Death's Exchange for 350 soul fragments.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -46692,7 +46855,7 @@
 			"type": "Basic Item",
 			"category": "materials",
 			"description": "A fragrant herb used in restorative potions.",
-			"extract": "Harralander is a herb that is harvested from Harralander plants, found primarily in the Whispering Swamp and can be bought from Domri - The Merchant for 6 garou chits.",
+			"extract": "Harralander is a herb that is harvested from Harralander plants, found primarily in the Whispering Swamp and can be bought from Domri - The Merchant for 6 garou chits.\n\n",
 			"recipes": [],
 			"usedIn": [
 				"arcane-infusion",
@@ -47657,7 +47820,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "A surprisingly well-preserved human torso, must be ancient. Doctor Fenkenstrain is looking for something just like it.",
-			"extract": "A human torso is a quest item used in The Great Body Robbery, where it is required to create Doctor Fenkenstrain's creature.",
+			"extract": "A human torso is a quest item used in The Great Body Robbery, where it is required to create Doctor Fenkenstrain's creature.\n\n",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -51717,7 +51880,7 @@
 			"type": "Basic Item",
 			"category": "jewellery",
 			"description": "One of three emblem keys required to unlock a statue.",
-			"extract": "A jade emblem is a quest item used in Statues of Saradomin. This emblem is found near the centre of Fractured Plains.",
+			"extract": "A jade emblem is a quest item used in Statues of Saradomin. This emblem is found near the centre of Fractured Plains.\n\n",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -52326,7 +52489,7 @@
 			"name": "Kalphite Shell",
 			"wiki": "Kalphite Shell",
 			"icon": "Kalphite Shell.png",
-			"type": "Basic Item",
+			"type": "Basic Material",
 			"category": "materials",
 			"description": "A durable kalphite carapace, suitable for crafting.",
 			"extract": "Kalphite shell is a basic item used as a crafting material. It can be processed from kalphite shell fragments with acrid adhesive at the tannery.",
@@ -53625,6 +53788,11 @@
 					"source": "Buried Treasure (Brynmoor)",
 					"qty": "10–20",
 					"rarity": "12.5/100"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "50–70",
+					"rarity": "1/4"
 				}
 			],
 			"shops": [],
@@ -54245,7 +54413,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "The book squirms in your backpack, as though trying to escape.",
-			"extract": "Leonard the Bound is one of five books in in the quest What Remains is Written that players must find to return to Abraxus The Eternal. The book is found in the gateway south of Skekven Kara vault, a connecting area between the Lake of Lost Souls and Silverthorn Keep. It is on the western gate, just below the southern tower. You need to use Windstep to reach the book, which lies on a pedestal\nThere are two skeletal warriors and one skeletal hoplite in this area. It also contains two chests, one requiring a spade, and six rune essence rocks on the ground in the nearby nook.",
+			"extract": "Leonard the Bound is one of five books in in the quest What Remains is Written that players must find to return to Abraxus The Eternal. The book is found in the gateway south of Skekven Kara vault, a connecting area between the Lake of Lost Souls and Silverthorn Keep. It is on the western gate, just below the southern tower. You need to use Windstep to reach the book, which lies on a pedestal\nThere are two skeletal warriors and one skeletal hoplite in this area. It also contains two chests, one requiring a spade, and six rune essence rocks on the ground in the nearby nook.\n\n",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -55567,7 +55735,7 @@
 			"type": null,
 			"category": "buildings",
 			"description": "",
-			"extract": "A lodestone is a platform that allows the player to travel if another lodestone is placed elsewhere. When the first lodestone is built, the inactive lodestone in the Temple starting area becomes active as well. Teleporting between two lodestones costs a varied amount of law runes, depending on the distance of the target lodestone and the weight of the player.",
+			"extract": "A lodestone is a platform that allows the player to travel if another lodestone is placed elsewhere. When the first lodestone is built, the inactive lodestone in the Temple starting area becomes active as well. Teleporting between two lodestones costs a varied amount of law runes, depending on the distance of the target lodestone and the weight of the player. \n\n",
 			"recipes": [
 				{
 					"outputLabel": "Lodestone",
@@ -55829,7 +55997,7 @@
 			"type": "Basic Item",
 			"category": "materials",
 			"description": "Stylish? Yes! But not only that... A highly functional backpack that improves your luck with rare wood resource drops. It also lightens the weight of carried wood, and gives a gentle boost to woodcutting progression.",
-			"extract": "Lumber backpack is an armour item equipped in the cape slot. Equipping this grants a +10% reduction to the weight of carried wood, +10% increase to Woodcutting experience, +10% increase to the amount of wood received from chopping trees and +15% for special item drop chance.\nThe recipe unlocks at level 59 Woodcutting.",
+			"extract": "A lumber backpack is an armour item equipped in the cape slot. Equipping this grants a +10% reduction to the weight of carried wood, +10% increase to Woodcutting experience, +10% increase to the amount of wood received from chopping trees and +15% for special item drop chance.\nThe recipe unlocks at level 59 Woodcutting.",
 			"recipes": [
 				{
 					"outputLabel": "Lumber Backpack",
@@ -56029,6 +56197,16 @@
 					"source": "Luminite Deposit",
 					"qty": "1–2",
 					"rarity": "Always"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "3–9",
+					"rarity": "1/8"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "3–9",
+					"rarity": "1/17.8"
 				}
 			],
 			"shops": [],
@@ -56289,7 +56467,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "Perhaps you could learn from it",
-			"extract": "The lunate shawl is a vestige that unlocks the Lunar Garou robes",
+			"extract": "The lunate shawl is a vestige that unlocks the Lunar Garou robes\n\nThe vestige can be obtained through Domri - The Merchant for 7500 Garou Chit.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -56318,7 +56496,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "Perhaps you could learn from it",
-			"extract": "The lunular wrappings is a vestige that unlocks the Lunar Garou robe legs",
+			"extract": "The lunular wrappings is a vestige that unlocks the Lunar Garou robe legs\n\nThe vestige can be obtained through Domri - The Merchant for 5000 Garou Chit.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -56432,6 +56610,16 @@
 					"source": "Magic Tree",
 					"qty": "1",
 					"rarity": "Always"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "5–10",
+					"rarity": "1/8"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "5–10",
+					"rarity": "1/17.8"
 				}
 			],
 			"shops": [],
@@ -56857,6 +57045,11 @@
 					"source": "Food & Drink Salvage",
 					"qty": "2–3",
 					"rarity": "4.17/100"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "1–2",
+					"rarity": "1/8"
 				}
 			],
 			"shops": [],
@@ -57108,7 +57301,7 @@
 			"stats": [
 				{
 					"label": "Stack size",
-					"value": "999"
+					"value": "99"
 				}
 			]
 		},
@@ -57510,7 +57703,7 @@
 			"type": "Resource",
 			"category": "materials",
 			"description": "A bitter tasting herb used in resistance potions.",
-			"extract": "Marrentil (also spelled marrentill in books) is a herb found from harvesting a marrentill plant in the Whispering Swamp and can be bought from Domri - The Merchant for 6 garou chits.",
+			"extract": "Marrentil (also spelled marrentill in books) is a herb found from harvesting a marrentill plant in the Whispering Swamp and can be bought from Domri - The Merchant for 6 garou chits.\n\n",
 			"recipes": [],
 			"usedIn": [
 				"weak-antipoison-potion",
@@ -57666,7 +57859,7 @@
 			"type": "Magic Weapon",
 			"category": "weapons",
 			"description": "A magical staff fashioned for a master of the mystic arts. It radiates with power.",
-			"extract": "The Master's staff is a power level 7 two-handed staff that can be crafted at a mystic forge. Players must receive the Ornate Golden Scarab to create the staff.",
+			"extract": "The Master's staff is a power level 7 two-handed staff that can be crafted at a mystic forge.",
 			"recipes": [
 				{
 					"outputLabel": "Master's Staff",
@@ -57880,6 +58073,11 @@
 					"source": "Food & Drink Salvage",
 					"qty": "2–3",
 					"rarity": "4.17/100"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "1–2",
+					"rarity": "1/5"
 				}
 			],
 			"shops": [],
@@ -58056,7 +58254,7 @@
 			"type": "Food",
 			"category": "food",
 			"description": "Meat, meat and more meat. A sandwich with flank steak, rat roast and dried redberries.",
-			"extract": "Meat twist sandwich is a consumable food item that provides 90 health and 80 sustenance, as well as the perks Knowledgable Nourishment, Meaty Meal, and Foreman's Feast, which increases experience gain in all skills by 10%, reduces hunger drain by 25%, and reduces the stamina cost of Woodcutting and Mining by 33% for 600 seconds. It is made with flank steak, rat roast, dried redberries, and bread in a cooking range after finding the recipe nearby Valerius in Dowdun Reach, between The Library and The Cathedral.",
+			"extract": "A meat twist sandwich is a consumable food item that provides 90 health and 80 sustenance, as well as the perks Knowledgable Nourishment, Meaty Meal, and Foreman's Feast, which increases experience gain in all skills by 10%, reduces hunger drain by 25%, and reduces the stamina cost of Woodcutting and Mining by 33% for 600 seconds. It is made with flank steak, rat roast, dried redberries, and bread in a cooking range after finding the recipe nearby Valerius in Dowdun Reach, between The Library and The Cathedral.",
 			"recipes": [
 				{
 					"outputLabel": "Meat Twist Sandwich",
@@ -58107,6 +58305,11 @@
 					"source": "Food & Drink Salvage",
 					"qty": "2–3",
 					"rarity": "4.17/100"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "1–2",
+					"rarity": "1/5"
 				}
 			],
 			"shops": [],
@@ -59211,6 +59414,36 @@
 						}
 					],
 					"id": "d8fb652319",
+					"station": {
+						"name": "Build Menu",
+						"slug": null
+					}
+				},
+				{
+					"outputLabel": "Medium 45° Roof",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [
+						{
+							"name": "Construction",
+							"xp": 8
+						}
+					],
+					"materials": [
+						{
+							"label": "Weeds",
+							"qty": 4,
+							"icon": "Weeds.png",
+							"slug": "weeds"
+						},
+						{
+							"label": "Ash Plank",
+							"qty": 2,
+							"icon": "Ash Plank.png",
+							"slug": "ash-plank"
+						}
+					],
+					"id": "e7a7d44728",
 					"station": {
 						"name": "Build Menu",
 						"slug": null
@@ -65187,14 +65420,14 @@
 			"stats": []
 		},
 		{
-			"slug": "mount-mossbeak-hunter",
-			"name": "MOUNT: Mossbeak Hunter",
-			"wiki": "MOUNT: Mossbeak Hunter",
+			"slug": "mount-mossbreak-hunter",
+			"name": "MOUNT: Mossbreak Hunter",
+			"wiki": "MOUNT: Mossbreak Hunter",
 			"icon": "MOUNT: Mossbeak Hunter.png",
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "Grants access to a visual mount variant",
-			"extract": "MOUNT: mossbeak hunter is a vestige that grants the player the mossbeak hunter mount when used. It can be bought from Death's Exchange for 2000 soul fragments.",
+			"extract": "MOUNT: mossbreak hunter is a vestige that grants the player the mossbreak hunter mount when used. It can be bought from Death's Exchange for 2000 soul fragments.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -65880,7 +66113,7 @@
 			"icon": "Mystic Fibres.png",
 			"type": "Basic Material",
 			"category": "cloth",
-			"description": "Dropped by Zamorak magi<sup class=\"noprint\">&#91;<span class=\"fact-text\" title=\"supposed to be Mages\">sic</span>&#93;</sup>. Can be spun into thread at a spinning wheel.",
+			"description": "Dropped by Zamorak magi. Can be spun into thread at a spinning wheel.",
 			"extract": "Mystic fibres are found by opening Zamorakian mage pack and are used to create mystic thread.",
 			"recipes": [],
 			"usedIn": [
@@ -65901,12 +66134,12 @@
 			],
 			"shops": [],
 			"unlockedBy": [],
-			"weight": 0.6,
+			"weight": 0.1,
 			"power": null,
 			"stats": [
 				{
 					"label": "Stack size",
-					"value": "50"
+					"value": "99"
 				}
 			]
 		},
@@ -66849,6 +67082,11 @@
 					"source": "Buried Treasure (Brynmoor)",
 					"qty": "10–20",
 					"rarity": "12.5/100"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "50–70",
+					"rarity": "1/4"
 				}
 			],
 			"shops": [],
@@ -67548,7 +67786,7 @@
 			"type": null,
 			"category": "buildings",
 			"description": "",
-			"extract": "The oak farming plot can be used to grow plants with seeds through the Farming skill. To obtain this plot recipe, collect oak logs.\nIt is the best plot to grow plants found within the Ghornfell region, like the following:\n\nDwellberry seeds\nKwuarm seeds\nOnion seeds\nSnapdragon seeds\nSwamp weed seeds\nToadflax seeds\nTomato seeds",
+			"extract": "The oak farming plot can be used to grow plants with seeds through the Farming skill. To obtain this plot recipe, collect oak logs.\nA bronze spade or higher is required to dig in willow farming plots.\nIt is the best plot to grow plants found within the Ghornfell region, like the following:\n\nDwellberry seeds\nKwuarm seeds\nOnion seeds\nSnapdragon seeds\nSwamp weed seeds\nToadflax seeds\nTomato seeds",
 			"recipes": [
 				{
 					"outputLabel": "Oak Farming Plot",
@@ -68606,7 +68844,7 @@
 			"type": "Raw Ingredient",
 			"category": "food",
 			"description": "A vegetable that often brings a tear to the eye.",
-			"extract": "Onions are a Power Level 3 raw ingredient, which means they can be cooked at a campfire or grill into fried onions starting at Cooking level 27, and not burnt into burnt onion at level 41. They can also be used to make lesser Focused Cooking potion, bowl of onions, and potted onion. They can be collected from onion (plant) in Fractured Plains, and Farmed from onion (Farming) grown from onion seeds. Onions can be used to make compost.",
+			"extract": "Onions are a Power Level 3 raw ingredient, which means they can be cooked at a campfire or grill into fried onions starting at Cooking level 27, and not burnt into burnt onion at level 41. They can also be used to make lesser Focused Cooking potion, bowl of onions, and potted onion. They can be collected from onion (plant) in Fractured Plains, and Farmed from onion (Farming) grown from onion seeds. Onions can be used to make compost.\n\n",
 			"recipes": [],
 			"usedIn": [
 				"bowl-of-onions",
@@ -68844,7 +69082,7 @@
 			"type": "Basic Item",
 			"category": "jewellery",
 			"description": "One of three emblem keys required to unlock a statue.",
-			"extract": "An opal emblem is a quest item used in Statues of Saradomin. This emblem is found at the western side of the Whispering Swamp.",
+			"extract": "An opal emblem is a quest item used in Statues of Saradomin. This emblem is found at the western side of the Whispering Swamp.\n\n",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -69925,7 +70163,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "Although damaged beyond repair, this staff seethes with ancient power. Perhaps you could learn something from it.",
-			"extract": "Parts of a sinister-looking staff is a vestige that unlocks creation of the draconic staff. This is found in a chest, located north-west of the Skeklac Kara vault's entrance.",
+			"extract": "Parts of a sinister-looking staff is a vestige that unlocks creation of the draconic staff. This is found in a chest, located north-west of the Skeklac Kara vault's entrance.\n\n",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [
@@ -70002,7 +70240,7 @@
 			"type": "Pattern",
 			"category": "patterns",
 			"description": "",
-			"extract": "The fell cape pattern is a blueprint for making the Fellhollow cape. This blueprint is found in Hope's Fall near the middle part of the dragon skeleton. Players will need to cast Rocksplosion or mine the stone boulders to get to the chest.",
+			"extract": "The fell cape pattern is a blueprint for making the Fellhollow cape. This blueprint is found in Hope's Fall near the middle part of the dragon skeleton. Players will need to cast Rocksplosion or mine the stone boulders to get to the chest.\n\n",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -75618,7 +75856,7 @@
 			"type": null,
 			"category": "buildings",
 			"description": "",
-			"extract": "The postbox is a buildable scenery item found in the \"Crafting\" building tab, given to players as a reward for completing the Letters for the Dead secondary quest. The post box can also give you a letter. Delivering the letter gives you 50 soul fragments.",
+			"extract": "The postbox is a buildable scenery item found in the \"Crafting\" building tab, given to players as a reward for completing the Letters for the Dead secondary quest. The post box can also give you a letter. Delivering the letter gives you 50 soul fragments.\n\n",
 			"recipes": [
 				{
 					"outputLabel": "Postbox",
@@ -75680,7 +75918,7 @@
 			"type": "Raw Ingredient",
 			"category": "food",
 			"description": "Definitely not a carrot.",
-			"extract": "Potatoes are a Power Level 2 raw ingredient, which means they can be cooked at a campfire or grill into baked potato starting at Cooking level 12, and not burnt into burnt potato at level 27. They can be gathered from potato (plant)s in Bramblemead Valley and potato (Farming) from potato seeds. Potatoes can be used to make compost.",
+			"extract": "Potatoes are a Power Level 2 raw ingredient, which means they can be cooked at a campfire or grill into baked potato starting at Cooking level 12, and not burnt into burnt potato at level 27. They can be gathered from potato (plant)s in Bramblemead Valley and potato (Farming) from potato seeds. Potatoes can be used to make compost.\n\n",
 			"recipes": [],
 			"usedIn": [
 				"baked-potato",
@@ -77001,7 +77239,7 @@
 			"type": "Raw Ingredient",
 			"category": "food",
 			"description": "More treat than trick. Can be cooked by itself or used as an ingredient in cooking meals.",
-			"extract": "Pumpkins are a Power Level 4 raw ingredient, which means they can be cooked at a campfire or grill into roast pumpkin starting at Cooking level 41, and not burnt into burnt pumpkin at level 50. They can be gathered from pumpkin (plant)s in Fellhollow and Dowdun Reach and Farmed from Pumpkin (Farming) grown from pumpkin seeds. Pumpkins can not be used as an item in a compost bin, however can be used in a super compost bin.",
+			"extract": "Pumpkins are a Power Level 4 raw ingredient, which means they can be cooked at a campfire or grill into roast pumpkin starting at Cooking level 41, and not burnt into burnt pumpkin at level 50. They can be gathered from pumpkin (plant)s in Fellhollow and Dowdun Reach and Farmed from Pumpkin (Farming) grown from pumpkin seeds. Pumpkins can not be used as an item in a compost bin, however can be used in a super compost bin.\n\n",
 			"recipes": [],
 			"usedIn": [
 				"burnt-pumpkin",
@@ -77253,6 +77491,11 @@
 					"source": "Chest (Dowdun Reach)",
 					"qty": "1",
 					"rarity": "1.1/100"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "1–2",
+					"rarity": "1/8"
 				}
 			],
 			"shops": [],
@@ -79195,7 +79438,7 @@
 			"type": "Food",
 			"category": "food",
 			"description": "Your mouth waters just looking at it.",
-			"extract": "Raw monkfish is a power level 7 food that can be captured at net fishing spots in the Umbral Sands region. Monkfish are so-called on Ashenfall due to the goddess Elidinis. The Moon Garou, having never seen a monk, adopted the name after the goddess herself named them.",
+			"extract": "Raw monkfish is a power level 7 food that can be captured at net fishing spots in the Umbral Sands region.",
 			"recipes": [],
 			"usedIn": [
 				"burnt-monkfish",
@@ -79601,7 +79844,7 @@
 			"type": "Armour",
 			"category": "capes",
 			"description": "A Red cape, stitched in an ancient desert style. Its patterns reflect a long-standing mastery of life beneath the scorching sun.",
-			"extract": "The red desert cape is a cape that takes no materials to craft, but is not currently in the game. The recipe is unlocked after studying the red memory of Menaphos vestige, which is also currently unavailable in-game.",
+			"extract": "The red desert cape is a cape that takes no materials to craft. The recipe is unlocked after studying the red memory of Menaphos vestige, which can be found in chests in Umbral Sands.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -81463,6 +81706,11 @@
 					"source": "Food & Drink Salvage",
 					"qty": "2–3",
 					"rarity": "4.17/100"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "1–2",
+					"rarity": "1/8"
 				}
 			],
 			"shops": [],
@@ -81541,7 +81789,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "The ancient remnants of some sort of armour. Perhaps you could learn something from it.",
-			"extract": "The remnants of a rotting robe is a vestige that unlocks the necromancer's robe top. It is obtained from Death's Exchange for 400 soul fragments.",
+			"extract": "The remnants of a rotting robe is a vestige that unlocks the necromancer's robe top.\n\nThe vestige can be obtained through Death's Exchange for 400 soul fragments.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -82131,14 +82379,14 @@
 			"type": "Trinket",
 			"category": "jewellery",
 			"description": "",
-			"extract": "The ring of recoil is a ring that can be crafted at a jeweler's bench. While equipped, the ring deals percentage of damage received back to attackers. The damage dealt is equal to 50% of the damage taken, rounded up.",
+			"extract": "The ring of recoil is a ring that can be crafted at a jeweler's bench. While equipped, the ring deals percentage of damage received back to attackers. The damage dealt is equal to 50% of the damage taken, rounded up. To unlock the recipe, players must unlock the Cracked Bronze Vanity Mirror.",
 			"recipes": [
 				{
 					"outputLabel": "Ring of Recoil",
 					"outputQty": 1,
 					"requires": {
-						"label": "A Cracked Bronze Vanity Mirror",
-						"slug": "a-cracked-bronze-vanity-mirror"
+						"label": "Cracked Bronze Vanity Mirror",
+						"slug": "cracked-bronze-vanity-mirror"
 					},
 					"skills": [
 						{
@@ -83627,7 +83875,7 @@
 			"type": "Basic Item",
 			"category": "materials",
 			"description": "A mysterious porous rock used as a base for powerful runes.",
-			"extract": "Rune essence can be gathered by mining rune essence stones surrounding the geysers around Ashenfall. Some spawn with rocks on the ground that you can easily gather from. The floating rocks require being hit (most easily with an arrow or an attack from a staff), and they will then fall to the ground to be mined. Alternatively, players can cast Rocksplosion whilst aiming at the floating rocks and can collect rune essence without affecting the pickaxe's durability.\nCollecting rune essence in their inventory for the first time unlocks the rune altar.",
+			"extract": "Rune essence is mainly used to craft runes and other magical items. It can be gathered by mining rune essence stones surrounding the geysers around Ashenfall.\nSome geysers spawn with rocks on the ground that players can easily gather from. Other floating rocks require being hit out of the sky (most easily with an arrow or an attack from a staff), then they will then fall to the ground to be mined. Alternatively, players can cast Rocksplosion whilst aiming at the floating rocks to burst all at once, and can collect rune essence without affecting their pickaxe's durability.\nReceiving rune essence for the first time unlocks the rune altar.",
 			"recipes": [],
 			"usedIn": [
 				"air-rune",
@@ -83938,6 +84186,16 @@
 					"source": "Buried Treasure (Brynmoor)",
 					"qty": "6–12",
 					"rarity": "Always"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "10–20",
+					"rarity": "1/8"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "10–20",
+					"rarity": "1/17.8"
 				}
 			],
 			"shops": [],
@@ -85359,6 +85617,16 @@
 					"source": "Runite Ore Node",
 					"qty": "1",
 					"rarity": "Always"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "3–9",
+					"rarity": "1/8"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "3–9",
+					"rarity": "1/17.8"
 				}
 			],
 			"shops": [],
@@ -85795,7 +86063,7 @@
 			"type": "Basic Item",
 			"category": "jewellery",
 			"description": "One of three emblem keys required to unlock a statue.",
-			"extract": "A sapphire emblem is a quest item used in Statues of Saradomin. This emblem is found at the north-eastern side of the Stormtouched Highlands.",
+			"extract": "A sapphire emblem is a quest item used in Statues of Saradomin. This emblem is found at the north-eastern side of the Stormtouched Highlands.\n\n",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -86286,7 +86554,7 @@
 			"type": "Basic Item",
 			"category": "materials",
 			"description": "It looks as if it is meant to sit on top of something.",
-			"extract": "The Saradomin symbol is an item found during the Withering Heights quest and is used to repair the Saradomin altar, which is one of the 4 altars holding up the barrier around Emberwood Village. It is located in the water just below the altar, propped up against a rock.",
+			"extract": "The Saradomin symbol is an item found during the Withering Heights quest and is used to repair the Saradomin altar, which is one of the 4 altars holding up the barrier around Emberwood Village. It is located in the water just below the altar, propped up against a rock.\n\n",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -87059,7 +87327,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "Perhaps you could learn from it<sup class=\"noprint\">&#91;<span class=\"fact-text\" title=\"no full stop\">sic</span>&#93;</sup>",
-			"extract": "The selenic veil is a vestige that unlocks the Lunar Garou hat.",
+			"extract": "The selenic veil is a vestige that unlocks the Lunar Garou hat.\n\nThe vestige can be obtained through Domri - The Merchant for 2500 Garou Chit.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -87791,7 +88059,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "A piece of the broken Dreaming Stone in the Dowdun Reach nexus. It whispers if you listen closely.",
-			"extract": "A shard of the Dreaming Stone is a quest item that is heavily featured in the Black Knight's Fortress. It is used to repair the Dreaming Stone when you have collected thirteen of them.",
+			"extract": "A shard of the Dreaming Stone is a quest item that is heavily featured in the Black Knight's Fortress. It is used to repair the Dreaming Stone when you have collected thirteen of them.\n\n",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -90440,7 +90708,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "The ancient remnants of some sort of armour. Perhaps you could learn something from it.",
-			"extract": "The simply splendid feather is a vestige that unlocks the ranger hat.",
+			"extract": "The simply splendid feather is a vestige that unlocks the ranger hat.\n\nThe vestige can be obtained through Death's Exchange for 200 soul fragments.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -91896,7 +92164,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "The ancient remnants of some sort of armour. Perhaps you could learn something from it.",
-			"extract": "The slightly chaffing chestguard is a vestige that unlocks the ranger tunic.",
+			"extract": "The slightly chaffing chestguard is a vestige that unlocks the ranger tunic.\n\nThe vestige can be obtained through Death's Exchange for 400 soul fragments.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -94161,7 +94429,7 @@
 			"type": "Resource",
 			"category": "materials",
 			"description": "A sweet-smelling herb used in restorative potions.",
-			"extract": "Snapdragon is a herb that can be found by harvesting the Snapdragon plant in the Bloodblight Swamp or can be bought from Domri - The Merchant for 12 garou chits.",
+			"extract": "Snapdragon is a herb that can be found by harvesting the Snapdragon plant in the Bloodblight Swamp or can be bought from Domri - The Merchant for 12 garou chits.\n\n",
 			"recipes": [],
 			"usedIn": [
 				"cooling-evasive-infusion",
@@ -94403,7 +94671,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "A sphere that seems to be playing Menu Chill. Perhaps you could learn from it.",
-			"extract": "The softly vibrating orb is a vestige that unlocks the creation of the amulet of Magic.",
+			"extract": "The softly vibrating orb is a vestige that unlocks the creation of the amulet of Magic.\nThe vestige can be obtained through Death's Exchange for 350 soul fragments.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -96819,6 +97087,11 @@
 					"source": "Food & Drink Salvage",
 					"qty": "2–3",
 					"rarity": "4.17/100"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "1–2",
+					"rarity": "1/5"
 				}
 			],
 			"shops": [],
@@ -98611,7 +98884,7 @@
 			"type": "Tool",
 			"category": "tools",
 			"description": "A robust Spade made from Steel.<br /> <br />Used to clear farming plots.",
-			"extract": "A steel spade is a power level 3 spade that can be crafted at a blacksmith's bench. When used to dig a farming plot, players will use 10 stamina and progress by 60% to the next plot clearing stage. Therefore, it will take two digs to progress one stage.",
+			"extract": "A steel spade is a power level 3 spade that can be crafted at a blacksmith's bench. When used to dig a farming plot, players will use 10 stamina and progress by 60% to the next plot clearing stage. Therefore, it will take two digs to progress one stage.\nA steel spade is required to dig in willow farming plots.",
 			"recipes": [
 				{
 					"outputLabel": "Steel Spade",
@@ -100056,7 +100329,7 @@
 			"type": "Basic Item",
 			"category": "capes",
 			"description": "A cloak depicting ancient monsters and a mage's fury.",
-			"extract": "The stormtouched cape is a craftable armour piece.  The recipe is unlocked by acquiring the stormtouched cape pattern, located at the top of the Highlands Castle in the Stormtouched Highlands.",
+			"extract": "The stormtouched cape is a craftable armour piece.  The recipe is unlocked by acquiring the stormtouched cape pattern, located at the top of the Highlands Castle in the Stormtouched Highlands.\n\n",
 			"recipes": [
 				{
 					"outputLabel": "Stormtouched Cape",
@@ -100170,7 +100443,13 @@
 				}
 			],
 			"usedIn": [],
-			"drops": [],
+			"drops": [
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "1–2",
+					"rarity": "1/8"
+				}
+			],
 			"shops": [],
 			"unlockedBy": [],
 			"weight": 1,
@@ -100844,7 +101123,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "Perhaps you could learn from it<sup class=\"noprint\">&#91;<span class=\"fact-text\" title=\"no full stop\">sic</span>&#93;</sup>",
-			"extract": "The sun-bleached head wrap is a vestige that unlocks the desert hood.",
+			"extract": "The sun-bleached head wrap is a vestige that unlocks the desert hood.\n\nThe vestige can be obtained through Domri - The Merchant for 2500 Garou Chit.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -100868,7 +101147,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "Perhaps you could learn from it<sup class=\"noprint\">&#91;<span class=\"fact-text\" title=\"no full stop\">sic</span>&#93;</sup>",
-			"extract": "The sun-bleached leggings is a vestige that unlocks the desert robe legs.",
+			"extract": "The sun-bleached leggings is a vestige that unlocks the desert robe legs.\n\nThe vestige can be obtained through Iasadair - The Merchant for 5000 Garou Chit.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -100892,7 +101171,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "Perhaps you could learn from it<sup class=\"noprint\">&#91;<span class=\"fact-text\" title=\"no full stop\">sic</span>&#93;</sup>",
-			"extract": "The sun-bleached vest is a vestige that unlocks the desert robes.",
+			"extract": "The sun-bleached vest is a vestige that unlocks the desert robes.\n\nThe vestige can be obtained through Beartach - The Merchant for 7500 Garou Chit.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -101866,7 +102145,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "Barely heavier than a feather, but worn away by time's cruel march. Still, perhaps you could learn something from it.",
-			"extract": "Suspiciously light tattered boots is a consumable item that unlocks creation of the leggings of lightness.",
+			"extract": "Suspiciously light tattered boots is a consumable item that unlocks creation of the leggings of lightness.\n\n",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [
@@ -101973,7 +102252,7 @@
 			"type": "Basic Material",
 			"category": "materials",
 			"description": "It's sticky!",
-			"extract": "Swamp tar is obtained by gathering from the ground in the Whispering Swamp, and is used inside a kiln to create adhesive.",
+			"extract": "Swamp tar is obtained by gathering from the ground in the Whispering Swamp, and is used inside a kiln to create adhesive.\n\n",
 			"recipes": [],
 			"usedIn": [
 				"adhesive",
@@ -102110,7 +102389,7 @@
 			"type": "Basic Item",
 			"category": "materials",
 			"description": "A hardy plant found in swamps and caves.",
-			"extract": "Swamp weed can be harvested by the swamp weed plant, which mostly spawns in and around the poisonous waters in the Bloodblight Swamp and inside the Kletterbuja Kara vault. It can be used to create swamp thread.",
+			"extract": "Swamp weed can be harvested by the swamp weed plant, which mostly spawns in and around the poisonous waters in the Bloodblight Swamp and inside the Kletterbuja Kara vault. It can be used to create swamp thread.\n\n",
 			"recipes": [],
 			"usedIn": [
 				"lesser-antipoison-potion",
@@ -102646,7 +102925,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "The ancient remnants of some sort of armour. Perhaps you could learn something from it.",
-			"extract": "Tastefully torn tights is a power level 5 vestige that can be purchased with 350 soul fragments at Death's Exchange. Players will need to study this to receive the recipe for the ranger tights.",
+			"extract": "Tastefully torn tights is a vestige that unlocks the ranger tights.\n\nThe vestige can be obtained through Death's Exchange for 300 soul fragments.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -103027,7 +103306,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "A sealed scroll containing dark secrets.",
-			"extract": "The Binding of Ib is a quest item obtained behind Blightscale. It is one of three scrolls required to complete What Remains is Written. The scroll is found in the eastern part of Silverthorn Keep, below the cliffs by large bones.",
+			"extract": "The Binding of Ib is a quest item obtained behind Blightscale. It is one of three scrolls required to complete What Remains is Written. The scroll is found in the eastern part of Silverthorn Keep, below the cliffs by large bones.\n\n",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -103050,7 +103329,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "A religious tome discussing the god of rebellion.",
-			"extract": "The Importance of Chaos is one of the five tomes in What Remains is Written. It is obtained north of the ominous gateway leading to Dowdun Reach. It's lying on a small incline on the south side of a small tower amidst a gateway ruin. It is on the south-western end of the ruin.\nThe ruin is surrounded by withered scenery and power-level 5 monsters.",
+			"extract": "The Importance of Chaos is one of the five tomes in What Remains is Written. It is obtained north of the ominous gateway leading to Dowdun Reach. It's lying on a small incline on the south side of a small tower amidst a gateway ruin. It is on the south-western end of the ruin.\nThe ruin is surrounded by withered scenery and power-level 5 monsters.\n\n",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -103073,7 +103352,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "A badly burned book wrapped in leather hide... at least you hope it's leather.",
-			"extract": "The Pride of the Avernic is one of five books needed to collect for What Remains is Written. It is located in the far eastern ruin in Silverthorn Keep next to an archery target on some boxes.",
+			"extract": "The Pride of the Avernic is one of five books needed to collect for What Remains is Written. It is located in the far eastern ruin in Silverthorn Keep next to an archery target on some boxes.\n\n",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -103120,7 +103399,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "A sinister book of truly nasty curses.",
-			"extract": "The Wrath of Baba Potterington is one of five books in in the quest What Remains is Written that players must find to return to Abraxus The Eternal. The book is found in the crumbled stone house near a nature grove north of the 'sil' of Silverthorn Keepon the map. There is a chest nearby, slightly to the north.",
+			"extract": "The Wrath of Baba Potterington is one of five books in in the quest What Remains is Written that players must find to return to Abraxus The Eternal. The book is found in the crumbled stone house near a nature grove north of the 'sil' of Silverthorn Keepon the map. There is a chest nearby, slightly to the north.\n\n",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -103439,7 +103718,7 @@
 			"type": "Resource",
 			"category": "materials",
 			"description": "A spicy tasting herb used in resistance potions.",
-			"extract": "Toadflax is found by harvesting the Toadflax plants in the Bloodblight Swamp and can be bought from Domri - The Merchant for 12 garou chits.",
+			"extract": "Toadflax is found by harvesting the Toadflax plants in the Bloodblight Swamp and can be bought from Domri - The Merchant for 12 garou chits.\n\n",
 			"recipes": [],
 			"usedIn": [
 				"cooling-arcane-infusion",
@@ -103831,7 +104110,43 @@
 			"extract": "Tome of Agility - Vol 1 is a skill tome. It can be received occasionally from chests. When read, the tome gives 100 Agility experience.",
 			"recipes": [],
 			"usedIn": [],
-			"drops": [],
+			"drops": [
+				{
+					"source": "Chest (Skeklac Kara)",
+					"qty": "1",
+					"rarity": "1/119"
+				},
+				{
+					"source": "Chest (Takla Kara)",
+					"qty": "1",
+					"rarity": "1/119"
+				},
+				{
+					"source": "Chest (Chaktan Kara)",
+					"qty": "1",
+					"rarity": "1/119"
+				},
+				{
+					"source": "Chest (Kletterbuja Kara)",
+					"qty": "1",
+					"rarity": "1/119"
+				},
+				{
+					"source": "Chest (Vertentis Kara)",
+					"qty": "1",
+					"rarity": "1/119"
+				},
+				{
+					"source": "Chest (Crasorak Kara)",
+					"qty": "1",
+					"rarity": "1/119"
+				},
+				{
+					"source": "Chest (Thishepen Kara)",
+					"qty": "1",
+					"rarity": "1/119"
+				}
+			],
 			"shops": [],
 			"unlockedBy": [],
 			"weight": 2,
@@ -103849,7 +104164,13 @@
 			"extract": "Tome of Agility - Vol 2 is a skill tome that can be found occasionally through gameplay. When read, the tome gives 400 Agility experience.",
 			"recipes": [],
 			"usedIn": [],
-			"drops": [],
+			"drops": [
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "1",
+					"rarity": "1/26.5"
+				}
+			],
 			"shops": [],
 			"unlockedBy": [],
 			"weight": 2,
@@ -103876,37 +104197,37 @@
 				{
 					"source": "Chest (Skeklac Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Takla Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Chaktan Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Kletterbuja Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Vertentis Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Crasorak Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Thishepen Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				}
 			],
 			"shops": [],
@@ -103951,6 +104272,11 @@
 					"source": "Spectral Chest",
 					"qty": "1",
 					"rarity": "1/11"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "1",
+					"rarity": "1/26.5"
 				}
 			],
 			"shops": [],
@@ -103974,37 +104300,37 @@
 				{
 					"source": "Chest (Skeklac Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Takla Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Chaktan Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Kletterbuja Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Vertentis Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Crasorak Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Thishepen Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				}
 			],
 			"shops": [],
@@ -104054,6 +104380,11 @@
 					"source": "Spectral Chest",
 					"qty": "1",
 					"rarity": "1/11"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "1",
+					"rarity": "1/26.5"
 				}
 			],
 			"shops": [],
@@ -104077,37 +104408,37 @@
 				{
 					"source": "Chest (Skeklac Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Takla Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Chaktan Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Kletterbuja Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Vertentis Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Crasorak Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Thishepen Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Restless Ghosts Reward Pack",
@@ -104152,6 +104483,11 @@
 					"source": "Spectral Chest",
 					"qty": "1",
 					"rarity": "1/11"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "1",
+					"rarity": "1/26.5"
 				}
 			],
 			"shops": [],
@@ -104171,7 +104507,43 @@
 			"extract": "The Tome of Farming - Vol 1 is a tier 1 tome that rewards the player 100 Farming experience.",
 			"recipes": [],
 			"usedIn": [],
-			"drops": [],
+			"drops": [
+				{
+					"source": "Chest (Skeklac Kara)",
+					"qty": "1",
+					"rarity": "1/119"
+				},
+				{
+					"source": "Chest (Takla Kara)",
+					"qty": "1",
+					"rarity": "1/119"
+				},
+				{
+					"source": "Chest (Chaktan Kara)",
+					"qty": "1",
+					"rarity": "1/119"
+				},
+				{
+					"source": "Chest (Kletterbuja Kara)",
+					"qty": "1",
+					"rarity": "1/119"
+				},
+				{
+					"source": "Chest (Vertentis Kara)",
+					"qty": "1",
+					"rarity": "1/119"
+				},
+				{
+					"source": "Chest (Crasorak Kara)",
+					"qty": "1",
+					"rarity": "1/119"
+				},
+				{
+					"source": "Chest (Thishepen Kara)",
+					"qty": "1",
+					"rarity": "1/119"
+				}
+			],
 			"shops": [],
 			"unlockedBy": [],
 			"weight": 2,
@@ -104219,6 +104591,11 @@
 					"source": "Spectral Chest",
 					"qty": "1",
 					"rarity": "1/11"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "1",
+					"rarity": "1/26.5"
 				}
 			],
 			"shops": [],
@@ -104243,7 +104620,43 @@
 			"extract": "Tome of Fishing - Vol 1 is a skill tome that rewards the player 100 Fishing experience. Players can receive this tome through completing the quest, Shrimp Catcher.",
 			"recipes": [],
 			"usedIn": [],
-			"drops": [],
+			"drops": [
+				{
+					"source": "Chest (Skeklac Kara)",
+					"qty": "1",
+					"rarity": "1/119"
+				},
+				{
+					"source": "Chest (Takla Kara)",
+					"qty": "1",
+					"rarity": "1/119"
+				},
+				{
+					"source": "Chest (Chaktan Kara)",
+					"qty": "1",
+					"rarity": "1/119"
+				},
+				{
+					"source": "Chest (Kletterbuja Kara)",
+					"qty": "1",
+					"rarity": "1/119"
+				},
+				{
+					"source": "Chest (Vertentis Kara)",
+					"qty": "1",
+					"rarity": "1/119"
+				},
+				{
+					"source": "Chest (Crasorak Kara)",
+					"qty": "1",
+					"rarity": "1/119"
+				},
+				{
+					"source": "Chest (Thishepen Kara)",
+					"qty": "1",
+					"rarity": "1/119"
+				}
+			],
 			"shops": [],
 			"unlockedBy": [],
 			"weight": 2,
@@ -104286,6 +104699,11 @@
 					"source": "Spectral Chest",
 					"qty": "1",
 					"rarity": "1/11"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "1",
+					"rarity": "1/26.5"
 				}
 			],
 			"shops": [],
@@ -104314,37 +104732,37 @@
 				{
 					"source": "Chest (Skeklac Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Takla Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Chaktan Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Kletterbuja Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Vertentis Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Crasorak Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Thishepen Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				}
 			],
 			"shops": [],
@@ -104389,6 +104807,11 @@
 					"source": "Spectral Chest",
 					"qty": "1",
 					"rarity": "1/11"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "1",
+					"rarity": "1/26.5"
 				}
 			],
 			"shops": [],
@@ -104412,37 +104835,37 @@
 				{
 					"source": "Chest (Skeklac Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Takla Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Chaktan Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Kletterbuja Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Vertentis Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Crasorak Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Thishepen Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Restless Ghosts Reward Pack",
@@ -104492,6 +104915,11 @@
 					"source": "Spectral Chest",
 					"qty": "1",
 					"rarity": "1/11"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "1",
+					"rarity": "1/26.5"
 				}
 			],
 			"shops": [],
@@ -104515,37 +104943,37 @@
 				{
 					"source": "Chest (Skeklac Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Takla Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Chaktan Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Kletterbuja Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Vertentis Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Crasorak Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Thishepen Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				}
 			],
 			"shops": [],
@@ -104585,6 +105013,11 @@
 					"source": "Spectral Chest",
 					"qty": "1",
 					"rarity": "1/11"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "1",
+					"rarity": "1/26.5"
 				}
 			],
 			"shops": [],
@@ -104608,37 +105041,37 @@
 				{
 					"source": "Chest (Skeklac Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Takla Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Chaktan Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Kletterbuja Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Vertentis Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Crasorak Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Thishepen Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				}
 			],
 			"shops": [],
@@ -104678,6 +105111,11 @@
 					"source": "Spectral Chest",
 					"qty": "1",
 					"rarity": "1/11"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "1",
+					"rarity": "1/26.5"
 				}
 			],
 			"shops": [],
@@ -104701,37 +105139,37 @@
 				{
 					"source": "Chest (Skeklac Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Takla Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Chaktan Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Kletterbuja Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Vertentis Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Crasorak Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Thishepen Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Restless Ghosts Reward Pack",
@@ -104781,6 +105219,11 @@
 					"source": "Spectral Chest",
 					"qty": "1",
 					"rarity": "1/11"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "1",
+					"rarity": "1/26.5"
 				}
 			],
 			"shops": [],
@@ -104910,37 +105353,37 @@
 				{
 					"source": "Chest (Skeklac Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Takla Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Chaktan Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Kletterbuja Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Vertentis Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Crasorak Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Chest (Thishepen Kara)",
 					"qty": "1",
-					"rarity": "1/69.9"
+					"rarity": "1/119"
 				},
 				{
 					"source": "Restless Ghosts Reward Pack",
@@ -104985,6 +105428,11 @@
 					"source": "Spectral Chest",
 					"qty": "1",
 					"rarity": "1/11"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "1",
+					"rarity": "1/26.5"
 				}
 			],
 			"shops": [],
@@ -105059,7 +105507,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "A piece of cloth torn from one of Dowdun Reach's tapestries.",
-			"extract": "The torn tapestry is a vestige that is found in a buried chest in Dowdun Reach. Upon studying the vestige, players can create the Dowdun Reach cape.",
+			"extract": "The torn tapestry is a vestige that is found in a buried chest in Dowdun Reach. Upon studying the vestige, players can create the Dowdun Reach cape.\n\n",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [
@@ -105600,7 +106048,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "Perhaps you could learn from it<sup class=\"noprint\">&#91;<span class=\"fact-text\" title=\"no full stop\">sic</span>&#93;</sup>",
-			"extract": "The Twtiching Antenna is a vestige that unlocks the kalphite carapace helmet.",
+			"extract": "The Twtiching Antenna is a vestige that unlocks the kalphite carapace helmet.\n\nThe vestige can be obtained through Iasadair - The Merchant for 2500 Garou Chit.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -106460,7 +106908,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "Manktongue asked for an Undead Chicken.",
-			"extract": "Undead chickens  is a quest item required for Animal Magnetism. It was meant to be released with Fellhollow as part of the 0.10 update, but instead, one was released following the 0.11.1 update, which ends up being an ingredient for the Animal Magnetism to create the Ava's accumulator.",
+			"extract": "Undead chickens  is a quest item required for Animal Magnetism. It was meant to be released with Fellhollow as part of the 0.10 update, but instead, one was released following the 0.11.1 update, which ends up being an ingredient for the Animal Magnetism to create the Ava's accumulator.\n\n",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -107353,7 +107801,7 @@
 			"type": "Food",
 			"category": "food",
 			"description": "All of the calories, none of the guilt.",
-			"extract": "Vegan fryup is a consumable food item that provides 70 health and 70 sustenance. It is made with baked potato, fried cabbage, and grilled tomatoes in a stone range or a cooking range, however a player must interact with a stone range first to learn the recipe.",
+			"extract": "Vegan fryup is a consumable food item that provides 70 health and 70 sustenance. It is made with baked potato, fried cabbage, and grilled tomatoes in a stone range or a cooking range; however, a player must interact with a stone range and have grilled tomatoes in their inventory first to learn the recipe.",
 			"recipes": [
 				{
 					"outputLabel": "Vegan Fryup",
@@ -107606,7 +108054,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "Proof of your triumph over the dragon general. It's dripping blood everywhere, you should probably get rid of it...",
-			"extract": "Velgar's head is a unique item obtained by killing Velgar at the end of Dragon Slayer. The player can hand the head over to the Wise Old Man to receive a noxious draconic visage, anti-dragon shield, and Tome of the Dragon Slayer, along with the recipe to make the dragonblight shield.",
+			"extract": "Velgar's head is a unique item obtained by killing Velgar at the end of Dragon Slayer. The player can hand the head over to the Wise Old Man to receive a Noxious Draconic Visage, anti-dragon shield, and Tome of the Dragon Slayer, along with the recipe to make the Dragonblight shield.\n\nAfter completing Dragon Slayer and defeating Velgar again, players can exchange additional Velgar's Head with the Wise Old Man for a Noxious Draconic Visage.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [
@@ -108860,7 +109308,7 @@
 			"type": "Basic Material",
 			"category": "materials",
 			"description": "Beautiful feather used to power the Gyrhawk Amulet, which grants additional experience for exploration.",
-			"extract": "Warped feathers is a basic Agility material that can be found from Agility courses reward packs. Warped feathers can create the gyrhawk amulet along with coarse thread. However, players will need more feathers to charge the amulet to gain Agility experience whilst running, jumping, and dodging.",
+			"extract": "Warped feathers are a basic Agility material that can be found from Agility courses reward packs.\nWarped feathers (along with coarse thread) can create the gyrhawk amulet. Feathers held in the inventory will also slowly be consumed by the amulet in exchange for increased Agility experience whilst running, jumping, and dodging.",
 			"recipes": [],
 			"usedIn": [
 				"agility-flag",
@@ -109157,6 +109605,11 @@
 					"source": "Buried Treasure (Brynmoor)",
 					"qty": "10–20",
 					"rarity": "12.5/100"
+				},
+				{
+					"source": "Chest (Scorned Wilderness)",
+					"qty": "50–70",
+					"rarity": "1/4"
 				}
 			],
 			"shops": [],
@@ -111017,6 +111470,7 @@
 			"extract": "Weeds are a Farming item, dug from Farming patches when nothing is growing on them. Players will need a spade to harvest this item, and can place it into a compost bin to convert to compost.",
 			"recipes": [],
 			"usedIn": [
+				"medium-45-roof",
 				"plant-cure",
 				"weak-focused-farming-potion"
 			],
@@ -111121,7 +111575,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "You can feel it pulling away from you. Perhaps you could learn from it.",
-			"extract": "The weighted training band is a consumable item that unlocks creation of the amulet of strength.",
+			"extract": "The weighted training band is a consumable item that unlocks creation of the amulet of strength.\nThe vestige can be obtained through Death's Exchange for 350 soul fragments.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -111210,6 +111664,7 @@
 			"usedIn": [
 				"bag-of-flour",
 				"dwellberry-crunchies",
+				"glorious-cake",
 				"lesser-focused-farming-potion",
 				"redberry-crunchies",
 				"scarecrow-decoration",
@@ -111335,7 +111790,7 @@
 			"type": "Basic Item",
 			"category": "capes",
 			"description": "A cloak that makes you shiver, even as it protects against the cold.",
-			"extract": "The whispering cape is a craftable armour piece.  The recipe is unlocked by acquiring the Whispering Cape Pattern, found in a chest near the waterfall in the Whispering Swamp.",
+			"extract": "The whispering cape is a craftable armour piece.  The recipe is unlocked by acquiring the Whispering Cape Pattern, found in a chest near the waterfall in the Whispering Swamp. \n\n",
 			"recipes": [
 				{
 					"outputLabel": "Whispering Cape",
@@ -112438,7 +112893,7 @@
 			"type": null,
 			"category": "buildings",
 			"description": "",
-			"extract": "The willow farming plot can be used to grow plants with seeds through the Farming skill. To obtain the recipe, you must interact with the crafting table after obtaining willow logs.\nIt is the best farming plot to plant the following: \n\nAvantoe seeds\nCadavaberry seeds\nCorpse cotton seeds\nIrit seeds\nPumpkin seeds\nWatermelon seeds",
+			"extract": "The willow farming plot can be used to grow plants with seeds through the Farming skill. To obtain the recipe, you must interact with the crafting table after obtaining willow logs.\nA steel spade or higher is required to dig in willow farming plots.\nIt is the best farming plot to plant the following: \n\nAvantoe seeds\nCadavaberry seeds\nCorpse cotton seeds\nIrit seeds\nPumpkin seeds\nWatermelon seeds",
 			"recipes": [
 				{
 					"outputLabel": "Willow Farming Plot",
@@ -113922,7 +114377,7 @@
 			"type": "Tool",
 			"category": "tools",
 			"description": "A rudimentary spade made from Ash wood.<br /><br />Used to clear farming plots.",
-			"extract": "A wooden spade is a power level 1 spade that can be crafted at a crafting table. When used to dig a farming plot, players will use 10 stamina and progress by 20% to the next plot clearing stage. Therefore, it will take five digs to progress one stage.",
+			"extract": "A wooden spade is a power level 1 spade that can be crafted at a crafting table. When used to dig a farming plot, players will use 10 stamina and progress by 20% to the next plot clearing stage. Therefore, it will take five digs to progress one stage.\nA wooden spade is required to dig in ash farming plots.",
 			"recipes": [
 				{
 					"outputLabel": "Wooden Spade",
@@ -114816,7 +115271,7 @@
 			"type": null,
 			"category": "buildings",
 			"description": "",
-			"extract": "The yew farming plot can be used to grow plants with seeds through the Farming skill.\nNote: The yew farming plot may also be referred to as an Umbral Sands plot.\n\nIt is the best farming plot to plant the following:\n\nbarrel cactus seeds\nbunny cactus seeds\ndesert weed seeds\npipe cactus seeds",
+			"extract": "The yew farming plot can be used to grow plants with seeds through the Farming skill.\nNote: The yew farming plot may also be referred to as an Umbral Sands plot.\nAn adamant spade or higher is required to dig in yew farming plots.\n\nIt is the best farming plot to plant the following:\n\nbarrel cactus seeds\nbunny cactus seeds\ndesert weed seeds\npipe cactus seeds",
 			"recipes": [
 				{
 					"outputLabel": "Yew Farming Plot",

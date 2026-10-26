@@ -1,5 +1,36 @@
 [
 	{
+		"date": "2026-10-26",
+		"added": [
+			{
+				"slug": "cracked-bronze-vanity-mirror",
+				"name": "Cracked Bronze Vanity Mirror"
+			},
+			{
+				"slug": "glorious-cake",
+				"name": "Glorious Cake"
+			},
+			{
+				"slug": "mount-mossbreak-hunter",
+				"name": "MOUNT: Mossbreak Hunter"
+			}
+		],
+		"removed": [
+			"A Cracked Bronze Vanity Mirror",
+			"MOUNT: Mossbeak Hunter"
+		],
+		"changed": [
+			{
+				"slug": "blue-dyad-cape",
+				"name": "Blue Dyad Cape"
+			},
+			{
+				"slug": "medium-45-roof",
+				"name": "Medium 45° Roof"
+			}
+		]
+	},
+	{
 		"date": "2026-10-19",
 		"added": [
 			{
