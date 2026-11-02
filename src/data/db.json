@@ -1,5 +1,5 @@
 {
-	"fetchedAt": "2026-10-26T13:06:08.331Z",
+	"fetchedAt": "2026-11-02T15:55:53.220Z",
 	"categories": [
 		{
 			"slug": "weapons",
@@ -58,8 +58,8 @@
 		{
 			"slug": "materials",
 			"name": "Materials",
-			"count": 352,
-			"craftable": 80
+			"count": 356,
+			"craftable": 83
 		},
 		{
 			"slug": "potions",
@@ -82,14 +82,14 @@
 		{
 			"slug": "crafting-stations",
 			"name": "Crafting Stations",
-			"count": 25,
-			"craftable": 25
+			"count": 28,
+			"craftable": 28
 		},
 		{
 			"slug": "buildings",
 			"name": "Buildings & Decor",
-			"count": 505,
-			"craftable": 505
+			"count": 499,
+			"craftable": 499
 		},
 		{
 			"slug": "seeds",
@@ -112,7 +112,7 @@
 		{
 			"slug": "packs",
 			"name": "Packs & Containers",
-			"count": 39,
+			"count": 40,
 			"craftable": 0
 		},
 		{
@@ -3249,7 +3249,7 @@
 			"slug": "abysmal-whip",
 			"name": "Abysmal Whip",
 			"wiki": "Abysmal Whip",
-			"icon": "Abysmal Whip (Journal).png",
+			"icon": "Abysmal Whip.png",
 			"type": "Melee Weapon",
 			"category": "weapons",
 			"description": "It's... not quite finished.",
@@ -3505,7 +3505,7 @@
 			"slug": "abyssal-whip",
 			"name": "Abyssal Whip",
 			"wiki": "Abyssal Whip",
-			"icon": "Abyssal Whip (Journal).png",
+			"icon": "Abyssal Whip.png",
 			"type": "Melee Weapon",
 			"category": "weapons",
 			"description": "A brutal weapon crafted from the spine of a terrifying Abyssal Demon.",
@@ -3592,11 +3592,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1600"
+					"value": "1,600"
 				},
 				{
 					"label": "Special action",
-					"value": "Abyssal Snare"
+					"value": "Abyssal Snare (50)"
 				},
 				{
 					"label": "Special effect",
@@ -4102,7 +4102,7 @@
 			"type": "Melee Weapon",
 			"category": "weapons",
 			"description": "Short, sharp and to the point.",
-			"extract": "The adamant dagger is a power level 7 one-handed melee weapon.",
+			"extract": "The adamant dagger is a power level 7 one-handed melee weapon that can be crafted on the Blacksmith's Bench after crafting Adamant Bar.",
 			"recipes": [
 				{
 					"outputLabel": "Adamant Dagger",
@@ -4176,11 +4176,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1600"
+					"value": "1,600"
 				},
 				{
 					"label": "Special action",
-					"value": "Lacerate"
+					"value": "Lacerate (25)"
 				}
 			]
 		},
@@ -4327,11 +4327,11 @@
 				},
 				{
 					"label": "Base damage",
-					"value": "168-294"
+					"value": "166 - 291"
 				},
 				{
 					"label": "Block",
-					"value": "44"
+					"value": "66"
 				},
 				{
 					"label": "Combo",
@@ -4339,11 +4339,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1600"
+					"value": "1,600"
 				},
 				{
 					"label": "Special action",
-					"value": "Decimate"
+					"value": "Decimate (50)"
 				}
 			]
 		},
@@ -4417,11 +4417,11 @@
 				},
 				{
 					"label": "Base damage",
-					"value": "126-219"
+					"value": "125 - 216"
 				},
 				{
 					"label": "Block",
-					"value": "44"
+					"value": "66"
 				},
 				{
 					"label": "Combo",
@@ -4429,11 +4429,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1600"
+					"value": "1,600"
 				},
 				{
 					"label": "Special action",
-					"value": "Whirlwind Slash"
+					"value": "Whirlwind Slash (33)"
 				}
 			]
 		},
@@ -4627,7 +4627,7 @@
 			"type": "Melee Weapon",
 			"category": "weapons",
 			"description": "An adamant mace designed to crush your enemies.",
-			"extract": "The adamant mace is a power level 7 one-handed melee weapon.",
+			"extract": "The adamant mace is a power level 7 one-handed melee weapon that can be crafted on the Blacksmith's Bench after crafting a Adamant Bar.",
 			"recipes": [
 				{
 					"outputLabel": "Adamant Mace",
@@ -4689,11 +4689,11 @@
 				},
 				{
 					"label": "Base damage",
-					"value": "114-202"
+					"value": "113 - 200"
 				},
 				{
 					"label": "Block",
-					"value": "30"
+					"value": "66"
 				},
 				{
 					"label": "Combo",
@@ -4701,11 +4701,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1600"
+					"value": "1,600"
 				},
 				{
 					"label": "Special action",
-					"value": "Block Breaker"
+					"value": "Block Breaker (33)"
 				}
 			]
 		},
@@ -5105,7 +5105,7 @@
 			"type": "Melee Weapon",
 			"category": "weapons",
 			"description": "A fast, curved, and very efficient sword.",
-			"extract": "The adamant scimitar is a power level 7 one-handed melee weapon.",
+			"extract": "The adamant scimitar is a power level 7 one-handed melee weapon that can be crafted on the Blacksmith's Bench after crafting a Adamant Bar.",
 			"recipes": [
 				{
 					"outputLabel": "Adamant Scimitar",
@@ -5167,11 +5167,11 @@
 				},
 				{
 					"label": "Base damage",
-					"value": "76-160"
+					"value": "75 - 158"
 				},
 				{
 					"label": "Block",
-					"value": "30"
+					"value": "66"
 				},
 				{
 					"label": "Combo",
@@ -5179,11 +5179,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1600"
+					"value": "1,600"
 				},
 				{
 					"label": "Special action",
-					"value": "Leaping Slash"
+					"value": "Leaping Slash (25)"
 				}
 			]
 		},
@@ -5329,7 +5329,7 @@
 			"type": "Melee Weapon",
 			"category": "weapons",
 			"description": "A reliable blade made of adamant.",
-			"extract": "The adamant sword is a power level 7 one-handed melee weapon.",
+			"extract": "The adamant sword is a power level 7 one-handed melee weapon that can be crafted on the Blacksmith's Bench after crafting a Adamant Bar.",
 			"recipes": [
 				{
 					"outputLabel": "Adamant Sword",
@@ -5391,15 +5391,11 @@
 				},
 				{
 					"label": "Base damage",
-					"value": "93-168"
-				},
-				{
-					"label": "Critical chance",
-					"value": "?"
+					"value": "92 - 166"
 				},
 				{
 					"label": "Block",
-					"value": "30"
+					"value": "66"
 				},
 				{
 					"label": "Combo",
@@ -5407,11 +5403,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1600"
+					"value": "1,600"
 				},
 				{
 					"label": "Special action",
-					"value": "Barge"
+					"value": "Barge (25)"
 				}
 			]
 		},
@@ -5479,11 +5475,11 @@
 				},
 				{
 					"label": "Base damage",
-					"value": "156-244"
+					"value": "154 - 241"
 				},
 				{
 					"label": "Block",
-					"value": "44"
+					"value": "66"
 				},
 				{
 					"label": "Combo",
@@ -5491,11 +5487,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1600"
+					"value": "1,600"
 				},
 				{
 					"label": "Special action",
-					"value": "Quake"
+					"value": "Quake (50)"
 				}
 			]
 		},
@@ -6763,7 +6759,7 @@
 			"icon": "Amulet of Strength (Journal).png",
 			"type": "Trinket",
 			"category": "jewellery",
-			"description": "",
+			"description": "An enchanted amulet favoured by warriors.",
 			"extract": "The amulet of strength is an amulet that can be crafted at a jeweler's bench. While equipped, the amulet increases the player's melee damage with both one-handed and two-handed weapons by 12.5% each. It will not increase unarmed damage.\nThe recipe is unlocked through Death's Exchange by purchasing the Weighted Training Band vestige for 350 soul fragments.",
 			"recipes": [
 				{
@@ -7548,9 +7544,10 @@
 			"type": "Resource",
 			"category": "materials",
 			"description": "Tree bark infused with magical energy.",
-			"extract": "Anima-infused bark is a basic crafting item that is required to create wild anima. Anima bark can be found on the ground around the anima trees and certain crystal trees located throughout the Fractured Plains biome. Players can interact with the item by picking it up, receiving 7 Woodcutting experience. Anima-infused bark can respawn after 72 minutes.",
+			"extract": "Anima-infused bark is a basic crafting item that is required to create wild anima. Anima bark can be found on the ground around the anima trees and certain crystal trees located throughout the Fractured Plains biome. Players can interact with the item by picking it up, receiving 7 Woodcutting experience. Anima-infused bark can respawn after 72 minutes.\n\n",
 			"recipes": [],
 			"usedIn": [
+				"compost",
 				"cooling-arcane-infusion",
 				"crystal-bow",
 				"imbued-leather-wrappings",
@@ -7602,6 +7599,7 @@
 				"bone-dagger",
 				"bone-pickaxe",
 				"chieftains-blade",
+				"compost",
 				"ferocious-infusion",
 				"garou-hanging-ornament-01",
 				"garou-hanging-ornament-02",
@@ -8258,6 +8256,7 @@
 			"usedIn": [
 				"arcane-infusion",
 				"chieftains-blade",
+				"compost",
 				"dragonbone-dagger",
 				"grieving-moonstaff",
 				"hunter-stagbow",
@@ -10075,6 +10074,7 @@
 				"cape-rack",
 				"charcoal",
 				"coarse-thread-bin",
+				"compost",
 				"compost-bin",
 				"compost-bucket",
 				"crafting-table",
@@ -10564,7 +10564,6 @@
 				"charcoal",
 				"cooking-range",
 				"dire-wolf-trophy",
-				"dragon-wolf-trophy",
 				"fence",
 				"green-dragon-trophy",
 				"half-wall",
@@ -10604,7 +10603,6 @@
 				"pristine-undead-eel-trophy",
 				"red-dragon-trophy",
 				"rotridden-cow-trophy",
-				"rotridden-rat-trophy",
 				"rotsworn-zombie-trophy",
 				"round-table",
 				"shelf",
@@ -10628,7 +10626,6 @@
 				"wall-with-window-frame",
 				"window-box",
 				"winged-kalphite-queen-trophy",
-				"wolf-trophy",
 				"zogre-hand-trophy",
 				"zogre-trophy",
 				"zombie-cow-trophy",
@@ -11434,7 +11431,8 @@
 				}
 			],
 			"usedIn": [
-				"bread"
+				"bread",
+				"compost"
 			],
 			"drops": [],
 			"shops": [],
@@ -12867,7 +12865,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"ultra-compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -13053,16 +13053,17 @@
 			"type": "Raw Ingredient",
 			"category": "food",
 			"description": "A tasty mushroom. Can be used in a variety of cooking recipes.",
-			"extract": "Bittercap mushrooms are a power level 2 raw ingredient, which means they can be cooked at a campfire or grill into grilled mushrooms starting at Cooking Level 12, and not burnt into burnt mushroom at level 27. They can also be used to make weak antipoison potion. They can be gathered from bittercap mushroom (plant)s in the Whispering Swamp and Dowdun Reach. \n\n",
+			"extract": "Bittercap mushrooms are a power level 2 raw ingredient, which means they can be cooked at a campfire or grill into grilled mushrooms starting at Cooking Level 12, and not burnt into burnt mushroom at level 27. They can also be used to make weak antipoison potion. They can be gathered from bittercap mushroom resource nodes in the Whispering Swamp and Dowdun Reach. \n\n",
 			"recipes": [],
 			"usedIn": [
 				"burnt-mushroom",
+				"compost",
 				"grilled-mushrooms",
 				"weak-antipoison-potion"
 			],
 			"drops": [
 				{
-					"source": "Bittercap Mushroom (plant)",
+					"source": "Bittercap Mushroom (node)",
 					"qty": "1",
 					"rarity": "Always"
 				}
@@ -13698,7 +13699,7 @@
 			"slug": "black-greataxe",
 			"name": "Black Greataxe",
 			"wiki": "Black Greataxe",
-			"icon": "Black Greataxe (Journal).png",
+			"icon": "Black Greataxe.png",
 			"type": "Melee Weapon",
 			"category": "weapons",
 			"description": "A hulking greataxe made from black metal.",
@@ -13783,7 +13784,7 @@
 				},
 				{
 					"label": "Special action",
-					"value": "Decimate"
+					"value": "Decimate (50)"
 				},
 				{
 					"label": "Special effect",
@@ -14448,7 +14449,7 @@
 			"slug": "black-sword",
 			"name": "Black Sword",
 			"wiki": "Black Sword",
-			"icon": "Black Sword (Journal).png",
+			"icon": "Black Sword.png",
 			"type": "Melee Weapon",
 			"category": "weapons",
 			"description": "A sword in the style of the Black Knights, forged from black metal.",
@@ -14533,7 +14534,7 @@
 				},
 				{
 					"label": "Special action",
-					"value": "Barge"
+					"value": "Barge (25)"
 				},
 				{
 					"label": "Special effect",
@@ -15201,7 +15202,8 @@
 			"extract": "Bloodwood sap can be found by logging the red formations on the bloodwood tree in the southernmost area of the Bloodblight Swamp, that is located in the middle of a garou camp.\nBloodwood sap is required for progression in the quest Dragon Slayer, as it is a component of the challenge horn.\nPlayers will need to use an iron logging axe or higher to harvest this material from the bloodwood tree.\n\n",
 			"recipes": [],
 			"usedIn": [
-				"challenge-horn"
+				"challenge-horn",
+				"compost"
 			],
 			"drops": [
 				{
@@ -16801,7 +16803,7 @@
 				},
 				{
 					"label": "Special action",
-					"value": "Block Breaker"
+					"value": "Block Breaker (33)"
 				}
 			]
 		},
@@ -16930,7 +16932,7 @@
 				},
 				{
 					"label": "Special action",
-					"value": "Lacerate"
+					"value": "Lacerate (25)"
 				}
 			]
 		},
@@ -16942,7 +16944,7 @@
 			"type": "Tool",
 			"category": "tools",
 			"description": "A basic mining tool made from tough animal bone. It is hard enough to mine copper and tin deposits.",
-			"extract": "A bone pickaxe is a power level 2 pickaxe that can be crafted at a crafting table. It can mine the same ores as the previous tiers, along with copper ore, and tin ore, dealing 15 damage to minable ores, and 30 damage with a critical swing. To unlock the recipe, players must have acquired animal bones.",
+			"extract": "A bone pickaxe is a power level 2 pickaxe that can be crafted at a crafting table. It can mine the same ores as the previous tiers, along with copper ore, and tin ore, dealing 15 damage to minable ores, and 30 damage with a critical swing. \nTo unlock the recipe, players must have acquired animal bones.",
 			"recipes": [
 				{
 					"outputLabel": "Bone Pickaxe",
@@ -18411,11 +18413,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1050"
+					"value": "1,050"
 				},
 				{
 					"label": "Special action",
-					"value": "Lacerate"
+					"value": "Lacerate (25)"
 				}
 			]
 		},
@@ -18556,11 +18558,11 @@
 				},
 				{
 					"label": "Base damage",
-					"value": "42-73"
+					"value": "42 - 73"
 				},
 				{
 					"label": "Block",
-					"value": "32.5"
+					"value": "39"
 				},
 				{
 					"label": "Combo",
@@ -18568,11 +18570,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1050"
+					"value": "1,050"
 				},
 				{
 					"label": "Special action",
-					"value": "Whirlwind Slash"
+					"value": "Whirlwind Slash (25)"
 				}
 			]
 		},
@@ -18944,11 +18946,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1050"
+					"value": "1,050"
 				},
 				{
 					"label": "Special action",
-					"value": "Block Breaker"
+					"value": "Block Breaker (33)"
 				}
 			]
 		},
@@ -19557,11 +19559,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1050"
+					"value": "1,050"
 				},
 				{
 					"label": "Special action",
-					"value": "Barge"
+					"value": "Barge (25)"
 				}
 			]
 		},
@@ -19623,11 +19625,11 @@
 				},
 				{
 					"label": "Base damage",
-					"value": "52-81"
+					"value": "52 - 82"
 				},
 				{
 					"label": "Block",
-					"value": "32.5"
+					"value": "39"
 				},
 				{
 					"label": "Combo",
@@ -19635,11 +19637,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1050"
+					"value": "1,050"
 				},
 				{
 					"label": "Special action",
-					"value": "Quake"
+					"value": "Quake (50)"
 				}
 			]
 		},
@@ -20299,7 +20301,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -20451,7 +20455,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -20527,7 +20533,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -20671,7 +20679,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -20747,7 +20757,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -20899,7 +20911,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -21019,7 +21033,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -21096,6 +21112,7 @@
 				}
 			],
 			"usedIn": [
+				"compost",
 				"dowdun-raven-perch"
 			],
 			"drops": [
@@ -21179,7 +21196,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"compost"
+			],
 			"drops": [
 				{
 					"source": "Carnivorous Chinchompa",
@@ -21261,7 +21280,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -21337,7 +21358,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -21409,7 +21432,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -21485,7 +21510,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -21561,7 +21588,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -21685,7 +21714,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -21837,7 +21868,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -21909,7 +21942,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -21981,7 +22016,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -22053,7 +22090,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -22129,7 +22168,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"super-compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -22205,7 +22246,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -22281,7 +22324,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -22357,7 +22402,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -22433,7 +22480,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -22509,7 +22558,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -22585,7 +22636,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -22657,7 +22710,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -22729,7 +22784,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -22805,7 +22862,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -22881,7 +22940,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -22933,7 +22994,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -23005,7 +23068,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -23034,6 +23099,7 @@
 			"recipes": [],
 			"usedIn": [
 				"burnt-cabbage",
+				"compost",
 				"focused-cooking-potion",
 				"fried-cabbage",
 				"weak-focused-cooking-potion"
@@ -23137,7 +23203,8 @@
 				}
 			],
 			"usedIn": [
-				"desert-cloth"
+				"desert-cloth",
+				"ultra-compost"
 			],
 			"drops": [
 				{
@@ -23174,7 +23241,8 @@
 			"recipes": [],
 			"usedIn": [
 				"burnt-cactus-steak",
-				"seared-cactus-steak"
+				"seared-cactus-steak",
+				"ultra-compost"
 			],
 			"drops": [
 				{
@@ -23210,6 +23278,7 @@
 			"extract": "Cactus water is a consumable drink item that provides 25 hydration and grants the perk Frosted Flavours that grants resistance to scorch buildup for 300 seconds.",
 			"recipes": [],
 			"usedIn": [
+				"compost",
 				"cooling-arcane-infusion",
 				"cooling-evasive-infusion",
 				"cooling-ferocious-infusion",
@@ -23259,7 +23328,8 @@
 			"recipes": [],
 			"usedIn": [
 				"burnt-cadavaberries",
-				"dried-cadavaberries"
+				"dried-cadavaberries",
+				"super-compost"
 			],
 			"drops": [
 				{
@@ -23738,7 +23808,7 @@
 			"type": null,
 			"category": "buildings",
 			"description": "",
-			"extract": "A chair is a type of furniture that is unlocked after creating ash planks. Players can place decorations and can also sit on top of the chair.",
+			"extract": "A chair is a type of furniture that is unlocked after creating ash planks. Players can place decorations and can also sit on top of the chair. If used at night, players will recieve the message \"Resting. Waiting for 1/1 Players to Sleep.\" and allow others to skip to daytime IF playing Multiplayer and someone else uses a bed while sitting in the chair; if used during the day, players will sit down and slowly regain their rest meter over time.",
 			"recipes": [
 				{
 					"outputLabel": "Chair",
@@ -24531,7 +24601,7 @@
 			"slug": "chieftains-blade",
 			"name": "Chieftain's Blade",
 			"wiki": "Chieftain's Blade",
-			"icon": "Chieftain's Blade (Journal).png",
+			"icon": "Chieftain's Blade.png",
 			"type": "Melee Weapon",
 			"category": "weapons",
 			"description": "The sword of a goblin chieftain, used to spread war in the name of the Big High War God.",
@@ -24606,11 +24676,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1050"
+					"value": "1,050"
 				},
 				{
 					"label": "Special action",
-					"value": "Barge"
+					"value": "Barge (25)"
 				},
 				{
 					"label": "Special effect",
@@ -26030,6 +26100,11 @@
 					"source": "Red Dragon",
 					"qty": "1",
 					"rarity": "Rare"
+				},
+				{
+					"source": "The Radiant",
+					"qty": "1",
+					"rarity": "Rare"
 				}
 			],
 			"shops": [],
@@ -26088,12 +26163,1475 @@
 			]
 		},
 		{
+			"slug": "compost",
+			"name": "Compost",
+			"wiki": "Compost",
+			"icon": "Compost.png",
+			"type": null,
+			"category": "materials",
+			"description": "",
+			"extract": "Compost is an item made at the compost bin, which can be used via the compost bucket at a rate of 10 units per item composted. Applying compost to a patch provides 10 Farming experience, decreases the disease rate of the affected plant to 50%, and has a 1.5x yield multiplier.",
+			"recipes": [
+				{
+					"outputLabel": "Compost",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Redberries",
+							"qty": 1,
+							"icon": "Redberries.png",
+							"slug": "redberries"
+						}
+					],
+					"id": "e92d523f53",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Cabbage",
+							"qty": 1,
+							"icon": "Cabbage.png",
+							"slug": "cabbage"
+						}
+					],
+					"id": "25f4462a27",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Flax",
+							"qty": 1,
+							"icon": "Flax.png",
+							"slug": "flax"
+						}
+					],
+					"id": "b4adcda6d2",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Ash Logs",
+							"qty": 1,
+							"icon": "Ash Logs.png",
+							"slug": "ash-logs"
+						}
+					],
+					"id": "4753dfb086",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Marrentil",
+							"qty": 1,
+							"icon": "Marrentil.png",
+							"slug": "marrentil"
+						}
+					],
+					"id": "f7411f8662",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Harralander",
+							"qty": 1,
+							"icon": "Harralander.png",
+							"slug": "harralander"
+						}
+					],
+					"id": "41bc20acae",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Feathers",
+							"qty": 1,
+							"icon": "Feathers.png",
+							"slug": "feathers"
+						}
+					],
+					"id": "110cdddc3b",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Bittercap Mushroom",
+							"qty": 1,
+							"icon": "Bittercap Mushroom.png",
+							"slug": "bittercap-mushroom"
+						}
+					],
+					"id": "f737f06026",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Antler",
+							"qty": 1,
+							"icon": "Antler.png",
+							"slug": "antler"
+						}
+					],
+					"id": "26a9a20e4e",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Dwellberries",
+							"qty": 1,
+							"icon": "Dwellberries.png",
+							"slug": "dwellberries"
+						}
+					],
+					"id": "e3070d9134",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Raw Rat Meat",
+							"qty": 1,
+							"icon": "Raw Rat Meat.png",
+							"slug": "raw-rat-meat"
+						}
+					],
+					"id": "f5af60a161",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Animal Bone",
+							"qty": 1,
+							"icon": "Animal Bone.png",
+							"slug": "animal-bone"
+						}
+					],
+					"id": "127d700a09",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Potato",
+							"qty": 1,
+							"icon": "Potato.png",
+							"slug": "potato"
+						}
+					],
+					"id": "6af4683f49",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Small Animal Fang",
+							"qty": 1,
+							"icon": "Small Animal Fang.png",
+							"slug": "small-animal-fang"
+						}
+					],
+					"id": "fef0e229cb",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Snapdragon",
+							"qty": 1,
+							"icon": "Snapdragon.png",
+							"slug": "snapdragon"
+						}
+					],
+					"id": "a9fa298520",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Toadflax",
+							"qty": 1,
+							"icon": "Toadflax.png",
+							"slug": "toadflax"
+						}
+					],
+					"id": "16f5f2f4c1",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Oak Logs",
+							"qty": 1,
+							"icon": "Oak Logs.png",
+							"slug": "oak-logs"
+						}
+					],
+					"id": "ec863bd94f",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Anima-Infused Bark",
+							"qty": 1,
+							"icon": "Anima-Infused Bark.png",
+							"slug": "anima-infused-bark"
+						}
+					],
+					"id": "f15c6b2670",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Monstrous Fang",
+							"qty": 1,
+							"icon": "Monstrous Fang.png",
+							"slug": "monstrous-fang"
+						}
+					],
+					"id": "6afb4b881f",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Swamp Weed",
+							"qty": 1,
+							"icon": "Swamp Weed.png",
+							"slug": "swamp-weed"
+						}
+					],
+					"id": "19517525d9",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Raw Farm Meat",
+							"qty": 1,
+							"icon": "Raw Farm Meat.png",
+							"slug": "raw-farm-meat"
+						}
+					],
+					"id": "d9fdb312d4",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Onion",
+							"qty": 1,
+							"icon": "Onion.png",
+							"slug": "onion"
+						}
+					],
+					"id": "5aa46f69b9",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Raw Bestial Meat",
+							"qty": 1,
+							"icon": "Raw Bestial Meat.png",
+							"slug": "raw-bestial-meat"
+						}
+					],
+					"id": "d4276cf16d",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Raw Bird Meat",
+							"qty": 1,
+							"icon": "Raw Bird Meat.png",
+							"slug": "raw-bird-meat"
+						}
+					],
+					"id": "a824618cbe",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Raw Game Meat",
+							"qty": 1,
+							"icon": "Raw Game Meat.png",
+							"slug": "raw-game-meat"
+						}
+					],
+					"id": "a6d23bbe0a",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Bloodwood Sap",
+							"qty": 1,
+							"icon": "Bloodwood Sap.png",
+							"slug": "bloodwood-sap"
+						}
+					],
+					"id": "59dc499b50",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Shocking Plant Bulb",
+							"qty": 1,
+							"icon": "Shocking Plant Bulb.png",
+							"slug": "shocking-plant-bulb"
+						}
+					],
+					"id": "315a92ab04",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Peach",
+							"qty": 1,
+							"icon": "Peach.png",
+							"slug": "peach"
+						}
+					],
+					"id": "90d8422994",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Egg",
+							"qty": 1,
+							"icon": "Egg.png",
+							"slug": "egg"
+						}
+					],
+					"id": "3f7a659bee",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Burnt Potato",
+							"qty": 1,
+							"icon": "Burnt Potato.png",
+							"slug": "burnt-potato"
+						}
+					],
+					"id": "1aec9ed764",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Burnt Onion",
+							"qty": 1,
+							"icon": "Burnt Onion.png",
+							"slug": "burnt-onion"
+						}
+					],
+					"id": "fa6092cba2",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Burnt Mushroom",
+							"qty": 1,
+							"icon": "Burnt Mushroom.png",
+							"slug": "burnt-mushroom"
+						}
+					],
+					"id": "54501ef095",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Burnt Flank",
+							"qty": 1,
+							"icon": "Burnt Flank.png",
+							"slug": "burnt-flank"
+						}
+					],
+					"id": "0d15e6a1ff",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Burnt Steak",
+							"qty": 1,
+							"icon": "Burnt Steak.png",
+							"slug": "burnt-steak"
+						}
+					],
+					"id": "9c64b7e68a",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Burnt Cabbage",
+							"qty": 1,
+							"icon": "Burnt Cabbage.png",
+							"slug": "burnt-cabbage"
+						}
+					],
+					"id": "bf61e3640f",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Burnt Dwellberries",
+							"qty": 1,
+							"icon": "Burnt Dwellberries.png",
+							"slug": "burnt-dwellberries"
+						}
+					],
+					"id": "47e1aaceb1",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Burnt Rat Roast",
+							"qty": 1,
+							"icon": "Burnt Rat Roast.png",
+							"slug": "burnt-rat-roast"
+						}
+					],
+					"id": "71242adbbc",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Burnt Haunch",
+							"qty": 1,
+							"icon": "Burnt Haunch.png",
+							"slug": "burnt-haunch"
+						}
+					],
+					"id": "029843cd38",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Burnt Fillet",
+							"qty": 1,
+							"icon": "Burnt Fillet.png",
+							"slug": "burnt-fillet"
+						}
+					],
+					"id": "b7c7e91a89",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Burnt Redberries",
+							"qty": 1,
+							"icon": "Burnt Redberries.png",
+							"slug": "burnt-redberries"
+						}
+					],
+					"id": "be7bb31776",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Burnt Peach",
+							"qty": 1,
+							"icon": "Burnt Peach.png",
+							"slug": "burnt-peach"
+						}
+					],
+					"id": "5f9ad4d1f3",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Burnt Egg",
+							"qty": 1,
+							"icon": "Burnt Egg.png",
+							"slug": "burnt-egg"
+						}
+					],
+					"id": "6583d1fd0a",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Wheat",
+							"qty": 1,
+							"icon": "Wheat.png",
+							"slug": "wheat"
+						}
+					],
+					"id": "2216b592a2",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Tomato",
+							"qty": 1,
+							"icon": "Tomato.png",
+							"slug": "tomato"
+						}
+					],
+					"id": "f9f7726067",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Bag of Flour",
+							"qty": 1,
+							"icon": "Bag of Flour.png",
+							"slug": "bag-of-flour"
+						}
+					],
+					"id": "f4ba5a19e6",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Burnt Cadavaberries",
+							"qty": 1,
+							"icon": "Burnt Cadavaberries.png",
+							"slug": "burnt-cadavaberries"
+						}
+					],
+					"id": "a3b9c00aed",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Burnt Watermelon",
+							"qty": 1,
+							"icon": "Burnt Watermelon.png",
+							"slug": "burnt-watermelon"
+						}
+					],
+					"id": "aaef5806ef",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Burnt Tomato",
+							"qty": 1,
+							"icon": "Burnt Tomato.png",
+							"slug": "burnt-tomato"
+						}
+					],
+					"id": "248fdcbb36",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Burnt Undead Steak",
+							"qty": 1,
+							"icon": "Burnt Undead Steak.png",
+							"slug": "burnt-undead-steak"
+						}
+					],
+					"id": "145845d47a",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Maple Sap",
+							"qty": 1,
+							"icon": "Maple Sap.png",
+							"slug": "maple-sap"
+						}
+					],
+					"id": "ec433397ed",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Burnt Maple Syrup",
+							"qty": 1,
+							"icon": "Burnt Maple Syrup.png",
+							"slug": "burnt-maple-syrup"
+						}
+					],
+					"id": "8f37a75ce4",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Raw Sardine",
+							"qty": 1,
+							"icon": "Raw Sardine.png",
+							"slug": "raw-sardine"
+						}
+					],
+					"id": "5470f57e50",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Raw Shrimp",
+							"qty": 1,
+							"icon": "Raw Shrimp.png",
+							"slug": "raw-shrimp"
+						}
+					],
+					"id": "24195972e4",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Raw Trout",
+							"qty": 1,
+							"icon": "Raw Trout.png",
+							"slug": "raw-trout"
+						}
+					],
+					"id": "0a63a3a7b1",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Raw Anchovies",
+							"qty": 1,
+							"icon": "Raw Anchovies.png",
+							"slug": "raw-anchovies"
+						}
+					],
+					"id": "b344123e65",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Raw Herring",
+							"qty": 1,
+							"icon": "Raw Herring.png",
+							"slug": "raw-herring"
+						}
+					],
+					"id": "27eeef2fd6",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Raw Salmon",
+							"qty": 1,
+							"icon": "Raw Salmon.png",
+							"slug": "raw-salmon"
+						}
+					],
+					"id": "fc71b08a7e",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Raw Infernal Eel",
+							"qty": 1,
+							"icon": "Raw Infernal Eel.png",
+							"slug": "raw-infernal-eel"
+						}
+					],
+					"id": "24b333984b",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Raw Armoured Catfish",
+							"qty": 1,
+							"icon": "Raw Armoured Catfish.png",
+							"slug": "raw-armoured-catfish"
+						}
+					],
+					"id": "6d26131199",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Raw Lobster",
+							"qty": 1,
+							"icon": "Raw Lobster.png",
+							"slug": "raw-lobster"
+						}
+					],
+					"id": "260aad80ec",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Raw Undead Bass",
+							"qty": 1,
+							"icon": "Raw Undead Bass.png",
+							"slug": "raw-undead-bass"
+						}
+					],
+					"id": "207d1c090b",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Raw Undead Eel",
+							"qty": 1,
+							"icon": "Raw Undead Eel.png",
+							"slug": "raw-undead-eel"
+						}
+					],
+					"id": "75569e7bd7",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Burnt Catfish",
+							"qty": 1,
+							"icon": "Burnt Catfish.png",
+							"slug": "burnt-catfish"
+						}
+					],
+					"id": "59c257ed7d",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Burnt Undead Eel",
+							"qty": 1,
+							"icon": "Burnt Undead Eel.png",
+							"slug": "burnt-undead-eel"
+						}
+					],
+					"id": "3bba2bff46",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Burnt Giant Krill",
+							"qty": 1,
+							"icon": "Burnt Giant Krill.png",
+							"slug": "burnt-giant-krill"
+						}
+					],
+					"id": "6382aeb939",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Burnt Salmon",
+							"qty": 1,
+							"icon": "Burnt Salmon.png",
+							"slug": "burnt-salmon"
+						}
+					],
+					"id": "f290b80721",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Burnt Sardine",
+							"qty": 1,
+							"icon": "Burnt Sardine.png",
+							"slug": "burnt-sardine"
+						}
+					],
+					"id": "c003cdf0b7",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Burnt Trout",
+							"qty": 1,
+							"icon": "Burnt Trout.png",
+							"slug": "burnt-trout"
+						}
+					],
+					"id": "6fd9205d9c",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Burnt Anchovies",
+							"qty": 1,
+							"icon": "Burnt Anchovies.png",
+							"slug": "burnt-anchovies"
+						}
+					],
+					"id": "8dc0bb6aa0",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Burnt Herring",
+							"qty": 1,
+							"icon": "Burnt Herring.png",
+							"slug": "burnt-herring"
+						}
+					],
+					"id": "c399a74711",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Burnt Infernal Eel",
+							"qty": 1,
+							"icon": "Burnt Infernal Eel.png",
+							"slug": "burnt-infernal-eel"
+						}
+					],
+					"id": "f9b7eb5963",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Burnt Lobster",
+							"qty": 1,
+							"icon": "Burnt Lobster.png",
+							"slug": "burnt-lobster"
+						}
+					],
+					"id": "bae9987d37",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Burnt Shrimp",
+							"qty": 1,
+							"icon": "Burnt Shrimp.png",
+							"slug": "burnt-shrimp"
+						}
+					],
+					"id": "00d04cc1b3",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Burnt Undead Bass",
+							"qty": 1,
+							"icon": "Burnt Undead Bass.png",
+							"slug": "burnt-undead-bass"
+						}
+					],
+					"id": "3d85cc5ba2",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Burnt Bread",
+							"qty": 1,
+							"icon": "Burnt Bread.png",
+							"slug": "burnt-bread"
+						}
+					],
+					"id": "a10ac6de21",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Cactus Water",
+							"qty": 1,
+							"icon": "Cactus Water.png",
+							"slug": "cactus-water"
+						}
+					],
+					"id": "a9a367a803",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				}
+			],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": null,
+			"power": null,
+			"stats": []
+		},
+		{
 			"slug": "compost-bin",
 			"name": "Compost Bin",
 			"wiki": "Compost Bin",
 			"icon": "Compost Bin.png",
 			"type": null,
-			"category": "buildings",
+			"category": "crafting-stations",
 			"description": "",
 			"extract": "A compost bin is a Farming object that players can create to turn unwanted items (burnt food, vegetables, and other acceptable items) into compost. It takes five seconds to convert a compostable item into compost. Once compost has been processed at the bottom of the bin, players must wield their compost bucket before interacting and filling it with compost.\nNote that players cannot destroy their compost bin whilst there is compost stored inside.\nLevel 10 Farming is required to unlock the recipe.",
 			"recipes": [
@@ -26319,7 +27857,7 @@
 			"type": null,
 			"category": "crafting-stations",
 			"description": "",
-			"extract": "The cooking range can be used to create more complex dishes than can be made on the campfire or grill. It functions like the stone range, but can craft a wider variety of recipes when unlocked at level 16 Cooking. It requires a roof above it to function.\nNOTE: To learn the recipe (see it in the build menu), you MUST interact with the basic campfire at a certain cooking level, on top of having obtained all the materials required to build it.\nSee food for lists of perk-less, perk, and all other types of food and to compare their health, sustenance, and weight ratios.",
+			"extract": "The cooking range can be used to create more complex dishes than can be made on the campfire or grill. It functions like the stone range, but can craft a wider variety of recipes when unlocked at level 16 Cooking. It requires a roof above it to function.\nNOTE: To learn the recipe (see it in the build menu), you MUST interact with the basic campfire at a certain cooking level, on top of having obtained all the materials required to build it.\nIn order to unlock cooking range food recipes, the player needs to pick up the ingredients, as well as their raw components by themselves. For example, fruit pie requires the player to craft dried fruit as well as pick up raw redberries and dwellberries.\nSee food for lists of perk-less, perk, and all other types of food and to compare their health, sustenance, and weight ratios.",
 			"recipes": [
 				{
 					"outputLabel": "Cooking Range",
@@ -26824,7 +28362,8 @@
 			"extract": "Corpse cotton is a drop from zogres and corpse cotton plants which is used to create fine thread.",
 			"recipes": [],
 			"usedIn": [
-				"fine-thread"
+				"fine-thread",
+				"super-compost"
 			],
 			"drops": [
 				{
@@ -27238,6 +28777,11 @@
 					"source": "Chest (Umbral Sands)",
 					"qty": "1",
 					"rarity": "0.63/100"
+				},
+				{
+					"source": "The Radiant",
+					"qty": "1",
+					"rarity": "1/400"
 				}
 			],
 			"shops": [],
@@ -27322,6 +28866,11 @@
 					"source": "Chest (Umbral Sands)",
 					"qty": "1",
 					"rarity": "0.63/100"
+				},
+				{
+					"source": "The Radiant",
+					"qty": "1",
+					"rarity": "1/400"
 				}
 			],
 			"shops": [],
@@ -27406,6 +28955,11 @@
 					"source": "Chest (Umbral Sands)",
 					"qty": "1",
 					"rarity": "0.63/100"
+				},
+				{
+					"source": "The Radiant",
+					"qty": "1",
+					"rarity": "1/400"
 				}
 			],
 			"shops": [],
@@ -27490,6 +29044,11 @@
 					"source": "Chest (Umbral Sands)",
 					"qty": "1",
 					"rarity": "0.63/100"
+				},
+				{
+					"source": "The Radiant",
+					"qty": "1",
+					"rarity": "1/400"
 				}
 			],
 			"shops": [],
@@ -29044,7 +30603,8 @@
 			"extract": "This article is about the resource. For the Plant itself, see Desert Weeds.\n\nDesert weed is a basic material gathered by picking up Desert Weeds located in the Umbral Sands region or by growing in any plot but grows best in a Yew Farming Plot.\n\n",
 			"recipes": [],
 			"usedIn": [
-				"desert-thread"
+				"desert-thread",
+				"ultra-compost"
 			],
 			"drops": [
 				{
@@ -30296,7 +31856,6 @@
 				"ascension-core",
 				"blast-furnace",
 				"cursed-leather",
-				"dragon-wolf-trophy",
 				"fallen-hoplites-aspis",
 				"fallen-hoplites-chest",
 				"fallen-hoplites-helm",
@@ -30658,6 +32217,11 @@
 					"source": "Chest (Scorned Wilderness)",
 					"qty": "3–5",
 					"rarity": "1/17.8"
+				},
+				{
+					"source": "The Radiant",
+					"qty": "8",
+					"rarity": "Always"
 				}
 			],
 			"shops": [],
@@ -30978,11 +32542,11 @@
 			"slug": "dragon-scimitar",
 			"name": "Dragon Scimitar",
 			"wiki": "Dragon Scimitar",
-			"icon": "Dragon Scimitar (Journal).png",
+			"icon": "Dragon Scimitar.png",
 			"type": "Melee Weapon",
 			"category": "weapons",
 			"description": "A razor-sharp dragon scimitar favoured by warriors who value speed as much as strength.",
-			"extract": "The dragon scimitar is a Power level 9 weapon that can be received after completing the Scorned Wilderness raid and opening the Queenslayer's Reward Pack. Unlike many other weapons in the game, this scimitar is both uncraftable and has a passive full durability.",
+			"extract": "The dragon scimitar is a Power level 9 weapon that can be received after completing the Scorned Wilderness raid and opening the Queenslayer's Reward Pack, which can be gained after completing Regicide quest.\nUnlike many other weapons in the game, this one is both uncraftable and has a passive full durability, meaning it does not degrade. This weapon also has a special effect where it deals increased damage against all kinds of dragons, making it the best option to use against dragon enemies and bosses.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [
@@ -31023,7 +32587,7 @@
 				},
 				{
 					"label": "Special action",
-					"value": "Leaping Slash"
+					"value": "Leaping Slash (25)"
 				},
 				{
 					"label": "Special effect",
@@ -31116,6 +32680,11 @@
 					"source": "Chest (Scorned Wilderness)",
 					"qty": "2–4",
 					"rarity": "1/17.8"
+				},
+				{
+					"source": "The Radiant",
+					"qty": "3–5",
+					"rarity": "Always"
 				}
 			],
 			"shops": [],
@@ -31128,61 +32697,6 @@
 					"value": "25"
 				}
 			]
-		},
-		{
-			"slug": "dragon-wolf-trophy",
-			"name": "Dragon Wolf Trophy",
-			"wiki": "Dragon Wolf Trophy",
-			"icon": "Dragon Wolf Trophy.png",
-			"type": null,
-			"category": "buildings",
-			"description": "",
-			"extract": "Dragon Wolf Trophy is a decoration.",
-			"recipes": [
-				{
-					"outputLabel": "Dragon Wolf Trophy",
-					"outputQty": 1,
-					"requires": null,
-					"skills": [
-						{
-							"name": "Construction",
-							"xp": 0
-						}
-					],
-					"materials": [
-						{
-							"label": "Ash Plank",
-							"qty": 2,
-							"icon": "Ash Plank.png",
-							"slug": "ash-plank"
-						},
-						{
-							"label": "Small Animal Fang",
-							"qty": 2,
-							"icon": "Small Animal Fang.png",
-							"slug": "small-animal-fang"
-						},
-						{
-							"label": "Draconic Leather",
-							"qty": 2,
-							"icon": "Draconic Leather.png",
-							"slug": "draconic-leather"
-						}
-					],
-					"id": "c4406f0be6",
-					"station": {
-						"name": "Build Menu",
-						"slug": null
-					}
-				}
-			],
-			"usedIn": [],
-			"drops": [],
-			"shops": [],
-			"unlockedBy": [],
-			"weight": null,
-			"power": null,
-			"stats": []
 		},
 		{
 			"slug": "dragonbane-cape",
@@ -31389,11 +32903,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1300"
+					"value": "1,300"
 				},
 				{
 					"label": "Special action",
-					"value": "Lacerate"
+					"value": "Lacerate (25)"
 				},
 				{
 					"label": "Special effect",
@@ -32255,7 +33769,7 @@
 			"type": "Cape",
 			"category": "capes",
 			"description": "Awarded to those who have faced Queen Kuldra and Emerged victorious. Few Capes carry greater prestige.",
-			"extract": "The Dragonslayer's Cape is a prestigious back slot item crafted at the Armour Bench following the defeat of Queen Kuldra in the Regicide quest. Featuring a deep purple drape with intricate gold trim, its centerpiece tapestry depicts Queen Kuldra perched atop floating, shattered landmasses.",
+			"extract": "The Dragonslayer's Cape is a prestigious back slot item crafted at the Armour Bench following the defeat of Queen Kuldra in the Regicide quest. Featuring a deep purple drape with intricate gold trim, its centrepiece tapestry depicts Queen Kuldra perched atop floating, shattered landmasses.",
 			"recipes": [
 				{
 					"outputLabel": "Dragonslayer's Cape",
@@ -32455,7 +33969,8 @@
 				}
 			],
 			"usedIn": [
-				"cadavaberry-infusion"
+				"cadavaberry-infusion",
+				"super-compost"
 			],
 			"drops": [
 				{
@@ -32883,7 +34398,8 @@
 				}
 			],
 			"usedIn": [
-				"ground-tea-leaves"
+				"ground-tea-leaves",
+				"ultra-compost"
 			],
 			"drops": [
 				{
@@ -33118,6 +34634,7 @@
 			"recipes": [],
 			"usedIn": [
 				"burnt-dwellberries",
+				"compost",
 				"dried-dwellberries",
 				"dwellberry-infusion",
 				"feathered-lure",
@@ -33929,6 +35446,7 @@
 			"recipes": [],
 			"usedIn": [
 				"burnt-egg",
+				"compost",
 				"fried-egg",
 				"glorious-cake",
 				"victoria-sponge-cake"
@@ -35990,6 +37508,7 @@
 				"bronze-arrow",
 				"bronze-bolts",
 				"brynmoor-falcon-perch",
+				"compost",
 				"dowdun-raven-perch",
 				"fang-arrow",
 				"feather-bait",
@@ -36537,7 +38056,8 @@
 			"extract": "Fibrous pipe cactus can be found west of the Moon Garou tribe near a grove of yew trees, and can be used to make 3 cactus fibres in a tannery.\n\n",
 			"recipes": [],
 			"usedIn": [
-				"cactus-fibres"
+				"cactus-fibres",
+				"ultra-compost"
 			],
 			"drops": [
 				{
@@ -36644,7 +38164,7 @@
 			"type": "Processed Material",
 			"category": "cloth",
 			"description": "Woven from fine thread and gold. Used in weapon and armour crafting.",
-			"extract": "Fine cloth is created with a loom with a Loom Harness next to it, requiring three fine thread. Fine cloth is used primarily for power level 5 armour.",
+			"extract": "Fine cloth is created with a loom with a Loom Harness next to it, requiring three fine thread and a gold bar. Fine cloth is used primarily for power level 5 armour.",
 			"recipes": [
 				{
 					"outputLabel": "Fine Cloth",
@@ -37555,6 +39075,7 @@
 				"advanced-spinning-wheel",
 				"archery-target",
 				"coarse-thread",
+				"compost",
 				"farmers-hat",
 				"large-awning-roof",
 				"medium-awning-roof",
@@ -41657,7 +43178,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "A handcrafted owl made of glass. It seems to have great sentimental value to someone.",
-			"extract": "The glass owl is an item used in the Black Knight's Fortress quest. The glass owl is obtained by digging the grave west of the blue dragon spawn in the west of the Library region.",
+			"extract": "The glass owl is an item used in the Black Knight's Fortress quest. The glass owl is obtained by digging the grave west of the blue dragon spawn in the west of the Library region.\n\n",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -41934,11 +43455,11 @@
 			"slug": "goblin-swingslash",
 			"name": "Goblin \"Swingslash\"",
 			"wiki": "Goblin \"Swingslash\"",
-			"icon": "Goblin \"Swingslash\" (Journal).png",
+			"icon": "Goblin \"Swingslash\".png",
 			"type": "Melee Weapon",
 			"category": "weapons",
 			"description": "A surprisingly nasty little axe. Popular with goblin warriors.",
-			"extract": "The goblin \"Swingslash\" is a power level 2 one-handed melee weapon that can be crafted at a crafting table. The recipe is learned by consuming a cruel goblin blade, received as a random drop from a goblin pack; the drop chance for this vestige is 2%.\nDespite having slash in the name, this weapon deals crush damage and uses the mace attack style. It has slightly higher base damage but the same durability as the bone club, despite listing a special effect of -15% durability.\nIt can be ascended at the mystic forge using ascension cores, but the base damage doesn't scale properly: the power level 2 goblin \"swingslash\" has 11-12% higher base damage than the power level 2 bone club's 26 - 46, but the power level 7 goblin \"swingslash\" only has ~1% higher base damage than the power level 7 adamant mace's 114 - 202).",
+			"extract": "The goblin \"Swingslash\" is a power level 2 one-handed melee weapon that can be crafted at a crafting table. The recipe is learned by consuming a cruel goblin blade, received as a random drop from a goblin pack; the drop chance for this vestige is 2%.\nIt can be ascended at the mystic forge using Ascension Core 4",
 			"recipes": [
 				{
 					"outputLabel": "Goblin \"Swingslash\"",
@@ -41989,7 +43510,7 @@
 			"stats": [
 				{
 					"label": "Damage type",
-					"value": "Crush"
+					"value": "Slash"
 				},
 				{
 					"label": "Attack style",
@@ -41997,7 +43518,7 @@
 				},
 				{
 					"label": "Base damage",
-					"value": "28 - 50"
+					"value": "29 - 51"
 				},
 				{
 					"label": "Block",
@@ -42013,7 +43534,7 @@
 				},
 				{
 					"label": "Special action",
-					"value": "Block Breaker"
+					"value": "Block Breaker (33)"
 				},
 				{
 					"label": "Special effect",
@@ -42647,7 +44168,7 @@
 			"slug": "granite-maul",
 			"name": "Granite Maul",
 			"wiki": "Granite Maul",
-			"icon": "Granite Maul (Journal).png",
+			"icon": "Granite Maul.png",
 			"type": "Melee Weapon",
 			"category": "weapons",
 			"description": "The power of this warhammer should not be taken for granite.",
@@ -42735,7 +44256,7 @@
 				},
 				{
 					"label": "Special action",
-					"value": "Battering Ram"
+					"value": "Battering Ram (25)"
 				},
 				{
 					"label": "Special effect",
@@ -45171,7 +46692,8 @@
 			],
 			"usedIn": [
 				"strong-sweet-tea",
-				"strong-tea"
+				"strong-tea",
+				"ultra-compost"
 			],
 			"drops": [
 				{
@@ -46356,7 +47878,6 @@
 				"paladins-helm",
 				"paladins-platebody",
 				"rotridden-cow-trophy",
-				"rotridden-rat-trophy",
 				"skullsplitter",
 				"studded-leather-body",
 				"studded-leather-chaps",
@@ -46855,10 +48376,11 @@
 			"type": "Basic Item",
 			"category": "materials",
 			"description": "A fragrant herb used in restorative potions.",
-			"extract": "Harralander is a herb that is harvested from Harralander plants, found primarily in the Whispering Swamp and can be bought from Domri - The Merchant for 6 garou chits.\n\n",
+			"extract": "Harralander is a herb that is harvested from Harralander plants, found primarily in the Whispering Swamp and can be bought from Domri - The Merchant for 6 garou chits.",
 			"recipes": [],
 			"usedIn": [
 				"arcane-infusion",
+				"compost",
 				"ferocious-infusion",
 				"relentless-infusion",
 				"weak-lumberjack-potion",
@@ -47497,7 +49019,8 @@
 				"splitbark-helm",
 				"splitbark-legs",
 				"splitbark-staff",
-				"splitbark-wand"
+				"splitbark-wand",
+				"super-compost"
 			],
 			"drops": [
 				{
@@ -47938,7 +49461,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "Perhaps you could learn from it<sup class=\"noprint\">&#91;<span class=\"fact-text\" title=\"no full stop\">sic</span>&#93;</sup>",
-			"extract": "Icthlarian fetish is the vestige that is used to unlock the pharaoh's sceptre. It can be collected after completing the quest Contact!, as long as the player has one inventory space.",
+			"extract": "Icthlarian fetish was the vestige that is used to unlock the pharaoh's sceptre. It used be collected after completing the quest Contact!, as long as the player has one inventory space.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -48058,7 +49581,7 @@
 			"slug": "imarus-talon",
 			"name": "Imaru's Talon",
 			"wiki": "Imaru's Talon",
-			"icon": "Imaru's Talon (Journal).png",
+			"icon": "Imaru's Talon.png",
 			"type": "Melee Weapon",
 			"category": "weapons",
 			"description": "A Scimitar forged from the Visage of Imaru.",
@@ -48143,7 +49666,7 @@
 				},
 				{
 					"label": "Special action",
-					"value": "Leaping Slash"
+					"value": "Leaping Slash (25)"
 				},
 				{
 					"label": "Special effect",
@@ -49177,6 +50700,11 @@
 					"source": "Red Dragon",
 					"qty": "1",
 					"rarity": "Rare"
+				},
+				{
+					"source": "The Radiant",
+					"qty": "1",
+					"rarity": "Rare"
 				}
 			],
 			"shops": [],
@@ -49764,7 +51292,8 @@
 				"lumberjack-potion",
 				"maple-infusion",
 				"pumpkin-spice-infusion",
-				"quarrymaster-potion"
+				"quarrymaster-potion",
+				"super-compost"
 			],
 			"drops": [
 				{
@@ -50486,11 +52015,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1300"
+					"value": "1,300"
 				},
 				{
 					"label": "Special action",
-					"value": "Lacerate"
+					"value": "Lacerate (25)"
 				}
 			]
 		},
@@ -50637,11 +52166,11 @@
 				},
 				{
 					"label": "Base damage",
-					"value": "82-144"
+					"value": "82 - 144"
 				},
 				{
 					"label": "Block",
-					"value": "40"
+					"value": "46"
 				},
 				{
 					"label": "Combo",
@@ -50649,11 +52178,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1300"
+					"value": "1,300"
 				},
 				{
 					"label": "Special action",
-					"value": "Decimate"
+					"value": "Decimate (50)"
 				}
 			]
 		},
@@ -50727,11 +52256,11 @@
 				},
 				{
 					"label": "Base damage",
-					"value": "62-107"
+					"value": "62 - 107"
 				},
 				{
 					"label": "Block",
-					"value": "39.5"
+					"value": "46"
 				},
 				{
 					"label": "Combo",
@@ -50739,11 +52268,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1300"
+					"value": "1, 300"
 				},
 				{
 					"label": "Special action",
-					"value": "Whirlwind Slash"
+					"value": "Whirlwind Slash (33)"
 				}
 			]
 		},
@@ -51001,11 +52530,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1300"
+					"value": "1,300"
 				},
 				{
 					"label": "Special action",
-					"value": "Block Breaker"
+					"value": "Block Breaker (33)"
 				}
 			]
 		},
@@ -51642,11 +53171,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1300"
+					"value": "1,300"
 				},
 				{
 					"label": "Special action",
-					"value": "Barge"
+					"value": "Barge (25)"
 				}
 			]
 		},
@@ -51714,11 +53243,11 @@
 				},
 				{
 					"label": "Base damage",
-					"value": "76-119"
+					"value": "76 - 119"
 				},
 				{
 					"label": "Block",
-					"value": "39.5"
+					"value": "49"
 				},
 				{
 					"label": "Combo",
@@ -51726,11 +53255,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1300"
+					"value": "1,300"
 				},
 				{
 					"label": "Special action",
-					"value": "Quake"
+					"value": "Quake (25)"
 				}
 			]
 		},
@@ -52867,7 +54396,7 @@
 				},
 				{
 					"label": "Base damage",
-					"value": "59 - 152"
+					"value": "59 - 150"
 				},
 				{
 					"label": "Block",
@@ -52879,7 +54408,7 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1600"
+					"value": "1,600"
 				},
 				{
 					"label": "Special action",
@@ -53000,6 +54529,24 @@
 					"value": "99"
 				}
 			]
+		},
+		{
+			"slug": "kothaar-numbering-for-dummies",
+			"name": "KotHaar Numbering For Dummies",
+			"wiki": "KotHaar Numbering For Dummies",
+			"icon": "KotHaar Numbering For Dummies.png",
+			"type": "Basic Item",
+			"category": "materials",
+			"description": "A book for understanding the KotHaar numbering system (Base 12).",
+			"extract": "KotHaar Numbering For Dummies is a quest item that the KotHaar Bouncer gives the player to solve their riddle.",
+			"recipes": [],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": 0,
+			"power": null,
+			"stats": []
 		},
 		{
 			"slug": "kuldras-head",
@@ -53335,7 +54882,7 @@
 			"type": "Basic Item",
 			"category": "materials",
 			"description": "An upgraded wooden bucket with room for extra Compost. Fewer trips, more fertilizing - just try not to strain your back! Pour its contents over a Farming Plot to Fertilize your plants.",
-			"extract": "The large compost bucket is a tool created at the crafting table. Level 65 Farming is required to unlock the recipe. It can be used to take out compost, super compost and ultra compost from the compost bin, super compost bin and ultra compost bin, respectively, at a maximum of 300 units per bucket held in the inventory.\nWhen used on a farming plot, 10 units of either compost, super compost or ultra compost will be used until a total of 50 units have been used to fully fertilize a plot.",
+			"extract": "The large compost bucket is a tool created at the crafting table. Level 65 Farming is required to unlock the recipe. It can be used to take out compost, super compost, and ultra compost from the compost bin, super compost bin, and ultra compost bin, respectively, at a maximum of 300 units per bucket held in the inventory.\nWhen used on a farming plot, 10 units of either compost, super compost, or ultra compost will be used until a total of 50 units have been used to fully fertilize a plot.",
 			"recipes": [
 				{
 					"outputLabel": "Large Compost Bucket",
@@ -54005,8 +55552,7 @@
 				"skill-tome-standing-woodcutting",
 				"skill-tome-woodcutting",
 				"sleeping-chinchompa",
-				"standing-book",
-				"wolf-trophy"
+				"standing-book"
 			],
 			"drops": [
 				{
@@ -56603,7 +58149,8 @@
 				"rune-greataxe",
 				"rune-mace",
 				"rune-pickaxe",
-				"rune-spade"
+				"rune-spade",
+				"ultra-compost"
 			],
 			"drops": [
 				{
@@ -57098,7 +58645,8 @@
 				"mithril-pickaxe",
 				"ore-stone-storage",
 				"shadow-crossbow",
-				"subjugation-staff"
+				"subjugation-staff",
+				"super-compost"
 			],
 			"drops": [
 				{
@@ -57279,6 +58827,7 @@
 			"recipes": [],
 			"usedIn": [
 				"burnt-maple-syrup",
+				"compost",
 				"maple-syrup"
 			],
 			"drops": [
@@ -57706,6 +59255,7 @@
 			"extract": "Marrentil (also spelled marrentill in books) is a herb found from harvesting a marrentill plant in the Whispering Swamp and can be bought from Domri - The Merchant for 6 garou chits.\n\n",
 			"recipes": [],
 			"usedIn": [
+				"compost",
 				"weak-antipoison-potion",
 				"weak-focused-agility-potion",
 				"weak-focused-artisan-potion",
@@ -59402,7 +60952,7 @@
 					"skills": [
 						{
 							"name": "Construction",
-							"xp": 12
+							"xp": 16
 						}
 					],
 					"materials": [
@@ -59426,7 +60976,7 @@
 					"skills": [
 						{
 							"name": "Construction",
-							"xp": 8
+							"xp": 20
 						}
 					],
 					"materials": [
@@ -59456,7 +61006,7 @@
 					"skills": [
 						{
 							"name": "Construction",
-							"xp": 16
+							"xp": 20
 						}
 					],
 					"materials": [
@@ -61794,6 +63344,24 @@
 			]
 		},
 		{
+			"slug": "mirror-lens",
+			"name": "Mirror Lens",
+			"wiki": "Mirror Lens",
+			"icon": "Mirror_Lens_-_Alcarrid.png",
+			"type": "Quest Item",
+			"category": "quest",
+			"description": "",
+			"extract": "Mirror lenses are quest items featured in Icthlarin's Little Helper, given by each clan's elder after completing all of the clan tasks.",
+			"recipes": [],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": 0,
+			"power": null,
+			"stats": []
+		},
+		{
 			"slug": "missing-letter",
 			"name": "Missing Letter",
 			"wiki": "Missing Letter",
@@ -62360,11 +63928,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1600"
+					"value": "1,600"
 				},
 				{
 					"label": "Special action",
-					"value": "Lacerate"
+					"value": "Lacerate (25)"
 				}
 			]
 		},
@@ -62511,11 +64079,11 @@
 				},
 				{
 					"label": "Base damage",
-					"value": "136-238"
+					"value": "136 - 238"
 				},
 				{
 					"label": "Block",
-					"value": "44"
+					"value": "59"
 				},
 				{
 					"label": "Combo",
@@ -62527,7 +64095,7 @@
 				},
 				{
 					"label": "Special action",
-					"value": "Decimate"
+					"value": "Decimate (50)"
 				}
 			]
 		},
@@ -62601,11 +64169,11 @@
 				},
 				{
 					"label": "Base damage",
-					"value": "102-177"
+					"value": "102 - 177"
 				},
 				{
 					"label": "Block",
-					"value": "44"
+					"value": "59"
 				},
 				{
 					"label": "Combo",
@@ -62613,11 +64181,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1600"
+					"value": "1,600"
 				},
 				{
 					"label": "Special action",
-					"value": "Whirlwind Slash"
+					"value": "Whirlwind Slash (33)"
 				}
 			]
 		},
@@ -62861,11 +64429,11 @@
 				},
 				{
 					"label": "Base damage",
-					"value": "92-163"
+					"value": "92 - 164"
 				},
 				{
 					"label": "Block",
-					"value": "30"
+					"value": "59"
 				},
 				{
 					"label": "Combo",
@@ -62873,11 +64441,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1600"
+					"value": "1,600"
 				},
 				{
 					"label": "Special action",
-					"value": "Block Breaker"
+					"value": "Block Breaker (33)"
 				}
 			]
 		},
@@ -63379,11 +64947,11 @@
 				},
 				{
 					"label": "Base damage",
-					"value": "61-129"
+					"value": "62 - 130"
 				},
 				{
 					"label": "Block",
-					"value": "30"
+					"value": "59"
 				},
 				{
 					"label": "Combo",
@@ -63391,11 +64959,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1600"
+					"value": "1,600"
 				},
 				{
 					"label": "Special action",
-					"value": "Leaping Slash"
+					"value": "Leaping Slash (25)"
 				}
 			]
 		},
@@ -63533,15 +65101,11 @@
 				},
 				{
 					"label": "Base damage",
-					"value": "75-136"
-				},
-				{
-					"label": "Critical chance",
-					"value": "0.02"
+					"value": "75 - 136"
 				},
 				{
 					"label": "Block",
-					"value": "30"
+					"value": "59"
 				},
 				{
 					"label": "Combo",
@@ -63549,11 +65113,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1600"
+					"value": "1,600"
 				},
 				{
 					"label": "Special action",
-					"value": "Barge"
+					"value": "Barge (25)"
 				}
 			]
 		},
@@ -63621,11 +65185,11 @@
 				},
 				{
 					"label": "Base damage",
-					"value": "126-197"
+					"value": "126 - 198"
 				},
 				{
 					"label": "Block",
-					"value": "44"
+					"value": "59"
 				},
 				{
 					"label": "Combo",
@@ -63633,11 +65197,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1600"
+					"value": "1,600"
 				},
 				{
 					"label": "Special action",
-					"value": "Quake"
+					"value": "Quake (50)"
 				}
 			]
 		},
@@ -63970,7 +65534,8 @@
 				}
 			],
 			"usedIn": [
-				"monkfish-skewers"
+				"monkfish-skewers",
+				"ultra-compost"
 			],
 			"drops": [],
 			"shops": [],
@@ -64067,7 +65632,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"ultra-compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -64103,7 +65670,8 @@
 			"extract": "Monstrous fangs are obtained by defeating an abyssal demon. There is currently no use for monstrous fangs.",
 			"recipes": [],
 			"usedIn": [
-				"abyssal-demon-trophy"
+				"abyssal-demon-trophy",
+				"compost"
 			],
 			"drops": [
 				{
@@ -64589,7 +66157,7 @@
 			"type": null,
 			"category": "buildings",
 			"description": "",
-			"extract": "Moon Garou table 01 is a type of furniture. Players can place decorations on top of the table.",
+			"extract": "Moon Garou table 01 is a type of furniture.",
 			"recipes": [
 				{
 					"outputLabel": "Moon Garou Table 01",
@@ -65058,6 +66626,11 @@
 					"source": "Chest (Umbral Sands)",
 					"qty": "1",
 					"rarity": "0.33/100"
+				},
+				{
+					"source": "The Radiant",
+					"qty": "1",
+					"rarity": "1/100"
 				}
 			],
 			"shops": [],
@@ -65160,6 +66733,11 @@
 					"source": "Chest (Umbral Sands)",
 					"qty": "1",
 					"rarity": "0.33/100"
+				},
+				{
+					"source": "The Radiant",
+					"qty": "1",
+					"rarity": "1/100"
 				}
 			],
 			"shops": [],
@@ -65508,6 +67086,11 @@
 					"source": "Chest (Umbral Sands)",
 					"qty": "1",
 					"rarity": "0.34/100"
+				},
+				{
+					"source": "The Radiant",
+					"qty": "1",
+					"rarity": "1/100"
 				}
 			],
 			"shops": [],
@@ -67249,7 +68832,7 @@
 			"icon": "Necromancer's Robe Bottom.png",
 			"type": "Mage Armour",
 			"category": "armour",
-			"description": "Leggings styled after the ancient overlords of Ashenfall.",
+			"description": "Magical robe bottoms for Sorcerer's<sup class=\"noprint\">&#91;<span class=\"fact-text\" title=\"The preceding quoted material has been reproduced verbatim from the quoted original and is not a transcription error.\">sic</span>&#93;</sup> that have no concept of ethics.",
 			"extract": "Necromancer's robe bottom are a power level 5 magic armour that can be created at an armour bench. The Crown, Robe Top, and Robe Legs are required to complete the What Remains is Written quest.",
 			"recipes": [
 				{
@@ -67869,6 +69452,7 @@
 				"bronze-spade",
 				"brynmoor-falcon-perch",
 				"charcoal",
+				"compost",
 				"curved-inner-corner-45-stairs",
 				"curved-outer-corner-45-stairs",
 				"door",
@@ -68232,7 +69816,7 @@
 			"type": "Tool",
 			"category": "tools",
 			"description": "A favourite fishing rod, effective in Ghornfell.",
-			"extract": "The oak rod is a power level 3 Fishing tool crafted at the blacksmith's bench.",
+			"extract": "The oak rod is a power level 3 Fishing tool crafted at the blacksmith's bench. It can be used to catch fish from rod fishing spots in Brynmoor and Ghornfell. Whilst using it to fish, stamina drains more slowly than with an ash rod.",
 			"recipes": [
 				{
 					"outputLabel": "Oak Rod",
@@ -68849,6 +70433,7 @@
 			"usedIn": [
 				"bowl-of-onions",
 				"burnt-onion",
+				"compost",
 				"cooling-fleet-footed-infusion",
 				"fried-onions",
 				"lesser-focused-cooking-potion",
@@ -70336,6 +71921,7 @@
 				"beltfish-broth",
 				"bowl-of-peaches",
 				"burnt-peach",
+				"compost",
 				"dried-peach"
 			],
 			"drops": [],
@@ -70417,15 +72003,12 @@
 			"type": "Magic Weapon",
 			"category": "weapons",
 			"description": "This ancient and powerful weapon lets the wielder channel its sovereign authority into mind-controlling powers.",
-			"extract": "The pharaoh's sceptre is a power level 7 staff that can be crafted at a mystic forge. The recipe is learned from the Icthlarian fetish, the reward from the quest Contact!. It can be ascended at the mystic forge using ascension cores.\nIts special effect is Royal Mandate: While holding the Sceptre, the wielder is able to use the Confuse spell without consuming runes. Its special action is Sworn Servant: This summons Buddy, a friendly kalphite to attack and distract enemies in combat. Buddy can be used for up to 3 minutes as long as it is still alive, and will take another five minutes for it to respawn when recasting the sceptre's special action. However, due to Hollow Vessel, while Buddy is active, the wielder regains stamina much slower (90% slower than normal). Fighting while Buddy is out can be dangerous due to the lack of stamina regen.\n\nBug: There is currently a bug where Buddy will not respawn, or spawn in a online world.",
+			"extract": "The pharaoh's sceptre is a power level 7 staff that can be crafted at a mystic forge. The recipe is learned after completing the quest Contact!. It can be ascended at the mystic forge using ascension cores.\nIts special effect is Royal Mandate: While holding the Sceptre, the wielder is able to use the Confuse spell without consuming runes. Its special action is Sworn Servant: This summons Buddy, a friendly kalphite to attack and distract enemies in combat. Buddy can be used for up to 3 minutes as long as it is still alive, and will take another five minutes for it to respawn when recasting the sceptre's special action. However, due to Hollow Vessel, while Buddy is active, the wielder regains stamina much slower (90% slower than normal). Fighting while Buddy is out can be dangerous due to the lack of stamina regen.\n\nBug: There is currently a bug where Buddy will not respawn, or spawn in a online world.",
 			"recipes": [
 				{
 					"outputLabel": "Pharaoh's Sceptre",
 					"outputQty": 1,
-					"requires": {
-						"label": "Icthlarian Fetish",
-						"slug": "icthlarian-fetish"
-					},
+					"requires": null,
 					"skills": [
 						{
 							"name": "Artisan",
@@ -75922,7 +77505,8 @@
 			"recipes": [],
 			"usedIn": [
 				"baked-potato",
-				"burnt-potato"
+				"burnt-potato",
+				"compost"
 			],
 			"drops": [
 				{
@@ -77243,7 +78827,8 @@
 			"recipes": [],
 			"usedIn": [
 				"burnt-pumpkin",
-				"roast-pumpkin"
+				"roast-pumpkin",
+				"super-compost"
 			],
 			"drops": [
 				{
@@ -78273,10 +79858,10 @@
 			"name": "Queenslayer's Reward Pack",
 			"wiki": "Queenslayer's Reward Pack",
 			"icon": "Queenslayer's Reward Pack.png",
-			"type": "Resource",
-			"category": "materials",
+			"type": "Container",
+			"category": "packs",
 			"description": "Contains the spoils of your battle against Kuldra.",
-			"extract": "The Queenslayer's Reward Pack is a reward pack given to you after defeating Kuldra, the God-Eater in the Scorned Wilderness raid. To acquire this item, players must hand in Kuldra's Head to Commander Zilyana and players can acquire this reward pack multiple times by completing multiple raid runs.\nThrough this, you can acquire pieces of Dragon equipment and a new wand. It is important to note that each opening of the pack ensures one drop from its table.",
+			"extract": "The Queenslayer's Reward Pack is a reward pack given to you after defeating Kuldra, the God-Eater in the Scorned Wilderness raid. To acquire this item, players must hand in Kuldra's Head to Commander Zilyana, and can acquire this reward pack multiple times by completing multiple raid runs.\nThis lets players acquire pieces of Dragon equipment and a new wand. It is important to note that each opening of the pack ensures one drop from its table.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [
@@ -78934,6 +80519,7 @@
 			"usedIn": [
 				"anchovy-bait",
 				"burnt-anchovies",
+				"compost",
 				"seared-anchovies"
 			],
 			"drops": [
@@ -78976,7 +80562,8 @@
 			"recipes": [],
 			"usedIn": [
 				"braised-catfish",
-				"burnt-catfish"
+				"burnt-catfish",
+				"compost"
 			],
 			"drops": [
 				{
@@ -79008,7 +80595,8 @@
 			"recipes": [],
 			"usedIn": [
 				"burnt-beltfish",
-				"steamed-beltfish"
+				"steamed-beltfish",
+				"ultra-compost"
 			],
 			"drops": [
 				{
@@ -79040,6 +80628,7 @@
 			"recipes": [],
 			"usedIn": [
 				"burnt-flank",
+				"compost",
 				"flank-steak"
 			],
 			"drops": [
@@ -79095,6 +80684,7 @@
 				"bramblemead-magpie-perch",
 				"brynmoor-falcon-perch",
 				"burnt-fillet",
+				"compost",
 				"fillet",
 				"umbral-vulture-perch"
 			],
@@ -79154,12 +80744,13 @@
 			"icon": "Raw Desert Sole.png",
 			"type": "Raw Ingredient",
 			"category": "food",
-			"description": "You half expect it to start wriggling again.",
-			"extract": "Raw desert sole is a Power Level 7 raw ingredient, which means it can be cooked at a campfire, grill, or with Infernal Rod into sun baked sole. It can be gathered from rod fishing spots with a yew rod in Umbral Sands at level 3 Fishing. Using monkfish bait increases the chance of catching one. It is the normal variant of a pristine desert sole.",
+			"description": "A raw desert sole, smelling rather ripe.",
+			"extract": "Raw desert sole is a Power Level 7 raw ingredient, which means it can be cooked at a campfire, grill, or with an Infernal Rod into sun baked sole. It can be gathered from rod fishing spots with a yew rod in Umbral Sands at level 3 Fishing. Using monkfish bait increases the chance of catching one. It is the normal variant of a pristine desert sole.",
 			"recipes": [],
 			"usedIn": [
 				"burnt-desert-sole",
-				"sun-baked-sole"
+				"sun-baked-sole",
+				"ultra-compost"
 			],
 			"drops": [
 				{
@@ -79191,6 +80782,7 @@
 			"recipes": [],
 			"usedIn": [
 				"burnt-steak",
+				"compost",
 				"steak"
 			],
 			"drops": [
@@ -79254,6 +80846,7 @@
 			"recipes": [],
 			"usedIn": [
 				"burnt-haunch",
+				"compost",
 				"haunch"
 			],
 			"drops": [
@@ -79293,7 +80886,8 @@
 			"usedIn": [
 				"burnt-giant-krill",
 				"dried-giant-krill",
-				"giant-krill-bait"
+				"giant-krill-bait",
+				"super-compost"
 			],
 			"drops": [
 				{
@@ -79335,6 +80929,7 @@
 			"recipes": [],
 			"usedIn": [
 				"burnt-herring",
+				"compost",
 				"smoked-herring"
 			],
 			"drops": [
@@ -79367,6 +80962,7 @@
 			"recipes": [],
 			"usedIn": [
 				"burnt-infernal-eel",
+				"compost",
 				"smoked-infernal-eel"
 			],
 			"drops": [
@@ -79399,6 +80995,7 @@
 			"recipes": [],
 			"usedIn": [
 				"burnt-lobster",
+				"compost",
 				"lobster-bait",
 				"roasted-lobster"
 			],
@@ -79443,7 +81040,8 @@
 			"usedIn": [
 				"burnt-monkfish",
 				"monkfish-bait",
-				"monkfish-fillets"
+				"monkfish-fillets",
+				"ultra-compost"
 			],
 			"drops": [
 				{
@@ -79485,6 +81083,7 @@
 			"recipes": [],
 			"usedIn": [
 				"burnt-rat-roast",
+				"compost",
 				"rat-roast"
 			],
 			"drops": [
@@ -79543,6 +81142,7 @@
 			"recipes": [],
 			"usedIn": [
 				"burnt-salmon",
+				"compost",
 				"fried-salmon"
 			],
 			"drops": [
@@ -79575,6 +81175,7 @@
 			"recipes": [],
 			"usedIn": [
 				"burnt-sardine",
+				"compost",
 				"fried-sardine"
 			],
 			"drops": [
@@ -79607,6 +81208,7 @@
 			"recipes": [],
 			"usedIn": [
 				"burnt-shrimp",
+				"compost",
 				"sauteed-shrimp",
 				"shrimp-bait"
 			],
@@ -79650,6 +81252,7 @@
 			"recipes": [],
 			"usedIn": [
 				"burnt-trout",
+				"compost",
 				"grilled-trout"
 			],
 			"drops": [
@@ -79682,6 +81285,7 @@
 			"recipes": [],
 			"usedIn": [
 				"burnt-undead-bass",
+				"compost",
 				"grilled-undead-bass"
 			],
 			"drops": [
@@ -79714,7 +81318,8 @@
 			"recipes": [],
 			"usedIn": [
 				"braised-undead-eel",
-				"burnt-undead-eel"
+				"burnt-undead-eel",
+				"compost"
 			],
 			"drops": [
 				{
@@ -79889,6 +81494,11 @@
 				{
 					"source": "Moon Garou Pack",
 					"qty": "3",
+					"rarity": "Always"
+				},
+				{
+					"source": "The Radiant",
+					"qty": "6–8",
 					"rarity": "Always"
 				}
 			],
@@ -80837,6 +82447,7 @@
 			"recipes": [],
 			"usedIn": [
 				"burnt-redberries",
+				"compost",
 				"dried-redberries",
 				"focused-woodcutting-potion",
 				"large-awning-roof",
@@ -82641,6 +84252,7 @@
 				"glazed-pumpkin-sandwich",
 				"pumpkin-soup",
 				"pumpkin-spice-infusion",
+				"super-compost",
 				"umbral-kebab"
 			],
 			"drops": [],
@@ -82880,61 +84492,6 @@
 						}
 					],
 					"id": "1ef6547c04",
-					"station": {
-						"name": "Build Menu",
-						"slug": null
-					}
-				}
-			],
-			"usedIn": [],
-			"drops": [],
-			"shops": [],
-			"unlockedBy": [],
-			"weight": null,
-			"power": null,
-			"stats": []
-		},
-		{
-			"slug": "rotridden-rat-trophy",
-			"name": "Rotridden Rat Trophy",
-			"wiki": "Rotridden Rat Trophy",
-			"icon": "Rotridden Rat Trophy.png",
-			"type": null,
-			"category": "buildings",
-			"description": "",
-			"extract": "The Rotridden Rat Trophy is a decoration.",
-			"recipes": [
-				{
-					"outputLabel": "Rotridden Rat Trophy",
-					"outputQty": 1,
-					"requires": null,
-					"skills": [
-						{
-							"name": "Construction",
-							"xp": 0
-						}
-					],
-					"materials": [
-						{
-							"label": "Ash Plank",
-							"qty": 2,
-							"icon": "Ash Plank.png",
-							"slug": "ash-plank"
-						},
-						{
-							"label": "Hard Leather",
-							"qty": 2,
-							"icon": "Hard Leather.png",
-							"slug": "hard-leather"
-						},
-						{
-							"label": "Small Animal Fang",
-							"qty": 2,
-							"icon": "Small Animal Fang.png",
-							"slug": "small-animal-fang"
-						}
-					],
-					"id": "57b00dd41a",
 					"station": {
 						"name": "Build Menu",
 						"slug": null
@@ -83407,7 +84964,7 @@
 				},
 				{
 					"label": "Base damage",
-					"value": "42-101"
+					"value": "44-118"
 				},
 				{
 					"label": "Stack size",
@@ -83781,11 +85338,11 @@
 			"slug": "rune-dagger",
 			"name": "Rune Dagger",
 			"wiki": "Rune Dagger",
-			"icon": "Rune Dagger (Journal).png",
+			"icon": "Rune Dagger.png",
 			"type": "Melee Weapon",
 			"category": "weapons",
 			"description": "A razor-sharp rune dagger prized for its speed, precision, and deadly effectiveness.",
-			"extract": "The Rune Dagger is a power level 8 one-handed melee weapon.",
+			"extract": "The Rune Dagger is a power level 8 one-handed melee weapon that can be crafted on the Blacksmith's Bench after crafting a Rune Bar.",
 			"recipes": [
 				{
 					"outputLabel": "Rune Dagger",
@@ -83859,11 +85416,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1900"
+					"value": "1,900"
 				},
 				{
 					"label": "Special action",
-					"value": "Lacerate"
+					"value": "Lacerate (25)"
 				}
 			]
 		},
@@ -84286,7 +85843,7 @@
 			"slug": "rune-greataxe",
 			"name": "Rune Greataxe",
 			"wiki": "Rune Greataxe",
-			"icon": "Rune Greataxe (Journal).png",
+			"icon": "Rune Greataxe.png",
 			"type": "Melee Weapon",
 			"category": "weapons",
 			"description": "An imposing rune greataxe, for when a regular axe simply isn't sending a strong enough message.",
@@ -84352,7 +85909,7 @@
 				},
 				{
 					"label": "Base damage",
-					"value": "196-343"
+					"value": "196 - 343"
 				},
 				{
 					"label": "Block",
@@ -84364,11 +85921,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1900"
+					"value": "1,900"
 				},
 				{
 					"label": "Special action",
-					"value": "Decimate"
+					"value": "Decimate (50)"
 				}
 			]
 		},
@@ -84376,7 +85933,7 @@
 			"slug": "rune-greatsword",
 			"name": "Rune Greatsword",
 			"wiki": "Rune Greatsword",
-			"icon": "Rune Greatsword (Journal).png",
+			"icon": "Rune Greatsword.png",
 			"type": "Melee Weapon",
 			"category": "weapons",
 			"description": "A massive two-handed blade forged from runite. Few can wield such a weapon effectively, but fewer still can stand against it.",
@@ -84442,7 +85999,7 @@
 				},
 				{
 					"label": "Base damage",
-					"value": "147-255"
+					"value": "147 - 255"
 				},
 				{
 					"label": "Block",
@@ -84454,11 +86011,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1900"
+					"value": "1,900"
 				},
 				{
 					"label": "Special action",
-					"value": "Whirlwind Slash"
+					"value": "Whirlwind Slash (3)"
 				}
 			]
 		},
@@ -84642,11 +86199,11 @@
 			"slug": "rune-mace",
 			"name": "Rune Mace",
 			"wiki": "Rune Mace",
-			"icon": "Rune Mace (Journal).png",
+			"icon": "Rune Mace.png",
 			"type": "Melee Weapon",
 			"category": "weapons",
 			"description": "A sturdy rune mace, designed to crush armour and bone alike with devastating force.",
-			"extract": "The Rune Mace is a power level 8 one-handed melee weapon.",
+			"extract": "The Rune Mace is a power level 8 one-handed melee weapon that can be crafted on the Blacksmith's Bench after crafting a Rune Bar.",
 			"recipes": [
 				{
 					"outputLabel": "Rune Mace",
@@ -84708,7 +86265,7 @@
 				},
 				{
 					"label": "Base damage",
-					"value": "133-236"
+					"value": "133 - 236"
 				},
 				{
 					"label": "Block",
@@ -84720,11 +86277,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1900"
+					"value": "1,900"
 				},
 				{
 					"label": "Special action",
-					"value": "Block Breaker"
+					"value": "Block Breaker (33)"
 				}
 			]
 		},
@@ -84998,11 +86555,11 @@
 			"slug": "rune-scimitar",
 			"name": "Rune Scimitar",
 			"wiki": "Rune Scimitar",
-			"icon": "Rune Scimitar (Journal).png",
+			"icon": "Rune Scimitar.png",
 			"type": "Melee Weapon",
 			"category": "weapons",
 			"description": "The curved rune blade flows effortlessly from one strike to the next.",
-			"extract": "The rune scimitar is a power level 8 one-handed melee weapon that is crafted with a blacksmith's bench.",
+			"extract": "The rune scimitar is a power level 8 one-handed melee weapon that can be crafted on the blacksmith's bench once you craft a rune bar.",
 			"recipes": [
 				{
 					"outputLabel": "Rune Scimitar",
@@ -85064,7 +86621,7 @@
 				},
 				{
 					"label": "Base damage",
-					"value": "89-187"
+					"value": "89 - 187"
 				},
 				{
 					"label": "Block",
@@ -85076,11 +86633,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1900"
+					"value": "1,900"
 				},
 				{
 					"label": "Special action",
-					"value": "Leaping Slash"
+					"value": "Leaping Slash (25)"
 				}
 			]
 		},
@@ -85218,11 +86775,11 @@
 			"slug": "rune-sword",
 			"name": "Rune Sword",
 			"wiki": "Rune Sword",
-			"icon": "Rune Sword (Journal).png",
+			"icon": "Rune Sword.png",
 			"type": "Melee Weapon",
 			"category": "weapons",
 			"description": "A finely balanced rune sword, renowned for its strength, precision, and reliability in battle.",
-			"extract": "The rune sword is a power level 8 one-handed melee weapon.",
+			"extract": "The rune sword is a power level 8 one-handed melee weapon that can be crafted on the Blacksmith's Bench after crafting a rune bar.",
 			"recipes": [
 				{
 					"outputLabel": "Rune Sword",
@@ -85284,7 +86841,7 @@
 				},
 				{
 					"label": "Base damage",
-					"value": "108-196"
+					"value": "108 - 196"
 				},
 				{
 					"label": "Block",
@@ -85296,11 +86853,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1900"
+					"value": "1,900"
 				},
 				{
 					"label": "Special action",
-					"value": "Barge"
+					"value": "Barge (25)"
 				}
 			]
 		},
@@ -85368,7 +86925,7 @@
 				},
 				{
 					"label": "Base damage",
-					"value": "182-285"
+					"value": "182 - 285"
 				},
 				{
 					"label": "Block",
@@ -85380,11 +86937,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1900"
+					"value": "1,900"
 				},
 				{
 					"label": "Special action",
-					"value": "Quake"
+					"value": "Quake (50)"
 				}
 			]
 		},
@@ -85826,8 +87383,8 @@
 			"name": "Salve Crystal",
 			"wiki": "Salve Crystal",
 			"icon": "Salve Crystal.png",
-			"type": "Quest Item",
-			"category": "quest",
+			"type": "Basic Item",
+			"category": "materials",
 			"description": "A crystal that Doric obtained from a cave near the Salve River, back in Misthalin. Used in creating the Salve amulet.",
 			"extract": "A salve crystal is a piece of crystal from the mainland of Gielinor that is known to have properties against undead. It is given to the players by Doric as a reward when completing Seeking Salvation. This crystal is required for the creation of the salve amulet. Players can obtain more by buying it from Death after Seeking Salvation is completed.",
 			"recipes": [],
@@ -87293,6 +88850,7 @@
 			],
 			"usedIn": [
 				"monkfish-skewers",
+				"ultra-compost",
 				"umbral-kebab"
 			],
 			"drops": [],
@@ -87749,7 +89307,7 @@
 			"slug": "shadow-sword",
 			"name": "Shadow Sword",
 			"wiki": "Shadow Sword",
-			"icon": "Shadow Sword (Journal).png",
+			"icon": "Shadow Sword.png",
 			"type": "Melee Weapon",
 			"category": "weapons",
 			"description": "This Greatsword exists between the realm of the living and the dead.",
@@ -87834,7 +89392,7 @@
 				},
 				{
 					"label": "Special action",
-					"value": "Whirlwind Slash"
+					"value": "Whirlwind Slash (33)"
 				},
 				{
 					"label": "Special effect",
@@ -88291,6 +89849,7 @@
 			"extract": "Shocking plant bulb is dropped by the wild lapulis vine, which is found in the Stormtouched Highlands.",
 			"recipes": [],
 			"usedIn": [
+				"compost",
 				"cooling-evasive-infusion",
 				"purified-kings-token",
 				"zombie-arm"
@@ -92002,7 +93561,7 @@
 			"slug": "skullsplitter",
 			"name": "Skullsplitter",
 			"wiki": "Skullsplitter",
-			"icon": "Skullsplitter (Journal).png",
+			"icon": "Skullsplitter.png",
 			"type": "Melee Weapon",
 			"category": "weapons",
 			"description": "A deadly weapon with a disturbingly accurate name.",
@@ -92083,11 +93642,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1050"
+					"value": "1,050"
 				},
 				{
 					"label": "Special action",
-					"value": "Block Breaker"
+					"value": "Block Breaker (33)"
 				},
 				{
 					"label": "Special effect",
@@ -92787,13 +94346,11 @@
 			"usedIn": [
 				"bone-dagger",
 				"bronze-dagger",
-				"dragon-wolf-trophy",
+				"compost",
 				"evasive-infusion",
 				"fang-arrow",
 				"focused-attack-potion",
-				"rotridden-rat-trophy",
 				"weak-focused-attack-potion",
-				"wolf-trophy",
 				"zombie-rat-trophy"
 			],
 			"drops": [
@@ -94432,6 +95989,7 @@
 			"extract": "Snapdragon is a herb that can be found by harvesting the Snapdragon plant in the Bloodblight Swamp or can be bought from Domri - The Merchant for 12 garou chits.\n\n",
 			"recipes": [],
 			"usedIn": [
+				"compost",
 				"cooling-evasive-infusion",
 				"cooling-fleet-footed-infusion",
 				"lesser-attack-potion",
@@ -96524,7 +98082,7 @@
 			"type": "Potion",
 			"category": "potions",
 			"description": "Consuming a stamina potion will prevent all loss of stamina for a short duration, however you'll need a moment to recover before you have another as such unbridled energy is taxing on the body.",
-			"extract": "Stamina potion grants the perk Stamina Potion, preventing stamina drain from all actions for 20 seconds. Upon using the potion, the player must wait roughly 75 seconds (1 minute and 15 seconds) starting from consumption to use another potion. This, effectively, means players must wait 55 seconds after the potion effect ends to use another dose if players want to multi-dose.",
+			"extract": "Stamina potion grants the perk Stamina Potion, preventing stamina drain from all actions for 20 seconds. Upon using the potion, the player must wait roughly 75 seconds (1 minute and 15 seconds) starting from consumption to use another potion. This, effectively, means players must wait 55 seconds after the potion effect ends to use another dose if players want to multi-dose.\n\nThe recipe is unlocked upon reaching level 53 in the skill Agility.",
 			"recipes": [
 				{
 					"outputLabel": "Stamina Potion",
@@ -97178,7 +98736,8 @@
 			],
 			"usedIn": [
 				"beltfish-broth",
-				"swabbie-pie"
+				"swabbie-pie",
+				"ultra-compost"
 			],
 			"drops": [],
 			"shops": [],
@@ -97798,11 +99357,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1300"
+					"value": "1,300"
 				},
 				{
 					"label": "Special action",
-					"value": "Lacerate"
+					"value": "Lacerate (25)"
 				}
 			]
 		},
@@ -98045,11 +99604,11 @@
 				},
 				{
 					"label": "Base damage",
-					"value": "108-189"
+					"value": "108 - 189"
 				},
 				{
 					"label": "Block",
-					"value": "39"
+					"value": "52"
 				},
 				{
 					"label": "Combo",
@@ -98057,11 +99616,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1300"
+					"value": "1,300"
 				},
 				{
 					"label": "Special action",
-					"value": "Decimate"
+					"value": "Decimate (50)"
 				}
 			]
 		},
@@ -98135,11 +99694,11 @@
 				},
 				{
 					"label": "Base damage",
-					"value": "81-140"
+					"value": "81 - 141"
 				},
 				{
 					"label": "Block",
-					"value": "39"
+					"value": "52"
 				},
 				{
 					"label": "Combo",
@@ -98147,11 +99706,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1300"
+					"value": "1,300"
 				},
 				{
 					"label": "Special action",
-					"value": "Whirlwind Slash"
+					"value": "Whirlwind Slash (33)"
 				}
 			]
 		},
@@ -98305,11 +99864,11 @@
 				},
 				{
 					"label": "Base damage",
-					"value": "73-130"
+					"value": "73 - 130"
 				},
 				{
 					"label": "Block",
-					"value": "26"
+					"value": "52"
 				},
 				{
 					"label": "Combo",
@@ -98317,11 +99876,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1300"
+					"value": "1,300"
 				},
 				{
 					"label": "Special action",
-					"value": "Block Breaker"
+					"value": "Block Breaker (25)"
 				}
 			]
 		},
@@ -98696,7 +100255,7 @@
 			"icon": "Steel Salvage Pile.png",
 			"type": "Basic Material",
 			"category": "materials",
-			"description": ".Scraps that can be searched through. It's the steel of the century.",
+			"description": "Scraps that can be searched through. It's the steel of the century.",
 			"extract": "Steel salvage piles are a basic material that can be combined with three coal in a blast furnace to create one steel bar.",
 			"recipes": [],
 			"usedIn": [
@@ -98792,11 +100351,11 @@
 				},
 				{
 					"label": "Base damage",
-					"value": "49-103"
+					"value": "49 - 103"
 				},
 				{
 					"label": "Block",
-					"value": "26"
+					"value": "52"
 				},
 				{
 					"label": "Combo",
@@ -98804,11 +100363,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1300"
+					"value": "1,300"
 				},
 				{
 					"label": "Special action",
-					"value": "Leaping Slash"
+					"value": "Leaping Slash (25)"
 				}
 			]
 		},
@@ -99009,15 +100568,11 @@
 				},
 				{
 					"label": "Base damage",
-					"value": "59-108"
-				},
-				{
-					"label": "Critical chance",
-					"value": "0.02"
+					"value": "60 - 108"
 				},
 				{
 					"label": "Block",
-					"value": "26"
+					"value": "52"
 				},
 				{
 					"label": "Combo",
@@ -99025,11 +100580,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1300"
+					"value": "1,300"
 				},
 				{
 					"label": "Special action",
-					"value": "Barge"
+					"value": "Barge (25)"
 				}
 			]
 		},
@@ -99097,11 +100652,11 @@
 				},
 				{
 					"label": "Base damage",
-					"value": "100-157"
+					"value": "100 - 157"
 				},
 				{
 					"label": "Block",
-					"value": "39"
+					"value": "52"
 				},
 				{
 					"label": "Combo",
@@ -99109,11 +100664,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1300"
+					"value": "1,300"
 				},
 				{
 					"label": "Special action",
-					"value": "Quake"
+					"value": "Quake (50)"
 				}
 			]
 		},
@@ -99838,7 +101393,7 @@
 				},
 				{
 					"label": "Special action",
-					"value": "Block Breaker"
+					"value": "Block Breaker (33)"
 				}
 			]
 		},
@@ -99916,7 +101471,7 @@
 				},
 				{
 					"label": "Special action",
-					"value": "Lacerate"
+					"value": "Lacerate (25)"
 				}
 			]
 		},
@@ -100274,7 +101829,7 @@
 			"type": null,
 			"category": "buildings",
 			"description": "",
-			"extract": "A storage ledger is a building where players quickly deposit items into \"linked\" storage containers. Its function serves to limit the need to manually open every storage container and instead automatically deposit items into the appropriate container.\nThe storage ledger does not have a Construction level requirement, but it does require level 28 Artisan.",
+			"extract": "A storage ledger is a building where players quickly deposit items into \"linked\" storage containers within a 30-metres radius. It reduces the need to manually open every storage container by automatically depositing items into the correct one. If a player has two chests with the same type of item from the player's inventory, the item will be stored at the nearest chest.\nThe storage ledger does not have a Construction level requirement, but it does require level 28 Artisan.",
 			"recipes": [
 				{
 					"outputLabel": "Storage Ledger",
@@ -100442,7 +101997,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"ultra-compost"
+			],
 			"drops": [
 				{
 					"source": "Chest (Scorned Wilderness)",
@@ -100510,7 +102067,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"ultra-compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -101054,7 +102613,8 @@
 				}
 			],
 			"usedIn": [
-				"swabbie-pie"
+				"swabbie-pie",
+				"ultra-compost"
 			],
 			"drops": [],
 			"shops": [],
@@ -101345,12 +102905,297 @@
 			]
 		},
 		{
+			"slug": "super-compost",
+			"name": "Super Compost",
+			"wiki": "Super Compost",
+			"icon": "Super Compost.png",
+			"type": null,
+			"category": "materials",
+			"description": "",
+			"extract": "Super compost is an item made at the super compost bin at a rate of 10 units per item composted, which can be gathered and used via the compost bucket. Applying compost to a patch provides 50 Farming experience, decreases the disease chance to 25%, and multiplies the yield by 1.75.",
+			"recipes": [
+				{
+					"outputLabel": "Super Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Cadavaberries",
+							"qty": 1,
+							"icon": "Cadavaberries.png",
+							"slug": "cadavaberries"
+						}
+					],
+					"id": "cbbf9f0208",
+					"station": {
+						"name": "Super Compost Bin",
+						"slug": "super-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Super Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Corpse Cotton",
+							"qty": 1,
+							"icon": "Corpse Cotton.png",
+							"slug": "corpse-cotton"
+						}
+					],
+					"id": "2cb6a69db6",
+					"station": {
+						"name": "Super Compost Bin",
+						"slug": "super-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Super Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Pumpkin",
+							"qty": 1,
+							"icon": "Pumpkin.png",
+							"slug": "pumpkin"
+						}
+					],
+					"id": "9c28c439b9",
+					"station": {
+						"name": "Super Compost Bin",
+						"slug": "super-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Super Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Willow Logs",
+							"qty": 1,
+							"icon": "Willow Logs.png",
+							"slug": "willow-logs"
+						}
+					],
+					"id": "1cedb91dd1",
+					"station": {
+						"name": "Super Compost Bin",
+						"slug": "super-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Super Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Watermelon",
+							"qty": 1,
+							"icon": "Watermelon.png",
+							"slug": "watermelon"
+						}
+					],
+					"id": "65282fc98c",
+					"station": {
+						"name": "Super Compost Bin",
+						"slug": "super-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Super Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Hollow Bark",
+							"qty": 1,
+							"icon": "Hollow Bark.png",
+							"slug": "hollow-bark"
+						}
+					],
+					"id": "0fbb1f6e97",
+					"station": {
+						"name": "Super Compost Bin",
+						"slug": "super-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Super Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Irit",
+							"qty": 1,
+							"icon": "Irit.png",
+							"slug": "irit"
+						}
+					],
+					"id": "d4b415a77a",
+					"station": {
+						"name": "Super Compost Bin",
+						"slug": "super-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Super Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Undead Bone",
+							"qty": 1,
+							"icon": "Undead Bone.png",
+							"slug": "undead-bone"
+						}
+					],
+					"id": "d3b294de50",
+					"station": {
+						"name": "Super Compost Bin",
+						"slug": "super-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Super Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Undead Meat",
+							"qty": 1,
+							"icon": "Undead Meat.png",
+							"slug": "undead-meat"
+						}
+					],
+					"id": "90d3807951",
+					"station": {
+						"name": "Super Compost Bin",
+						"slug": "super-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Super Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Dried Cadavaberries",
+							"qty": 1,
+							"icon": "Dried Cadavaberries.png",
+							"slug": "dried-cadavaberries"
+						}
+					],
+					"id": "7820c0227f",
+					"station": {
+						"name": "Super Compost Bin",
+						"slug": "super-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Super Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Roast Pumpkin",
+							"qty": 1,
+							"icon": "Roast Pumpkin.png",
+							"slug": "roast-pumpkin"
+						}
+					],
+					"id": "967d58fbb6",
+					"station": {
+						"name": "Super Compost Bin",
+						"slug": "super-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Super Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Burnt Pumpkin",
+							"qty": 1,
+							"icon": "Burnt Pumpkin.png",
+							"slug": "burnt-pumpkin"
+						}
+					],
+					"id": "73aa43f5f4",
+					"station": {
+						"name": "Super Compost Bin",
+						"slug": "super-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Super Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Maple Logs",
+							"qty": 1,
+							"icon": "Maple Logs.png",
+							"slug": "maple-logs"
+						}
+					],
+					"id": "22579cb8e9",
+					"station": {
+						"name": "Super Compost Bin",
+						"slug": "super-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Super Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Raw Giant Krill",
+							"qty": 1,
+							"icon": "Raw Giant Krill.png",
+							"slug": "raw-giant-krill"
+						}
+					],
+					"id": "f753161c94",
+					"station": {
+						"name": "Super Compost Bin",
+						"slug": "super-compost-bin"
+					}
+				}
+			],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": null,
+			"power": null,
+			"stats": []
+		},
+		{
 			"slug": "super-compost-bin",
 			"name": "Super Compost Bin",
 			"wiki": "Super Compost Bin",
 			"icon": "Super Compost Bin.png",
 			"type": null,
-			"category": "buildings",
+			"category": "crafting-stations",
 			"description": "",
 			"extract": "A super compost bin is a buildable object unlocked at level 60 Farming. Unlike the regular compost bin, it will only accept a smaller pool of items, which includes willow logs, in order to produce super compost, which can be taken out of the bin with an empty compost bucket.",
 			"recipes": [
@@ -102219,7 +104064,9 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"ultra-compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -102392,6 +104239,7 @@
 			"extract": "Swamp weed can be harvested by the swamp weed plant, which mostly spawns in and around the poisonous waters in the Bloodblight Swamp and inside the Kletterbuja Kara vault. It can be used to create swamp thread.\n\n",
 			"recipes": [],
 			"usedIn": [
+				"compost",
 				"lesser-antipoison-potion",
 				"swamp-thread"
 			],
@@ -103040,7 +104888,8 @@
 			"extract": "Tea leaves is a basic item bought from merchants for 20 garou chits or found in chests in Umbral Sands . It can be processed into dried tea leaves at the kiln.",
 			"recipes": [],
 			"usedIn": [
-				"dried-tea-leaves"
+				"dried-tea-leaves",
+				"ultra-compost"
 			],
 			"drops": [
 				{
@@ -103205,7 +105054,7 @@
 			"slug": "thanes-authority",
 			"name": "Thane's Authority",
 			"wiki": "Thane's Authority",
-			"icon": "Thane's Authority (Journal).png",
+			"icon": "Thane's Authority.png",
 			"type": "Melee Weapon",
 			"category": "weapons",
 			"description": "A hefting greataxe, wielded by the powerful garou thanes.",
@@ -103380,7 +105229,7 @@
 			"usedIn": [],
 			"drops": [
 				{
-					"source": "Red Dragon",
+					"source": "The Radiant",
 					"qty": "1",
 					"rarity": "Always"
 				}
@@ -103608,7 +105457,7 @@
 			"slug": "titans-wrath",
 			"name": "Titan's Wrath",
 			"wiki": "Titan's Wrath",
-			"icon": "Titan's Wrath (Journal).png",
+			"icon": "Titan's Wrath.png",
 			"type": "Melee Weapon",
 			"category": "weapons",
 			"description": "This sword is now thrice-owned: by you, the Black Knight Titan and Lord Rasmodel.",
@@ -103721,6 +105570,7 @@
 			"extract": "Toadflax is found by harvesting the Toadflax plants in the Bloodblight Swamp and can be bought from Domri - The Merchant for 12 garou chits.\n\n",
 			"recipes": [],
 			"usedIn": [
+				"compost",
 				"cooling-arcane-infusion",
 				"cooling-ferocious-infusion",
 				"cooling-relentless-infusion",
@@ -103946,7 +105796,7 @@
 			"slug": "toktz-xil-ak",
 			"name": "Toktz-Xil-Ak",
 			"wiki": "Toktz-Xil-Ak",
-			"icon": "TOKTZ-XIL-AK (Journal).png",
+			"icon": "Toktz-Xil-Ak.png",
 			"type": "Melee Weapon",
 			"category": "weapons",
 			"description": "A double-pointed sword that is extremely efficient at finding the weak spots in your enemies.",
@@ -104025,11 +105875,11 @@
 				},
 				{
 					"label": "Special action",
-					"value": "Barge"
+					"value": "Barge (25)"
 				},
 				{
 					"label": "Special effect",
-					"value": "INCREASED chance of landing CRITICAL HITS Reduced DURABILITY"
+					"value": "* INCREASED chance of landing CRITICAL HITS * Reduced DURABILITY"
 				}
 			]
 		},
@@ -104045,6 +105895,7 @@
 			"recipes": [],
 			"usedIn": [
 				"burnt-tomato",
+				"compost",
 				"grilled-tomatoes"
 			],
 			"drops": [
@@ -106073,7 +107924,7 @@
 			"slug": "tzhaar-ket-om",
 			"name": "TzHaar-Ket-Om",
 			"wiki": "TzHaar-Ket-Om",
-			"icon": "TZHAAR-KET-OM (Journal).png",
+			"icon": "TzHaar-Ket-Om.png",
 			"type": "Melee Weapon",
 			"category": "weapons",
 			"description": "A massive warhammer of obsidian hue. Each swing carries the weight of something ancient.",
@@ -106146,7 +107997,7 @@
 				},
 				{
 					"label": "Special action",
-					"value": "Quake"
+					"value": "Quake (50)"
 				},
 				{
 					"label": "Special effect",
@@ -106163,7 +108014,407 @@
 			"category": "materials",
 			"description": "Fertilizing a plot with this is beneficial to its yield. Like, suspiciously beneficial. Wow!",
 			"extract": "Ultra compost is an item made at the ultra compost bin at a rate of 10 units per item composted, which can be gathered and used via the compost bucket. Applying ultra compost to a patch provides 50 Farming experience, decreases the disease chance to 12.5%, and multiplies the yield by 2.5.",
-			"recipes": [],
+			"recipes": [
+				{
+					"outputLabel": "Ultra Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Cactus Fibres",
+							"qty": 1,
+							"icon": "Cactus Fibres.png",
+							"slug": "cactus-fibres"
+						}
+					],
+					"id": "b479f6db58",
+					"station": {
+						"name": "Ultra Compost Bin",
+						"slug": "ultra-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Ultra Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Yew Logs",
+							"qty": 1,
+							"icon": "Yew Logs.png",
+							"slug": "yew-logs"
+						}
+					],
+					"id": "417089ad91",
+					"station": {
+						"name": "Ultra Compost Bin",
+						"slug": "ultra-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Ultra Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Monkfish Fillets",
+							"qty": 1,
+							"icon": "Monkfish Fillets.png",
+							"slug": "monkfish-fillets"
+						}
+					],
+					"id": "c4d1d2b38b",
+					"station": {
+						"name": "Ultra Compost Bin",
+						"slug": "ultra-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Ultra Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Desert Weed",
+							"qty": 1,
+							"icon": "Desert Weed.png",
+							"slug": "desert-weed"
+						}
+					],
+					"id": "03ff4d4677",
+					"station": {
+						"name": "Ultra Compost Bin",
+						"slug": "ultra-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Ultra Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Cactus Steak",
+							"qty": 1,
+							"icon": "Cactus Steak.png",
+							"slug": "cactus-steak"
+						}
+					],
+					"id": "61e85648ec",
+					"station": {
+						"name": "Ultra Compost Bin",
+						"slug": "ultra-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Ultra Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Ground Tea Leaves",
+							"qty": 1,
+							"icon": "Ground Tea Leaves.png",
+							"slug": "ground-tea-leaves"
+						}
+					],
+					"id": "76529f6b85",
+					"station": {
+						"name": "Ultra Compost Bin",
+						"slug": "ultra-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Ultra Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Tea Leaves",
+							"qty": 1,
+							"icon": "Tea Leaves.png",
+							"slug": "tea-leaves"
+						}
+					],
+					"id": "b4f346ac3c",
+					"station": {
+						"name": "Ultra Compost Bin",
+						"slug": "ultra-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Ultra Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Fibrous Pipe Cactus",
+							"qty": 1,
+							"icon": "Fibrous Pipe Cactus.png",
+							"slug": "fibrous-pipe-cactus"
+						}
+					],
+					"id": "ac9245dd38",
+					"station": {
+						"name": "Ultra Compost Bin",
+						"slug": "ultra-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Ultra Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Seared Cactus Steak",
+							"qty": 1,
+							"icon": "Seared Cactus Steak.png",
+							"slug": "seared-cactus-steak"
+						}
+					],
+					"id": "20e32d1922",
+					"station": {
+						"name": "Ultra Compost Bin",
+						"slug": "ultra-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Ultra Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Raw Monkfish",
+							"qty": 1,
+							"icon": "Raw Monkfish.png",
+							"slug": "raw-monkfish"
+						}
+					],
+					"id": "639ec8a0b3",
+					"station": {
+						"name": "Ultra Compost Bin",
+						"slug": "ultra-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Ultra Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Monkfish Skewers",
+							"qty": 1,
+							"icon": "Monkfish Skewers.png",
+							"slug": "monkfish-skewers"
+						}
+					],
+					"id": "02f074005a",
+					"station": {
+						"name": "Ultra Compost Bin",
+						"slug": "ultra-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Ultra Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Beltfish Broth",
+							"qty": 1,
+							"icon": "Beltfish Broth.png",
+							"slug": "beltfish-broth"
+						}
+					],
+					"id": "c08be708a7",
+					"station": {
+						"name": "Ultra Compost Bin",
+						"slug": "ultra-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Ultra Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Raw Beltfish",
+							"qty": 1,
+							"icon": "Raw Beltfish.png",
+							"slug": "raw-beltfish"
+						}
+					],
+					"id": "6f6764b8b7",
+					"station": {
+						"name": "Ultra Compost Bin",
+						"slug": "ultra-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Ultra Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Steamed Beltfish",
+							"qty": 1,
+							"icon": "Steamed Beltfish.png",
+							"slug": "steamed-beltfish"
+						}
+					],
+					"id": "ed9886bb8c",
+					"station": {
+						"name": "Ultra Compost Bin",
+						"slug": "ultra-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Ultra Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Raw Desert Sole",
+							"qty": 1,
+							"icon": "Raw Desert Sole.png",
+							"slug": "raw-desert-sole"
+						}
+					],
+					"id": "d72dc16467",
+					"station": {
+						"name": "Ultra Compost Bin",
+						"slug": "ultra-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Ultra Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Sun Baked Sole",
+							"qty": 1,
+							"icon": "Sun Baked Sole.png",
+							"slug": "sun-baked-sole"
+						}
+					],
+					"id": "64fce546ca",
+					"station": {
+						"name": "Ultra Compost Bin",
+						"slug": "ultra-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Ultra Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Swabbie Pie",
+							"qty": 1,
+							"icon": "Swabbie Pie.png",
+							"slug": "swabbie-pie"
+						}
+					],
+					"id": "94fb714d2f",
+					"station": {
+						"name": "Ultra Compost Bin",
+						"slug": "ultra-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Ultra Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Strong Sweet Tea",
+							"qty": 1,
+							"icon": "Strong Sweet Tea.png",
+							"slug": "strong-sweet-tea"
+						}
+					],
+					"id": "e2dacd45b0",
+					"station": {
+						"name": "Ultra Compost Bin",
+						"slug": "ultra-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Ultra Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Strong Tea",
+							"qty": 1,
+							"icon": "Strong Tea.png",
+							"slug": "strong-tea"
+						}
+					],
+					"id": "e99a1b2dde",
+					"station": {
+						"name": "Ultra Compost Bin",
+						"slug": "ultra-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Ultra Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Dried Tea Leaves",
+							"qty": 1,
+							"icon": "Dried Tea Leaves.png",
+							"slug": "dried-tea-leaves"
+						}
+					],
+					"id": "0ce3eb6691",
+					"station": {
+						"name": "Ultra Compost Bin",
+						"slug": "ultra-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Ultra Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Magic Logs",
+							"qty": 1,
+							"icon": "Magic Logs.png",
+							"slug": "magic-logs"
+						}
+					],
+					"id": "f1a07bac91",
+					"station": {
+						"name": "Ultra Compost Bin",
+						"slug": "ultra-compost-bin"
+					}
+				}
+			],
 			"usedIn": [],
 			"drops": [],
 			"shops": [],
@@ -106178,7 +108429,7 @@
 			"wiki": "Ultra Compost Bin",
 			"icon": "Ultra Compost Bin.png",
 			"type": null,
-			"category": "buildings",
+			"category": "crafting-stations",
 			"description": "",
 			"extract": "An ultra compost bin is a buildable object unlocked at level 69 Farming. It mainly uses plants and foods from Umbral Sands and takes 11 minutes and 40 seconds of processing to produce 1000 units of ultra compost (or instantly during sleep).",
 			"recipes": [
@@ -106802,6 +109053,7 @@
 				"skeleton-trophy",
 				"skeletons-trophy",
 				"steel-dagger",
+				"super-compost",
 				"undead-rangers-bow",
 				"undead-spade",
 				"zogre-hand-trophy",
@@ -107056,6 +109308,7 @@
 				"cauterised-undead-steak",
 				"infinity-zogre-trophy",
 				"rotsworn-zombie-trophy",
+				"super-compost",
 				"zogre-hand-trophy",
 				"zogre-trophy"
 			],
@@ -109679,6 +111932,7 @@
 			"usedIn": [
 				"burnt-watermelon",
 				"scarecrow-decoration",
+				"super-compost",
 				"watermelon-jerky"
 			],
 			"drops": [
@@ -111663,6 +113917,7 @@
 			"recipes": [],
 			"usedIn": [
 				"bag-of-flour",
+				"compost",
 				"dwellberry-crunchies",
 				"glorious-cake",
 				"lesser-focused-farming-potion",
@@ -112974,6 +115229,7 @@
 				"steel-mace",
 				"steel-pickaxe",
 				"steel-spade",
+				"super-compost",
 				"super-compost-bin",
 				"ulvs-longbow",
 				"undead-spade",
@@ -113899,61 +116155,6 @@
 			]
 		},
 		{
-			"slug": "wolf-trophy",
-			"name": "Wolf Trophy",
-			"wiki": "Wolf Trophy",
-			"icon": "Wolf Trophy.png",
-			"type": null,
-			"category": "buildings",
-			"description": "",
-			"extract": "The Wolf Trophy is a decoration.",
-			"recipes": [
-				{
-					"outputLabel": "Wolf Trophy",
-					"outputQty": 1,
-					"requires": null,
-					"skills": [
-						{
-							"name": "Construction",
-							"xp": 0
-						}
-					],
-					"materials": [
-						{
-							"label": "Ash Plank",
-							"qty": 2,
-							"icon": "Ash Plank.png",
-							"slug": "ash-plank"
-						},
-						{
-							"label": "Small Animal Fang",
-							"qty": 2,
-							"icon": "Small Animal Fang.png",
-							"slug": "small-animal-fang"
-						},
-						{
-							"label": "Leather",
-							"qty": 2,
-							"icon": "Leather.png",
-							"slug": "leather"
-						}
-					],
-					"id": "f230109ec3",
-					"station": {
-						"name": "Build Menu",
-						"slug": null
-					}
-				}
-			],
-			"usedIn": [],
-			"drops": [],
-			"shops": [],
-			"unlockedBy": [],
-			"weight": null,
-			"power": null,
-			"stats": []
-		},
-		{
 			"slug": "wolfbane-dagger",
 			"name": "Wolfbane Dagger",
 			"wiki": "Wolfbane Dagger",
@@ -114035,11 +116236,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1300"
+					"value": "1,300"
 				},
 				{
 					"label": "Special action",
-					"value": "Lacerate"
+					"value": "Lacerate (25)"
 				},
 				{
 					"label": "Special effect",
@@ -114426,7 +116627,7 @@
 			"slug": "wooden-training-sword",
 			"name": "Wooden Training Sword",
 			"wiki": "Wooden Training Sword",
-			"icon": "Wooden Training Sword (Journal).png",
+			"icon": "Wooden Training Sword.png",
 			"type": "Melee Weapon",
 			"category": "weapons",
 			"description": "Causes damage to their self esteem more than anything really.",
@@ -114493,7 +116694,7 @@
 				},
 				{
 					"label": "Special action",
-					"value": "Barge"
+					"value": "Barge (25)"
 				}
 			]
 		},
@@ -115333,6 +117534,7 @@
 				"moon-garou-sunshade-01",
 				"moon-garou-sunshade-02",
 				"rune-logging-axe",
+				"ultra-compost",
 				"ultra-compost-bin",
 				"umbral-vulture-perch",
 				"yew-farming-plot",
@@ -116709,6 +118911,35 @@
 			]
 		},
 		{
+			"slug": "zis-core",
+			"name": "Zi's Core",
+			"wiki": "Zi's Core",
+			"icon": "Zi's Core.png",
+			"type": "Basic Item",
+			"category": "materials",
+			"description": "Look, adventurer, I have an item description!",
+			"extract": "Zi's core is a quest item that players receive after defeating the Reforged Zi boss from the quest Brink of Extinction. Players will need to turn this into the KotHaar Bouncer to complete the quest.",
+			"recipes": [],
+			"usedIn": [],
+			"drops": [
+				{
+					"source": "Reforged Zi",
+					"qty": "1",
+					"rarity": "Always"
+				}
+			],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": 0,
+			"power": null,
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
+				}
+			]
+		},
+		{
 			"slug": "zogre-hand-trophy",
 			"name": "Zogre Hand Trophy",
 			"wiki": "Zogre Hand Trophy",
@@ -116856,7 +119087,7 @@
 			"slug": "zombie-arm",
 			"name": "Zombie Arm",
 			"wiki": "Zombie Arm",
-			"icon": "Zombie Arm (Journal).png",
+			"icon": "Zombie Arm.png",
 			"type": "Melee Weapon",
 			"category": "weapons",
 			"description": "A zombie's arm with electrifying properties. High five!",
@@ -116950,7 +119181,7 @@
 				},
 				{
 					"label": "Special action",
-					"value": "Block Breaker"
+					"value": "Block Breaker (33)"
 				},
 				{
 					"label": "Special effect",
@@ -116962,7 +119193,7 @@
 			"slug": "zombie-axe",
 			"name": "Zombie Axe",
 			"wiki": "Zombie Axe",
-			"icon": "Zombie Axe (Journal).png",
+			"icon": "Zombie Axe.png",
 			"type": "Melee Weapon",
 			"category": "weapons",
 			"description": "Made in the style of an ancient axe often found in the hands of zombies, it is capable of dealing both Crush and Slash damage at the same time. There seems to be more to this axe though...",
@@ -117046,11 +119277,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1300"
+					"value": "1,300"
 				},
 				{
 					"label": "Special action",
-					"value": "Block Breaker"
+					"value": "Block Breaker (33)"
 				},
 				{
 					"label": "Special effect",

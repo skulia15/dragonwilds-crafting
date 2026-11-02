@@ -1,5 +1,41 @@
 [
 	{
+		"date": "2026-11-02",
+		"added": [
+			{
+				"slug": "compost",
+				"name": "Compost"
+			},
+			{
+				"slug": "kothaar-numbering-for-dummies",
+				"name": "KotHaar Numbering For Dummies"
+			},
+			{
+				"slug": "mirror-lens",
+				"name": "Mirror Lens"
+			},
+			{
+				"slug": "super-compost",
+				"name": "Super Compost"
+			},
+			{
+				"slug": "zis-core",
+				"name": "Zi's Core"
+			}
+		],
+		"removed": [
+			"Dragon Wolf Trophy",
+			"Rotridden Rat Trophy",
+			"Wolf Trophy"
+		],
+		"changed": [
+			{
+				"slug": "ultra-compost",
+				"name": "Ultra Compost"
+			}
+		]
+	},
+	{
 		"date": "2026-10-26",
 		"added": [
 			{
