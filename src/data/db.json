@@ -1,5 +1,5 @@
 {
-	"fetchedAt": "2026-11-02T15:55:53.220Z",
+	"fetchedAt": "2026-11-09T16:22:30.824Z",
 	"categories": [
 		{
 			"slug": "weapons",
@@ -58,7 +58,7 @@
 		{
 			"slug": "materials",
 			"name": "Materials",
-			"count": 356,
+			"count": 357,
 			"craftable": 83
 		},
 		{
@@ -4610,8 +4610,12 @@
 					"value": "66"
 				},
 				{
+					"label": "Combo",
+					"value": "1"
+				},
+				{
 					"label": "Durability",
-					"value": "2400"
+					"value": "2,400"
 				},
 				{
 					"label": "Special action",
@@ -4888,8 +4892,12 @@
 					"value": "66"
 				},
 				{
+					"label": "Combo",
+					"value": "1"
+				},
+				{
 					"label": "Durability",
-					"value": "2400"
+					"value": "2,400"
 				}
 			]
 		},
@@ -7202,6 +7210,10 @@
 				{
 					"label": "Magic defence",
 					"value": "60"
+				},
+				{
+					"label": "Durability",
+					"value": "1750"
 				},
 				{
 					"label": "Set bonus",
@@ -17007,8 +17019,12 @@
 					"value": "33"
 				},
 				{
+					"label": "Combo",
+					"value": "1"
+				},
+				{
 					"label": "Durability",
-					"value": "1350"
+					"value": "1,350"
 				}
 			]
 		},
@@ -18861,8 +18877,12 @@
 					"value": "39"
 				},
 				{
+					"label": "Combo",
+					"value": "1"
+				},
+				{
 					"label": "Durability",
-					"value": "1800"
+					"value": "1,800"
 				},
 				{
 					"label": "Special action",
@@ -19158,8 +19178,12 @@
 					"value": "39"
 				},
 				{
+					"label": "Combo",
+					"value": "1"
+				},
+				{
 					"label": "Durability",
-					"value": "1800"
+					"value": "1,800"
 				}
 			]
 		},
@@ -23106,7 +23130,7 @@
 			],
 			"drops": [
 				{
-					"source": "Cabbage (plant)",
+					"source": "Cabbage (node)",
 					"qty": "1",
 					"rarity": "Always"
 				},
@@ -23146,7 +23170,7 @@
 			"usedIn": [],
 			"drops": [
 				{
-					"source": "Cabbage (plant)",
+					"source": "Cabbage (node)",
 					"qty": "1",
 					"rarity": "25/100"
 				},
@@ -29128,7 +29152,7 @@
 			"type": "Ranged Weapon",
 			"category": "weapons",
 			"description": "A powerful Shortbow fashioned from crystal of elven origin.",
-			"extract": "The crystal bow is a power level 3 masterwork shortbow that can be obtained (as well as its crafting recipe) as a reward from the Heartstrings quest. It can then be crafted at a fletching bench. It can be ascended at the mystic forge using ascension cores.\nIts special attack is called Shattershot, costing 43 stamina and shoots an area-of-effect cone of arrows a short distance that deals one third of the weapon's base damage to every target hit. Each target hit is stuck with crystal needles that explode after a short time for a set 50 damage. More needles can be stacked before the previous set explodes. This special attack does not require arrows to fire and can penetrate solid objects.\nThis weapon fires slightly slower than other shortbows despite dealing very similar damage when at the same power level, even when compared to the undead ranger's bow which is supposed to have increased damage as its special effect. This weapon has the same durability as the other ascendable shortbows, which makes the wild scout's shortbow with its 10% faster draw speed the ideal choice of shortbow to ascend if not using shattershot.",
+			"extract": "The crystal bow is a power level 3 masterwork shortbow that can be obtained (as well as its crafting recipe) as a reward from the Heartstrings quest. It can then be crafted at a fletching bench. It can be ascended at the mystic forge using ascension cores.\nIts special attack is called Shattershot, costing 50 stamina and shoots an area-of-effect cone of arrows a short distance that deals one third of the weapon's base damage to every target hit. Each target hit is stuck with crystal needles that explode after a short time for a set 50 damage. More needles can be stacked before the previous set explodes. This special attack does not require arrows to fire and can penetrate solid objects.\nThis weapon fires slightly slower than other shortbows despite dealing very similar damage when at the same power level, even when compared to the undead ranger's bow which is supposed to have increased damage as its special effect. This weapon has the same durability as the other ascendable shortbows, which makes the wild scout's shortbow with its 10% faster draw speed the ideal choice of shortbow to ascend if not using shattershot.",
 			"recipes": [
 				{
 					"outputLabel": "Crystal Bow",
@@ -30003,6 +30027,7 @@
 				"moon-garou-carpet-02",
 				"moon-garou-chair-01",
 				"moon-garou-chair-02",
+				"moon-garou-cushion-01",
 				"moon-garou-sunshade-01",
 				"moon-garou-sunshade-02",
 				"moon-garou-table-01",
@@ -30228,15 +30253,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "-"
+					"value": "+27"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "-"
+					"value": "+28"
 				},
 				{
 					"label": "Magic defence",
-					"value": "-"
+					"value": "+32"
 				},
 				{
 					"label": "Durability",
@@ -30608,7 +30633,7 @@
 			],
 			"drops": [
 				{
-					"source": "Desert Weed (plant)",
+					"source": "Desert Weed (node)",
 					"qty": "1–2",
 					"rarity": "Always"
 				},
@@ -30642,7 +30667,7 @@
 			"usedIn": [],
 			"drops": [
 				{
-					"source": "Desert Weed (plant)",
+					"source": "Desert Weed (node)",
 					"qty": "1–2",
 					"rarity": "Always"
 				},
@@ -38061,7 +38086,7 @@
 			],
 			"drops": [
 				{
-					"source": "Fibrous Pipe Cactus (plant)",
+					"source": "Fibrous Pipe Cactus (node)",
 					"qty": "2–3",
 					"rarity": "Always"
 				}
@@ -39093,7 +39118,7 @@
 			],
 			"drops": [
 				{
-					"source": "Flax (plant)",
+					"source": "Flax (node)",
 					"qty": "1",
 					"rarity": "Always"
 				},
@@ -39138,7 +39163,7 @@
 			"usedIn": [],
 			"drops": [
 				{
-					"source": "Flax (plant)",
+					"source": "Flax (node)",
 					"qty": "1",
 					"rarity": "15/100"
 				},
@@ -41264,7 +41289,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "It's tempting to leave it out in the Scorch to give it a taste of its own medicine.",
-			"extract": "Fuzan's Head is a quest item obtained by defeating Fuzan during the Icthlarin's Little Helper quest. Players must give Fuzan's Head to Icthlarin to complete the quest.\nAfter completing the quest, players can exchange additional Fuzan Heads with Icthlarin for a Smoldering Draconic Visage.",
+			"extract": "Fuzan's Head is a quest item obtained by defeating Fuzan during the Icthlarin's Little Helper quest. Players must give Fuzan's Head to Icthlarin to complete the quest.\nAfter completing the quest, players can exchange additional Fuzan Heads with Icthlarin for a Smouldering Draconic Visage.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [
@@ -44861,7 +44886,7 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1,250"
+					"value": "1250"
 				},
 				{
 					"label": "Set bonus",
@@ -44957,7 +44982,7 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1,250"
+					"value": "1250"
 				},
 				{
 					"label": "Set bonus",
@@ -48376,7 +48401,7 @@
 			"type": "Basic Item",
 			"category": "materials",
 			"description": "A fragrant herb used in restorative potions.",
-			"extract": "Harralander is a herb that is harvested from Harralander plants, found primarily in the Whispering Swamp and can be bought from Domri - The Merchant for 6 garou chits.",
+			"extract": "Harralander is a herb that is harvested from Harralander plants, found primarily in the Whispering Swamp and can be bought from Domri - The Merchant for 6 garou chits.\n\n",
 			"recipes": [],
 			"usedIn": [
 				"arcane-infusion",
@@ -48393,7 +48418,7 @@
 					"rarity": "Always"
 				},
 				{
-					"source": "Harralander (plant)",
+					"source": "Harralander (node)",
 					"qty": "1",
 					"rarity": "Always"
 				},
@@ -48453,7 +48478,7 @@
 			"usedIn": [],
 			"drops": [
 				{
-					"source": "Harralander (plant)",
+					"source": "Harralander (node)",
 					"qty": "1",
 					"rarity": "15/100"
 				},
@@ -50025,7 +50050,7 @@
 			"type": "Mage Armour",
 			"category": "armour",
 			"description": "A wizard's robe, infused with endless arcane force.",
-			"extract": "Infinity robe body is a power level 7 magic armour that can be crafted at an armour bench. The recipe for this item and the rest of the armour set is unlocked by creating Infinity Cloth for the first time.",
+			"extract": "An infinity robe body is a power level 7 magic armour that can be crafted at an armour bench. The recipe for this item and the rest of the armour set is unlocked by creating Infinity Cloth for the first time.",
 			"recipes": [
 				{
 					"outputLabel": "Infinity Robe Body",
@@ -50102,6 +50127,10 @@
 					"value": "+53"
 				},
 				{
+					"label": "Durability",
+					"value": "1500"
+				},
+				{
 					"label": "Set bonus",
 					"value": "-50% Stamina Regen Delay"
 				},
@@ -50123,7 +50152,7 @@
 			"type": "Mage Armour",
 			"category": "armour",
 			"description": "A wizard's hat, infused with boundless magical power.",
-			"extract": "Infinity robe hat is a power level 7 magic armour that can be crafted at an armour bench.  The recipe for this item and the rest of the armour set is unlocked by creating Infinity Cloth for the first time.",
+			"extract": "An infinity robe hat is a power level 7 magic armour that can be crafted at an armour bench.  The recipe for this item and the rest of the armour set is unlocked by creating Infinity Cloth for the first time.",
 			"recipes": [
 				{
 					"outputLabel": "Infinity Robe Hat",
@@ -50200,6 +50229,10 @@
 				{
 					"label": "Magic defence",
 					"value": "+21"
+				},
+				{
+					"label": "Durability",
+					"value": "1500"
 				},
 				{
 					"label": "Set bonus",
@@ -50298,6 +50331,10 @@
 				{
 					"label": "Magic defence",
 					"value": "+32"
+				},
+				{
+					"label": "Durability",
+					"value": "1500"
 				},
 				{
 					"label": "Set bonus",
@@ -52338,15 +52375,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "12"
+					"value": "+12"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "10"
+					"value": "+10"
 				},
 				{
 					"label": "Magic defence",
-					"value": "9"
+					"value": "+9"
 				},
 				{
 					"label": "Durability",
@@ -52439,8 +52476,12 @@
 					"value": "46"
 				},
 				{
+					"label": "Combo",
+					"value": "1"
+				},
+				{
 					"label": "Durability",
-					"value": "2400"
+					"value": "2,400"
 				},
 				{
 					"label": "Special action",
@@ -52760,8 +52801,12 @@
 					"value": "46"
 				},
 				{
+					"label": "Combo",
+					"value": "1"
+				},
+				{
 					"label": "Durability",
-					"value": "2100"
+					"value": "2,100"
 				}
 			]
 		},
@@ -52827,15 +52872,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "30"
+					"value": "+30"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "24"
+					"value": "+24"
 				},
 				{
 					"label": "Magic defence",
-					"value": "23"
+					"value": "+23"
 				},
 				{
 					"label": "Durability",
@@ -52917,15 +52962,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "18"
+					"value": "+18"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "15"
+					"value": "+15"
 				},
 				{
 					"label": "Magic defence",
-					"value": "14"
+					"value": "+14"
 				},
 				{
 					"label": "Durability",
@@ -54882,7 +54927,7 @@
 			"type": "Basic Item",
 			"category": "materials",
 			"description": "An upgraded wooden bucket with room for extra Compost. Fewer trips, more fertilizing - just try not to strain your back! Pour its contents over a Farming Plot to Fertilize your plants.",
-			"extract": "The large compost bucket is a tool created at the crafting table. Level 65 Farming is required to unlock the recipe. It can be used to take out compost, super compost, and ultra compost from the compost bin, super compost bin, and ultra compost bin, respectively, at a maximum of 300 units per bucket held in the inventory.\nWhen used on a farming plot, 10 units of either compost, super compost, or ultra compost will be used until a total of 50 units have been used to fully fertilize a plot.",
+			"extract": "The large compost bucket is a tool created at the crafting table. Level 65 Farming and collecting yew logs for the first time is required to unlock the recipe. It can be used to take out compost, super compost, and ultra compost from the compost bin, super compost bin, and ultra compost bin, respectively, at a maximum of 300 units per bucket held in the inventory.\nWhen used on a farming plot, 10 units of either compost, super compost, or ultra compost will be used until a total of 50 units have been used to fully fertilize a plot.",
 			"recipes": [
 				{
 					"outputLabel": "Large Compost Bucket",
@@ -57336,7 +57381,7 @@
 			"type": null,
 			"category": "crafting-stations",
 			"description": "",
-			"extract": "The loom can be used to create rough cloth, wool cloth and mystic cloth. It can be upgraded with the loom harness to be used to make padded cloth, fine cloth, infinity cloth, desert cloth, and vis cloth. It requires a roof above it to function. \nThe loom is unlocked upon obtaining a bronze bar.",
+			"extract": "The loom can be used to create rough cloth, wool cloth and mystic cloth. It can be upgraded with the loom harness to be used to make padded cloth, fine cloth, infinity cloth, desert cloth, and vis cloth. It requires a roof above and a wall behind it to function. \nThe loom is unlocked upon obtaining a bronze bar.",
 			"recipes": [
 				{
 					"outputLabel": "Loom",
@@ -57932,8 +57977,37 @@
 			"shops": [],
 			"unlockedBy": [],
 			"weight": 6,
-			"power": null,
-			"stats": []
+			"power": 7,
+			"stats": [
+				{
+					"label": "Melee defence",
+					"value": "+27"
+				},
+				{
+					"label": "Ranged defence",
+					"value": "+28"
+				},
+				{
+					"label": "Magic defence",
+					"value": "+32"
+				},
+				{
+					"label": "Durability",
+					"value": "1750"
+				},
+				{
+					"label": "Set bonus",
+					"value": "-50% Stamina Regen Delay"
+				},
+				{
+					"label": "Set bonus",
+					"value": "+10% Magic Attack Speed"
+				},
+				{
+					"label": "Set bonus",
+					"value": "+15% Magical Crit Chance"
+				}
+			]
 		},
 		{
 			"slug": "lunar-garou-robes",
@@ -58002,8 +58076,37 @@
 			"shops": [],
 			"unlockedBy": [],
 			"weight": 8,
-			"power": null,
-			"stats": []
+			"power": 7,
+			"stats": [
+				{
+					"label": "Melee defence",
+					"value": "+45"
+				},
+				{
+					"label": "Ranged defence",
+					"value": "+47"
+				},
+				{
+					"label": "Magic defence",
+					"value": "+53"
+				},
+				{
+					"label": "Durability",
+					"value": "1750"
+				},
+				{
+					"label": "Set bonus",
+					"value": "-50% Stamina Regen Delay"
+				},
+				{
+					"label": "Set bonus",
+					"value": "+10% Magic Attack Speed"
+				},
+				{
+					"label": "Set bonus",
+					"value": "+15% Magical Crit Chance"
+				}
+			]
 		},
 		{
 			"slug": "lunate-shawl",
@@ -59228,7 +59331,7 @@
 			"usedIn": [],
 			"drops": [
 				{
-					"source": "Marrentil (plant)",
+					"source": "Marrentil (node)",
 					"qty": "1",
 					"rarity": "15/100"
 				}
@@ -59270,7 +59373,7 @@
 			],
 			"drops": [
 				{
-					"source": "Marrentil (plant)",
+					"source": "Marrentil (node)",
 					"qty": "1",
 					"rarity": "Always"
 				},
@@ -64350,8 +64453,12 @@
 					"value": "59"
 				},
 				{
+					"label": "Combo",
+					"value": "1"
+				},
+				{
 					"label": "Durability",
-					"value": "2400"
+					"value": "2,400"
 				},
 				{
 					"label": "Special action",
@@ -64657,7 +64764,7 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1800"
+					"value": "24,00"
 				}
 			]
 		},
@@ -66000,20 +66107,30 @@
 			"type": null,
 			"category": "buildings",
 			"description": "",
-			"extract": "Moon Garou cushion 01",
+			"extract": "The Moon Garou bed is a buildable piece of decoration",
 			"recipes": [
 				{
 					"outputLabel": "Moon Garou Cushion 01",
 					"outputQty": 1,
-					"requires": null,
+					"requires": {
+						"label": "PLAN: Moon Garou Cushion 01",
+						"slug": "plan-moon-garou-cushion-01"
+					},
 					"skills": [
 						{
 							"name": "Construction",
-							"xp": 0
+							"xp": 40
 						}
 					],
-					"materials": [],
-					"id": "3b9839b71f",
+					"materials": [
+						{
+							"label": "Desert Cloth",
+							"qty": 2,
+							"icon": "Desert Cloth.png",
+							"slug": "desert-cloth"
+						}
+					],
+					"id": "351968234c",
 					"station": {
 						"name": "Build Menu",
 						"slug": null
@@ -70441,7 +70558,7 @@
 			],
 			"drops": [
 				{
-					"source": "Onion (plant)",
+					"source": "Onion (node)",
 					"qty": "1",
 					"rarity": "Always"
 				},
@@ -70481,7 +70598,7 @@
 			"usedIn": [],
 			"drops": [
 				{
-					"source": "Onion (plant)",
+					"source": "Onion (node)",
 					"qty": "1",
 					"rarity": "25/100"
 				},
@@ -71470,19 +71587,19 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "18"
+					"value": "+18"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "15"
+					"value": "+15"
 				},
 				{
 					"label": "Magic defence",
-					"value": "14"
+					"value": "+14"
 				},
 				{
 					"label": "Durability",
-					"value": "1400"
+					"value": "1500"
 				},
 				{
 					"label": "Set bonus",
@@ -71560,19 +71677,19 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "12"
+					"value": "+12"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "10"
+					"value": "+10"
 				},
 				{
 					"label": "Magic defence",
-					"value": "9"
+					"value": "+9"
 				},
 				{
 					"label": "Durability",
-					"value": "1400"
+					"value": "1500"
 				},
 				{
 					"label": "Set bonus",
@@ -71650,15 +71767,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "30"
+					"value": "+30"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "24"
+					"value": "+24"
 				},
 				{
 					"label": "Magic defence",
-					"value": "23"
+					"value": "+23"
 				},
 				{
 					"label": "Durability",
@@ -72655,7 +72772,7 @@
 			"usedIn": [],
 			"drops": [
 				{
-					"source": "Fibrous Pipe Cactus (plant)",
+					"source": "Fibrous Pipe Cactus (node)",
 					"qty": "1",
 					"rarity": "Always"
 				},
@@ -75301,6 +75418,35 @@
 			]
 		},
 		{
+			"slug": "plan-moon-garou-cushion-01",
+			"name": "PLAN: Moon Garou Cushion 01",
+			"wiki": "PLAN: Moon Garou Cushion 01",
+			"icon": "PLAN- Moon Garou Cushion 01.png",
+			"type": "Consumable",
+			"category": "materials",
+			"description": "",
+			"extract": "PLAN: Moon Garou bed is a consumable item that unlocks the Moon Garou Cushion 01.",
+			"recipes": [],
+			"usedIn": [],
+			"drops": [
+				{
+					"source": "Chest (Umbral Sands)",
+					"qty": "1",
+					"rarity": "0.44/100"
+				}
+			],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": 0,
+			"power": null,
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
+				}
+			]
+		},
+		{
 			"slug": "plan-open-wooden-barrel",
 			"name": "PLAN: Open Wooden Barrel",
 			"wiki": "PLAN: Open Wooden Barrel",
@@ -77510,7 +77656,7 @@
 			],
 			"drops": [
 				{
-					"source": "Potato (plant)",
+					"source": "Potato (node)",
 					"qty": "1",
 					"rarity": "Always"
 				},
@@ -77550,7 +77696,7 @@
 			"usedIn": [],
 			"drops": [
 				{
-					"source": "Potato (plant)",
+					"source": "Potato (node)",
 					"qty": "1",
 					"rarity": "25/100"
 				},
@@ -78832,7 +78978,7 @@
 			],
 			"drops": [
 				{
-					"source": "Pumpkin (plant)",
+					"source": "Pumpkin (node)",
 					"qty": "1",
 					"rarity": "Always"
 				},
@@ -78872,7 +79018,7 @@
 			"usedIn": [],
 			"drops": [
 				{
-					"source": "Pumpkin (plant)",
+					"source": "Pumpkin (node)",
 					"qty": "1",
 					"rarity": "10/100"
 				},
@@ -86098,6 +86244,10 @@
 					"value": "21"
 				},
 				{
+					"label": "Durability",
+					"value": "1750"
+				},
+				{
 					"label": "Set bonus",
 					"value": "-33% Block Stamina Cost"
 				},
@@ -86115,11 +86265,11 @@
 			"slug": "rune-logging-axe",
 			"name": "Rune Logging Axe",
 			"wiki": "Rune Logging Axe",
-			"icon": "Rune Logging Axe (Journal).png",
+			"icon": "Rune Logging Axe.png",
 			"type": "Tool",
 			"category": "tools",
 			"description": "Crafted from durable runite, this axe bites deeply into timber and stands up to years of hard use.",
-			"extract": "Rune Logging Axe is a power level 8 logging axe that can cut Magic Trees.",
+			"extract": "Rune Logging Axe is a power level 8 logging axe that can cut Magic Trees. They are crafted on the Blacksmith's Bench, unlocked when crafting rune bar.",
 			"recipes": [
 				{
 					"outputLabel": "Rune Logging Axe",
@@ -86187,7 +86337,7 @@
 				},
 				{
 					"label": "Durability",
-					"value": "2700"
+					"value": "2,700"
 				},
 				{
 					"label": "Special action",
@@ -86289,7 +86439,7 @@
 			"slug": "rune-pickaxe",
 			"name": "Rune Pickaxe",
 			"wiki": "Rune Pickaxe",
-			"icon": "Rune Pickaxe (Journal).png",
+			"icon": "Rune Pickaxe.png",
 			"type": "Tool",
 			"category": "tools",
 			"description": "A masterfully forged pickaxe of pure runite, capable of breaking through even the toughest stone with ease.",
@@ -86362,8 +86512,12 @@
 					"value": "72"
 				},
 				{
+					"label": "Combo",
+					"value": "1"
+				},
+				{
 					"label": "Durability",
-					"value": "2700"
+					"value": "2,700"
 				}
 			]
 		},
@@ -86375,7 +86529,7 @@
 			"type": "Melee Armour",
 			"category": "armour",
 			"description": "Thick rune plates forged into armour for the strongest of warriors.",
-			"extract": "Rune Platebody is a power level 8 armour piece that can be crafted on the Armour Bench. To unlock the recipe, players need to have Rune Bar crafted.",
+			"extract": "A Rune Platebody is a power level 8 armour piece that can be crafted on the Armour Bench. To unlock the recipe, players need to have a Rune Bar crafted.",
 			"recipes": [
 				{
 					"outputLabel": "Rune Platebody",
@@ -86446,6 +86600,10 @@
 					"value": "53"
 				},
 				{
+					"label": "Durability",
+					"value": "1750"
+				},
+				{
 					"label": "Set bonus",
 					"value": "-33% Block Stamina Cost"
 				},
@@ -86467,7 +86625,7 @@
 			"type": "Melee Armour",
 			"category": "armour",
 			"description": "Durable rune platelegs designed for warriors who spend more time fighting than running.",
-			"extract": "Rune Platelegs are a power level 8 armour piece.",
+			"extract": "Rune Platelegs are a power level 8 armour piece. Players will need to receive a rune bar in their inventory to unlock the platelegs.",
 			"recipes": [
 				{
 					"outputLabel": "Rune Platelegs",
@@ -86536,6 +86694,10 @@
 				{
 					"label": "Magic defence",
 					"value": "32"
+				},
+				{
+					"label": "Durability",
+					"value": "1750"
 				},
 				{
 					"label": "Set bonus",
@@ -88797,7 +88959,7 @@
 			"type": "Food",
 			"category": "food",
 			"description": "You'd be surprised at how tasty an eight-ounce cactus, medium-rare can be.",
-			"extract": "Cactus steak is a Power Level 5 consumable food item that provides 20 health and 20 sustenance when eaten. It can be cooked from cactus steak at either a campfire or grill. It requires Cooking level 50 to cook and 75 to not burn, otherwise creating burnt cactus Steak.",
+			"extract": "Cactus steak is a Power Level 5 consumable food item that provides 20 health and 20 sustenance when eaten. It can be cooked from cactus steak at either a campfire or grill. It requires Cooking level 50 to cook and 75 to not burn, otherwise creating burnt cactus steak.",
 			"recipes": [
 				{
 					"outputLabel": "Seared Cactus Steak",
@@ -96007,7 +96169,7 @@
 			],
 			"drops": [
 				{
-					"source": "Snapdragon (plant)",
+					"source": "Snapdragon (node)",
 					"qty": "1",
 					"rarity": "Always"
 				},
@@ -96052,7 +96214,7 @@
 			"usedIn": [],
 			"drops": [
 				{
-					"source": "Snapdragon (plant)",
+					"source": "Snapdragon (node)",
 					"qty": "1",
 					"rarity": "15/100"
 				},
@@ -99785,8 +99947,12 @@
 					"value": "52"
 				},
 				{
+					"label": "Combo",
+					"value": "1"
+				},
+				{
 					"label": "Durability",
-					"value": "2400"
+					"value": "2,400"
 				},
 				{
 					"label": "Special action",
@@ -100051,8 +100217,12 @@
 					"value": "52"
 				},
 				{
+					"label": "Combo",
+					"value": "1"
+				},
+				{
 					"label": "Durability",
-					"value": "2100"
+					"value": "2,100"
 				}
 			]
 		},
@@ -100363,7 +100533,7 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1,300"
+					"value": "1300"
 				},
 				{
 					"label": "Special action",
@@ -101583,8 +101753,12 @@
 					"value": "26"
 				},
 				{
+					"label": "Combo",
+					"value": "1"
+				},
+				{
 					"label": "Durability",
-					"value": "1200"
+					"value": "1,200"
 				},
 				{
 					"label": "Special action",
@@ -101657,8 +101831,12 @@
 					"value": "26"
 				},
 				{
+					"label": "Combo",
+					"value": "1"
+				},
+				{
 					"label": "Durability",
-					"value": "1200"
+					"value": "1,200"
 				}
 			]
 		},
@@ -104099,7 +104277,7 @@
 			"type": "Basic Material",
 			"category": "materials",
 			"description": "It's sticky!",
-			"extract": "Swamp tar is obtained by gathering from the ground in the Whispering Swamp, and is used inside a kiln to create adhesive.\n\n",
+			"extract": "Swamp tar is obtained by havresting Swamp Tar (node) from the ground in the Whispering Swamp. It is used inside a kiln to create adhesive, or as a component of Naptha and Chandeliers.\n\n",
 			"recipes": [],
 			"usedIn": [
 				"adhesive",
@@ -104150,6 +104328,11 @@
 					"source": "Chest (Dowdun Reach)",
 					"qty": "2–6",
 					"rarity": "12.75/100"
+				},
+				{
+					"source": "Swamp Tar (node)",
+					"qty": "1–2",
+					"rarity": "Always"
 				}
 			],
 			"shops": [
@@ -104245,7 +104428,7 @@
 			],
 			"drops": [
 				{
-					"source": "Swamp Weed (plant)",
+					"source": "Swamp Weed (node)",
 					"qty": "1",
 					"rarity": "Always"
 				},
@@ -104285,7 +104468,7 @@
 			"usedIn": [],
 			"drops": [
 				{
-					"source": "Swamp Weed (plant)",
+					"source": "Swamp Weed (node)",
 					"qty": "1",
 					"rarity": "15/100"
 				},
@@ -105580,7 +105763,7 @@
 			],
 			"drops": [
 				{
-					"source": "Toadflax (plant)",
+					"source": "Toadflax (node)",
 					"qty": "1",
 					"rarity": "Always"
 				},
@@ -105625,7 +105808,7 @@
 			"usedIn": [],
 			"drops": [
 				{
-					"source": "Toadflax (plant)",
+					"source": "Toadflax (node)",
 					"qty": "1",
 					"rarity": "15/100"
 				},
@@ -107341,12 +107524,8 @@
 			"power": 1,
 			"stats": [
 				{
-					"label": "Block",
-					"value": "5"
-				},
-				{
 					"label": "Durability",
-					"value": "1800"
+					"value": "1,800"
 				}
 			]
 		},
@@ -109030,7 +109209,7 @@
 			"type": "Basic Material",
 			"category": "materials",
 			"description": "Dropped from the restless dead. Use as a crafting material, or process at a grindstone.",
-			"extract": "Undead bones are drops from enemies in Fellhollow.",
+			"extract": "Undead bones are drops from enemies in Fellhollow and Dowdun Reach.",
 			"recipes": [],
 			"usedIn": [
 				"bone-bolts",
@@ -109348,7 +109527,7 @@
 			"type": "Ranged Weapon",
 			"category": "weapons",
 			"description": "This bow still fires with undeadly precision.",
-			"extract": "The undead ranger's bow is a power level 5 shortbow that can be crafted at a fletching bench. The recipe is learned from a dragonkin effigy in Skekven Kara, the dragonkin vault in eastern Fellhollow. It can be ascended at the mystic forge using ascension cores.\nIts special effect is listed as increased damage but reduced durability. The reduced durability works as this weapon has 1,050 compared to the willow shortbow's 1300, however it has the same damage, both listed and actual.\nIt fires faster but deals the same damage as the crystal bow, which also has shattershot. However, the wild scout's shortbow has 10% faster draw speed with only 1-5% lower damage, increasing with higher power levels, making it the ideal shortbow to ascend.",
+			"extract": "The undead ranger's bow is a power level 5 shortbow that can be crafted at a fletching bench. The recipe is learned from a dragonkin effigy in Skekven Kara, the dragonkin vault in eastern Fellhollow. It can be ascended at the mystic forge using ascension cores.\nIts special effect is listed as increased damage but reduced durability. The reduced durability works as this weapon has 1,050 compared to the willow shortbow's 1300, however it has the same damage, both listed and actual.\nIt fires faster but deals the same damage as the crystal bow, which also has shattershot.",
 			"recipes": [
 				{
 					"outputLabel": "Undead Ranger's Bow",
@@ -109614,7 +109793,7 @@
 			"type": "Raw Ingredient",
 			"category": "food",
 			"description": "This trout has seen things. You almost feel apologetic for catching it.",
-			"extract": "Unusual Trout is a raw ingredient that can be captured by grabbing it from the pool of fish for OffalFoot in The Lake far beneath The Courtyard. The area in which to grab it is accessed through the catacombs beneath the The Cathedral. Give it to OffalFoot to receive a Shard of the Dreaming Stone in return.",
+			"extract": "Unusual Trout is a raw ingredient that can be captured by grabbing it from the pool of fish for OffalFoot in The Lake far beneath The Courtyard. The area in which to grab it is accessed through the catacombs beneath the The Cathedral. Give it to OffalFoot to receive a Shard of the Dreaming Stone in return. \nCatching an unusual trout rewards 25 xp.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [
@@ -112799,7 +112978,7 @@
 			"type": "Potion",
 			"category": "potions",
 			"description": "PERK: Focused Fishing<br><br>Grants a boost to your Fishing XP for a short period of time.",
-			"extract": "Weak Focused Fishing potion grants the perk Focused Fishing, which provides a 5-minute (300-second) +15% XP boost for the Fishing skill. It is made with marrentil, sauteed shrimp, and clay vessel in a brewing cauldron.",
+			"extract": "Weak Focused Fishing potion grants the perk Focused Fishing, which provides a 5-minute (300-second) +15% XP boost for the Fishing skill. It is made with marrentil, sauteed shrimp, and clay vessel in a brewing cauldron. This potion is unlocked by cooking shrimp the first time.",
 			"recipes": [
 				{
 					"outputLabel": "Weak Focused Fishing Potion",
@@ -115062,7 +115241,7 @@
 			"type": "Ranged Weapon",
 			"category": "weapons",
 			"description": "A bow used by a Wild Knight scout. Maintaining balance, one arrow at a time.",
-			"extract": "The wild scout's shortbow is a power level 3 shortbow that can be crafted at a fletching bench. The recipe is learned from a dragonkin effigy in Takla Kara, the dragonkin vault in central Fractured Plains. It can be ascended at the mystic forge using ascension cores.\nIts special effect is 10% increased draw speed, making this weapon draw faster than other shortbows. This does not affect quick actions.\nThe crystal bow and the undead ranger's bow have slightly higher base damage at all power levels, but they are supposed to have much higher base damage than they do (the undead ranger's bow's special effect is supposed to be increased damage after all), but they fire slower, the crystal bow especially so. They also have the same durability, which means that as long as the crystal bow's shattershot is not being used, then this weapon is the ideal shortbow to ascend.",
+			"extract": "The wild scout's shortbow is a power level 3 shortbow that can be crafted at a fletching bench. The recipe is learned from a dragonkin effigy in Takla Kara, the dragonkin vault in central Fractured Plains. It can be ascended at the mystic forge using ascension cores.\nIts special effect is 10% increased draw speed, making this weapon draw faster than other shortbows. This does not affect quick actions.\nWhile crystal bow and the undead ranger's bow have a slightly higher base damage in equal power levels, the Wild Scout's draw time is still the fastest in-game, allowing it to do more damage over time compared to the crystal and undead ranger's bow. Sharing the same durability, it is suggested to ascend this bow if you wish to shoot arrows quicker.",
 			"recipes": [
 				{
 					"outputLabel": "Wild Scout's Shortbow",

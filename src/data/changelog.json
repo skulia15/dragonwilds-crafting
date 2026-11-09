@@ -1,5 +1,21 @@
 [
 	{
+		"date": "2026-11-09",
+		"added": [
+			{
+				"slug": "plan-moon-garou-cushion-01",
+				"name": "PLAN: Moon Garou Cushion 01"
+			}
+		],
+		"removed": [],
+		"changed": [
+			{
+				"slug": "moon-garou-cushion-01",
+				"name": "Moon Garou Cushion 01"
+			}
+		]
+	},
+	{
 		"date": "2026-11-02",
 		"added": [
 			{
