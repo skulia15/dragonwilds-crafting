@@ -1,5 +1,131 @@
 [
 	{
+		"date": "2026-11-16",
+		"added": [
+			{
+				"slug": "a-reel-downer-reward-pack",
+				"name": "A Reel Downer Reward Pack"
+			},
+			{
+				"slug": "agony-auntchovy",
+				"name": "Agony Auntchovy"
+			},
+			{
+				"slug": "bawling-beltfish",
+				"name": "Bawling Beltfish"
+			},
+			{
+				"slug": "decorative-penguin-coin",
+				"name": "Decorative Penguin Coin"
+			},
+			{
+				"slug": "depressed-desert-sole",
+				"name": "Depressed Desert Sole"
+			},
+			{
+				"slug": "fishing-rod-rack",
+				"name": "Fishing Rod Rack"
+			},
+			{
+				"slug": "inconsolable-catfish",
+				"name": "Inconsolable Catfish"
+			},
+			{
+				"slug": "naptha",
+				"name": "Naptha"
+			},
+			{
+				"slug": "penguin-coin",
+				"name": "Penguin Coin"
+			},
+			{
+				"slug": "pristine-bawling-beltfish",
+				"name": "Pristine Bawling Beltfish"
+			},
+			{
+				"slug": "pristine-bawling-beltfish-trophy",
+				"name": "Pristine Bawling Beltfish Trophy"
+			},
+			{
+				"slug": "pristine-depressed-desert-sole",
+				"name": "Pristine Depressed Desert Sole"
+			},
+			{
+				"slug": "pristine-depressed-desert-sole-trophy",
+				"name": "Pristine Depressed Desert Sole Trophy"
+			},
+			{
+				"slug": "pristine-inconsolable-catfish",
+				"name": "Pristine Inconsolable Catfish"
+			},
+			{
+				"slug": "pristine-inconsolable-catfish-trophy",
+				"name": "Pristine Inconsolable Catfish Trophy"
+			},
+			{
+				"slug": "pristine-snivelling-sardine",
+				"name": "Pristine Snivelling Sardine"
+			},
+			{
+				"slug": "pristine-snivelling-sardine-trophy",
+				"name": "Pristine Snivelling Sardine Trophy"
+			},
+			{
+				"slug": "snivelling-sardine",
+				"name": "Snivelling Sardine"
+			}
+		],
+		"removed": [
+			"Naphtha"
+		],
+		"changed": [
+			{
+				"slug": "adamant-helmet",
+				"name": "Adamant Helmet"
+			},
+			{
+				"slug": "burnt-desert-sole",
+				"name": "Burnt Desert Sole"
+			},
+			{
+				"slug": "burnt-sardine",
+				"name": "Burnt Sardine"
+			},
+			{
+				"slug": "compost",
+				"name": "Compost"
+			},
+			{
+				"slug": "fire-oil",
+				"name": "Fire Oil"
+			},
+			{
+				"slug": "fried-sardine",
+				"name": "Fried Sardine"
+			},
+			{
+				"slug": "red-desert-cape",
+				"name": "Red Desert Cape"
+			},
+			{
+				"slug": "sleeping-chinchompa",
+				"name": "Sleeping Chinchompa"
+			},
+			{
+				"slug": "sun-baked-sole",
+				"name": "Sun Baked Sole"
+			},
+			{
+				"slug": "super-compost",
+				"name": "Super Compost"
+			},
+			{
+				"slug": "ultra-compost",
+				"name": "Ultra Compost"
+			}
+		]
+	},
+	{
 		"date": "2026-11-09",
 		"added": [
 			{

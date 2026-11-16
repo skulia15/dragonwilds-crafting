@@ -1,5 +1,5 @@
 {
-	"fetchedAt": "2026-11-09T16:22:30.824Z",
+	"fetchedAt": "2026-11-16T15:49:40.101Z",
 	"categories": [
 		{
 			"slug": "weapons",
@@ -16,8 +16,8 @@
 		{
 			"slug": "tools",
 			"name": "Tools",
-			"count": 54,
-			"craftable": 54
+			"count": 55,
+			"craftable": 55
 		},
 		{
 			"slug": "ammunition",
@@ -29,7 +29,7 @@
 			"slug": "capes",
 			"name": "Capes",
 			"count": 61,
-			"craftable": 56
+			"craftable": 57
 		},
 		{
 			"slug": "jewellery",
@@ -58,7 +58,7 @@
 		{
 			"slug": "materials",
 			"name": "Materials",
-			"count": 357,
+			"count": 358,
 			"craftable": 83
 		},
 		{
@@ -70,7 +70,7 @@
 		{
 			"slug": "food",
 			"name": "Food & Drink",
-			"count": 192,
+			"count": 200,
 			"craftable": 129
 		},
 		{
@@ -88,8 +88,8 @@
 		{
 			"slug": "buildings",
 			"name": "Buildings & Decor",
-			"count": 499,
-			"craftable": 499
+			"count": 505,
+			"craftable": 505
 		},
 		{
 			"slug": "seeds",
@@ -112,7 +112,7 @@
 		{
 			"slug": "packs",
 			"name": "Packs & Containers",
-			"count": 40,
+			"count": 41,
 			"craftable": 0
 		},
 		{
@@ -2984,7 +2984,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "The rusted remains of a symbol of authority. Perhaps you could learn something from it.",
-			"extract": "A corroded serrated blade is a vestige that unlocks the creation of the chieftain's blade. This vestige is found by the chest near the Heartstrings' starting tree.\n\n",
+			"extract": "A corroded serrated blade is a vestige that unlocks the creation of the chieftain's blade. This vestige is found by the chest near the Heartstrings' starting tree.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [
@@ -3079,6 +3079,29 @@
 			]
 		},
 		{
+			"slug": "a-reel-downer-reward-pack",
+			"name": "A Reel Downer Reward Pack",
+			"wiki": "A Reel Downer Reward Pack",
+			"icon": "A Reel Downer Reward Pack.png",
+			"type": "Container",
+			"category": "packs",
+			"description": "A reward for helping cheer up some sad fish.",
+			"extract": "A Reel Downer Reward Pack is a quest reward after completing the quest, A Reel Downer. Players can find Garou Chit, a Tome of Fishing - Vol 2 skill tome, a Super Focused Fishing Potion, and 10 Adamantite Ore.",
+			"recipes": [],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": 1,
+			"power": null,
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "10"
+				}
+			]
+		},
+		{
 			"slug": "a-simple-broken-bow",
 			"name": "A Simple Broken Bow",
 			"wiki": "A Simple Broken Bow",
@@ -3086,7 +3109,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "The remains of a longbow damaged in a dragon attack. Perhaps you could learn something from it.",
-			"extract": "A simple broken bow is a vestige that unlocks creation of the adventurer's longbow.\n\n",
+			"extract": "A simple broken bow is a vestige that unlocks creation of the adventurer's longbow.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [
@@ -4445,7 +4468,7 @@
 			"type": "Melee Armour",
 			"category": "armour",
 			"description": "A durable adamant helmet forged for the strongest of warriors.",
-			"extract": "Adamant helmet is a power level 7 armour piece.",
+			"extract": "The adamant helmet is a power level 7 armour piece.",
 			"recipes": [
 				{
 					"outputLabel": "Adamant Helmet",
@@ -4484,7 +4507,7 @@
 						},
 						{
 							"label": "Gypsum Wax",
-							"qty": 1,
+							"qty": 2,
 							"icon": "Gypsum Wax.png",
 							"slug": "gypsum-wax"
 						},
@@ -4495,7 +4518,7 @@
 							"slug": "garou-weave"
 						}
 					],
-					"id": "8d684bb3ee",
+					"id": "bee8b22b86",
 					"station": {
 						"name": "Armour Bench",
 						"slug": "armour-bench"
@@ -4511,15 +4534,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "21"
+					"value": "+21"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "19"
+					"value": "+19"
 				},
 				{
 					"label": "Magic defence",
-					"value": "18"
+					"value": "+18"
 				},
 				{
 					"label": "Durability",
@@ -4909,7 +4932,7 @@
 			"type": "Melee Armour",
 			"category": "armour",
 			"description": "A sturdy set of adamant chest armour, forged for the strongest of warriors.",
-			"extract": "Adamant platebody is a power level 7 armour piece.",
+			"extract": "The adamant platebody is a power level 7 armour piece.",
 			"recipes": [
 				{
 					"outputLabel": "Adamant Platebody",
@@ -4975,15 +4998,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "53"
+					"value": "+53"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "47"
+					"value": "+47"
 				},
 				{
 					"label": "Magic defence",
-					"value": "45"
+					"value": "+45"
 				},
 				{
 					"label": "Durability",
@@ -5077,15 +5100,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "32"
+					"value": "+32"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "28"
+					"value": "+28"
 				},
 				{
 					"label": "Magic defence",
-					"value": "27"
+					"value": "+27"
 				},
 				{
 					"label": "Durability",
@@ -5575,6 +5598,11 @@
 					"source": "Moon Garou Pack",
 					"qty": "20",
 					"rarity": "Always"
+				},
+				{
+					"source": "A Reel Downer Reward Pack",
+					"qty": "10",
+					"rarity": "Always"
 				}
 			],
 			"shops": [],
@@ -6008,7 +6036,7 @@
 			"type": "Basic Item",
 			"category": "capes",
 			"description": "Congratulations! Reaching level 99 in Agility is an astonishing feat. Wear this cape with pride.",
-			"extract": "The Agility cape is a Cape of Accomplishment able to be crafted and worn with a level 99 Agility. It can be crafted at the crafting table. This cape, while worn, gives the player a 10% chance to not consume stamina for jumping, dashing, or evading.\nTrimmed versions can be made the same way if you have more than one skill at 99.",
+			"extract": "The Agility cape is a Cape of Accomplishment able to be crafted and worn with a level 99 Agility. It can be crafted at the mystic forge. This cape, while worn, gives the player a 10% chance to not consume stamina for jumping, dashing, or evading.\nTrimmed versions can be made the same way if you have more than one skill at 99.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -6140,6 +6168,66 @@
 			"weight": null,
 			"power": null,
 			"stats": []
+		},
+		{
+			"slug": "agony-auntchovy",
+			"name": "Agony Auntchovy",
+			"wiki": "Agony Auntchovy",
+			"icon": "Agony Auntchovy.png",
+			"type": "Tool",
+			"category": "tools",
+			"description": "Sad little fish love a shoulder to cry on. Increases the chance of catching an upset fish in Umbral Sands.",
+			"extract": "Agony Auntchovy is a power level 7 bait that is used to increase the chance of catching upset fish in Umbral Sands.",
+			"recipes": [
+				{
+					"outputLabel": "Agony Auntchovy",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [
+						{
+							"name": "Artisan",
+							"xp": 20
+						}
+					],
+					"materials": [
+						{
+							"label": "Feathers",
+							"qty": 1,
+							"icon": "Feathers.png",
+							"slug": "feathers"
+						},
+						{
+							"label": "Onion",
+							"qty": 1,
+							"icon": "Onion.png",
+							"slug": "onion"
+						},
+						{
+							"label": "Raw Anchovies",
+							"qty": 1,
+							"icon": "Raw Anchovies.png",
+							"slug": "raw-anchovies"
+						}
+					],
+					"id": "d44b410d77",
+					"station": {
+						"name": "Crafting Table",
+						"slug": "crafting-table"
+					}
+				}
+			],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": 0,
+			"power": null,
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
+				}
+			]
 		},
 		{
 			"slug": "air-rune",
@@ -6897,7 +6985,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "A crude wooden blade and handle, what's left of a child's toy turned to weaponry. Perhaps you could learn something from it.",
-			"extract": "An educational blade is a vestige that unlocks the creation of the wooden training sword. This is found on the eastern side of the Temple of Saradomin roof.\n\n",
+			"extract": "An educational blade is a vestige that unlocks the creation of the wooden training sword. This is found on the eastern side of the Temple of Saradomin roof.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [
@@ -6949,7 +7037,7 @@
 			"type": "Mage Armour",
 			"category": "armour",
 			"description": "Woven with ancient knowledge and arcane tradition. The hat is old, the magic within is older.",
-			"extract": "Ancestral hat is a power level 8 magic armour piece that is crafted with an armour bench.",
+			"extract": "The ancestral hat is a power level 8 magic armour piece that is crafted with an armour bench.",
 			"recipes": [
 				{
 					"outputLabel": "Ancestral Hat",
@@ -7009,15 +7097,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "21"
+					"value": "+21"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "22"
+					"value": "+22"
 				},
 				{
 					"label": "Magic defence",
-					"value": "24"
+					"value": "+24"
 				},
 				{
 					"label": "Durability",
@@ -7045,7 +7133,7 @@
 			"type": "Mage Armour",
 			"category": "armour",
 			"description": "Enchanted garments that carry the legacy of generations of powerful spellcasters.",
-			"extract": "Ancestral leggings is a power level 8 magic armour piece that is crafted with an armour bench.",
+			"extract": "Ancestral leggings are a power level 8 magic armour piece that is crafted with an armour bench.",
 			"recipes": [
 				{
 					"outputLabel": "Ancestral Leggings",
@@ -7105,15 +7193,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "32"
+					"value": "+32"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "33"
+					"value": "+33"
 				},
 				{
 					"label": "Magic defence",
-					"value": "36"
+					"value": "+36"
 				},
 				{
 					"label": "Durability",
@@ -7201,15 +7289,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "53"
+					"value": "+53"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "54"
+					"value": "+54"
 				},
 				{
 					"label": "Magic defence",
-					"value": "60"
+					"value": "+60"
 				},
 				{
 					"label": "Durability",
@@ -7556,7 +7644,7 @@
 			"type": "Resource",
 			"category": "materials",
 			"description": "Tree bark infused with magical energy.",
-			"extract": "Anima-infused bark is a basic crafting item that is required to create wild anima. Anima bark can be found on the ground around the anima trees and certain crystal trees located throughout the Fractured Plains biome. Players can interact with the item by picking it up, receiving 7 Woodcutting experience. Anima-infused bark can respawn after 72 minutes.\n\n",
+			"extract": "Anima-infused bark is a basic crafting item that is required to create wild anima. Anima bark can be found on the ground around the anima trees and certain crystal trees located throughout the Fractured Plains biome. Players can interact with the item by picking it up, receiving 7 Woodcutting experience. Anima-infused bark can respawn after 72 minutes.",
 			"recipes": [],
 			"usedIn": [
 				"compost",
@@ -7604,7 +7692,7 @@
 			"type": "Basic Material",
 			"category": "materials",
 			"description": "A sturdy bone from a sizable creature.",
-			"extract": "Animal bones are retrieved from killing animals such as cows, deer, and sheep. They can also be found on the ground in a cave in the Stormtouched Highlands. Players can also receive it by casting Bark To Bones on a tree. Upon receiving a bone for the first time, players can unlock the tannery and the stone range.\n\n",
+			"extract": "Animal bones are retrieved from killing animals such as cows, deer, and sheep. They can also be found on the ground in a cave in the Stormtouched Highlands. Players can also receive it by casting Bark To Bones on a tree. Upon receiving a bone for the first time, players can unlock the tannery and the stone range.",
 			"recipes": [],
 			"usedIn": [
 				"bone-club",
@@ -8018,7 +8106,7 @@
 			"type": "Shield",
 			"category": "armour",
 			"description": "This provides partial protection from dragonbreath attacks.",
-			"extract": "The anti-dragon shield is a power level 3 masterwork shield that can be crafted at a blacksmith's bench after obtaining the recipe from Vertentis Kara, the dragonkin vault in the Whispering Swamp. It is also one of the rewards for completing the Dragon Slayer quest, and is used as a material to craft the dragonblight shield, dragoncurse shield and the dragonfire shield. It can be ascended at the mystic forge using ascension cores.\nIts special effect allows the user to block incoming dragon fire without being staggered. This includes the sweeping breath attack that all dragons perform, as well as the poison spit from green dragons, the spinning fire from Imaru, the lightning ball from blue dragons, and the fireball from red dragons and Fuzan. This does not include any ground-based effects like Velgar's poison breath/barrage and earth spikes, Imaru's wither projectiles and spikes, and Fuzan's lava floor. Notably, despite not being listed, this special effect is also present on the dragonblight shield and dragoncurse shield but not on the dragonfire shield.\nAll of that being said, Tempest Shield will block all incoming damage (excluding any ground-based attacks), including the projectiles and spikes that weren't blockable even with the special effect, and that is available even with two-handed weapons. Otherwise, all vestige and masterwork shields can be ascended to the highest power level and will have the same block value, with the exception of the fallen hoplite's aspis which has 3 more and the toktz-ket-xil which has 6 less. Therefore, the optimal shield choice will come down to their special effects, and this shield may often be chosen as it can block dragonfire but will not interfere with staggers caused by parries, unlike the other dragon shields.",
+			"extract": "The anti-dragon shield is a power level 3 masterwork shield that can be crafted at a blacksmith's bench after obtaining the recipe from Vertentis Kara, the dragonkin vault in the Whispering Swamp. It is also one of the rewards for completing the Dragon Slayer quest, and is used as a material to craft the dragonblight shield, dragoncurse shield and the dragonfire shield. It can be ascended at the mystic forge using ascension cores.\nIts special effect allows the user to block incoming dragon fire without being staggered. This includes the sweeping breath attack that all dragons perform, as well as the poison spit from green dragons, the spinning fire from Imaru, the lightning ball from blue dragons, and the fireball from red dragons and Fuzan. This does not include any ground-based effects like Velgar's poison breath/barrage and earth spikes, Imaru's wither projectiles and spikes, and Fuzan's lava floor.\nWith that being said, Tempest Shield can also block all incoming damage (excluding any ground-based attacks), including the projectiles and spikes that weren't blockable even with the special effect, and that is available even with two-handed weapons.",
 			"recipes": [
 				{
 					"outputLabel": "Anti-Dragon Shield",
@@ -9540,7 +9628,7 @@
 			"type": "Basic Material",
 			"category": "materials",
 			"description": "Used to upgrade Masterwork Weapons and Vestiges from a lower Power level to Power Level 4.",
-			"extract": "Ascension cores are items used and crafted in the mystic forge to ascend masterwork weapons from their base power level to the next tier. They are made by combining ascension shards or by collecting them as rewards for completing Nightmare Crucible instances in Umbral Sands. For most cores, players can gain core shards by killing mini-bosses (such as black dragons, green dragons, and blue dragons).\nThe only core that cannot be crafted thus far is the power level 7 ascension core, which can only be acquired by completing the Nightmare Crucible.\n\nBug: After upgrading an item with a core, there is a visual bug where the stats will appear not to increase.",
+			"extract": "Ascension cores are items used and crafted in the mystic forge to ascend masterwork weapons from their base power level to the next tier. They are made by combining ascension shards or by collecting them as rewards for completing Nightmare Crucible instances in Umbral Sands. For most cores, players can gain core shards by killing mini-bosses (such as black dragons, green dragons, and blue dragons) or region bosses like Velgar.\nThe only core that cannot be crafted thus far is the power level 7 ascension core, which can only be acquired by completing the Nightmare Crucible.",
 			"recipes": [
 				{
 					"outputLabel": "Ascension Core",
@@ -9732,7 +9820,7 @@
 			"type": "Basic Material",
 			"category": "materials",
 			"description": "Used to craft a Tier 4 Ascension Core",
-			"extract": "Ascension shard is a basic item used to craft ascension cores, which are in turn used to upgrade masterwork weapons into stronger forms.\nThere is currently no use for Power Level 7 shards, as cores earned directly from completing the Nightmare Crucible.",
+			"extract": "Ascension shards are a basic item used to craft ascension cores, which are in turn used to upgrade masterwork weapons into stronger forms.\nThere is currently no use for Power Level 7 shards, as cores earned directly from completing the Nightmare Crucible.",
 			"recipes": [],
 			"usedIn": [
 				"ascension-core"
@@ -10602,14 +10690,18 @@
 				"medium-wall",
 				"pan-rack",
 				"pristine-armoured-catfish-trophy",
+				"pristine-bawling-beltfish-trophy",
 				"pristine-beltfish-trophy",
+				"pristine-depressed-desert-sole-trophy",
 				"pristine-desert-sole-trophy",
 				"pristine-herring-trophy",
+				"pristine-inconsolable-catfish-trophy",
 				"pristine-infernal-eel-trophy",
 				"pristine-lobster-trophy",
 				"pristine-monkfish-trophy",
 				"pristine-salmon-trophy",
 				"pristine-sardine-trophy",
+				"pristine-snivelling-sardine-trophy",
 				"pristine-trout-trophy",
 				"pristine-undead-bass-trophy",
 				"pristine-undead-eel-trophy",
@@ -10708,7 +10800,7 @@
 			"slug": "ash-shortbow",
 			"name": "Ash Shortbow",
 			"wiki": "Ash Shortbow",
-			"icon": "Ash Shortbow (Journal).png",
+			"icon": "Ash Shortbow.png",
 			"type": "Ranged Weapon",
 			"category": "weapons",
 			"description": "A shortbow carved from ash wood.",
@@ -10770,7 +10862,7 @@
 				},
 				{
 					"label": "Special action",
-					"value": "Rapid fire"
+					"value": "Rapid fire (40)"
 				}
 			]
 		},
@@ -11231,7 +11323,7 @@
 			"type": "Basic Item",
 			"category": "materials",
 			"description": "A bagged chicken ready to serve you, magnet in claw. \n\nIncreases Arrow Recovery Chance and automatically picks up recovered arrows.",
-			"extract": "Ava's accumulator is an armour item equipped in the cape slot. It is a reward from Animal Magnetism, and additional ones can also be crafted via the Armour Bench after the quest. Ava's accumulator adds a 10% chance of recovering arrows when worn. Please note that it will not recover spectral arrows of any kind.",
+			"extract": "Ava's accumulator is an armour item equipped in the cape slot. It is a reward from Animal Magnetism, and additional ones can also be crafted via the Armour Bench after the quest. Ava's accumulator adds a 10% chance of recovering arrows when worn. It will not recover spectral arrows of any kind.",
 			"recipes": [
 				{
 					"outputLabel": "Ava's Accumulator",
@@ -11285,15 +11377,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "2"
+					"value": "+2"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "2"
+					"value": "+2"
 				},
 				{
 					"label": "Magic defence",
-					"value": "2"
+					"value": "+2"
 				}
 			]
 		},
@@ -11386,7 +11478,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "A contraption made from strange blue metal. Perhaps you could learn something from it.",
-			"extract": "Azure metal contraption is a consumable item that unlocks the creation of Blurite Crossbow Limbs, the blurite crossbow, and blurite bolts. This is found in a chest, located under a cliff near the northern border of the Fractured Plains, west of the main river. This cliff is located near a broken bridge and has surrounding wolves, garou hunters, and garou druids; players are recommended to bring armour, a high-tiered weapon, to help navigate through this area.\n\n",
+			"extract": "Azure metal contraption is a consumable item that unlocks the creation of Blurite Crossbow Limbs, the blurite crossbow, and blurite bolts. This is found in a chest, located under a cliff near the northern border of the Fractured Plains, west of the main river. This cliff is located near a broken bridge and has surrounding wolves, garou hunters, and garou druids; players are recommended to bring armour, a high-tiered weapon, to help navigate through this area.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [
@@ -12535,6 +12627,29 @@
 			]
 		},
 		{
+			"slug": "bawling-beltfish",
+			"name": "Bawling Beltfish",
+			"wiki": "Bawling Beltfish",
+			"icon": "Bawling Beltfish.png",
+			"type": "Raw Ingredient",
+			"category": "food",
+			"description": "Too depressed to wriggle.",
+			"extract": "A Bawling Beltfish is a quest item obtained during the quest, A Reel Downer. Players can only obtain the bawling beltfish with a yew rod and agony auntchovy in a rod fishing spot within Umbral Sands.",
+			"recipes": [],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": 5,
+			"power": null,
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
+				}
+			]
+		},
+		{
 			"slug": "beast-training-notes",
 			"name": "Beast-Training Notes",
 			"wiki": "Beast-Training Notes",
@@ -12658,7 +12773,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "An ancient book of spells by Agatha's mail-order magic service. \"Guaranteed to put warts on your nose, or your money back!\"",
-			"extract": "The bedraggled spellbook is a quest item that is found during the Mirror, Mirror quest. Players will need to return this book to Edna as well as 1 silver bar, 1 fine thread, 1 sacred oil, and 6 soul fragments.\n\n",
+			"extract": "The bedraggled spellbook is a quest item that is found during the Mirror, Mirror quest. Players will need to return this book to Edna as well as 1 silver bar, 1 fine thread, 1 sacred oil, and 6 soul fragments.",
 			"recipes": [],
 			"usedIn": [
 				"spectral-silver-thread"
@@ -13065,7 +13180,7 @@
 			"type": "Raw Ingredient",
 			"category": "food",
 			"description": "A tasty mushroom. Can be used in a variety of cooking recipes.",
-			"extract": "Bittercap mushrooms are a power level 2 raw ingredient, which means they can be cooked at a campfire or grill into grilled mushrooms starting at Cooking Level 12, and not burnt into burnt mushroom at level 27. They can also be used to make weak antipoison potion. They can be gathered from bittercap mushroom resource nodes in the Whispering Swamp and Dowdun Reach. \n\n",
+			"extract": "Bittercap mushrooms are a power level 2 raw ingredient, which means they can be cooked at a campfire or grill into grilled mushrooms starting at Cooking Level 12, and not burnt into burnt mushroom at level 27. They can also be used to make weak antipoison potion. They can be gathered from bittercap mushroom resource nodes in the Whispering Swamp and Dowdun Reach.",
 			"recipes": [],
 			"usedIn": [
 				"burnt-mushroom",
@@ -13427,7 +13542,7 @@
 			"type": "Ranged Armour",
 			"category": "armour",
 			"description": "Tough, flexible black dragonhide armour trusted by hunters who prefer to strike from afar.",
-			"extract": "Black Dragonhide Body is a Power level 8 ranged armour piece crafted with an armour bench.",
+			"extract": "The black dragonhide body is a Power level 8 ranged armour piece crafted with an armour bench.",
 			"recipes": [
 				{
 					"outputLabel": "Black Dragonhide Body",
@@ -13487,15 +13602,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "54"
+					"value": "+54"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "58"
+					"value": "+58"
 				},
 				{
 					"label": "Magic defence",
-					"value": "54"
+					"value": "+54"
 				},
 				{
 					"label": "Durability",
@@ -13523,7 +13638,7 @@
 			"type": "Ranged Armour",
 			"category": "armour",
 			"description": "Crafted from resilient black dragonhide, these leggings allow swift movement while providing excellent protection.",
-			"extract": "Black dragonhide chaps is a power level 8 ranged armour piece that is crafted with an armour bench.",
+			"extract": "Black dragonhide chaps are a power level 8 ranged armour piece that is crafted with an armour bench.",
 			"recipes": [
 				{
 					"outputLabel": "Black Dragonhide Chaps",
@@ -13583,15 +13698,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "33"
+					"value": "+33"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "35"
+					"value": "+35"
 				},
 				{
 					"label": "Magic defence",
-					"value": "33"
+					"value": "+33"
 				},
 				{
 					"label": "Durability",
@@ -13679,15 +13794,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "22"
+					"value": "+22"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "23"
+					"value": "+23"
 				},
 				{
 					"label": "Magic defence",
-					"value": "22"
+					"value": "+22"
 				},
 				{
 					"label": "Durability",
@@ -13911,7 +14026,7 @@
 			"type": "Melee Armour",
 			"category": "armour",
 			"description": "A heavy chestplate worn by the Black Knights of Dowdun Reach",
-			"extract": "Black Knight platebody is a power level 6 armour piece that can be created at a armour bench.\nThe recipe is unlocked by purchasing and using the shard of black pauldron vestige from the Evil Emporium shop.",
+			"extract": "The Black Knight platebody is a power level 6 armour piece that can be created at a armour bench.\nThe recipe is unlocked by purchasing and using the shard of black pauldron vestige from the Evil Emporium shop.",
 			"recipes": [
 				{
 					"outputLabel": "Black Knight Platebody",
@@ -13974,15 +14089,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "45"
+					"value": "+45"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "39"
+					"value": "+39"
 				},
 				{
 					"label": "Magic defence",
-					"value": "38"
+					"value": "+38"
 				},
 				{
 					"label": "Durability",
@@ -14010,7 +14125,7 @@
 			"type": "Melee Armour",
 			"category": "armour",
 			"description": "Sturdy leg armour worn by the Black Knights of Dowdun Reach.",
-			"extract": "Black Knight platelegs is a power level 6 armour piece that can be created at a armour bench.\nThe recipe is unlocked by purchasing and using the grim black codpiece vestige from the Evil Emporium shop.",
+			"extract": "The Black Knight platelegs are a power level 6 armour piece that can be created at a armour bench.\nThe recipe is unlocked by purchasing and using the grim black codpiece vestige from the Evil Emporium shop.",
 			"recipes": [
 				{
 					"outputLabel": "Black Knight Platelegs",
@@ -14073,15 +14188,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "27"
+					"value": "+27"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "24"
+					"value": "+24"
 				},
 				{
 					"label": "Magic defence",
-					"value": "23"
+					"value": "+23"
 				},
 				{
 					"label": "Durability",
@@ -14139,7 +14254,7 @@
 				{
 					"source": "Chest (Umbral Sands)",
 					"qty": "1",
-					"rarity": "0.36/100"
+					"rarity": "12.5/100"
 				}
 			],
 			"shops": [],
@@ -14903,7 +15018,7 @@
 			"slug": "blightwood-shortbow",
 			"name": "Blightwood Shortbow",
 			"wiki": "Blightwood Shortbow",
-			"icon": "Blightwood Shortbow (Journal).png",
+			"icon": "Blightwood Shortbow.png",
 			"type": "Ranged Weapon",
 			"category": "weapons",
 			"description": "A finely crafted bow, fast and reliable.",
@@ -14979,11 +15094,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1300"
+					"value": "1,300"
 				},
 				{
 					"label": "Special action",
-					"value": "Rapid fire"
+					"value": "Rapid fire (40)"
 				}
 			]
 		},
@@ -15073,7 +15188,7 @@
 			"type": "Basic Item",
 			"category": "capes",
 			"description": "A cloak commemorating a dragon's vengeance.",
-			"extract": "The Bloodblight cape is a craftable armour piece. The recipe is unlocked by acquiring the Bloodblight Cape Pattern, found in a chest behind a broken wall in the Bloodblight Castle.  \n\n",
+			"extract": "The Bloodblight cape is a craftable armour piece. The recipe is unlocked by acquiring the Bloodblight Cape Pattern, found in a chest behind a broken wall in the Bloodblight Castle.",
 			"recipes": [
 				{
 					"outputLabel": "Bloodblight Cape",
@@ -15211,7 +15326,7 @@
 			"type": "Resource",
 			"category": "materials",
 			"description": "Harvested from bloodwood trees found in the toxic swamp in Ghornfell.",
-			"extract": "Bloodwood sap can be found by logging the red formations on the bloodwood tree in the southernmost area of the Bloodblight Swamp, that is located in the middle of a garou camp.\nBloodwood sap is required for progression in the quest Dragon Slayer, as it is a component of the challenge horn.\nPlayers will need to use an iron logging axe or higher to harvest this material from the bloodwood tree.\n\n",
+			"extract": "Bloodwood sap can be found by logging the red formations on the bloodwood tree in the southernmost area of the Bloodblight Swamp, that is located in the middle of a garou camp.\nBloodwood sap is required for progression in the quest Dragon Slayer, as it is a component of the challenge horn.\nPlayers will need to use an iron logging axe or higher to harvest this material from the bloodwood tree.",
 			"recipes": [],
 			"usedIn": [
 				"challenge-horn",
@@ -17447,7 +17562,7 @@
 			"type": "Basic Item",
 			"category": "capes",
 			"description": "A cloak to remember simpler times.",
-			"extract": "The Bramblemead cape is a craftable armour piece. The recipe is unlocked by acquiring the Bramblemead Cape Pattern, found in a chest atop the Runecrafting Guild. Using only Windstep to reach the chest is considerably difficult; it is recommended to do this in combination with building foundations.\n\n",
+			"extract": "The Bramblemead cape is a craftable armour piece. The recipe is unlocked by acquiring the Bramblemead Cape Pattern, found in a chest atop the Runecrafting Guild. Using only Windstep to reach the chest is considerably difficult; it is recommended to do this in combination with building foundations.",
 			"recipes": [
 				{
 					"outputLabel": "Bramblemead Cape",
@@ -20808,7 +20923,7 @@
 			"type": "Food",
 			"category": "food",
 			"description": "Too well done, but still edible.",
-			"extract": "Burnt desert sole are consumable burnt food that have a chance to be made when cooking raw desert sole, providing 15 sustenance when consumed. It can also be used as compost in a compost bin.",
+			"extract": "Burnt desert soles are consumable burnt food that have a chance to be made when cooking raw desert sole, providing 15 sustenance when consumed. It can also be used as compost in an ultra compost bin.",
 			"recipes": [
 				{
 					"outputLabel": "Burnt Desert Sole",
@@ -20846,6 +20961,30 @@
 					],
 					"materials": [
 						{
+							"label": "Depressed Desert Sole",
+							"qty": 1,
+							"icon": "Depressed Desert Sole.png",
+							"slug": "depressed-desert-sole"
+						}
+					],
+					"id": "8ac613c1c9",
+					"station": {
+						"name": "Campfire",
+						"slug": "campfire"
+					}
+				},
+				{
+					"outputLabel": "Burnt Desert Sole",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [
+						{
+							"name": "Cooking",
+							"xp": 10
+						}
+					],
+					"materials": [
+						{
 							"label": "Raw Desert Sole",
 							"qty": 1,
 							"icon": "Raw Desert Sole.png",
@@ -20857,9 +20996,35 @@
 						"name": "Grill",
 						"slug": "grill"
 					}
+				},
+				{
+					"outputLabel": "Burnt Desert Sole",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [
+						{
+							"name": "Cooking",
+							"xp": 10
+						}
+					],
+					"materials": [
+						{
+							"label": "Depressed Desert Sole",
+							"qty": 1,
+							"icon": "Depressed Desert Sole.png",
+							"slug": "depressed-desert-sole"
+						}
+					],
+					"id": "f5473ebdd9",
+					"station": {
+						"name": "Grill",
+						"slug": "grill"
+					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"ultra-compost"
+			],
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
@@ -22491,6 +22656,30 @@
 					],
 					"materials": [
 						{
+							"label": "Snivelling Sardine",
+							"qty": 1,
+							"icon": "Snivelling Sardine.png",
+							"slug": "snivelling-sardine"
+						}
+					],
+					"id": "598688a6cf",
+					"station": {
+						"name": "Campfire",
+						"slug": "campfire"
+					}
+				},
+				{
+					"outputLabel": "Burnt Sardine",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [
+						{
+							"name": "Cooking",
+							"xp": 10
+						}
+					],
+					"materials": [
+						{
 							"label": "Raw Sardine",
 							"qty": 1,
 							"icon": "Raw Sardine.png",
@@ -22498,6 +22687,30 @@
 						}
 					],
 					"id": "f2e4083a02",
+					"station": {
+						"name": "Grill",
+						"slug": "grill"
+					}
+				},
+				{
+					"outputLabel": "Burnt Sardine",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [
+						{
+							"name": "Cooking",
+							"xp": 10
+						}
+					],
+					"materials": [
+						{
+							"label": "Snivelling Sardine",
+							"qty": 1,
+							"icon": "Snivelling Sardine.png",
+							"slug": "snivelling-sardine"
+						}
+					],
+					"id": "ca4eb92a35",
 					"station": {
 						"name": "Grill",
 						"slug": "grill"
@@ -23119,7 +23332,7 @@
 			"type": "Raw Ingredient",
 			"category": "food",
 			"description": "Yuck I don't like cabbage.",
-			"extract": "Cabbages are a power level 2 raw ingredient, which means they can be cooked at a campfire or grill into fried cabbage starting at Cooking Level 12, and not burnt into burnt cabbage at level 27. They can also be used to make weak Focused Cooking potions and Focused Cooking potions. They can be gathered from cabbage plants in Bramblemead Valley and cabbage (Farming) from cabbage seeds.\n\n",
+			"extract": "Cabbages are a power level 2 raw ingredient, which means they can be cooked at a campfire or grill into fried cabbage starting at Cooking Level 12, and not burnt into burnt cabbage at level 27. They can also be used to make weak Focused Cooking potions and Focused Cooking potions. They can be gathered from cabbage plants in Bramblemead Valley and cabbage (Farming) from cabbage seeds.",
 			"recipes": [],
 			"usedIn": [
 				"burnt-cabbage",
@@ -24207,7 +24420,7 @@
 			"usedIn": [
 				"fuel-pellet",
 				"furnace",
-				"naphtha"
+				"naptha"
 			],
 			"drops": [
 				{
@@ -25247,7 +25460,7 @@
 				"lesser-quarrymaster-potion",
 				"medium-desert-vase",
 				"moon-garou-table-02",
-				"naphtha",
+				"naptha",
 				"pan-rack",
 				"sacred-oil",
 				"small-desert-vase",
@@ -26050,7 +26263,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "A sealed scroll full of forbidden magics.",
-			"extract": "Coclear Malificarum is a quest item obtained on the ground by Ulgo the zogre. It is slightly north-west of the chest, by the large bones. It is one of three scrolls required to complete What Remains is Written. It is located in the north-east section of Coalridge Pass.\n\n",
+			"extract": "Coclear Malificarum is a quest item obtained on the ground by Ulgo the zogre. It is slightly north-west of the chest, by the large bones. It is one of three scrolls required to complete What Remains is Written. It is located in the north-east section of Coalridge Pass.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -27639,6 +27852,44 @@
 						"name": "Compost Bin",
 						"slug": "compost-bin"
 					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Snivelling Sardine",
+							"qty": 1,
+							"icon": "Snivelling Sardine.png",
+							"slug": "snivelling-sardine"
+						}
+					],
+					"id": "40dc8f57be",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Compost",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Pristine Snivelling Sardine",
+							"qty": 1,
+							"icon": "Pristine Snivelling Sardine.png",
+							"slug": "pristine-snivelling-sardine"
+						}
+					],
+					"id": "19615fcefe",
+					"station": {
+						"name": "Compost Bin",
+						"slug": "compost-bin"
+					}
 				}
 			],
 			"usedIn": [],
@@ -28800,7 +29051,7 @@
 				{
 					"source": "Chest (Umbral Sands)",
 					"qty": "1",
-					"rarity": "0.63/100"
+					"rarity": "1/4"
 				},
 				{
 					"source": "The Radiant",
@@ -28889,7 +29140,7 @@
 				{
 					"source": "Chest (Umbral Sands)",
 					"qty": "1",
-					"rarity": "0.63/100"
+					"rarity": "1/4"
 				},
 				{
 					"source": "The Radiant",
@@ -28978,7 +29229,7 @@
 				{
 					"source": "Chest (Umbral Sands)",
 					"qty": "1",
-					"rarity": "0.63/100"
+					"rarity": "1/4"
 				},
 				{
 					"source": "The Radiant",
@@ -29067,7 +29318,7 @@
 				{
 					"source": "Chest (Umbral Sands)",
 					"qty": "1",
-					"rarity": "0.63/100"
+					"rarity": "1/4"
 				},
 				{
 					"source": "The Radiant",
@@ -29148,11 +29399,11 @@
 			"slug": "crystal-bow",
 			"name": "Crystal Bow",
 			"wiki": "Crystal Bow",
-			"icon": "Crystal Bow (Journal).png",
+			"icon": "Crystal Bow.png",
 			"type": "Ranged Weapon",
 			"category": "weapons",
 			"description": "A powerful Shortbow fashioned from crystal of elven origin.",
-			"extract": "The crystal bow is a power level 3 masterwork shortbow that can be obtained (as well as its crafting recipe) as a reward from the Heartstrings quest. It can then be crafted at a fletching bench. It can be ascended at the mystic forge using ascension cores.\nIts special attack is called Shattershot, costing 50 stamina and shoots an area-of-effect cone of arrows a short distance that deals one third of the weapon's base damage to every target hit. Each target hit is stuck with crystal needles that explode after a short time for a set 50 damage. More needles can be stacked before the previous set explodes. This special attack does not require arrows to fire and can penetrate solid objects.\nThis weapon fires slightly slower than other shortbows despite dealing very similar damage when at the same power level, even when compared to the undead ranger's bow which is supposed to have increased damage as its special effect. This weapon has the same durability as the other ascendable shortbows, which makes the wild scout's shortbow with its 10% faster draw speed the ideal choice of shortbow to ascend if not using shattershot.",
+			"extract": "The crystal bow is a power level 3 masterwork shortbow that can be obtained (as well as its crafting recipe) as a reward from the Heartstrings quest. It can then be crafted at a fletching bench. It can be ascended at the mystic forge using ascension cores.\nIts special attack is called Shattershot, costing 50 stamina and shoots an area-of-effect cone of arrows a short distance that deals one third of the weapon's base damage to every target hit. Each target hit is stuck with crystal needles that explode after a short time for a set 50 damage. More needles can be stacked before the previous set explodes. This special attack does not require arrows to fire and can penetrate solid objects.\nThis weapon draw time is 1 second slower than other shortbows, but at the same power level it deals more damage, only being underperformed by the Undead Ranger's Bow in base damage.",
 			"recipes": [
 				{
 					"outputLabel": "Crystal Bow",
@@ -29234,7 +29485,11 @@
 				},
 				{
 					"label": "Special action",
-					"value": "Shattershot"
+					"value": "Shattershot (50)"
+				},
+				{
+					"label": "Special effect",
+					"value": "* SHATTERSHOT Fire a CRYSTAL ARROW that shatters, dealing DAMAGE in a cone and DETONATING after a short delay. * LOVE'S BITE Enemies hit by SPECIAL ATTACKS cause CRYSTALS to detonate inside them after a short delay, dealing additional DAMAGE. * INCREASED DRAW TIME"
 				}
 			]
 		},
@@ -29823,6 +30078,61 @@
 			]
 		},
 		{
+			"slug": "decorative-penguin-coin",
+			"name": "Decorative Penguin Coin",
+			"wiki": "Decorative Penguin Coin",
+			"icon": "Decorative Penguin Coin.png",
+			"type": null,
+			"category": "buildings",
+			"description": "",
+			"extract": "a decorative version of Penguin Coin",
+			"recipes": [
+				{
+					"outputLabel": "Decorative Penguin Coin",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [
+						{
+							"name": "Construction",
+							"xp": 0
+						}
+					],
+					"materials": [
+						{
+							"label": "Penguin Coin",
+							"qty": 1,
+							"icon": "Penguin Coin.png",
+							"slug": "penguin-coin"
+						},
+						{
+							"label": "Oak Plank",
+							"qty": 1,
+							"icon": "Oak Plank.png",
+							"slug": "oak-plank"
+						}
+					],
+					"id": "e578136f36",
+					"station": {
+						"name": "Build Menu",
+						"slug": null
+					}
+				}
+			],
+			"usedIn": [],
+			"drops": [],
+			"shops": [
+				{
+					"seller": "Fishy Facade",
+					"cost": 1,
+					"currency": "Penguin Coin"
+				}
+			],
+			"unlockedBy": [],
+			"weight": null,
+			"power": null,
+			"stats": []
+		},
+		{
 			"slug": "demonic-metal-rod",
 			"name": "Demonic Metal Rod",
 			"wiki": "Demonic Metal Rod",
@@ -29963,6 +30273,32 @@
 			],
 			"unlockedBy": [],
 			"weight": 0,
+			"power": null,
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
+				}
+			]
+		},
+		{
+			"slug": "depressed-desert-sole",
+			"name": "Depressed Desert Sole",
+			"wiki": "Depressed Desert Sole",
+			"icon": "Depressed Desert Sole.png",
+			"type": "Raw Ingredient",
+			"category": "food",
+			"description": "A mournful sole.",
+			"extract": "A Depressed Desert Sole is a quest item that is obtained during the quest, A Reel Downer. Players will need a yew rod and agony auntchovy in their inventory whilst in Umbral Sands to catch a depressed desert sole.",
+			"recipes": [],
+			"usedIn": [
+				"burnt-desert-sole",
+				"sun-baked-sole"
+			],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": 5,
 			"power": null,
 			"stats": [
 				{
@@ -30253,15 +30589,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "+27"
+					"value": "-"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "+28"
+					"value": "-"
 				},
 				{
 					"label": "Magic defence",
-					"value": "+32"
+					"value": "-"
 				},
 				{
 					"label": "Durability",
@@ -30625,7 +30961,7 @@
 			"type": "Basic Material",
 			"category": "materials",
 			"description": "A hearty plant native to the region. Can be spun into a durable thread",
-			"extract": "This article is about the resource. For the Plant itself, see Desert Weeds.\n\nDesert weed is a basic material gathered by picking up Desert Weeds located in the Umbral Sands region or by growing in any plot but grows best in a Yew Farming Plot.\n\n",
+			"extract": "This article is about the resource. For the Plant itself, see Desert Weeds.\n\nDesert weed is a basic material gathered by picking up Desert Weeds located in the Umbral Sands region or by growing in any plot but grows best in a Yew Farming Plot.",
 			"recipes": [],
 			"usedIn": [
 				"desert-thread",
@@ -32338,15 +32674,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "27"
+					"value": "+27"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "25"
+					"value": "+25"
 				},
 				{
 					"label": "Magic defence",
-					"value": "24"
+					"value": "+24"
 				},
 				{
 					"label": "Durability",
@@ -32429,15 +32765,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "27"
+					"value": "+27"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "25"
+					"value": "+25"
 				},
 				{
 					"label": "Magic defence",
-					"value": "24"
+					"value": "+24"
 				},
 				{
 					"label": "Durability",
@@ -32482,15 +32818,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "68"
+					"value": "+68"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "62"
+					"value": "+62"
 				},
 				{
 					"label": "Magic defence",
-					"value": "60"
+					"value": "+60"
 				},
 				{
 					"label": "Durability",
@@ -32518,7 +32854,7 @@
 			"type": "Melee Armour",
 			"category": "armour",
 			"description": "Dragon-forged platelegs offering exceptional protection without sacrificing mobility.",
-			"extract": "The Dragon Platelegs is a power level 9 armour piece worn on the legs. Unlike many other armour pieces in the game, these leggings are uncraftable and have a passive full durability. It can only be obtained as a rare drop from the Queenslayer's Reward Pack.",
+			"extract": "The Dragon Platelegs are a power level 9 armour piece worn on the legs. Unlike many other armour pieces in the game, these leggings are uncraftable and have a passive full durability. It can only be obtained as a rare drop from the Queenslayer's Reward Pack.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [
@@ -32535,15 +32871,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "41"
+					"value": "+41"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "37"
+					"value": "+37"
 				},
 				{
 					"label": "Magic defence",
-					"value": "36"
+					"value": "+36"
 				},
 				{
 					"label": "Durability",
@@ -32559,7 +32895,7 @@
 				},
 				{
 					"label": "Set bonus",
-					"value": "+25% Damage To Staggered Targets"
+					"value": "+25% Damage to Staggered Targets"
 				}
 			]
 		},
@@ -32651,7 +32987,7 @@
 			"type": "Basic Material",
 			"category": "materials",
 			"description": "A piece of dragon tooth, extracted from a dragon skull found in the Highlands.",
-			"extract": "Dragon teeth can be obtained either by mining teeth from the head of the dragon skull in the Stormtouched Highlands or by killing lesser dragons. It is one component of the challenge horn, which is used in the Dragon Slayer quest. Players will need to have an iron pickaxe to mine this item. Dragon teeth respawn after two in-game days, as long as the player is at least 100 metres away, and their built objects are not directly on the spawn area.\nBeyond the Ghornfell region, players can obtain this item as a mob drop from defeating lesser dragon mini-bosses.\n\n",
+			"extract": "Dragon teeth can be obtained either by mining teeth from the head of the dragon skull in the Stormtouched Highlands or by killing lesser dragons. It is one component of the challenge horn, which is used in the Dragon Slayer quest. Players will need to have an iron pickaxe to mine this item. Dragon teeth respawn after two in-game days, as long as the player is at least 100 metres away, and their built objects are not directly on the spawn area.\nBeyond the Ghornfell region, players can obtain this item as a mob drop from defeating lesser dragon mini-bosses.",
 			"recipes": [],
 			"usedIn": [
 				"black-dragon-trophy",
@@ -32756,7 +33092,7 @@
 			"shops": [],
 			"unlockedBy": [],
 			"weight": 0,
-			"power": 3,
+			"power": null,
 			"stats": [
 				{
 					"label": "Melee defence",
@@ -33824,15 +34160,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "2"
+					"value": "+2"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "2"
+					"value": "+2"
 				},
 				{
 					"label": "Magic defence",
-					"value": "2"
+					"value": "+2"
 				}
 			]
 		},
@@ -35084,7 +35420,7 @@
 			"type": "Rune",
 			"category": "runes",
 			"description": "A symbol of the earth's might, essential for earth-based magic. Runes are retained if you happen to die",
-			"extract": "Earth runes can be crafted at a rune altar at level 15 Runecrafting or higher. Spells that use this rune orient around manipulating the earth and minerals, such as Mucksplosion and Divine Rock.\nFrom the Community Campfire with Mod Pointy, there is active development on casting spells with earth runes.",
+			"extract": "Earth runes can be crafted at a rune altar at level 15 Runecrafting or higher. Spells that use this rune orient around manipulating the earth and minerals, such as Mucksplosion and Divine Rock. Players can also use runes to cast combat spells after unlocking the Earth Magic passive.",
 			"recipes": [
 				{
 					"outputLabel": "Earth Rune",
@@ -36499,7 +36835,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "A sealed scroll full of the worst things imaginable.",
-			"extract": "Eventide - A New Spawn is a quest item obtained on the desk in the ruins by Razlem, the Deranged. It is one of three scrolls required to complete What Remains is Written. The scroll located in the very south-eastern part of Silverthorn Keep.\n\n",
+			"extract": "Eventide - A New Spawn is a quest item obtained on the desk in the ruins by Razlem, the Deranged. It is one of three scrolls required to complete What Remains is Written. The scroll located in the very south-eastern part of Silverthorn Keep.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -36696,7 +37032,7 @@
 			"type": "Shield",
 			"category": "armour",
 			"description": "The shield of an Undead Hoplite.",
-			"extract": "The fallen hoplite's aspis is a power level 5 shield that can be crafted at a blacksmith's bench after obtaining a sundering spiked slab as a rare drop (5/100) from a skeletal hoplite. It can be ascended at the mystic forge using ascension cores.\nIts special effect is that it has 3 higher block value at every power level compared to most other shields. Block value directly reduces damage taken from attacks linearly, i.e. if you have more block value than an attack deals, you will lose no health, your armour will be unaffected, and the stamina cost to block an attack will be low, lower than dodging that same attack.\nThis has to be compared with the effects provided by the other shields though, for example this shield will be unable to block dragon fire like the anti-dragon shield, dragonblight shield, and dragoncurse shield (but not the dragonfire shield). This shield also does not an offensive benefit like those shield's parry effects or the toktz-ket-xil's bonus melee crit damage, although that shield in particular has 6 less block than other shields.",
+			"extract": "The fallen hoplite's aspis is a power level 5 shield that can be crafted at a blacksmith's bench after obtaining a sundering spiked slab as a rare drop (5/100) from a skeletal hoplite. It can be ascended at the mystic forge using ascension cores.\nIts special effect is that it has 3 higher block value at every power level compared to most other shields, even the  Dragon Kiteshield, making it the highest block rate shield in the game. However, while it has the highest block rate, it can be replaced with other shields, like the anti-dragon shield, dragonblight shield, dragoncurse shield and the dragonfire shield that could block dragon breath. This shield also does not receive an offensive benefit like those shield's parry effects or the toktz-ket-xil's bonus melee crit damage.",
 			"recipes": [
 				{
 					"outputLabel": "Fallen Hoplite's Aspis",
@@ -37527,6 +37863,7 @@
 			"usedIn": [
 				"adamant-arrow",
 				"adamant-bolt",
+				"agony-auntchovy",
 				"animated-feather",
 				"blurite-bolts",
 				"bramblemead-magpie-perch",
@@ -38078,7 +38415,7 @@
 			"type": "Basic Item",
 			"category": "materials",
 			"description": "A complex network of fibres and water reservoirs. Can be tanned to produce a durable material.",
-			"extract": "Fibrous pipe cactus can be found west of the Moon Garou tribe near a grove of yew trees, and can be used to make 3 cactus fibres in a tannery.\n\n",
+			"extract": "Fibrous pipe cactus can be found west of the Moon Garou tribe near a grove of yew trees, and can be used to make 3 cactus fibres in a tannery.",
 			"recipes": [],
 			"usedIn": [
 				"cactus-fibres",
@@ -38394,7 +38731,7 @@
 			"type": "Basic Item",
 			"category": "capes",
 			"description": "Receiving or blocking damage has a chance to triggering burning on your attacker. Melee kills on Burning enemies refill stamina.",
-			"extract": "The fire cape is a cape awarded after beating the Fight Cave activity. It is the only cape in the game that is dropped by a boss monster. When worn by the player it gives the Burning Endurance effect.\nThe cape previously required an ember-edged remnant of cloth vestige.",
+			"extract": "The fire cape is a cape awarded after beating the Fight Cave activity. It is the only cape in the game that is dropped by a boss monster. When worn by the player it gives the Burning Endurance effect. Players can craft them on the Armour Bench.\nThe cape previously required an ember-edged remnant of cloth vestige.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -38446,7 +38783,7 @@
 							"label": "Naptha",
 							"qty": 1,
 							"icon": "Naptha.png",
-							"slug": "naphtha"
+							"slug": "naptha"
 						},
 						{
 							"label": "Coarse Thread",
@@ -38455,7 +38792,7 @@
 							"slug": "coarse-thread"
 						}
 					],
-					"id": "4deb0dd6ad",
+					"id": "6eb82b9067",
 					"station": {
 						"name": "Fletching Bench",
 						"slug": "fletching-bench"
@@ -38997,6 +39334,49 @@
 			]
 		},
 		{
+			"slug": "fishing-rod-rack",
+			"name": "Fishing Rod Rack",
+			"wiki": "Fishing Rod Rack",
+			"icon": "Fishing Rod Rack.png",
+			"type": null,
+			"category": "buildings",
+			"description": "",
+			"extract": "A Fishing Rod Rack is a storage-type furniture that is unlocked after completing the quest, A Reel Downer. The rack is made with four yew logs and can hold up to four fishing rods.",
+			"recipes": [
+				{
+					"outputLabel": "Fishing Rod Rack",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [
+						{
+							"name": "Construction",
+							"xp": 40
+						}
+					],
+					"materials": [
+						{
+							"label": "Yew Logs",
+							"qty": 4,
+							"icon": "Yew Logs.png",
+							"slug": "yew-logs"
+						}
+					],
+					"id": "c661a835ec",
+					"station": {
+						"name": "Build Menu",
+						"slug": null
+					}
+				}
+			],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": null,
+			"power": null,
+			"stats": []
+		},
+		{
 			"slug": "flank-steak",
 			"name": "Flank Steak",
 			"wiki": "Flank Steak",
@@ -39094,7 +39474,7 @@
 			"type": "Resource",
 			"category": "materials",
 			"description": "Harvested from flax plants, essential for crafting linen and bowstrings.",
-			"extract": "Flax can be found by harvesting the flax plants in either Bramblemead Valley, Fractured Plains, or Stormtouched Highlands. It can be used on the spinning wheel to create coarse thread. Collecting flax for the first time unlocks the creation of the spinning wheel and fletching bench.\n\n",
+			"extract": "Flax can be found by harvesting the flax plants in either Bramblemead Valley, Fractured Plains, or Stormtouched Highlands. It can be used on the spinning wheel to create coarse thread. Collecting flax for the first time unlocks the creation of the spinning wheel and fletching bench.",
 			"recipes": [],
 			"usedIn": [
 				"advanced-spinning-wheel",
@@ -40253,7 +40633,7 @@
 			"type": "Container",
 			"category": "packs",
 			"description": "",
-			"extract": "Food & drink salvage are a type of salvage hotspot that can be looted to obtain various resources. They can be found in the Dowdun Reach.\n\n",
+			"extract": "Food & drink salvage are a type of salvage hotspot that can be looted to obtain various resources. They can be found in the Dowdun Reach.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -40354,7 +40734,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "An ancient garou scroll describing some kind of moon deity. An archaeologist will want this.",
-			"extract": "Forbidden Scroll - 'Moon Goddess' is a quest item that is obtained by digging up a mound with a piece of a scroll sticking up. Players will need to bring this to Lehran - The Archaeologist, along with the other three scrolls to complete The Dig Site subquest part of Icthlarin's Little Helper.\n\n",
+			"extract": "Forbidden Scroll - 'Moon Goddess' is a quest item that is obtained by digging up a mound with a piece of a scroll sticking up. Players will need to bring this to Lehran - The Archaeologist, along with the other three scrolls to complete The Dig Site subquest part of Icthlarin's Little Helper.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -40372,7 +40752,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "An ancient garou scroll describing old Moon Garou kingdom. An archaeologist will want this.",
-			"extract": "Forbidden Scroll - 'Old Kingdom' is a quest item that is obtained by digging up a mound with a piece of a scroll sticking up. Players will need to bring this to Lehran - The Archaeologist, along with the other three scrolls to complete The Dig Site subquest part of Icthlarin's Little Helper.\n\n",
+			"extract": "Forbidden Scroll - 'Old Kingdom' is a quest item that is obtained by digging up a mound with a piece of a scroll sticking up. Players will need to bring this to Lehran - The Archaeologist, along with the other three scrolls to complete The Dig Site subquest part of Icthlarin's Little Helper.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -40390,7 +40770,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "An ancient garou scroll describing a cruel, sun-themed demoness. An archaeologist will want this.",
-			"extract": "Forbidden Scroll - 'Sun Demon' is a quest item that is obtained by digging up a mound with a piece of a scroll sticking up. Players will need to bring this to Lehran - The Archaeologist, along with the other three scrolls to complete The Dig Site subquest part of Icthlarin's Little Helper.\n\n",
+			"extract": "Forbidden Scroll - 'Sun Demon' is a quest item that is obtained by digging up a mound with a piece of a scroll sticking up. Players will need to bring this to Lehran - The Archaeologist, along with the other three scrolls to complete The Dig Site subquest part of Icthlarin's Little Helper.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -40408,7 +40788,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "An ancient Moon Garou scroll describing the schism that separated the garou. An archaeologist will want this.",
-			"extract": "Forbidden Scroll - 'The Schism' is a quest item that is obtained by digging up a mound with a piece of a scroll sticking up. Players will need to bring this to Lehran - The Archaeologist, along with the other three scrolls to complete The Dig Site subquest part of Icthlarin's Little Helper.\n\n",
+			"extract": "Forbidden Scroll - 'The Schism' is a quest item that is obtained by digging up a mound with a piece of a scroll sticking up. Players will need to bring this to Lehran - The Archaeologist, along with the other three scrolls to complete The Dig Site subquest part of Icthlarin's Little Helper.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -40507,7 +40887,7 @@
 			"type": "Basic Item",
 			"category": "capes",
 			"description": "A cloak warning against the danger of hubris.",
-			"extract": "The fractured cape is a craftable armour piece.  The recipe is unlocked by acquiring the PATTERN: fractured cape, found in a chest at the north-north-east tip of the Fractured Plains.\n\n",
+			"extract": "The fractured cape is a craftable armour piece.  The recipe is unlocked by acquiring the PATTERN: fractured cape, found in a chest at the north-north-east tip of the Fractured Plains.",
 			"recipes": [
 				{
 					"outputLabel": "Fractured Cape",
@@ -41000,6 +41380,30 @@
 					],
 					"materials": [
 						{
+							"label": "Snivelling Sardine",
+							"qty": 1,
+							"icon": "Snivelling Sardine.png",
+							"slug": "snivelling-sardine"
+						}
+					],
+					"id": "4f916b7b63",
+					"station": {
+						"name": "Campfire",
+						"slug": "campfire"
+					}
+				},
+				{
+					"outputLabel": "Fried Sardine",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [
+						{
+							"name": "Cooking",
+							"xp": 10
+						}
+					],
+					"materials": [
+						{
 							"label": "Raw Sardine",
 							"qty": 1,
 							"icon": "Raw Sardine.png",
@@ -41007,6 +41411,30 @@
 						}
 					],
 					"id": "7ec0d89c3a",
+					"station": {
+						"name": "Grill",
+						"slug": "grill"
+					}
+				},
+				{
+					"outputLabel": "Fried Sardine",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [
+						{
+							"name": "Cooking",
+							"xp": 10
+						}
+					],
+					"materials": [
+						{
+							"label": "Snivelling Sardine",
+							"qty": 1,
+							"icon": "Snivelling Sardine.png",
+							"slug": "snivelling-sardine"
+						}
+					],
+					"id": "179d53f5d1",
 					"station": {
 						"name": "Grill",
 						"slug": "grill"
@@ -41049,7 +41477,7 @@
 			"type": "Food",
 			"category": "food",
 			"description": "A fruit party, wrapped in golden pastry.",
-			"extract": "Fruit pie is a consumable food item that provides 90 health and 85 sustenance. It is made with dried redberries, dried dwellberries, and bread in a cooking range. Dried redberries or dried dwellberries are required in the player's inventory to unlock the recipe.",
+			"extract": "Fruit pie is a consumable food item that provides 90 health and 85 sustenance. It is made with dried redberries, dried dwellberries, and bread in a cooking range. Dried redberries, dried dwellberries, and Dried Cadavaberries are required in the player's inventory to unlock the recipe.",
 			"recipes": [
 				{
 					"outputLabel": "Fruit Pie",
@@ -41318,7 +41746,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "A pair of well-preserved garou arms, the perfect gift for any mad scientist.",
-			"extract": "Garou Arms are a quest item used in The Great Body Robbery, where it is required to create Doctor Fenkenstrain's creature.\n\n",
+			"extract": "Garou Arms are a quest item used in The Great Body Robbery, where it is required to create Doctor Fenkenstrain's creature.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -41350,9 +41778,24 @@
 			],
 			"drops": [
 				{
+					"source": "Rod Fishing Spot",
+					"qty": "1",
+					"rarity": "5/100"
+				},
+				{
 					"source": "Artifact Salvage",
 					"qty": "1",
 					"rarity": "20/100"
+				},
+				{
+					"source": "Reward Pack: Umbral Sands Gold",
+					"qty": "1",
+					"rarity": "1/50"
+				},
+				{
+					"source": "Reward Pack: Umbral Sands Silver",
+					"qty": "1",
+					"rarity": "1/50"
 				}
 			],
 			"shops": [],
@@ -41396,17 +41839,17 @@
 				{
 					"source": "Chest (Umbral Sands)",
 					"qty": "40–50",
-					"rarity": "70/100"
+					"rarity": "1/7"
 				},
 				{
 					"source": "Chest (Umbral Sands)",
 					"qty": "50–80",
-					"rarity": "20/100"
+					"rarity": "1/5"
 				},
 				{
 					"source": "Chest (Umbral Sands)",
 					"qty": "80–120",
-					"rarity": "10/100"
+					"rarity": "1/10"
 				},
 				{
 					"source": "Reward Pack: Umbral Sands Gold",
@@ -41417,6 +41860,11 @@
 					"source": "Reward Pack: Umbral Sands Silver",
 					"qty": "1–100",
 					"rarity": "1/6.67"
+				},
+				{
+					"source": "A Reel Downer Reward Pack",
+					"qty": "250",
+					"rarity": "Always"
 				}
 			],
 			"shops": [],
@@ -42817,7 +43265,7 @@
 			"type": "Cape",
 			"category": "capes",
 			"description": "A magnificent cape trimmed in gold, worn by those who wish to stand apart from the crowd.",
-			"extract": "The Gilded Paladin Cape is a cape that requires no materials to craft and can be crafted at the Crafting Table and the Mystic Forge\nThe recipe for this item is obtained from purchasing the Deluxe Edition.",
+			"extract": "The Gilded Paladin Cape is a cape that requires no materials to craft and can be crafted at the Crafting Table and the Mystic Forge.\nThe recipe for this item is obtained by purchasing the Deluxe Edition.",
 			"recipes": [
 				{
 					"outputLabel": "Gilded Paladin Cape",
@@ -42879,11 +43327,11 @@
 			"slug": "gilded-paladin-chestpiece",
 			"name": "Gilded Paladin Chestpiece",
 			"wiki": "Gilded Paladin Chestpiece",
-			"icon": "Gilded Paladin Chestpiece (Journal).png",
+			"icon": "Gilded Paladin Chestpiece.png",
 			"type": "Melee Armour",
 			"category": "armour",
 			"description": "An ornate golden chestpiece that serves as a symbol of power, status, and confidence.",
-			"extract": "The gilded paladin chestpiece is a power level 4 melee armour piece that can be crafted with an armour bench.\nThe recipe for this item is obtained from purchasing the Deluxe Edition.",
+			"extract": "The gilded paladin chestpiece is a power level 4 melee armour piece that can be crafted with an armour bench or a Crafting Table. The recipe for this item is obtained from purchasing the Deluxe Edition and crafting a Gold Bar.",
 			"recipes": [
 				{
 					"outputLabel": "Gilded Paladin Chestpiece",
@@ -42937,15 +43385,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "30"
+					"value": "+30"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "24"
+					"value": "+24"
 				},
 				{
 					"label": "Magic defence",
-					"value": "23"
+					"value": "+23"
 				},
 				{
 					"label": "Durability",
@@ -42969,11 +43417,11 @@
 			"slug": "gilded-paladin-helmet",
 			"name": "Gilded Paladin Helmet",
 			"wiki": "Gilded Paladin Helmet",
-			"icon": "Gilded Paladin Helmet (Journal).png",
+			"icon": "Gilded Paladin Helmet.png",
 			"type": "Melee Armour",
 			"category": "armour",
 			"description": "Polished to a brilliant shine, this helmet is as impressive as it is eye-catching.",
-			"extract": "The gilded paladin helmet is a power level 4 melee armour piece that is crafted with an armour bench.\nThe recipe for this item is obtained from purchasing the Deluxe Edition.",
+			"extract": "The gilded paladin helmet is a power level 4 melee armour piece that is crafted with an armour bench or the Crafting Table. The recipe for this item is obtained from purchasing the Deluxe Edition as well as crafting a Gold Bar.",
 			"recipes": [
 				{
 					"outputLabel": "Gilded Paladin Helmet",
@@ -43027,15 +43475,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "12"
+					"value": "+12"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "10"
+					"value": "+10"
 				},
 				{
 					"label": "Magic defence",
-					"value": "9"
+					"value": "+9"
 				},
 				{
 					"label": "Durability",
@@ -43059,11 +43507,11 @@
 			"slug": "gilded-paladin-legs",
 			"name": "Gilded Paladin Legs",
 			"wiki": "Gilded Paladin Legs",
-			"icon": "Gilded Paladin Legs (Journal).png",
+			"icon": "Gilded Paladin Legs.png",
 			"type": "Melee Armour",
 			"category": "armour",
 			"description": "Golden platelegs for warriors who believe protection should be seen from a distance.",
-			"extract": "The gilded paladin legs is a power level 4 melee armour piece that can be crafted with an armour bench. \nThe recipe for this item is obtained from purchasing the Deluxe Edition.",
+			"extract": "The gilded paladin legs is a power level 4 melee armour piece that can be crafted with an armour bench or a crafting table. The recipe for this item is obtained from purchasing the Deluxe Edition and crafting a gold bar.",
 			"recipes": [
 				{
 					"outputLabel": "Gilded Paladin Legs",
@@ -43117,15 +43565,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "18"
+					"value": "+18"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "15"
+					"value": "+15"
 				},
 				{
 					"label": "Magic defence",
-					"value": "14"
+					"value": "+14"
 				},
 				{
 					"label": "Durability",
@@ -43203,7 +43651,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "A handcrafted owl made of glass. It seems to have great sentimental value to someone.",
-			"extract": "The glass owl is an item used in the Black Knight's Fortress quest. The glass owl is obtained by digging the grave west of the blue dragon spawn in the west of the Library region.\n\n",
+			"extract": "The glass owl is an item used in the Black Knight's Fortress quest. The glass owl is obtained by digging the grave west of the blue dragon spawn in the west of the Library region.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -43269,7 +43717,7 @@
 			"name": "Glass Vessel",
 			"wiki": "Glass Vessel",
 			"icon": "Glass Vessel.png",
-			"type": "Component",
+			"type": "Basic Item",
 			"category": "materials",
 			"description": "A glass item made by glassblowing.",
 			"extract": "Glass vessels can be created with molten glass at a jeweler's bench, and can be used for various recipes.",
@@ -43575,7 +44023,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "A pair of worryingly fresh goblin legs. Doctor Fenkenstrain will be interested in these.",
-			"extract": "Goblin legs are a quest item used in The Great Body Robbery, where it is required to create Doctor Fenkenstrain's creature.\n\n",
+			"extract": "Goblin legs are a quest item used in The Great Body Robbery, where it is required to create Doctor Fenkenstrain's creature.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -45260,7 +45708,7 @@
 				{
 					"source": "Chest (Umbral Sands)",
 					"qty": "1",
-					"rarity": "0.36/100"
+					"rarity": "12.5/100"
 				}
 			],
 			"shops": [],
@@ -47229,7 +47677,7 @@
 				{
 					"source": "Chest (Umbral Sands)",
 					"qty": "3–6",
-					"rarity": "1/24"
+					"rarity": "1/23"
 				},
 				{
 					"source": "Chest (Umbral Sands)",
@@ -48043,15 +48491,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "17"
+					"value": "+17"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "21"
+					"value": "+21"
 				},
 				{
 					"label": "Magic defence",
-					"value": "17"
+					"value": "+17"
 				},
 				{
 					"label": "Durability",
@@ -48127,15 +48575,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "10"
+					"value": "+10"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "12"
+					"value": "+12"
 				},
 				{
 					"label": "Magic defence",
-					"value": "10"
+					"value": "+10"
 				},
 				{
 					"label": "Durability",
@@ -48211,15 +48659,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "7"
+					"value": "+7"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "8"
+					"value": "+8"
 				},
 				{
 					"label": "Magic defence",
-					"value": "7"
+					"value": "+7"
 				},
 				{
 					"label": "Durability",
@@ -48401,7 +48849,7 @@
 			"type": "Basic Item",
 			"category": "materials",
 			"description": "A fragrant herb used in restorative potions.",
-			"extract": "Harralander is a herb that is harvested from Harralander plants, found primarily in the Whispering Swamp and can be bought from Domri - The Merchant for 6 garou chits.\n\n",
+			"extract": "Harralander is a herb that is harvested from Harralander plants, found primarily in the Whispering Swamp and can be bought from Domri - The Merchant for 6 garou chits.",
 			"recipes": [],
 			"usedIn": [
 				"arcane-infusion",
@@ -49368,7 +49816,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "A surprisingly well-preserved human torso, must be ancient. Doctor Fenkenstrain is looking for something just like it.",
-			"extract": "A human torso is a quest item used in The Great Body Robbery, where it is required to create Doctor Fenkenstrain's creature.\n\n",
+			"extract": "A human torso is a quest item used in The Great Body Robbery, where it is required to create Doctor Fenkenstrain's creature.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -49873,6 +50321,29 @@
 			"weight": null,
 			"power": null,
 			"stats": []
+		},
+		{
+			"slug": "inconsolable-catfish",
+			"name": "Inconsolable Catfish",
+			"wiki": "Inconsolable Catfish",
+			"icon": "Inconsolable Catfish.png",
+			"type": "Raw Ingredient",
+			"category": "food",
+			"description": "No sense crying over spilled milk.",
+			"extract": "An Inconsolable Catfish is a quest item that is obtained during the quest, A Reel Downer. Players will need a yew rod and agony auntchovy in their inventory whilst near a rod fishing spot in Umbral Sands.",
+			"recipes": [],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": 9,
+			"power": null,
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
+				}
+			]
 		},
 		{
 			"slug": "infernal-fragment",
@@ -53454,7 +53925,7 @@
 			"type": "Basic Item",
 			"category": "jewellery",
 			"description": "One of three emblem keys required to unlock a statue.",
-			"extract": "A jade emblem is a quest item used in Statues of Saradomin. This emblem is found near the centre of Fractured Plains.\n\n",
+			"extract": "A jade emblem is a quest item used in Statues of Saradomin. This emblem is found near the centre of Fractured Plains.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -56004,7 +56475,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "The book squirms in your backpack, as though trying to escape.",
-			"extract": "Leonard the Bound is one of five books in in the quest What Remains is Written that players must find to return to Abraxus The Eternal. The book is found in the gateway south of Skekven Kara vault, a connecting area between the Lake of Lost Souls and Silverthorn Keep. It is on the western gate, just below the southern tower. You need to use Windstep to reach the book, which lies on a pedestal\nThere are two skeletal warriors and one skeletal hoplite in this area. It also contains two chests, one requiring a spade, and six rune essence rocks on the ground in the nearby nook.\n\n",
+			"extract": "Leonard the Bound is one of five books in in the quest What Remains is Written that players must find to return to Abraxus The Eternal. The book is found in the gateway south of Skekven Kara vault, a connecting area between the Lake of Lost Souls and Silverthorn Keep. It is on the western gate, just below the southern tower. You need to use Windstep to reach the book, which lies on a pedestal\nThere are two skeletal warriors and one skeletal hoplite in this area. It also contains two chests, one requiring a spade, and six rune essence rocks on the ground in the nearby nook.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -57326,7 +57797,7 @@
 			"type": null,
 			"category": "buildings",
 			"description": "",
-			"extract": "A lodestone is a platform that allows the player to travel if another lodestone is placed elsewhere. When the first lodestone is built, the inactive lodestone in the Temple starting area becomes active as well. Teleporting between two lodestones costs a varied amount of law runes, depending on the distance of the target lodestone and the weight of the player. \n\n",
+			"extract": "A lodestone is a platform that allows the player to travel to other lodestones placed elsewhere. Building a lodestone for the first time activates the inactive lodestone in the Temple starting area.\nPlayers always face east after teleporting, regardless of what direction the lodestone was facing when built.\nTeleporting between two lodestones costs a varied amount of law runes, depending on distance and weight. This is described in more detail below.",
 			"recipes": [
 				{
 					"outputLabel": "Lodestone",
@@ -58375,11 +58846,11 @@
 			"slug": "magic-shortbow",
 			"name": "Magic Shortbow",
 			"wiki": "Magic Shortbow",
-			"icon": "Magic Shortbow (Journal).png",
+			"icon": "Magic Shortbow.png",
 			"type": "Ranged Weapon",
 			"category": "weapons",
 			"description": "A shortbow made of magic wood, this bow is light enough to carry all day and powerful enough to ruin someone else's.",
-			"extract": "Magic Shortbow is a power level 8 ranged weapon.",
+			"extract": "Magic Shortbow is a power level 8 ranged weapon that requires a Fletching Bench to craft. To unlock the recipe, players need to have craft a Rune Bar.",
 			"recipes": [
 				{
 					"outputLabel": "Magic Shortbow",
@@ -58451,11 +58922,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1900"
+					"value": "1,900"
 				},
 				{
 					"label": "Special action",
-					"value": "Rapid fire"
+					"value": "Rapid fire (40)"
 				}
 			]
 		},
@@ -58961,7 +59432,7 @@
 			"slug": "maple-shortbow",
 			"name": "Maple Shortbow",
 			"wiki": "Maple Shortbow",
-			"icon": "Maple Shortbow (Jounal).png",
+			"icon": "Maple Shortbow.png",
 			"type": "Ranged Weapon",
 			"category": "weapons",
 			"description": "A limber shortbow carved from maple wood<sup class=\"noprint\">&#91;<span class=\"fact-text\" title=\"no full stop\">sic</span>&#93;</sup>",
@@ -59037,11 +59508,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1600"
+					"value": "1,600"
 				},
 				{
 					"label": "Special action",
-					"value": "Rapid fire"
+					"value": "Rapid fire (40)"
 				}
 			]
 		},
@@ -59355,7 +59826,7 @@
 			"type": "Resource",
 			"category": "materials",
 			"description": "A bitter tasting herb used in resistance potions.",
-			"extract": "Marrentil (also spelled marrentill in books) is a herb found from harvesting a marrentill plant in the Whispering Swamp and can be bought from Domri - The Merchant for 6 garou chits.\n\n",
+			"extract": "Marrentil (also spelled marrentill in books) is a herb found from harvesting a marrentill plant in the Whispering Swamp and can be bought from Domri - The Merchant for 6 garou chits.",
 			"recipes": [],
 			"usedIn": [
 				"compost",
@@ -59603,7 +60074,7 @@
 			"type": "Food",
 			"category": "food",
 			"description": "A pizza with bits of meat on it.",
-			"extract": "Meat pizza is a consumable food item that provides 90 health, 110 sustenance as well the perks Meaty Meal and Coagulated, which reduces hunger drain by 25% and reduces Bleed buildup for 600 seconds. It is made with flank steak, fillet, haunch, and bread in a cooking range and learned by unlocking Adept Culinaromancer at level 36 Cooking.",
+			"extract": "Meat pizza is a consumable food item that provides 90 health, 110 sustenance as well the perks Meaty Meal and Coagulated, which reduces hunger drain by 25% and reduces Bleed buildup for 600 seconds. It is made with flank steak, fillet, haunch, and bread in a cooking range and learned by unlocking Adept Culinaromancer at level 36 Cooking.\nGiven that this food provides more than the maximum 100 sustenance, the remaining 10 sustenance simply causes Over Eating to build up faster.",
 			"recipes": [
 				{
 					"outputLabel": "Meat Pizza",
@@ -64300,7 +64771,7 @@
 			"type": "Melee Armour",
 			"category": "armour",
 			"description": "Protect your head with this durable mithril headgear.",
-			"extract": "Mithril helmet is a power level 6 armour piece that is crafted with a armour bench.",
+			"extract": "The mithril helmet is a power level 6 armour piece that is crafted with a armour bench. Players must receive a mithril bar in their inventory to unlock the mithril helmet.",
 			"recipes": [
 				{
 					"outputLabel": "Mithril Helmet",
@@ -64354,15 +64825,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "18"
+					"value": "+18"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "16"
+					"value": "+16"
 				},
 				{
 					"label": "Magic defence",
-					"value": "15"
+					"value": "+15"
 				},
 				{
 					"label": "Durability",
@@ -64866,7 +65337,7 @@
 			"type": "Melee Armour",
 			"category": "armour",
 			"description": "Durable mithril leg armour.",
-			"extract": "Mithril platelegs is a power level 6 armour piece that can be crafted with a armour bench.",
+			"extract": "Mithril platelegs are a power level 6 armour piece that can be crafted with a armour bench.",
 			"recipes": [
 				{
 					"outputLabel": "Mithril Platelegs",
@@ -64920,15 +65391,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "27"
+					"value": "+27"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "24"
+					"value": "+24"
 				},
 				{
 					"label": "Magic defence",
-					"value": "23"
+					"value": "+23"
 				},
 				{
 					"label": "Durability",
@@ -67619,7 +68090,7 @@
 			"type": "Food",
 			"category": "food",
 			"description": "A meaty kebab with mushrooms.",
-			"extract": "Mushroom kebab is a consumable food item that provides 120 health, 110 sustenance as well as the perks Foreman's Feast and Fungal Fortitude, which reduces the stamina cost of Woodcutting and Mining by 33% and reduces Poison buildup by 33% for 600 seconds. It is made with grilled mushrooms, fried cabbage, haunch, and bread in a cooking range and learned by unlocking Adept Culinaromancer at level 36 Cooking.",
+			"extract": "Mushroom kebab is a consumable food item that provides 120 health, 110 sustenance as well as the perks Foreman's Feast and Fungal Fortitude, which reduces the stamina cost of Woodcutting and Mining by 33% and reduces Poison buildup by 33% for 600 seconds. It is made with grilled mushrooms, fried cabbage, haunch, and bread in a cooking range and learned by unlocking Adept Culinaromancer at level 36 Cooking.\nGiven that this food provides more than the maximum 100 sustenance, the remaining 10 sustenance simply causes Over Eating to build up faster.",
 			"recipes": [
 				{
 					"outputLabel": "Mushroom Kebab",
@@ -67912,7 +68383,7 @@
 			"type": "Mage Armour",
 			"category": "armour",
 			"description": "A magically resonant hood, perfect for staying warm.",
-			"extract": "Mystic hat is a power level 6 armour piece that is crafted with an armour bench.",
+			"extract": "A mystic hat is a power level 6 armour piece that is crafted with an armour bench.",
 			"recipes": [
 				{
 					"outputLabel": "Mystic Hat",
@@ -67966,15 +68437,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "15"
+					"value": "+15"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "16"
+					"value": "+16"
 				},
 				{
 					"label": "Magic defence",
-					"value": "18"
+					"value": "+18"
 				},
 				{
 					"label": "Durability",
@@ -68099,15 +68570,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "23"
+					"value": "+23"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "24"
+					"value": "+24"
 				},
 				{
 					"label": "Magic defence",
-					"value": "27"
+					"value": "+27"
 				},
 				{
 					"label": "Durability",
@@ -68134,8 +68605,8 @@
 			"icon": "Mystic Robes.png",
 			"type": "Mage Armour",
 			"category": "armour",
-			"description": "The finest magical thread, spun into fabolous mage gear.",
-			"extract": "Mystic robes is a power level 6 armour piece that is crafted with a armour bench.",
+			"description": "The finest magical thread, spun into fabulous mage gear.",
+			"extract": "Mystic robes are a power level 6 armour piece that is crafted with a armour bench.",
 			"recipes": [
 				{
 					"outputLabel": "Mystic Robes",
@@ -68189,15 +68660,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "38"
+					"value": "+38"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "39"
+					"value": "+39"
 				},
 				{
 					"label": "Magic defence",
-					"value": "45"
+					"value": "+45"
 				},
 				{
 					"label": "Durability",
@@ -68295,9 +68766,9 @@
 			]
 		},
 		{
-			"slug": "naphtha",
-			"name": "Naphtha",
-			"wiki": "Naphtha",
+			"slug": "naptha",
+			"name": "Naptha",
+			"wiki": "Naptha",
 			"icon": "Naptha.png",
 			"type": "Basic Item",
 			"category": "materials",
@@ -69901,6 +70372,7 @@
 				"45-roof",
 				"45-valley-roof",
 				"charcoal",
+				"decorative-penguin-coin",
 				"door",
 				"fishing-barrel",
 				"iron-chest",
@@ -69984,7 +70456,7 @@
 			"slug": "oak-shortbow",
 			"name": "Oak Shortbow",
 			"wiki": "Oak Shortbow",
-			"icon": "Oak Shortbow (Journal).png",
+			"icon": "Oak Shortbow.png",
 			"type": "Ranged Weapon",
 			"category": "weapons",
 			"description": "An agile shortbow carved from oak wood.",
@@ -70054,11 +70526,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1050"
+					"value": "1,050"
 				},
 				{
 					"label": "Special action",
-					"value": "Rapid fire"
+					"value": "Rapid fire (40)"
 				}
 			]
 		},
@@ -70545,9 +71017,10 @@
 			"type": "Raw Ingredient",
 			"category": "food",
 			"description": "A vegetable that often brings a tear to the eye.",
-			"extract": "Onions are a Power Level 3 raw ingredient, which means they can be cooked at a campfire or grill into fried onions starting at Cooking level 27, and not burnt into burnt onion at level 41. They can also be used to make lesser Focused Cooking potion, bowl of onions, and potted onion. They can be collected from onion (plant) in Fractured Plains, and Farmed from onion (Farming) grown from onion seeds. Onions can be used to make compost.\n\n",
+			"extract": "Onions are a Power Level 3 raw ingredient, which means they can be cooked at a campfire or grill into fried onions starting at Cooking level 27, and not burnt into burnt onion at level 41. They can also be used to make lesser Focused Cooking potion, bowl of onions, and potted onion. They can be collected from onion (plant) in Fractured Plains, and Farmed from onion (Farming) grown from onion seeds. Onions can be used to make compost.",
 			"recipes": [],
 			"usedIn": [
+				"agony-auntchovy",
 				"bowl-of-onions",
 				"burnt-onion",
 				"compost",
@@ -70784,7 +71257,7 @@
 			"type": "Basic Item",
 			"category": "jewellery",
 			"description": "One of three emblem keys required to unlock a statue.",
-			"extract": "An opal emblem is a quest item used in Statues of Saradomin. This emblem is found at the western side of the Whispering Swamp.\n\n",
+			"extract": "An opal emblem is a quest item used in Statues of Saradomin. This emblem is found at the western side of the Whispering Swamp.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -71008,7 +71481,7 @@
 				{
 					"source": "Chest (Umbral Sands)",
 					"qty": "1",
-					"rarity": "0.36/100"
+					"rarity": "12.5/100"
 				}
 			],
 			"shops": [],
@@ -71865,7 +72338,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "Although damaged beyond repair, this staff seethes with ancient power. Perhaps you could learn something from it.",
-			"extract": "Parts of a sinister-looking staff is a vestige that unlocks creation of the draconic staff. This is found in a chest, located north-west of the Skeklac Kara vault's entrance.\n\n",
+			"extract": "Parts of a sinister-looking staff is a vestige that unlocks creation of the draconic staff. This is found in a chest, located north-west of the Skeklac Kara vault's entrance.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [
@@ -71942,7 +72415,7 @@
 			"type": "Pattern",
 			"category": "patterns",
 			"description": "",
-			"extract": "The fell cape pattern is a blueprint for making the Fellhollow cape. This blueprint is found in Hope's Fall near the middle part of the dragon skeleton. Players will need to cast Rocksplosion or mine the stone boulders to get to the chest.\n\n",
+			"extract": "The fell cape pattern is a blueprint for making the Fellhollow cape. This blueprint is found in Hope's Fall near the middle part of the dragon skeleton. Players will need to cast Rocksplosion or mine the stone boulders to get to the chest.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -72056,6 +72529,26 @@
 					"value": "99"
 				}
 			]
+		},
+		{
+			"slug": "penguin-coin",
+			"name": "Penguin Coin",
+			"wiki": "Penguin Coin",
+			"icon": "Penguin Coin.png",
+			"type": null,
+			"category": "materials",
+			"description": "",
+			"extract": "Penguin Coins are a activity-based currency only acquired during the Penguin Hunting activity by finding KGP agents throughout Ashenfall. They can be used at Facade's Front to purchase new buildables and crafting recipes.",
+			"recipes": [],
+			"usedIn": [
+				"decorative-penguin-coin"
+			],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": null,
+			"power": null,
+			"stats": []
 		},
 		{
 			"slug": "personal-chest-chest",
@@ -72580,7 +73073,7 @@
 				{
 					"source": "Chest (Umbral Sands)",
 					"qty": "1",
-					"rarity": "0.36/100"
+					"rarity": "12.5/100"
 				}
 			],
 			"shops": [],
@@ -75403,7 +75896,7 @@
 				{
 					"source": "Chest (Umbral Sands)",
 					"qty": "1",
-					"rarity": "0.44/100"
+					"rarity": "1/23"
 				}
 			],
 			"shops": [],
@@ -75432,7 +75925,7 @@
 				{
 					"source": "Chest (Umbral Sands)",
 					"qty": "1",
-					"rarity": "0.44/100"
+					"rarity": "1/23"
 				}
 			],
 			"shops": [],
@@ -77585,7 +78078,7 @@
 			"type": null,
 			"category": "buildings",
 			"description": "",
-			"extract": "The postbox is a buildable scenery item found in the \"Crafting\" building tab, given to players as a reward for completing the Letters for the Dead secondary quest. The post box can also give you a letter. Delivering the letter gives you 50 soul fragments.\n\n",
+			"extract": "The postbox is a buildable scenery item found in the \"Crafting\" building tab, given to players as a reward for completing the Letters for the Dead secondary quest. The post box can also give you a letter. Delivering the letter gives you 50 soul fragments.",
 			"recipes": [
 				{
 					"outputLabel": "Postbox",
@@ -77647,7 +78140,7 @@
 			"type": "Raw Ingredient",
 			"category": "food",
 			"description": "Definitely not a carrot.",
-			"extract": "Potatoes are a Power Level 2 raw ingredient, which means they can be cooked at a campfire or grill into baked potato starting at Cooking level 12, and not burnt into burnt potato at level 27. They can be gathered from potato (plant)s in Bramblemead Valley and potato (Farming) from potato seeds. Potatoes can be used to make compost.\n\n",
+			"extract": "Potatoes are a Power Level 2 raw ingredient, which means they can be cooked at a campfire or grill into baked potato starting at Cooking level 12, and not burnt into burnt potato at level 27. They can be gathered from potato (plant)s in Bramblemead Valley and potato (Farming) from potato seeds. Potatoes can be used to make compost.",
 			"recipes": [],
 			"usedIn": [
 				"baked-potato",
@@ -78082,6 +78575,81 @@
 			"stats": []
 		},
 		{
+			"slug": "pristine-bawling-beltfish",
+			"name": "Pristine Bawling Beltfish",
+			"wiki": "Pristine Bawling Beltfish",
+			"icon": "Pristine Bawling Beltfish.png",
+			"type": "Raw Ingredient",
+			"category": "food",
+			"description": "A Pristine Beltfish, that appears to be sobbing.",
+			"extract": "Pristine Depressed Desert Soles are a Power Level 7 fish and is a rare type of bawling beltfishes that players can catch from Rod Fishing Spots in Umbral Sands.",
+			"recipes": [],
+			"usedIn": [
+				"pristine-bawling-beltfish-trophy",
+				"ultra-compost"
+			],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": 5,
+			"power": null,
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
+				}
+			]
+		},
+		{
+			"slug": "pristine-bawling-beltfish-trophy",
+			"name": "Pristine Bawling Beltfish Trophy",
+			"wiki": "Pristine Bawling Beltfish Trophy",
+			"icon": "Pristine Bawling Beltfish Trophy.png",
+			"type": null,
+			"category": "buildings",
+			"description": "",
+			"extract": "A Pristine Bawling Beltfish Trophy is a decoration that players can build with a pristine bawling beltfish.",
+			"recipes": [
+				{
+					"outputLabel": "Pristine Bawling Beltfish Trophy",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [
+						{
+							"name": "Construction",
+							"xp": 40
+						}
+					],
+					"materials": [
+						{
+							"label": "Pristine Bawling Beltfish",
+							"qty": 1,
+							"icon": "Pristine Bawling Beltfish.png",
+							"slug": "pristine-bawling-beltfish"
+						},
+						{
+							"label": "Ash Plank",
+							"qty": 2,
+							"icon": "Ash Plank.png",
+							"slug": "ash-plank"
+						}
+					],
+					"id": "d5b37967f2",
+					"station": {
+						"name": "Build Menu",
+						"slug": null
+					}
+				}
+			],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": null,
+			"power": null,
+			"stats": []
+		},
+		{
 			"slug": "pristine-beltfish",
 			"name": "Pristine Beltfish",
 			"wiki": "Pristine Beltfish",
@@ -78147,6 +78715,81 @@
 						}
 					],
 					"id": "df3b1a30b4",
+					"station": {
+						"name": "Build Menu",
+						"slug": null
+					}
+				}
+			],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": null,
+			"power": null,
+			"stats": []
+		},
+		{
+			"slug": "pristine-depressed-desert-sole",
+			"name": "Pristine Depressed Desert Sole",
+			"wiki": "Pristine Depressed Desert Sole",
+			"icon": "Pristine Depressed Desert Sole.png",
+			"type": "Raw Ingredient",
+			"category": "food",
+			"description": "A Pristine Desert Sole, that could use someone to talk to.",
+			"extract": "Pristine Depressed Desert Soles are a Power Level 7 fish and is a rare type of raw desert soles that players can catch from Rod Fishing Spots in Umbral Sands.",
+			"recipes": [],
+			"usedIn": [
+				"pristine-depressed-desert-sole-trophy",
+				"ultra-compost"
+			],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": 5,
+			"power": null,
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
+				}
+			]
+		},
+		{
+			"slug": "pristine-depressed-desert-sole-trophy",
+			"name": "Pristine Depressed Desert Sole Trophy",
+			"wiki": "Pristine Depressed Desert Sole Trophy",
+			"icon": "Pristine Depressed Desert Sole Trophy.png",
+			"type": null,
+			"category": "buildings",
+			"description": "",
+			"extract": "A Pristine Depressed Desert Sole Trophy is a decoration that players can build with a pristine depressed desert sole.",
+			"recipes": [
+				{
+					"outputLabel": "Pristine Depressed Desert Sole Trophy",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [
+						{
+							"name": "Construction",
+							"xp": 40
+						}
+					],
+					"materials": [
+						{
+							"label": "Pristine Depressed Desert Sole",
+							"qty": 1,
+							"icon": "Pristine Depressed Desert Sole.png",
+							"slug": "pristine-depressed-desert-sole"
+						},
+						{
+							"label": "Ash Plank",
+							"qty": 2,
+							"icon": "Ash Plank.png",
+							"slug": "ash-plank"
+						}
+					],
+					"id": "c161fa139e",
 					"station": {
 						"name": "Build Menu",
 						"slug": null
@@ -78307,6 +78950,81 @@
 						}
 					],
 					"id": "2583030100",
+					"station": {
+						"name": "Build Menu",
+						"slug": null
+					}
+				}
+			],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": null,
+			"power": null,
+			"stats": []
+		},
+		{
+			"slug": "pristine-inconsolable-catfish",
+			"name": "Pristine Inconsolable Catfish",
+			"wiki": "Pristine Inconsolable Catfish",
+			"icon": "Pristine Inconsolable Catfish.png",
+			"type": "Raw Ingredient",
+			"category": "food",
+			"description": "A Pristine but upset Catfish.",
+			"extract": "Pristine Inconsolable Catfishes are a Power Level 4 fish and is a rare type of inconsolable catfishes that players can catch from Rod Fishing Spots in Umbral Sands.",
+			"recipes": [],
+			"usedIn": [
+				"pristine-inconsolable-catfish-trophy",
+				"super-compost"
+			],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": 9,
+			"power": null,
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
+				}
+			]
+		},
+		{
+			"slug": "pristine-inconsolable-catfish-trophy",
+			"name": "Pristine Inconsolable Catfish Trophy",
+			"wiki": "Pristine Inconsolable Catfish Trophy",
+			"icon": "Pristine Inconsolable Catfish Trophy.png",
+			"type": null,
+			"category": "buildings",
+			"description": "",
+			"extract": "A Pristine Inconsolable Catfish Trophy is a decoration that players can build with a pristine inconsolable catfish.",
+			"recipes": [
+				{
+					"outputLabel": "Pristine Inconsolable Catfish Trophy",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [
+						{
+							"name": "Construction",
+							"xp": 40
+						}
+					],
+					"materials": [
+						{
+							"label": "Pristine Inconsolable Catfish",
+							"qty": 1,
+							"icon": "Pristine Inconsolable Catfish.png",
+							"slug": "pristine-inconsolable-catfish"
+						},
+						{
+							"label": "Ash Plank",
+							"qty": 2,
+							"icon": "Ash Plank.png",
+							"slug": "ash-plank"
+						}
+					],
+					"id": "668374dd23",
 					"station": {
 						"name": "Build Menu",
 						"slug": null
@@ -78722,6 +79440,81 @@
 			"stats": []
 		},
 		{
+			"slug": "pristine-snivelling-sardine",
+			"name": "Pristine Snivelling Sardine",
+			"wiki": "Pristine Snivelling Sardine",
+			"icon": "Pristine Snivelling Sardine.png",
+			"type": "Raw Ingredient",
+			"category": "food",
+			"description": "A Pristine Sardine, snivelling.",
+			"extract": "Pristine Snivelling Sardines are a Power Level 2 fish and is a rare type of snivelling sardines that players can catch from Rod Fishing Spots in Umbral Sands.",
+			"recipes": [],
+			"usedIn": [
+				"compost",
+				"pristine-snivelling-sardine-trophy"
+			],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": 1,
+			"power": null,
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
+				}
+			]
+		},
+		{
+			"slug": "pristine-snivelling-sardine-trophy",
+			"name": "Pristine Snivelling Sardine Trophy",
+			"wiki": "Pristine Snivelling Sardine Trophy",
+			"icon": "Pristine Snivelling Sardine Trophy.png",
+			"type": null,
+			"category": "buildings",
+			"description": "",
+			"extract": "A Pristine Snivelling Sardine Trophy is a decoration that players can build with a pristine snivelling sardine.",
+			"recipes": [
+				{
+					"outputLabel": "Pristine Snivelling Sardine Trophy",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [
+						{
+							"name": "Construction",
+							"xp": 40
+						}
+					],
+					"materials": [
+						{
+							"label": "Pristine Snivelling Sardine",
+							"qty": 1,
+							"icon": "Pristine Snivelling Sardine.png",
+							"slug": "pristine-snivelling-sardine"
+						},
+						{
+							"label": "Ash Plank",
+							"qty": 2,
+							"icon": "Ash Plank.png",
+							"slug": "ash-plank"
+						}
+					],
+					"id": "dd6cb82369",
+					"station": {
+						"name": "Build Menu",
+						"slug": null
+					}
+				}
+			],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": null,
+			"power": null,
+			"stats": []
+		},
+		{
 			"slug": "pristine-trout",
 			"name": "Pristine Trout",
 			"wiki": "Pristine Trout",
@@ -78969,7 +79762,7 @@
 			"type": "Raw Ingredient",
 			"category": "food",
 			"description": "More treat than trick. Can be cooked by itself or used as an ingredient in cooking meals.",
-			"extract": "Pumpkins are a Power Level 4 raw ingredient, which means they can be cooked at a campfire or grill into roast pumpkin starting at Cooking level 41, and not burnt into burnt pumpkin at level 50. They can be gathered from pumpkin (plant)s in Fellhollow and Dowdun Reach and Farmed from Pumpkin (Farming) grown from pumpkin seeds. Pumpkins can not be used as an item in a compost bin, however can be used in a super compost bin.\n\n",
+			"extract": "Pumpkins are a Power Level 4 raw ingredient, which means they can be cooked at a campfire or grill into roast pumpkin starting at Cooking level 41, and not burnt into burnt pumpkin at level 50. They can be gathered from pumpkin (plant)s in Fellhollow and Dowdun Reach and Farmed from Pumpkin (Farming) grown from pumpkin seeds. Pumpkins can not be used as an item in a compost bin, however can be used in a super compost bin.",
 			"recipes": [],
 			"usedIn": [
 				"burnt-pumpkin",
@@ -79645,7 +80438,7 @@
 				{
 					"source": "Chest (Umbral Sands)",
 					"qty": "1",
-					"rarity": "0.36/100"
+					"rarity": "12.5/100"
 				}
 			],
 			"shops": [],
@@ -80663,6 +81456,7 @@
 			"extract": "Raw anchovies are a Power Level 3 raw ingredient, which means they can be cooked at a campfire or grill into seared anchovies starting at Cooking level 27, and not burnt into burnt anchovies at level 41. They can also be used to make anchovy bait. They can be gathered from net fishing spots with at least a wool net in Fractured Plains and Stormtouched Highlands.",
 			"recipes": [],
 			"usedIn": [
+				"agony-auntchovy",
 				"anchovy-bait",
 				"burnt-anchovies",
 				"compost",
@@ -81596,7 +82390,28 @@
 			"category": "capes",
 			"description": "A Red cape, stitched in an ancient desert style. Its patterns reflect a long-standing mastery of life beneath the scorching sun.",
 			"extract": "The red desert cape is a cape that takes no materials to craft. The recipe is unlocked after studying the red memory of Menaphos vestige, which can be found in chests in Umbral Sands.",
-			"recipes": [],
+			"recipes": [
+				{
+					"outputLabel": "Red Desert Cape",
+					"outputQty": 1,
+					"requires": {
+						"label": "Red Memory of Menaphos",
+						"slug": "red-memory-of-menaphos"
+					},
+					"skills": [
+						{
+							"name": "Artisan",
+							"xp": 100
+						}
+					],
+					"materials": [],
+					"id": "93f0075e17",
+					"station": {
+						"name": "Armour Bench",
+						"slug": "armour-bench"
+					}
+				}
+			],
 			"usedIn": [],
 			"drops": [],
 			"shops": [],
@@ -82179,7 +82994,13 @@
 			"extract": "The red memory of Menaphos is a vestige that unlocks the red desert cape. It is found in Umbral Sands chests.",
 			"recipes": [],
 			"usedIn": [],
-			"drops": [],
+			"drops": [
+				{
+					"source": "Chest (Umbral Sands)",
+					"qty": "1",
+					"rarity": "12.5/100"
+				}
+			],
 			"shops": [],
 			"unlockedBy": [],
 			"weight": 0,
@@ -83582,7 +84403,7 @@
 				{
 					"source": "Garou Berserker",
 					"qty": "1",
-					"rarity": "2/100"
+					"rarity": "3/100"
 				},
 				{
 					"source": "Garou Exile",
@@ -86173,7 +86994,7 @@
 			"type": "Melee Armour",
 			"category": "armour",
 			"description": "A sturdy rune helm built to withstand the chaos of close combat.",
-			"extract": "Rune Helm is a power level 8 armour piece.",
+			"extract": "The rune Helm is a power level 8 armour piece.",
 			"recipes": [
 				{
 					"outputLabel": "Rune Helm",
@@ -86233,15 +87054,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "24"
+					"value": "+24"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "22"
+					"value": "+22"
 				},
 				{
 					"label": "Magic defence",
-					"value": "21"
+					"value": "+21"
 				},
 				{
 					"label": "Durability",
@@ -86589,15 +87410,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "60"
+					"value": "+60"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "54"
+					"value": "+54"
 				},
 				{
 					"label": "Magic defence",
-					"value": "53"
+					"value": "+53"
 				},
 				{
 					"label": "Durability",
@@ -86685,15 +87506,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "36"
+					"value": "+36"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "33"
+					"value": "+33"
 				},
 				{
 					"label": "Magic defence",
-					"value": "32"
+					"value": "+32"
 				},
 				{
 					"label": "Durability",
@@ -87027,7 +87848,7 @@
 			"slug": "rune-warhammer",
 			"name": "Rune Warhammer",
 			"wiki": "Rune Warhammer",
-			"icon": "Rune Warhammer (Journal).png",
+			"icon": "Rune Warhammer.png",
 			"type": "Melee Weapon",
 			"category": "weapons",
 			"description": "A colossal rune warhammer, capable of shattering shields and crushing the strongest defences.",
@@ -87782,7 +88603,7 @@
 			"type": "Basic Item",
 			"category": "jewellery",
 			"description": "One of three emblem keys required to unlock a statue.",
-			"extract": "A sapphire emblem is a quest item used in Statues of Saradomin. This emblem is found at the north-eastern side of the Stormtouched Highlands.\n\n",
+			"extract": "A sapphire emblem is a quest item used in Statues of Saradomin. This emblem is found at the north-eastern side of the Stormtouched Highlands.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -88273,7 +89094,7 @@
 			"type": "Basic Item",
 			"category": "materials",
 			"description": "It looks as if it is meant to sit on top of something.",
-			"extract": "The Saradomin symbol is an item found during the Withering Heights quest and is used to repair the Saradomin altar, which is one of the 4 altars holding up the barrier around Emberwood Village. It is located in the water just below the altar, propped up against a rock.\n\n",
+			"extract": "The Saradomin symbol is an item found during the Withering Heights quest and is used to repair the Saradomin altar, which is one of the 4 altars holding up the barrier around Emberwood Village. It is located in the water just below the altar, propped up against a rock.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -89779,7 +90600,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "A piece of the broken Dreaming Stone in the Dowdun Reach nexus. It whispers if you listen closely.",
-			"extract": "A shard of the Dreaming Stone is a quest item that is heavily featured in the Black Knight's Fortress. It is used to repair the Dreaming Stone when you have collected thirteen of them.\n\n",
+			"extract": "A shard of the Dreaming Stone is a quest item that is heavily featured in the Black Knight's Fortress. It is used to repair the Dreaming Stone when you have collected thirteen of them.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -93853,7 +94674,7 @@
 							"label": "Naptha",
 							"qty": 2,
 							"icon": "Naptha.png",
-							"slug": "naphtha"
+							"slug": "naptha"
 						},
 						{
 							"label": "Animal Bone",
@@ -93862,7 +94683,7 @@
 							"slug": "animal-bone"
 						}
 					],
-					"id": "4c57cc4e0c",
+					"id": "1ecb7e465f",
 					"station": {
 						"name": "Build Menu",
 						"slug": null
@@ -96148,7 +96969,7 @@
 			"type": "Resource",
 			"category": "materials",
 			"description": "A sweet-smelling herb used in restorative potions.",
-			"extract": "Snapdragon is a herb that can be found by harvesting the Snapdragon plant in the Bloodblight Swamp or can be bought from Domri - The Merchant for 12 garou chits.\n\n",
+			"extract": "Snapdragon is a herb that can be found by harvesting the Snapdragon plant in the Bloodblight Swamp or can be bought from Domri - The Merchant for 12 garou chits.",
 			"recipes": [],
 			"usedIn": [
 				"compost",
@@ -96232,6 +97053,33 @@
 				{
 					"label": "Stack size",
 					"value": "999"
+				}
+			]
+		},
+		{
+			"slug": "snivelling-sardine",
+			"name": "Snivelling Sardine",
+			"wiki": "Snivelling Sardine",
+			"icon": "Snivelling Sardine.png",
+			"type": "Raw Ingredient",
+			"category": "food",
+			"description": "A small fish with big emotions.",
+			"extract": "A Snivelling Sardine is a quest item that players will first need to catch during the quest, A Reel Downer. A yew rod and agony auntchovy are required to catch the snivelling sardine near Taliesin - The Fisher.",
+			"recipes": [],
+			"usedIn": [
+				"burnt-sardine",
+				"compost",
+				"fried-sardine"
+			],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": 1,
+			"power": null,
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
 				}
 			]
 		},
@@ -99668,15 +100516,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "15"
+					"value": "+15"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "13"
+					"value": "+13"
 				},
 				{
 					"label": "Magic defence",
-					"value": "12"
+					"value": "+12"
 				},
 				{
 					"label": "Durability",
@@ -100118,15 +100966,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "15"
+					"value": "+15"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "13"
+					"value": "+13"
 				},
 				{
 					"label": "Magic defence",
-					"value": "12"
+					"value": "+12"
 				},
 				{
 					"label": "Durability",
@@ -100390,15 +101238,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "23"
+					"value": "+23"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "19"
+					"value": "+19"
 				},
 				{
 					"label": "Magic defence",
-					"value": "18"
+					"value": "+18"
 				},
 				{
 					"label": "Durability",
@@ -102062,7 +102910,7 @@
 			"type": "Basic Item",
 			"category": "capes",
 			"description": "A cloak depicting ancient monsters and a mage's fury.",
-			"extract": "The stormtouched cape is a craftable armour piece.  The recipe is unlocked by acquiring the stormtouched cape pattern, located at the top of the Highlands Castle in the Stormtouched Highlands.\n\n",
+			"extract": "The stormtouched cape is a craftable armour piece.  The recipe is unlocked by acquiring the stormtouched cape pattern, located at the top of the Highlands Castle in the Stormtouched Highlands.",
 			"recipes": [
 				{
 					"outputLabel": "Stormtouched Cape",
@@ -102326,15 +103174,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "24"
+					"value": "+24"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "28"
+					"value": "+28"
 				},
 				{
 					"label": "Magic defence",
-					"value": "24"
+					"value": "+24"
 				},
 				{
 					"label": "Durability",
@@ -102416,15 +103264,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "15"
+					"value": "+15"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "17"
+					"value": "+17"
 				},
 				{
 					"label": "Magic defence",
-					"value": "15"
+					"value": "+15"
 				},
 				{
 					"label": "Durability",
@@ -102506,15 +103354,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "10"
+					"value": "+10"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "11"
+					"value": "+11"
 				},
 				{
 					"label": "Magic defence",
-					"value": "10"
+					"value": "+10"
 				},
 				{
 					"label": "Durability",
@@ -102777,6 +103625,30 @@
 					],
 					"materials": [
 						{
+							"label": "Depressed Desert Sole",
+							"qty": 1,
+							"icon": "Depressed Desert Sole.png",
+							"slug": "depressed-desert-sole"
+						}
+					],
+					"id": "7a7a34e718",
+					"station": {
+						"name": "Campfire",
+						"slug": "campfire"
+					}
+				},
+				{
+					"outputLabel": "Sun Baked Sole",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [
+						{
+							"name": "Cooking",
+							"xp": 10
+						}
+					],
+					"materials": [
+						{
 							"label": "Raw Desert Sole",
 							"qty": 1,
 							"icon": "Raw Desert Sole.png",
@@ -102784,6 +103656,30 @@
 						}
 					],
 					"id": "b2f9960918",
+					"station": {
+						"name": "Grill",
+						"slug": "grill"
+					}
+				},
+				{
+					"outputLabel": "Sun Baked Sole",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [
+						{
+							"name": "Cooking",
+							"xp": 10
+						}
+					],
+					"materials": [
+						{
+							"label": "Depressed Desert Sole",
+							"qty": 1,
+							"icon": "Depressed Desert Sole.png",
+							"slug": "depressed-desert-sole"
+						}
+					],
+					"id": "84ba307f6b",
 					"station": {
 						"name": "Grill",
 						"slug": "grill"
@@ -103357,6 +104253,25 @@
 						"name": "Super Compost Bin",
 						"slug": "super-compost-bin"
 					}
+				},
+				{
+					"outputLabel": "Super Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Pristine Inconsolable Catfish",
+							"qty": 1,
+							"icon": "Pristine Inconsolable Catfish.png",
+							"slug": "pristine-inconsolable-catfish"
+						}
+					],
+					"id": "5617667c0b",
+					"station": {
+						"name": "Super Compost Bin",
+						"slug": "super-compost-bin"
+					}
 				}
 			],
 			"usedIn": [],
@@ -103835,6 +104750,11 @@
 					"source": "Chest (Umbral Sands)",
 					"qty": "1",
 					"rarity": "0.38/100"
+				},
+				{
+					"source": "A Reel Downer Reward Pack",
+					"qty": "1",
+					"rarity": "Always"
 				}
 			],
 			"shops": [],
@@ -104168,7 +105088,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "Barely heavier than a feather, but worn away by time's cruel march. Still, perhaps you could learn something from it.",
-			"extract": "Suspiciously light tattered boots is a consumable item that unlocks creation of the leggings of lightness.\n\n",
+			"extract": "Suspiciously light tattered boots is a consumable item that unlocks creation of the leggings of lightness.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [
@@ -104277,14 +105197,14 @@
 			"type": "Basic Material",
 			"category": "materials",
 			"description": "It's sticky!",
-			"extract": "Swamp tar is obtained by havresting Swamp Tar (node) from the ground in the Whispering Swamp. It is used inside a kiln to create adhesive, or as a component of Naptha and Chandeliers.\n\n",
+			"extract": "Swamp tar is obtained by havresting Swamp Tar (node) from the ground in the Whispering Swamp. It is used inside a kiln to create adhesive, or as a component of Naptha and Chandeliers.",
 			"recipes": [],
 			"usedIn": [
 				"adhesive",
 				"blue-chandelier",
 				"chandelier",
 				"green-chandelier",
-				"naphtha",
+				"naptha",
 				"purple-chandelier",
 				"red-chandelier"
 			],
@@ -104419,7 +105339,7 @@
 			"type": "Basic Item",
 			"category": "materials",
 			"description": "A hardy plant found in swamps and caves.",
-			"extract": "Swamp weed can be harvested by the swamp weed plant, which mostly spawns in and around the poisonous waters in the Bloodblight Swamp and inside the Kletterbuja Kara vault. It can be used to create swamp thread.\n\n",
+			"extract": "Swamp weed can be harvested by the swamp weed plant, which mostly spawns in and around the poisonous waters in the Bloodblight Swamp and inside the Kletterbuja Kara vault. It can be used to create swamp thread.",
 			"recipes": [],
 			"usedIn": [
 				"compost",
@@ -105338,7 +106258,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "A sealed scroll containing dark secrets.",
-			"extract": "The Binding of Ib is a quest item obtained behind Blightscale. It is one of three scrolls required to complete What Remains is Written. The scroll is found in the eastern part of Silverthorn Keep, below the cliffs by large bones.\n\n",
+			"extract": "The Binding of Ib is a quest item obtained behind Blightscale. It is one of three scrolls required to complete What Remains is Written. The scroll is found in the eastern part of Silverthorn Keep, below the cliffs by large bones.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -105361,7 +106281,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "A religious tome discussing the god of rebellion.",
-			"extract": "The Importance of Chaos is one of the five tomes in What Remains is Written. It is obtained north of the ominous gateway leading to Dowdun Reach. It's lying on a small incline on the south side of a small tower amidst a gateway ruin. It is on the south-western end of the ruin.\nThe ruin is surrounded by withered scenery and power-level 5 monsters.\n\n",
+			"extract": "The Importance of Chaos is one of the five tomes in What Remains is Written. It is obtained north of the ominous gateway leading to Dowdun Reach. It's lying on a small incline on the south side of a small tower amidst a gateway ruin. It is on the south-western end of the ruin.\nThe ruin is surrounded by withered scenery and power-level 5 monsters.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -105384,7 +106304,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "A badly burned book wrapped in leather hide... at least you hope it's leather.",
-			"extract": "The Pride of the Avernic is one of five books needed to collect for What Remains is Written. It is located in the far eastern ruin in Silverthorn Keep next to an archery target on some boxes.\n\n",
+			"extract": "The Pride of the Avernic is one of five books needed to collect for What Remains is Written. It is located in the far eastern ruin in Silverthorn Keep next to an archery target on some boxes.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -105431,7 +106351,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "A sinister book of truly nasty curses.",
-			"extract": "The Wrath of Baba Potterington is one of five books in in the quest What Remains is Written that players must find to return to Abraxus The Eternal. The book is found in the crumbled stone house near a nature grove north of the 'sil' of Silverthorn Keepon the map. There is a chest nearby, slightly to the north.\n\n",
+			"extract": "The Wrath of Baba Potterington is one of five books in in the quest What Remains is Written that players must find to return to Abraxus The Eternal. The book is found in the crumbled stone house near a nature grove north of the 'sil' of Silverthorn Keepon the map. There is a chest nearby, slightly to the north.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -105750,7 +106670,7 @@
 			"type": "Resource",
 			"category": "materials",
 			"description": "A spicy tasting herb used in resistance potions.",
-			"extract": "Toadflax is found by harvesting the Toadflax plants in the Bloodblight Swamp and can be bought from Domri - The Merchant for 12 garou chits.\n\n",
+			"extract": "Toadflax is found by harvesting the Toadflax plants in the Bloodblight Swamp and can be bought from Domri - The Merchant for 12 garou chits.",
 			"recipes": [],
 			"usedIn": [
 				"compost",
@@ -106295,7 +107215,7 @@
 				{
 					"source": "Chest (Umbral Sands)",
 					"qty": "1",
-					"rarity": "0.81/100"
+					"rarity": "1/11.9"
 				},
 				{
 					"source": "Chest (Dowdun Reach)",
@@ -106403,7 +107323,7 @@
 				{
 					"source": "Chest (Umbral Sands)",
 					"qty": "1",
-					"rarity": "0.9/100"
+					"rarity": "1/11.9"
 				},
 				{
 					"source": "Chest (Dowdun Reach)",
@@ -106506,7 +107426,7 @@
 				{
 					"source": "Chest (Umbral Sands)",
 					"qty": "1",
-					"rarity": "0.81/100"
+					"rarity": "1/11.9"
 				},
 				{
 					"source": "Chest (Dowdun Reach)",
@@ -106614,7 +107534,7 @@
 				{
 					"source": "Chest (Umbral Sands)",
 					"qty": "1",
-					"rarity": "0.81/100"
+					"rarity": "1/11.9"
 				},
 				{
 					"source": "Chest (Dowdun Reach)",
@@ -106722,7 +107642,7 @@
 				{
 					"source": "Chest (Umbral Sands)",
 					"qty": "1",
-					"rarity": "0.81/100"
+					"rarity": "1/11.9"
 				},
 				{
 					"source": "Chest (Dowdun Reach)",
@@ -106738,6 +107658,11 @@
 					"source": "Chest (Scorned Wilderness)",
 					"qty": "1",
 					"rarity": "1/26.5"
+				},
+				{
+					"source": "A Reel Downer Reward Pack",
+					"qty": "1",
+					"rarity": "Always"
 				}
 			],
 			"shops": [],
@@ -106830,7 +107755,7 @@
 				{
 					"source": "Chest (Umbral Sands)",
 					"qty": "1",
-					"rarity": "0.81/100"
+					"rarity": "1/11.9"
 				},
 				{
 					"source": "Chest (Dowdun Reach)",
@@ -106938,7 +107863,7 @@
 				{
 					"source": "Chest (Umbral Sands)",
 					"qty": "1",
-					"rarity": "0.81/100"
+					"rarity": "1/11.9"
 				},
 				{
 					"source": "Chest (Dowdun Reach)",
@@ -107036,7 +107961,7 @@
 				{
 					"source": "Chest (Umbral Sands)",
 					"qty": "1",
-					"rarity": "0.9/100"
+					"rarity": "1/11.9"
 				},
 				{
 					"source": "Chest (Dowdun Reach)",
@@ -107134,7 +108059,7 @@
 				{
 					"source": "Chest (Umbral Sands)",
 					"qty": "1",
-					"rarity": "0.81/100"
+					"rarity": "1/11.9"
 				},
 				{
 					"source": "Chest (Dowdun Reach)",
@@ -107242,7 +108167,7 @@
 				{
 					"source": "Chest (Umbral Sands)",
 					"qty": "1",
-					"rarity": "0.9/100"
+					"rarity": "1/11.9"
 				},
 				{
 					"source": "Chest (Dowdun Reach)",
@@ -107451,7 +108376,7 @@
 				{
 					"source": "Chest (Umbral Sands)",
 					"qty": "1",
-					"rarity": "0.81/100"
+					"rarity": "1/11.9"
 				},
 				{
 					"source": "Chest (Dowdun Reach)",
@@ -107537,7 +108462,7 @@
 			"type": "Vestige",
 			"category": "vestiges",
 			"description": "A piece of cloth torn from one of Dowdun Reach's tapestries.",
-			"extract": "The torn tapestry is a vestige that is found in a buried chest in Dowdun Reach. Upon studying the vestige, players can create the Dowdun Reach cape.\n\n",
+			"extract": "The torn tapestry is a vestige that is found in a buried chest in Dowdun Reach. Upon studying the vestige, players can create the Dowdun Reach cape.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [
@@ -108581,6 +109506,25 @@
 					"skills": [],
 					"materials": [
 						{
+							"label": "Burnt Desert Sole",
+							"qty": 1,
+							"icon": "Burnt Desert Sole.png",
+							"slug": "burnt-desert-sole"
+						}
+					],
+					"id": "e5ca367c6e",
+					"station": {
+						"name": "Ultra Compost Bin",
+						"slug": "ultra-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Ultra Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
 							"label": "Magic Logs",
 							"qty": 1,
 							"icon": "Magic Logs.png",
@@ -108588,6 +109532,44 @@
 						}
 					],
 					"id": "f1a07bac91",
+					"station": {
+						"name": "Ultra Compost Bin",
+						"slug": "ultra-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Ultra Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Pristine Depressed Desert Sole",
+							"qty": 1,
+							"icon": "Pristine Depressed Desert Sole.png",
+							"slug": "pristine-depressed-desert-sole"
+						}
+					],
+					"id": "bfeb7874f1",
+					"station": {
+						"name": "Ultra Compost Bin",
+						"slug": "ultra-compost-bin"
+					}
+				},
+				{
+					"outputLabel": "Ultra Compost",
+					"outputQty": 10,
+					"requires": null,
+					"skills": [],
+					"materials": [
+						{
+							"label": "Pristine Bawling Beltfish",
+							"qty": 1,
+							"icon": "Pristine Bawling Beltfish.png",
+							"slug": "pristine-bawling-beltfish"
+						}
+					],
+					"id": "0f6a505548",
 					"station": {
 						"name": "Ultra Compost Bin",
 						"slug": "ultra-compost-bin"
@@ -108878,7 +109860,7 @@
 			"type": "Armour",
 			"category": "capes",
 			"description": "A light desert cape designed to shield against sun and sand. Offers comfort during long journeys across the dunes.",
-			"extract": "Umbral Sands cape is a armour piece located in Umbral Sands. Players can find the recipe for this cape in the hills, north-east of the pyramid in the Dunes of Uzzer. The recipe can be found in a chest high up the vertical rock formation and cannot be reached without building foundations.",
+			"extract": "Umbral Sands cape is a armour piece located in Umbral Sands. Players can find the recipe for this cape in the hills, north-east of the pyramid in the Dunes of Uzzer. The recipe can be found in a chest high up the vertical rock formation. Players who have a mount must to travel to the north end of the vertical rocks and time the jump to the top correctly to reach the chest.",
 			"recipes": [
 				{
 					"outputLabel": "Umbral Sands Cape",
@@ -109339,7 +110321,7 @@
 			"type": "Quest Item",
 			"category": "quest",
 			"description": "Manktongue asked for an Undead Chicken.",
-			"extract": "Undead chickens  is a quest item required for Animal Magnetism. It was meant to be released with Fellhollow as part of the 0.10 update, but instead, one was released following the 0.11.1 update, which ends up being an ingredient for the Animal Magnetism to create the Ava's accumulator.\n\n",
+			"extract": "Undead chickens  is a quest item required for Animal Magnetism. It was meant to be released with Fellhollow as part of the 0.10 update, but instead, one was released following the 0.11.1 update, which ends up being an ingredient for the Animal Magnetism to create the Ava's accumulator.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -109523,11 +110505,11 @@
 			"slug": "undead-rangers-bow",
 			"name": "Undead Ranger's Bow",
 			"wiki": "Undead Ranger's Bow",
-			"icon": "Undead Ranger's Bow (journal).png",
+			"icon": "Undead Ranger's Bow.png",
 			"type": "Ranged Weapon",
 			"category": "weapons",
 			"description": "This bow still fires with undeadly precision.",
-			"extract": "The undead ranger's bow is a power level 5 shortbow that can be crafted at a fletching bench. The recipe is learned from a dragonkin effigy in Skekven Kara, the dragonkin vault in eastern Fellhollow. It can be ascended at the mystic forge using ascension cores.\nIts special effect is listed as increased damage but reduced durability. The reduced durability works as this weapon has 1,050 compared to the willow shortbow's 1300, however it has the same damage, both listed and actual.\nIt fires faster but deals the same damage as the crystal bow, which also has shattershot.",
+			"extract": "The undead ranger's bow is a power level 5 shortbow that can be crafted at a fletching bench. The recipe is learned from a dragonkin effigy in Skekven Kara, the dragonkin vault in eastern Fellhollow. It can be ascended at the mystic forge using ascension cores.\nIts special effect is listed as increased damage but reduced durability. The reduced durability works as this weapon has 1,050 compared to the willow shortbow's 1300, however it has the same damage, both listed and actual.",
 			"recipes": [
 				{
 					"outputLabel": "Undead Ranger's Bow",
@@ -109603,7 +110585,7 @@
 				},
 				{
 					"label": "Special action",
-					"value": "Rapid fire"
+					"value": "Rapid fire (40)"
 				},
 				{
 					"label": "Special effect",
@@ -114224,7 +115206,7 @@
 			"type": "Basic Item",
 			"category": "capes",
 			"description": "A cloak that makes you shiver, even as it protects against the cold.",
-			"extract": "The whispering cape is a craftable armour piece.  The recipe is unlocked by acquiring the Whispering Cape Pattern, found in a chest near the waterfall in the Whispering Swamp. \n\n",
+			"extract": "The whispering cape is a craftable armour piece.  The recipe is unlocked by acquiring the Whispering Cape Pattern, found in a chest near the waterfall in the Whispering Swamp.",
 			"recipes": [
 				{
 					"outputLabel": "Whispering Cape",
@@ -114538,7 +115520,7 @@
 				{
 					"source": "Chest (Umbral Sands)",
 					"qty": "1",
-					"rarity": "0.36/100"
+					"rarity": "12.5/100"
 				}
 			],
 			"shops": [],
@@ -115163,7 +116145,7 @@
 			"type": "Food",
 			"category": "food",
 			"description": "A triumph of man over nature.",
-			"extract": "Wild pie is a consumable food item that provides 90 health, 110 sustenance as well as the perks Knowledgable Nourishment and Grounded, which increases experience gain in all skills by 10%, and reduces the amount of shock damage taken for 600 seconds. It is made with fried onions, baked potato, dried dwellberries, and bread in a cooking range and learned by unlocking Adept Culinaromancer at level 36 Cooking.",
+			"extract": "Wild pie is a consumable food item that provides 90 health, 110 sustenance as well as the perks Knowledgable Nourishment and Grounded, which increases experience gain in all skills by 10%, and reduces the amount of shock damage taken for 600 seconds. It is made with fried onions, baked potato, dried dwellberries, and bread in a cooking range and learned by unlocking Adept Culinaromancer at level 36 Cooking.\nGiven that this food provides more than the maximum 100 sustenance, the remaining 10 sustenance simply causes Over Eating to build up faster.",
 			"recipes": [
 				{
 					"outputLabel": "Wild Pie",
@@ -115237,11 +116219,11 @@
 			"slug": "wild-scouts-shortbow",
 			"name": "Wild Scout's Shortbow",
 			"wiki": "Wild Scout's Shortbow",
-			"icon": "Wild Scout's Shortbow (Journal).png",
+			"icon": "Wild Scout's Shortbow.png",
 			"type": "Ranged Weapon",
 			"category": "weapons",
 			"description": "A bow used by a Wild Knight scout. Maintaining balance, one arrow at a time.",
-			"extract": "The wild scout's shortbow is a power level 3 shortbow that can be crafted at a fletching bench. The recipe is learned from a dragonkin effigy in Takla Kara, the dragonkin vault in central Fractured Plains. It can be ascended at the mystic forge using ascension cores.\nIts special effect is 10% increased draw speed, making this weapon draw faster than other shortbows. This does not affect quick actions.\nWhile crystal bow and the undead ranger's bow have a slightly higher base damage in equal power levels, the Wild Scout's draw time is still the fastest in-game, allowing it to do more damage over time compared to the crystal and undead ranger's bow. Sharing the same durability, it is suggested to ascend this bow if you wish to shoot arrows quicker.",
+			"extract": "The wild scout's shortbow is a power level 3 shortbow that can be crafted at a fletching bench. The recipe is learned from a dragonkin effigy in Takla Kara, the dragonkin vault in central Fractured Plains. It can be ascended at the mystic forge using ascension cores.\nIts special effect is 10% increased draw speed, making this weapon draw faster than other shortbows. This does not affect quick actions.\nWhile crystal bow and the undead ranger's bow have a higher base damage in equal power levels, the Wild Scout's draw time is still the fastest in-game, allowing it to do more damage over time compared to the crystal and undead ranger's bow. Sharing the same durability, it is suggested to ascend this bow if you wish to shoot arrows quicker.",
 			"recipes": [
 				{
 					"outputLabel": "Wild Scout's Shortbow",
@@ -115311,7 +116293,7 @@
 				},
 				{
 					"label": "Special action",
-					"value": "Rapid fire"
+					"value": "Rapid fire (40)"
 				},
 				{
 					"label": "Special effect",
@@ -115601,7 +116583,7 @@
 			"slug": "willow-shortbow",
 			"name": "Willow Shortbow",
 			"wiki": "Willow Shortbow",
-			"icon": "Willow Shortbow (Journal).png",
+			"icon": "Willow Shortbow.png",
 			"type": "Ranged Weapon",
 			"category": "weapons",
 			"description": "An agile Shortbow crafted from Willow.",
@@ -115677,11 +116659,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1300"
+					"value": "1,300"
 				},
 				{
 					"label": "Special action",
-					"value": "Rapid fire"
+					"value": "Rapid fire (40)"
 				}
 			]
 		},
@@ -116060,7 +117042,7 @@
 			"type": "Mage Armour",
 			"category": "armour",
 			"description": "A stylish hat, popular with spellcasters.",
-			"extract": "Wizard hat is a power level 3 magic armour that can be crafted at an armour bench. Unlocked via acquiring rough cloth.",
+			"extract": "A wizard hat is a power level 3 magic armour that can be crafted at an armour bench. Creating the wizard hat is unlocked by acquiring rough cloth in their inventory for the first time.",
 			"recipes": [
 				{
 					"outputLabel": "Wizard Hat",
@@ -116108,15 +117090,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "6"
+					"value": "+6"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "7"
+					"value": "+7"
 				},
 				{
 					"label": "Magic defence",
-					"value": "9"
+					"value": "+9"
 				},
 				{
 					"label": "Durability",
@@ -116144,7 +117126,7 @@
 			"type": "Mage Armour",
 			"category": "armour",
 			"description": "Lightweight magical armour.",
-			"extract": "Wizard robe legs are a power level 3 magic armour that can be crafted at an armour bench. Unlocked via acquiring rough cloth.",
+			"extract": "Wizard robe legs are a power level 3 magic armour that can be crafted at an armour bench. Creating the wizard robe legs is unlocked by acquiring rough cloth in their inventory for the first time.",
 			"recipes": [
 				{
 					"outputLabel": "Wizard Robe Legs",
@@ -116192,15 +117174,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "9"
+					"value": "+9"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "10"
+					"value": "+10"
 				},
 				{
 					"label": "Magic defence",
-					"value": "4"
+					"value": "+4"
 				},
 				{
 					"label": "Durability",
@@ -116228,7 +117210,7 @@
 			"type": "Mage Armour",
 			"category": "armour",
 			"description": "Lightweight magical armour.",
-			"extract": "Wizard robes are a power level 3 magic armour that can be crafted at an armour bench. Unlocked via acquiring rough cloth.",
+			"extract": "Wizard robes are a power level 3 magic armour that can be crafted at an armour bench. Creating the wizard robe legs is unlocked by acquiring rough cloth in their inventory for the first time.",
 			"recipes": [
 				{
 					"outputLabel": "Wizard Robes",
@@ -116276,15 +117258,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "15"
+					"value": "+15"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "17"
+					"value": "+17"
 				},
 				{
 					"label": "Magic defence",
-					"value": "23"
+					"value": "+23"
 				},
 				{
 					"label": "Durability",
@@ -117568,7 +118550,7 @@
 				{
 					"source": "Chest (Umbral Sands)",
 					"qty": "1",
-					"rarity": "0.36/100"
+					"rarity": "12.5/100"
 				}
 			],
 			"shops": [],
@@ -117705,6 +118687,7 @@
 				"adamant-spade",
 				"advanced-tannery",
 				"charcoal",
+				"fishing-rod-rack",
 				"large-awning-roof",
 				"large-compost-bucket",
 				"master-wand",
@@ -117977,11 +118960,11 @@
 			"slug": "yew-shortbow",
 			"name": "Yew Shortbow",
 			"wiki": "Yew Shortbow",
-			"icon": "Yew Shortbow (Journal).png",
+			"icon": "Yew Shortbow.png",
 			"type": "Ranged Weapon",
 			"category": "weapons",
 			"description": "A strong shortbow made from yew.",
-			"extract": "Yew shortbow is a power level 7 ranged weapons",
+			"extract": "Yew shortbow is a power level 7 ranged weapons that can be crafted on the Fletching Bench, to unlock the recipe you will need Adamant Bar crafted.",
 			"recipes": [
 				{
 					"outputLabel": "Yew Shortbow",
@@ -118053,11 +119036,11 @@
 				},
 				{
 					"label": "Durability",
-					"value": "1300"
+					"value": "1,300"
 				},
 				{
 					"label": "Special action",
-					"value": "Rapid fire"
+					"value": "Rapid fire (40)"
 				}
 			]
 		},
@@ -118278,15 +119261,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "2"
+					"value": "+2"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "2"
+					"value": "+2"
 				},
 				{
 					"label": "Magic defence",
-					"value": "2"
+					"value": "+2"
 				},
 				{
 					"label": "Special effect",
