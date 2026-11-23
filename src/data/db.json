@@ -1,5 +1,5 @@
 {
-	"fetchedAt": "2026-11-16T15:49:40.101Z",
+	"fetchedAt": "2026-11-23T18:11:38.845Z",
 	"categories": [
 		{
 			"slug": "weapons",
@@ -10,8 +10,8 @@
 		{
 			"slug": "armour",
 			"name": "Armour & Shields",
-			"count": 143,
-			"craftable": 138
+			"count": 145,
+			"craftable": 140
 		},
 		{
 			"slug": "tools",
@@ -28,14 +28,14 @@
 		{
 			"slug": "capes",
 			"name": "Capes",
-			"count": 61,
-			"craftable": 57
+			"count": 62,
+			"craftable": 62
 		},
 		{
 			"slug": "jewellery",
 			"name": "Jewellery & Trinkets",
-			"count": 39,
-			"craftable": 26
+			"count": 41,
+			"craftable": 28
 		},
 		{
 			"slug": "leathers",
@@ -58,8 +58,8 @@
 		{
 			"slug": "materials",
 			"name": "Materials",
-			"count": 358,
-			"craftable": 83
+			"count": 374,
+			"craftable": 85
 		},
 		{
 			"slug": "potions",
@@ -88,8 +88,8 @@
 		{
 			"slug": "buildings",
 			"name": "Buildings & Decor",
-			"count": 505,
-			"craftable": 505
+			"count": 515,
+			"craftable": 515
 		},
 		{
 			"slug": "seeds",
@@ -118,7 +118,7 @@
 		{
 			"slug": "vestiges",
 			"name": "Vestiges",
-			"count": 125,
+			"count": 131,
 			"craftable": 0
 		}
 	],
@@ -4970,19 +4970,13 @@
 							"slug": "refined-obsidian"
 						},
 						{
-							"label": "Gypsum Wax",
-							"qty": 3,
-							"icon": "Gypsum Wax.png",
-							"slug": "gypsum-wax"
-						},
-						{
 							"label": "Garou Weave",
-							"qty": 3,
+							"qty": 6,
 							"icon": "Garou Weave.png",
 							"slug": "garou-weave"
 						}
 					],
-					"id": "9b3e9b6c3e",
+					"id": "0dd7ff3392",
 					"station": {
 						"name": "Armour Bench",
 						"slug": "armour-bench"
@@ -5073,18 +5067,12 @@
 						},
 						{
 							"label": "Gypsum Wax",
-							"qty": 2,
+							"qty": 4,
 							"icon": "Gypsum Wax.png",
 							"slug": "gypsum-wax"
-						},
-						{
-							"label": "Garou Weave",
-							"qty": 2,
-							"icon": "Garou Weave.png",
-							"slug": "garou-weave"
 						}
 					],
-					"id": "cde82b4944",
+					"id": "b6d81fd3e7",
 					"station": {
 						"name": "Armour Bench",
 						"slug": "armour-bench"
@@ -5658,6 +5646,7 @@
 				"iron-chest",
 				"lumber-storage",
 				"ore-stone-storage",
+				"penguin-helmet",
 				"tanners-kit",
 				"weapon-barbs"
 			],
@@ -6037,7 +6026,42 @@
 			"category": "capes",
 			"description": "Congratulations! Reaching level 99 in Agility is an astonishing feat. Wear this cape with pride.",
 			"extract": "The Agility cape is a Cape of Accomplishment able to be crafted and worn with a level 99 Agility. It can be crafted at the mystic forge. This cape, while worn, gives the player a 10% chance to not consume stamina for jumping, dashing, or evading.\nTrimmed versions can be made the same way if you have more than one skill at 99.",
-			"recipes": [],
+			"recipes": [
+				{
+					"outputLabel": "Agility Cape",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [
+						{
+							"name": "Artisan",
+							"xp": 0
+						}
+					],
+					"materials": [],
+					"id": "322523ef01",
+					"station": {
+						"name": "Mystic Forge",
+						"slug": "mystic-forge"
+					}
+				},
+				{
+					"outputLabel": "Agility Cape (Trimmed)",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [
+						{
+							"name": "Artisan",
+							"xp": 0
+						}
+					],
+					"materials": [],
+					"id": "0581fad224",
+					"station": {
+						"name": "Mystic Forge",
+						"slug": "mystic-forge"
+					}
+				}
+			],
 			"usedIn": [],
 			"drops": [],
 			"shops": [],
@@ -7524,7 +7548,10 @@
 					}
 				}
 			],
-			"usedIn": [],
+			"usedIn": [
+				"kgp-hat",
+				"pescaling-amulet"
+			],
 			"drops": [
 				{
 					"source": "Reward Pack: Ghornfell Gold",
@@ -8624,7 +8651,7 @@
 			"type": "Drink",
 			"category": "food",
 			"description": "Puts the whiz in wizard.",
-			"extract": "Arcane infusion is a consumable drink item that provides 40 hydration and grants the perk Arcane Aligned, which reduces the stamina cost of magic attacks by 33% for 300 seconds. It is made with clean water, antler, and harralander in a stone range or Cooking Range. It is learned by unlocking Teamonger at level 14 Cooking, and requires interacting with a stone range first to learn the recipe.",
+			"extract": "Arcane infusion is a consumable drink item that provides 40 hydration and grants the perk Arcane Aligned, which reduces the stamina cost of magic attacks by 33% for 300 seconds. It is made with clean water, antler, and harralander in a stone range or cooking range. It can be learned after unlocking Teamonger at level 14 Cooking, and requires interacting with a stone range (not a cooking range) first.",
 			"recipes": [
 				{
 					"outputLabel": "Arcane Infusion",
@@ -10329,6 +10356,8 @@
 				"stone-pickaxe",
 				"stone-range",
 				"storage-ledger",
+				"suspicious-penguin-miniature-01",
+				"suspicious-penguin-miniature-02",
 				"tannery",
 				"torch",
 				"triangular-foundation",
@@ -11386,6 +11415,10 @@
 				{
 					"label": "Magic defence",
 					"value": "+2"
+				},
+				{
+					"label": "Special effect",
+					"value": "* INCREASED chance to recover RANGED AMMO. * Automatically picks up RANGED AMMO at a larger distance."
 				}
 			]
 		},
@@ -12798,7 +12831,7 @@
 			"type": "Food",
 			"category": "food",
 			"description": "Hearty, healthy & delicious.",
-			"extract": "Beef & tomato stew is a consumable food item that provides 60 health and 65 sustenance. It is made with grilled tomatoes, steak, and dried redberries in a stone range or a cooking range, however a player must interact with a stone range first and have grilled tomatoes in their inventory to learn the recipe.",
+			"extract": "Beef & tomato stew is a consumable food item that provides 60 health and 65 sustenance. It is made with grilled tomatoes, steak, and dried redberries in a stone range or a cooking range. However, to learn the recipe, players must interact with a stone range (not a cooking range) and have grilled tomatoes in their inventory.",
 			"recipes": [
 				{
 					"outputLabel": "Beef & Tomato Stew",
@@ -17847,6 +17880,64 @@
 			"stats": []
 		},
 		{
+			"slug": "brine-soaked-band",
+			"name": "Brine-Soaked Band",
+			"wiki": "Brine-Soaked Band",
+			"icon": "Brine-Soaked Band.png",
+			"type": "Vestige",
+			"category": "vestiges",
+			"description": "Perhaps you could learn something from it.",
+			"extract": "Brine-Soaked Band is a vestige that unlocks the ability to create Pescaling Ring, which reduces fish's stamina by 5-15% while worn.\nThe vestige can be obtained through Façade's Front for 15Penguin Coins.",
+			"recipes": [],
+			"usedIn": [],
+			"drops": [],
+			"shops": [
+				{
+					"seller": "Fishy Facade",
+					"cost": 15,
+					"currency": "Penguin Coin"
+				}
+			],
+			"unlockedBy": [],
+			"weight": 0,
+			"power": null,
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
+				}
+			]
+		},
+		{
+			"slug": "brine-soaked-bauble",
+			"name": "Brine-Soaked Bauble",
+			"wiki": "Brine-Soaked Bauble",
+			"icon": "Brine-Soaked Bauble.png",
+			"type": "Vestige",
+			"category": "vestiges",
+			"description": "Perhaps you could learn something from it.",
+			"extract": "Brine-Soaked Bauble is a vestige that unlocks the ability to create the Pescaling Amulet, which provides a 5% increased chance of catching pristine fish while worn.\nThe vestige can be obtained through Façade's Front for 15Penguin Coins.",
+			"recipes": [],
+			"usedIn": [],
+			"drops": [],
+			"shops": [
+				{
+					"seller": "Fishy Facade",
+					"cost": 15,
+					"currency": "Penguin Coin"
+				}
+			],
+			"unlockedBy": [],
+			"weight": 0,
+			"power": null,
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
+				}
+			]
+		},
+		{
 			"slug": "broken-titans-wrath",
 			"name": "Broken Titan's Wrath",
 			"wiki": "Broken Titan's Wrath",
@@ -18104,6 +18195,7 @@
 				"bronze-logging-axe",
 				"bronze-mace",
 				"bronze-med-helm",
+				"bronze-penguin-miniature",
 				"bronze-pickaxe",
 				"bronze-platebody",
 				"bronze-platelegs",
@@ -19208,6 +19300,58 @@
 						}
 					],
 					"id": "3013109259",
+					"station": {
+						"name": "Build Menu",
+						"slug": null
+					}
+				}
+			],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": null,
+			"power": null,
+			"stats": []
+		},
+		{
+			"slug": "bronze-penguin-miniature",
+			"name": "Bronze Penguin Miniature",
+			"wiki": "Bronze Penguin Miniature",
+			"icon": "Bronze Penguin Miniature.png",
+			"type": null,
+			"category": "buildings",
+			"description": "",
+			"extract": "A Bronze Penguin Miniature is a decoration that is unlocked after studying PLAN: Bronze Penguin Miniature.\nThe plan can be purchased from the Façade's Front shop for 8Penguin Coins.",
+			"recipes": [
+				{
+					"outputLabel": "Bronze Penguin Miniature",
+					"outputQty": 1,
+					"requires": {
+						"label": "PLAN: Bronze Penguin Miniature",
+						"slug": "plan-bronze-penguin-miniature"
+					},
+					"skills": [
+						{
+							"name": "Construction",
+							"xp": 20
+						}
+					],
+					"materials": [
+						{
+							"label": "Bronze Bar",
+							"qty": 4,
+							"icon": "Bronze Bar.png",
+							"slug": "bronze-bar"
+						},
+						{
+							"label": "Clay Mould",
+							"qty": 1,
+							"icon": "Clay Mould.png",
+							"slug": "clay-mould"
+						}
+					],
+					"id": "e0648bb70f",
 					"station": {
 						"name": "Build Menu",
 						"slug": null
@@ -24420,7 +24564,12 @@
 			"usedIn": [
 				"fuel-pellet",
 				"furnace",
-				"naptha"
+				"naptha",
+				"penguin-helmet",
+				"suspicious-penguin-miniature-01",
+				"suspicious-penguin-miniature-02",
+				"suspicious-penguin-miniature-03",
+				"suspicious-penguin-miniature-04"
 			],
 			"drops": [
 				{
@@ -24453,7 +24602,7 @@
 			"type": "Food",
 			"category": "food",
 			"description": "A surefire hangover cure.",
-			"extract": "Cheeky fryup is a consumable food item that provides 70 health and 70 sustenance as well as the perk Foreman's Feast, which reduces the stamina cost of Woodcutting and Mining by 33% for 300 seconds. It is made with rat roast, baked potato, and fried egg in a stone range or a cooking range. It is learned by unlocking Amateur Culinaromancer at level 16 Cooking, and requires interacting with a stone range first to learn the recipe.",
+			"extract": "Cheeky fryup is a consumable food item that provides 70 health and 70 sustenance as well as the perk Foreman's Feast, which reduces the stamina cost of Woodcutting and Mining by 33% for 300 seconds. It is made with rat roast, baked potato, and fried egg in a stone range or a cooking range. It can be learned after unlocking Amateur Culinaromancer at level 16 Cooking, and requires interacting with a stone range (not a cooking range) first.",
 			"recipes": [
 				{
 					"outputLabel": "Cheeky Fryup",
@@ -25275,6 +25424,9 @@
 				"amulet-of-glory",
 				"amulet-of-magic",
 				"amulet-of-strength",
+				"bronze-penguin-miniature",
+				"copper-penguin-miniature",
+				"gold-penguin-miniature",
 				"inspiring-amulet-of-attack",
 				"inspiring-amulet-of-magic",
 				"inspiring-amulet-of-ranged",
@@ -25287,12 +25439,21 @@
 				"inspiring-ring-of-mining",
 				"inspiring-ring-of-runecrafting",
 				"inspiring-ring-of-woodcutting",
+				"pescaling-amulet",
+				"pescaling-ring",
 				"ravannas-ring",
 				"ring-of-life",
 				"ring-of-pursuit",
 				"ring-of-recoil",
 				"salve-amulet",
+				"silver-penguin-miniature",
 				"skills-necklace",
+				"stone-penguin-miniature",
+				"suspicious-penguin-miniature-01",
+				"suspicious-penguin-miniature-02",
+				"suspicious-penguin-miniature-03",
+				"suspicious-penguin-miniature-04",
+				"tin-penguin-miniature",
 				"unholy-symbol"
 			],
 			"drops": [],
@@ -26120,10 +26281,14 @@
 				"ghornfell-water-tapestry",
 				"gyrhawk-amulet",
 				"imaru-tapestry",
+				"kgp-hat",
 				"leather-body",
 				"leather-chaps",
 				"leather-cowl",
 				"mystic-forge",
+				"penguin-body",
+				"penguin-legs",
+				"pescaling-amulet",
 				"pioneers-tapestry",
 				"pottery-wheel",
 				"rough-cloth",
@@ -28543,6 +28708,7 @@
 			"recipes": [],
 			"usedIn": [
 				"bronze-bar",
+				"copper-penguin-miniature",
 				"medium-copper-nugget",
 				"small-copper-bin",
 				"small-copper-nugget"
@@ -28618,6 +28784,87 @@
 			],
 			"unlockedBy": [],
 			"weight": 2.3,
+			"power": null,
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
+				}
+			]
+		},
+		{
+			"slug": "copper-penguin-miniature",
+			"name": "Copper Penguin Miniature",
+			"wiki": "Copper Penguin Miniature",
+			"icon": "Copper Penguin Miniature.png",
+			"type": null,
+			"category": "buildings",
+			"description": "",
+			"extract": "A Copper Penguin Miniature is a decoration that is unlocked after studying PLAN: Copper Penguin Miniature.\nThe plan can be purchased from the Façade's Front shop for 7Penguin Coins.",
+			"recipes": [
+				{
+					"outputLabel": "Copper Penguin Miniature",
+					"outputQty": 1,
+					"requires": {
+						"label": "PLAN: Copper Penguin Miniature",
+						"slug": "plan-copper-penguin-miniature"
+					},
+					"skills": [
+						{
+							"name": "Construction",
+							"xp": 20
+						}
+					],
+					"materials": [
+						{
+							"label": "Copper Ore",
+							"qty": 4,
+							"icon": "Copper Ore.png",
+							"slug": "copper-ore"
+						},
+						{
+							"label": "Clay Mould",
+							"qty": 1,
+							"icon": "Clay Mould.png",
+							"slug": "clay-mould"
+						}
+					],
+					"id": "16c6bba0ed",
+					"station": {
+						"name": "Build Menu",
+						"slug": null
+					}
+				}
+			],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": null,
+			"power": null,
+			"stats": []
+		},
+		{
+			"slug": "coral-nubbin",
+			"name": "Coral Nubbin",
+			"wiki": "Coral Nubbin",
+			"icon": "Coral Nubbin.png",
+			"type": "Vestige",
+			"category": "vestiges",
+			"description": "Perhaps you could learn something from it.",
+			"extract": "Coral Nubbin is a vestige that unlocks the Penguin Helmet, which looks like a hood. It has no stats as it is purely cosmetic.\nThe vestige can be obtained through Façade's Front for 15Penguin Coins.",
+			"recipes": [],
+			"usedIn": [],
+			"drops": [],
+			"shops": [
+				{
+					"seller": "Fishy Facade",
+					"cost": 15,
+					"currency": "Penguin Coin"
+				}
+			],
+			"unlockedBy": [],
+			"weight": 0,
 			"power": null,
 			"stats": [
 				{
@@ -30085,16 +30332,19 @@
 			"type": null,
 			"category": "buildings",
 			"description": "",
-			"extract": "a decorative version of Penguin Coin",
+			"extract": "A decorative penguin coin is a penguin decoration that is unlocked after studying PLAN: Penguin Decorative Coin.\nThe plan can be purchased from the Façade's Front shop for 1Penguin Coin.",
 			"recipes": [
 				{
 					"outputLabel": "Decorative Penguin Coin",
 					"outputQty": 1,
-					"requires": null,
+					"requires": {
+						"label": "PLAN: Penguin Decorative Coin",
+						"slug": "plan-penguin-decorative-coin"
+					},
 					"skills": [
 						{
 							"name": "Construction",
-							"xp": 0
+							"xp": 20
 						}
 					],
 					"materials": [
@@ -30120,13 +30370,7 @@
 			],
 			"usedIn": [],
 			"drops": [],
-			"shops": [
-				{
-					"seller": "Fishy Facade",
-					"cost": 1,
-					"currency": "Penguin Coin"
-				}
-			],
+			"shops": [],
 			"unlockedBy": [],
 			"weight": null,
 			"power": null,
@@ -30461,15 +30705,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "-"
+					"value": "+8"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "-"
+					"value": "+8"
 				},
 				{
 					"label": "Magic defence",
-					"value": "-"
+					"value": "+8"
 				},
 				{
 					"label": "Durability",
@@ -30477,7 +30721,7 @@
 				},
 				{
 					"label": "Special effect",
-					"value": "Provides Scorch resistant when worn. (Equip additional Desert Robe pieces to further increase Scorch resistance.)"
+					"value": "Reduced SCORCH BUILD UP"
 				}
 			]
 		},
@@ -30589,15 +30833,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "-"
+					"value": "+5"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "-"
+					"value": "+5"
 				},
 				{
 					"label": "Magic defence",
-					"value": "-"
+					"value": "+5"
 				},
 				{
 					"label": "Durability",
@@ -30605,7 +30849,7 @@
 				},
 				{
 					"label": "Special effect",
-					"value": "Provides Scorch resistant when worn. (Equip additional Desert Robe pieces to further increase Scorch resistance.)"
+					"value": "Reduced SCORCH BUILD UP"
 				}
 			]
 		},
@@ -30674,15 +30918,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "-"
+					"value": "+4"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "-"
+					"value": "+4"
 				},
 				{
 					"label": "Magic defence",
-					"value": "-"
+					"value": "+4"
 				},
 				{
 					"label": "Durability",
@@ -30690,7 +30934,7 @@
 				},
 				{
 					"label": "Special effect",
-					"value": "Provides Scorch resistant when worn. (Equip additional Desert Robe pieces to further increase Scorch resistance.)"
+					"value": "Reduced SCORCH BUILD UP"
 				}
 			]
 		},
@@ -30961,7 +31205,7 @@
 			"type": "Basic Material",
 			"category": "materials",
 			"description": "A hearty plant native to the region. Can be spun into a durable thread",
-			"extract": "This article is about the resource. For the Plant itself, see Desert Weeds.\n\nDesert weed is a basic material gathered by picking up Desert Weeds located in the Umbral Sands region or by growing in any plot but grows best in a Yew Farming Plot.",
+			"extract": "Desert weed is a basic material gathered by picking up Desert Weeds located in the Umbral Sands region or by growing in any plot but grows best in a Yew Farming Plot.",
 			"recipes": [],
 			"usedIn": [
 				"desert-thread",
@@ -35059,7 +35303,7 @@
 			"type": "Food",
 			"category": "food",
 			"description": "Yum... smells fruity.",
-			"extract": "Dwellberry crunchies are a consumable food item that provides 70 health and 40 sustenance. They are made with dried dwellberries and wheat in a stone range or a cooking range, however a player must interact with a stone range first to learn the recipe.",
+			"extract": "Dwellberry crunchies are a consumable food item that provides 70 health and 40 sustenance. They are made with dried dwellberries and wheat in a stone range or a cooking range. However, to learn the recipe, players must interact with a stone range (not a cooking range).",
 			"recipes": [
 				{
 					"outputLabel": "Dwellberry Crunchies",
@@ -35232,7 +35476,7 @@
 			"type": "Drink",
 			"category": "food",
 			"description": "A refreshing, fruity drink. Good for hydration.",
-			"extract": "Dwellberry infusion is a consumable drink item that provides 40 hydration and grants the perk Quenched, which reduces thirst drain by 33% for 600 seconds. It is made with clean water and dwellberries in a stone range or cooking range. However, a player must interact with a stone range first to learn the recipe.",
+			"extract": "Dwellberry infusion is a consumable drink item that provides 40 hydration and grants the perk Quenched, which reduces thirst drain by 33% for 600 seconds. It is made with clean water and dwellberries in a stone range or cooking range. However, to learn the recipe, players must interact with a stone range (not a cooking range).",
 			"recipes": [
 				{
 					"outputLabel": "Dwellberry Infusion",
@@ -35864,7 +36108,7 @@
 			"type": "Food",
 			"category": "food",
 			"description": "Made by combining fried egg and fried salmon. Grants the Sea Life perk.",
-			"extract": "Eggs royale is a consumable food item that provides 120 health and 30 sustenance as well as the perk Sea Life, which restores 3 health every second for 900 seconds. It is made with fried egg and fried salmon in a stone range or a cooking range, however a player must interact with a stone range first to learn the recipe.",
+			"extract": "Eggs royale is a consumable food item that provides 120 health and 30 sustenance as well as the perk Sea Life, which restores 3 health every second for 900 seconds. It is made with fried egg and fried salmon in a stone range or a cooking range. However, to learn the recipe, players must interact with a stone range (not a cooking range).",
 			"recipes": [
 				{
 					"outputLabel": "Eggs Royale",
@@ -37883,6 +38127,9 @@
 				"kalphite-bait",
 				"mithril-arrow",
 				"mithril-bolts",
+				"penguin-body",
+				"penguin-helmet",
+				"penguin-legs",
 				"rune-arrow",
 				"rune-bolt",
 				"spooky-bait",
@@ -38244,7 +38491,7 @@
 			"type": "Drink",
 			"category": "food",
 			"description": "A hydrating drink infused with primal fury.",
-			"extract": "Ferocious infusion is a consumable drink item that provides 40 hydration and grants the perk Ferocious Fighter, which reduces the stamina cost of physical attacks by 33% for 300 seconds. It is made with clean water, animal bone, and harralander in a stone range or cooking range. It is learned by unlocking Teamonger at level 14 Cooking, and requires interacting with a stone range first to learn the recipe.",
+			"extract": "Ferocious infusion is a consumable drink item that provides 40 hydration and grants the perk Ferocious Fighter, which reduces the stamina cost of physical attacks by 33% for 300 seconds. It is made with clean water, animal bone, and harralander in a stone range or cooking range. It can be learned after unlocking Teamonger at level 14 Cooking, and requires interacting with a stone range (not a cooking range) first.",
 			"recipes": [
 				{
 					"outputLabel": "Ferocious Infusion",
@@ -38415,7 +38662,7 @@
 			"type": "Basic Item",
 			"category": "materials",
 			"description": "A complex network of fibres and water reservoirs. Can be tanned to produce a durable material.",
-			"extract": "Fibrous pipe cactus can be found west of the Moon Garou tribe near a grove of yew trees, and can be used to make 3 cactus fibres in a tannery.",
+			"extract": "Fibrous pipe cactus can be found by harvesting a cactus node which are found in various places in Umbral Sands. This item can be used to make 3 cactus fibres in a tannery.",
 			"recipes": [],
 			"usedIn": [
 				"cactus-fibres",
@@ -38732,7 +38979,25 @@
 			"category": "capes",
 			"description": "Receiving or blocking damage has a chance to triggering burning on your attacker. Melee kills on Burning enemies refill stamina.",
 			"extract": "The fire cape is a cape awarded after beating the Fight Cave activity. It is the only cape in the game that is dropped by a boss monster. When worn by the player it gives the Burning Endurance effect. Players can craft them on the Armour Bench.\nThe cape previously required an ember-edged remnant of cloth vestige.",
-			"recipes": [],
+			"recipes": [
+				{
+					"outputLabel": "Fire Cape",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [
+						{
+							"name": "Artisan",
+							"xp": 0
+						}
+					],
+					"materials": [],
+					"id": "d702d278f2",
+					"station": {
+						"name": "Armour Bench",
+						"slug": "armour-bench"
+					}
+				}
+			],
 			"usedIn": [],
 			"drops": [],
 			"shops": [],
@@ -41443,6 +41708,7 @@
 			],
 			"usedIn": [
 				"lesser-focused-fishing-potion",
+				"pescaling-ring",
 				"sauteed-sardines"
 			],
 			"drops": [],
@@ -42147,7 +42413,25 @@
 			"category": "capes",
 			"description": "A cloak worn by garou nobility.",
 			"extract": "The garou highborn's cloak is a unique cape given as a reward by Vannaka for completing the Dog Days quest. Additional ones can also be crafted via the Armour Bench after the quest.",
-			"recipes": [],
+			"recipes": [
+				{
+					"outputLabel": "Garou Highborn's Cloak",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [
+						{
+							"name": "Artisan",
+							"xp": 0
+						}
+					],
+					"materials": [],
+					"id": "279e104575",
+					"station": {
+						"name": "Armour Bench",
+						"slug": "armour-bench"
+					}
+				}
+			],
 			"usedIn": [],
 			"drops": [],
 			"shops": [],
@@ -42741,7 +43025,6 @@
 				"adamant-helmet",
 				"adamant-med-helm",
 				"adamant-platebody",
-				"adamant-platelegs",
 				"desert-hood",
 				"desert-robe-legs",
 				"desert-robes",
@@ -43311,15 +43594,15 @@
 			"stats": [
 				{
 					"label": "Melee defence",
-					"value": "2"
+					"value": "+2"
 				},
 				{
 					"label": "Ranged defence",
-					"value": "2"
+					"value": "+2"
 				},
 				{
 					"label": "Magic defence",
-					"value": "2"
+					"value": "+2"
 				}
 			]
 		},
@@ -44253,6 +44536,7 @@
 				"jewelers-bench",
 				"large-gold-bar-pile",
 				"lightning-rod",
+				"pescaling-amulet",
 				"pharaohs-sceptre",
 				"ring-of-life",
 				"ring-of-recoil",
@@ -44473,6 +44757,7 @@
 			"recipes": [],
 			"usedIn": [
 				"gold-bar",
+				"gold-penguin-miniature",
 				"medium-gold-nugget",
 				"small-gold-bin",
 				"small-gold-nugget"
@@ -44525,6 +44810,58 @@
 					"value": "99"
 				}
 			]
+		},
+		{
+			"slug": "gold-penguin-miniature",
+			"name": "Gold Penguin Miniature",
+			"wiki": "Gold Penguin Miniature",
+			"icon": "Gold Penguin Miniature.png",
+			"type": null,
+			"category": "buildings",
+			"description": "",
+			"extract": "A Gold Penguin Miniature is a decoration that is unlocked after studying PLAN: Gold Penguin Miniature. \nThe plan can be purchased from the Façade's Front shop for 15Penguin Coins.",
+			"recipes": [
+				{
+					"outputLabel": "Gold Penguin Miniature",
+					"outputQty": 1,
+					"requires": {
+						"label": "PLAN: Gold Penguin Miniature",
+						"slug": "plan-gold-penguin-miniature"
+					},
+					"skills": [
+						{
+							"name": "Construction",
+							"xp": 20
+						}
+					],
+					"materials": [
+						{
+							"label": "Gold Ore",
+							"qty": 4,
+							"icon": "Gold Ore.png",
+							"slug": "gold-ore"
+						},
+						{
+							"label": "Clay Mould",
+							"qty": 1,
+							"icon": "Clay Mould.png",
+							"slug": "clay-mould"
+						}
+					],
+					"id": "4eabab7635",
+					"station": {
+						"name": "Build Menu",
+						"slug": null
+					}
+				}
+			],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": null,
+			"power": null,
+			"stats": []
 		},
 		{
 			"slug": "gold-salvage-pile",
@@ -47756,7 +48093,6 @@
 				"adamant-mace",
 				"adamant-med-helm",
 				"adamant-pickaxe",
-				"adamant-platebody",
 				"adamant-platelegs",
 				"adamant-scimitar",
 				"adamant-shield",
@@ -49318,7 +49654,7 @@
 			"type": "Food",
 			"category": "food",
 			"description": "Made by combining grilled trout and a baked potato. Grants the Sea Life perk.<sup class=\"noprint\">&#91;<span class=\"fact-text\" title=\"Herb Baked Trout does not currently provide the Perk Sea Life.\">sic</span>&#93;</sup>",
-			"extract": "Herb baked trout is a consumable food item that provides 100 health and 35 sustenance. It is made with grilled trout and baked potato in a stone range or a cooking range, however a player must interact with a stone range first to learn the recipe.",
+			"extract": "Herb baked trout is a consumable food item that provides 100 health and 35 sustenance. It is made with grilled trout and baked potato in a stone range or a cooking range. However, to learn the recipe, players must interact with a stone range (not a cooking range).",
 			"recipes": [
 				{
 					"outputLabel": "Herb Baked Trout",
@@ -54937,6 +55273,81 @@
 			]
 		},
 		{
+			"slug": "kgp-hat",
+			"name": "KGP Hat",
+			"wiki": "KGP Hat",
+			"icon": "KGP Hat.png",
+			"type": "Melee Armour",
+			"category": "armour",
+			"description": "Turns you invisible. Except when it doesn't.",
+			"extract": "A KGP Hat is a helmet-type armour that is unlocked by studying the Scrap Mired in Subterfuge vestige.\nThe vestige can be purchased from the Façade's Front shop for 30Penguin Coins.",
+			"recipes": [
+				{
+					"outputLabel": "KGP Hat",
+					"outputQty": 1,
+					"requires": {
+						"label": "Scrap Mired in Subterfuge",
+						"slug": "scrap-mired-in-subterfuge"
+					},
+					"skills": [
+						{
+							"name": "Artisan",
+							"xp": 100
+						}
+					],
+					"materials": [
+						{
+							"label": "Rough Cloth",
+							"qty": 3,
+							"icon": "Rough Cloth.png",
+							"slug": "rough-cloth"
+						},
+						{
+							"label": "Anchovy Bait",
+							"qty": 1,
+							"icon": "Anchovy Bait.png",
+							"slug": "anchovy-bait"
+						},
+						{
+							"label": "Coarse Thread",
+							"qty": 2,
+							"icon": "Coarse Thread.png",
+							"slug": "coarse-thread"
+						}
+					],
+					"id": "d3eca623a2",
+					"station": {
+						"name": "Crafting Table",
+						"slug": "crafting-table"
+					}
+				}
+			],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": 4,
+			"power": null,
+			"stats": [
+				{
+					"label": "Melee defence",
+					"value": "0"
+				},
+				{
+					"label": "Ranged defence",
+					"value": "0"
+				},
+				{
+					"label": "Magic defence",
+					"value": "0"
+				},
+				{
+					"label": "Durability",
+					"value": "1500"
+				}
+			]
+		},
+		{
 			"slug": "kiln",
 			"name": "Kiln",
 			"wiki": "Kiln",
@@ -55606,7 +56017,7 @@
 			"type": "Basic Item",
 			"category": "materials",
 			"description": "Recharges your armour with a large amount of lifeward.",
-			"extract": "A large wardstone is a wardstone that recharges a player's armour with 90 lifeward in one second, but will inflict 25 Soulscourge on the player.",
+			"extract": "A large wardstone was a wardstone that recharges a player's armour with 90 lifeward in one second and would inflict 25 Soulscourge on the player.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -56043,6 +56454,8 @@
 				"leather-cowl",
 				"leather-shield",
 				"open-book",
+				"penguin-body",
+				"penguin-legs",
 				"postbox",
 				"reinforced-body",
 				"reinforced-helmet",
@@ -58059,7 +58472,7 @@
 			"type": "Basic Item",
 			"category": "materials",
 			"description": "Stylish? Yes! But not only that... A highly functional backpack that improves your luck with rare wood resource drops. It also lightens the weight of carried wood, and gives a gentle boost to woodcutting progression.",
-			"extract": "A lumber backpack is an armour item equipped in the cape slot. Equipping this grants a +10% reduction to the weight of carried wood, +10% increase to Woodcutting experience, +10% increase to the amount of wood received from chopping trees and +15% for special item drop chance.\nThe recipe unlocks at level 59 Woodcutting.",
+			"extract": "A lumber backpack is an armour item equipped in the cape slot. The recipe unlocks at level 59 Woodcutting.",
 			"recipes": [
 				{
 					"outputLabel": "Lumber Backpack",
@@ -58113,7 +58526,24 @@
 			"unlockedBy": [],
 			"weight": 0,
 			"power": null,
-			"stats": []
+			"stats": [
+				{
+					"label": "Melee defence",
+					"value": "+2"
+				},
+				{
+					"label": "Ranged defence",
+					"value": "+2"
+				},
+				{
+					"label": "Magic defence",
+					"value": "+2"
+				},
+				{
+					"label": "Special effect",
+					"value": "* -10% WOOD WEIGHT REDUCTION * +10% WOODCUTTING XP * +10% WOOD FROM WOODCUTTING * +15% SPECIAL ITEM DROP CHANCE"
+				}
+			]
 		},
 		{
 			"slug": "lumber-storage",
@@ -60235,7 +60665,7 @@
 			"type": "Food",
 			"category": "food",
 			"description": "Meat and vegetables, the classic combination. A warm and pleasant meal.",
-			"extract": "Meat stew is a consumable food item that provides 50 health and 50 sustenance. It is made with fillet and haunch in a stone range or a cooking range, however a player must interact with a stone range first to learn the recipe.",
+			"extract": "Meat stew is a consumable food item that provides 50 health and 50 sustenance. It is made with fillet and haunch in a stone range or a cooking range. However, to learn the recipe, players must interact with a stone range (not a cooking range).",
 			"recipes": [
 				{
 					"outputLabel": "Meat Stew",
@@ -63801,7 +64231,7 @@
 			"type": "Basic Item",
 			"category": "materials",
 			"description": "Recharges your armour with a moderate amount of lifeward.",
-			"extract": "A medium wardstone is a wardstone that recharges a player's armour with 60 lifeward in one second, but will inflict 25 Soulscourge on the player.",
+			"extract": "A medium wardstone was a wardstone that recharged a player's armour with 60 lifeward in one second, and would inflict 25 Soulscourge on the player.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -65791,7 +66221,7 @@
 			"type": "Food",
 			"category": "food",
 			"description": "Why eat just one animal? A carnivore's favourite.",
-			"extract": "Mixed grill is a consumable food item that provides 70 health and 70 sustenance as well as the perk Meaty Meal, which reduces the player's hunger drain by 25% for 300 seconds. It is made with fillet, haunch, and steak in a stone range or a cooking range. It is learned by unlocking Amateur Culinaromancer at level 16 Cooking, and requires interacting with a stone range first to learn the recipe.",
+			"extract": "Mixed grill is a consumable food item that provides 70 health and 70 sustenance as well as the perk Meaty Meal, which reduces the player's hunger drain by 25% for 300 seconds. It is made with fillet, haunch, and steak in a stone range or a cooking range. It can be learned after unlocking Amateur Culinaromancer at level 16 Cooking, and requires interacting with a stone range (not a cooking range) first.",
 			"recipes": [
 				{
 					"outputLabel": "Mixed Grill",
@@ -66147,7 +66577,7 @@
 			"type": "Food",
 			"category": "food",
 			"description": "Tasty monkfish meat, pierced on a skewer for convenient eating.",
-			"extract": "Monkfish skewers are a consumable food item that provide 120 health and 50 sustenance as well as the perks Sea Life and Frosted Flavours, which restores 3 health every second and reduces the rate at which Scorch is accumulated for 300 seconds. They are made with monkfish fillets and seared cactus steak in a stone range or a cooking range, however a player must interact with a stone range first to learn the recipe.",
+			"extract": "Monkfish skewers are a consumable food item that provide 120 health and 50 sustenance as well as the perks Sea Life and Frosted Flavours, which restores 3 health every second and reduces the rate at which Scorch is accumulated for 300 seconds. They are made with monkfish fillets and seared cactus steak in a stone range or a cooking range. However, to learn the recipe, players must interact with a stone range (not a cooking range).",
 			"recipes": [
 				{
 					"outputLabel": "Monkfish Skewers",
@@ -71017,7 +71447,7 @@
 			"type": "Raw Ingredient",
 			"category": "food",
 			"description": "A vegetable that often brings a tear to the eye.",
-			"extract": "Onions are a Power Level 3 raw ingredient, which means they can be cooked at a campfire or grill into fried onions starting at Cooking level 27, and not burnt into burnt onion at level 41. They can also be used to make lesser Focused Cooking potion, bowl of onions, and potted onion. They can be collected from onion (plant) in Fractured Plains, and Farmed from onion (Farming) grown from onion seeds. Onions can be used to make compost.",
+			"extract": "Onions are a Power Level 3 raw ingredient, which means they can be cooked at a campfire or grill into fried onions starting at Cooking level 27, and not burnt into burnt onion at level 41. They can also be used to make lesser Focused Cooking potion, bowl of onions, and potted onion. They can be collected from onion (node) in Fractured Plains, and Farmed from onion (Farming) grown from onion seeds. Onions can be used to make compost.",
 			"recipes": [],
 			"usedIn": [
 				"agony-auntchovy",
@@ -71066,7 +71496,7 @@
 			"type": "Seed",
 			"category": "seeds",
 			"description": "Onion Seeds. Equip and use them to scatter these into a farming plot and start growing!<br /> <br />Best planted in Ghornfell plots.",
-			"extract": "Onion seeds are a type of Ghornfell seed, used in the Farming skill. Onion seeds can be obtained from harvesting wild onion (plant).",
+			"extract": "Onion seeds are a type of Ghornfell seed, used in the Farming skill. Onion seeds can be obtained from harvesting wild onion.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [
@@ -72531,14 +72961,157 @@
 			]
 		},
 		{
+			"slug": "penguin-body",
+			"name": "Penguin Body",
+			"wiki": "Penguin Body",
+			"icon": "Penguin Body.png",
+			"type": "Basic Item",
+			"category": "materials",
+			"description": "A delightful penguinny tuxedo.",
+			"extract": "A Penguin Body is an armour piece that is unlocked by studying the Tuxedo Patch vestige, which also unlocks the Penguin Legs.\nThe vestige can be purchased from the Façade's Front shop for 15Penguin Coins.",
+			"recipes": [
+				{
+					"outputLabel": "Penguin Body",
+					"outputQty": 1,
+					"requires": {
+						"label": "Tuxedo Patch",
+						"slug": "tuxedo-patch"
+					},
+					"skills": [
+						{
+							"name": "Artisan",
+							"xp": 100
+						}
+					],
+					"materials": [
+						{
+							"label": "Rough Cloth",
+							"qty": 3,
+							"icon": "Rough Cloth.png",
+							"slug": "rough-cloth"
+						},
+						{
+							"label": "Leather",
+							"qty": 2,
+							"icon": "Leather.png",
+							"slug": "leather"
+						},
+						{
+							"label": "Swamp Tar",
+							"qty": 1,
+							"icon": "Swamp Tar.png",
+							"slug": "swamp-tar"
+						},
+						{
+							"label": "Feathers",
+							"qty": 10,
+							"icon": "Feathers.png",
+							"slug": "feathers"
+						},
+						{
+							"label": "Coarse Thread",
+							"qty": 2,
+							"icon": "Coarse Thread.png",
+							"slug": "coarse-thread"
+						}
+					],
+					"id": "11403ef9ea",
+					"station": {
+						"name": "Crafting Table",
+						"slug": "crafting-table"
+					}
+				}
+			],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": 8,
+			"power": null,
+			"stats": [
+				{
+					"label": "Melee defence",
+					"value": "0"
+				},
+				{
+					"label": "Ranged defence",
+					"value": "0"
+				},
+				{
+					"label": "Magic defence",
+					"value": "0"
+				},
+				{
+					"label": "Durability",
+					"value": "1500"
+				}
+			]
+		},
+		{
+			"slug": "penguin-cape",
+			"name": "Penguin Cape",
+			"wiki": "Penguin Cape",
+			"icon": "Penguin Cape.png",
+			"type": "Basic Item",
+			"category": "capes",
+			"description": "A cape of accomplishment. Worn once you master the art of being a penguin.",
+			"extract": "A Penguin Cape is a type of cape that is unlocked after studying the Prestigious Prototype vestige.\nThe vestige can be obtained through Façade's Front for 30Penguin Coins.",
+			"recipes": [
+				{
+					"outputLabel": "Penguin Cape",
+					"outputQty": 1,
+					"requires": {
+						"label": "Prestigious Prototype",
+						"slug": "prestigious-prototype"
+					},
+					"skills": [
+						{
+							"name": "Artisan",
+							"xp": 0
+						}
+					],
+					"materials": [],
+					"id": "4b1ddbac33",
+					"station": {
+						"name": "Crafting Table",
+						"slug": "crafting-table"
+					}
+				}
+			],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": 0,
+			"power": null,
+			"stats": [
+				{
+					"label": "Melee defence",
+					"value": "+2"
+				},
+				{
+					"label": "Ranged defence",
+					"value": "+2"
+				},
+				{
+					"label": "Magic defence",
+					"value": "+2"
+				},
+				{
+					"label": "Durability",
+					"value": "no"
+				}
+			]
+		},
+		{
 			"slug": "penguin-coin",
 			"name": "Penguin Coin",
 			"wiki": "Penguin Coin",
 			"icon": "Penguin Coin.png",
-			"type": null,
+			"type": "Special Material",
 			"category": "materials",
-			"description": "",
-			"extract": "Penguin Coins are a activity-based currency only acquired during the Penguin Hunting activity by finding KGP agents throughout Ashenfall. They can be used at Facade's Front to purchase new buildables and crafting recipes.",
+			"description": "Did the eyes move? This can be spent at Facade's Front.",
+			"extract": "Penguin Coins are an activity-based currency only acquired during the Penguin Hunting activity by finding KGP agents throughout Ashenfall. They can be used at Facade's Front to purchase new buildables and crafting recipes.",
 			"recipes": [],
 			"usedIn": [
 				"decorative-penguin-coin"
@@ -72546,9 +73119,188 @@
 			"drops": [],
 			"shops": [],
 			"unlockedBy": [],
-			"weight": null,
+			"weight": 0,
 			"power": null,
-			"stats": []
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "9999"
+				}
+			]
+		},
+		{
+			"slug": "penguin-helmet",
+			"name": "Penguin Helmet",
+			"wiki": "Penguin Helmet",
+			"icon": "Penguin Helmet.png",
+			"type": "Basic Item",
+			"category": "armour",
+			"description": "For when you need to be A Spy in the Huddle.",
+			"extract": "A Penguin Helmet is an armour piece that is unlocked by studying the Coral Nubbin vestige.\nThe vestige can be purchased from the Façade's Front shop for 15Penguin Coins.",
+			"recipes": [
+				{
+					"outputLabel": "Penguin Helmet",
+					"outputQty": 1,
+					"requires": {
+						"label": "Coral Nubbin",
+						"slug": "coral-nubbin"
+					},
+					"skills": [
+						{
+							"name": "Artisan",
+							"xp": 100
+						}
+					],
+					"materials": [
+						{
+							"label": "Rough Cloth",
+							"qty": 2,
+							"icon": "Rough Cloth.png",
+							"slug": "rough-cloth"
+						},
+						{
+							"label": "Raw Sardine",
+							"qty": 1,
+							"icon": "Raw Sardine.png",
+							"slug": "raw-sardine"
+						},
+						{
+							"label": "Charcoal",
+							"qty": 1,
+							"icon": "Charcoal.png",
+							"slug": "charcoal"
+						},
+						{
+							"label": "Feathers",
+							"qty": 6,
+							"icon": "Feathers.png",
+							"slug": "feathers"
+						},
+						{
+							"label": "Adhesive",
+							"qty": 1,
+							"icon": "Adhesive.png",
+							"slug": "adhesive"
+						}
+					],
+					"id": "27404f59b4",
+					"station": {
+						"name": "Crafting Table",
+						"slug": "crafting-table"
+					}
+				}
+			],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": 4,
+			"power": null,
+			"stats": [
+				{
+					"label": "Melee defence",
+					"value": "0"
+				},
+				{
+					"label": "Ranged defence",
+					"value": "0"
+				},
+				{
+					"label": "Magic defence",
+					"value": "0"
+				},
+				{
+					"label": "Durability",
+					"value": "no"
+				}
+			]
+		},
+		{
+			"slug": "penguin-legs",
+			"name": "Penguin Legs",
+			"wiki": "Penguin Legs",
+			"icon": "Penguin Legs.png",
+			"type": "Basic Item",
+			"category": "materials",
+			"description": "Perfect for waddling to work.",
+			"extract": "Penguin Legs are a set of armour that is unlocked by studying the Tuxedo Patch vestige, which also unlocks the Penguin Body.\nThe vestige can be purchased from the Façade's Front shop for 15Penguin Coins.",
+			"recipes": [
+				{
+					"outputLabel": "Penguin Legs",
+					"outputQty": 1,
+					"requires": {
+						"label": "Tuxedo Patch",
+						"slug": "tuxedo-patch"
+					},
+					"skills": [
+						{
+							"name": "Artisan",
+							"xp": 100
+						}
+					],
+					"materials": [
+						{
+							"label": "Rough Cloth",
+							"qty": 2,
+							"icon": "Rough Cloth.png",
+							"slug": "rough-cloth"
+						},
+						{
+							"label": "Leather",
+							"qty": 2,
+							"icon": "Leather.png",
+							"slug": "leather"
+						},
+						{
+							"label": "Swamp Tar",
+							"qty": 1,
+							"icon": "Swamp Tar.png",
+							"slug": "swamp-tar"
+						},
+						{
+							"label": "Feathers",
+							"qty": 4,
+							"icon": "Feathers.png",
+							"slug": "feathers"
+						},
+						{
+							"label": "Coarse Thread",
+							"qty": 2,
+							"icon": "Coarse Thread.png",
+							"slug": "coarse-thread"
+						}
+					],
+					"id": "8273892d7d",
+					"station": {
+						"name": "Crafting Table",
+						"slug": "crafting-table"
+					}
+				}
+			],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": 6,
+			"power": null,
+			"stats": [
+				{
+					"label": "Melee defence",
+					"value": "0"
+				},
+				{
+					"label": "Ranged defence",
+					"value": "0"
+				},
+				{
+					"label": "Magic defence",
+					"value": "0"
+				},
+				{
+					"label": "Durability",
+					"value": "no"
+				}
+			]
 		},
 		{
 			"slug": "personal-chest-chest",
@@ -72602,6 +73354,140 @@
 			"shops": [],
 			"unlockedBy": [],
 			"weight": null,
+			"power": null,
+			"stats": []
+		},
+		{
+			"slug": "pescaling-amulet",
+			"name": "Pescaling Amulet",
+			"wiki": "Pescaling Amulet",
+			"icon": "Pescaling Amulet.png",
+			"type": "Trinket",
+			"category": "jewellery",
+			"description": "Has a fishy aroma. Increase chance of getting PRISTINE catches by 5%.",
+			"extract": "A Pescaling Amulet is an amulet that increase the chance of catching pristine fish by 5%.\nThe recipe is unlocked by purchasing and studying the Brine-Soaked Bauble vestige from the Façade's Front shop for 15Penguin Coins.",
+			"recipes": [
+				{
+					"outputLabel": "Pescaling Amulet",
+					"outputQty": 1,
+					"requires": {
+						"label": "Brine-Soaked Bauble",
+						"slug": "brine-soaked-bauble"
+					},
+					"skills": [
+						{
+							"name": "Artisan",
+							"xp": 40
+						}
+					],
+					"materials": [
+						{
+							"label": "Clay Mould",
+							"qty": 1,
+							"icon": "Clay Mould.png",
+							"slug": "clay-mould"
+						},
+						{
+							"label": "Coarse Thread",
+							"qty": 2,
+							"icon": "Coarse Thread.png",
+							"slug": "coarse-thread"
+						},
+						{
+							"label": "Gold Bar",
+							"qty": 2,
+							"icon": "Gold Bar.png",
+							"slug": "gold-bar"
+						},
+						{
+							"label": "Water Rune",
+							"qty": 15,
+							"icon": "Water Rune.png",
+							"slug": "water-rune"
+						},
+						{
+							"label": "Anchovy Bait",
+							"qty": 1,
+							"icon": "Anchovy Bait.png",
+							"slug": "anchovy-bait"
+						}
+					],
+					"id": "d441719d6d",
+					"station": {
+						"name": "Crafting Table",
+						"slug": "crafting-table"
+					}
+				}
+			],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": 1,
+			"power": null,
+			"stats": []
+		},
+		{
+			"slug": "pescaling-ring",
+			"name": "Pescaling Ring",
+			"wiki": "Pescaling Ring",
+			"icon": "Pescaling Ring.png",
+			"type": "Trinket",
+			"category": "jewellery",
+			"description": "Has a fishy aroma. Reduce<sup class=\"noprint\">&#91;<span class=\"fact-text\" title=\"Reduces\">sic</span>&#93;</sup> fishing stamina by 5-15%.",
+			"extract": "A Pescaling Ring is a ring that reduces slowing down and reeling fish by 5 to 15%.\nThe recipe is unlocked by purchasing and studying the Brine-Soaked Band vestige from the Façade's Front shop for 15Penguin Coins.",
+			"recipes": [
+				{
+					"outputLabel": "Pescaling Ring",
+					"outputQty": 1,
+					"requires": {
+						"label": "Brine-Soaked Band",
+						"slug": "brine-soaked-band"
+					},
+					"skills": [
+						{
+							"name": "Artisan",
+							"xp": 0
+						}
+					],
+					"materials": [
+						{
+							"label": "Clay Mould",
+							"qty": 1,
+							"icon": "Clay Mould.png",
+							"slug": "clay-mould"
+						},
+						{
+							"label": "Silver Bar",
+							"qty": 2,
+							"icon": "Silver Bar.png",
+							"slug": "silver-bar"
+						},
+						{
+							"label": "Water Rune",
+							"qty": 15,
+							"icon": "Water Rune.png",
+							"slug": "water-rune"
+						},
+						{
+							"label": "Fried Sardine",
+							"qty": 1,
+							"icon": "Fried Sardine.png",
+							"slug": "fried-sardine"
+						}
+					],
+					"id": "b6f63b6e67",
+					"station": {
+						"name": "Crafting Table",
+						"slug": "crafting-table"
+					}
+				}
+			],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": 1,
 			"power": null,
 			"stats": []
 		},
@@ -74283,6 +75169,64 @@
 			]
 		},
 		{
+			"slug": "plan-bronze-penguin-miniature",
+			"name": "PLAN: Bronze Penguin Miniature",
+			"wiki": "PLAN: Bronze Penguin Miniature",
+			"icon": "PLAN: Bronze Penguin Miniature.png",
+			"type": "Plan",
+			"category": "materials",
+			"description": "Unlocks a new decoration for your home.",
+			"extract": "PLAN: Bronze Penguin Miniature is a plan that can be obtained at Façade's Front for 8Penguin Coins. This plan unlocks the Bronze Penguin Miniature decoration.",
+			"recipes": [],
+			"usedIn": [],
+			"drops": [],
+			"shops": [
+				{
+					"seller": "Fishy Facade",
+					"cost": 8,
+					"currency": "Penguin Coin"
+				}
+			],
+			"unlockedBy": [],
+			"weight": 0,
+			"power": null,
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
+				}
+			]
+		},
+		{
+			"slug": "plan-copper-penguin-miniature",
+			"name": "PLAN: Copper Penguin Miniature",
+			"wiki": "PLAN: Copper Penguin Miniature",
+			"icon": "PLAN: Copper Penguin Miniature.png",
+			"type": "Plan",
+			"category": "materials",
+			"description": "Unlocks a new decoration for your home.",
+			"extract": "PLAN: Copper Penguin Miniature is a plan that can be obtained at Façade's Front for 7Penguin Coins. This plan unlocks the Copper Penguin Miniature decoration.",
+			"recipes": [],
+			"usedIn": [],
+			"drops": [],
+			"shops": [
+				{
+					"seller": "Fishy Facade",
+					"cost": 7,
+					"currency": "Penguin Coin"
+				}
+			],
+			"unlockedBy": [],
+			"weight": 0,
+			"power": null,
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
+				}
+			]
+		},
+		{
 			"slug": "plan-dragonkin-gargoyle-01",
 			"name": "PLAN: Dragonkin Gargoyle 01",
 			"wiki": "PLAN: Dragonkin Gargoyle 01",
@@ -75255,6 +76199,35 @@
 			]
 		},
 		{
+			"slug": "plan-gold-penguin-miniature",
+			"name": "PLAN: Gold Penguin Miniature",
+			"wiki": "PLAN: Gold Penguin Miniature",
+			"icon": "PLAN: Gold Penguin Miniature.png",
+			"type": "Plan",
+			"category": "materials",
+			"description": "Unlocks a new decoration for your home.",
+			"extract": "PLAN: Gold Penguin Miniature is a plan that can be obtained at Façade's Front for 15Penguin Coins. This plan unlocks the Gold Penguin Miniature decoration.",
+			"recipes": [],
+			"usedIn": [],
+			"drops": [],
+			"shops": [
+				{
+					"seller": "Fishy Facade",
+					"cost": 15,
+					"currency": "Penguin Coin"
+				}
+			],
+			"unlockedBy": [],
+			"weight": 0,
+			"power": null,
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
+				}
+			]
+		},
+		{
 			"slug": "plan-grave-1",
 			"name": "PLAN: Grave 1",
 			"wiki": "PLAN: Grave 1",
@@ -76014,6 +76987,122 @@
 			]
 		},
 		{
+			"slug": "plan-penguin-decorative-coin",
+			"name": "PLAN: Penguin Decorative Coin",
+			"wiki": "PLAN: Penguin Decorative Coin",
+			"icon": "PLAN: Penguin Decorative Coin.png",
+			"type": "Plan",
+			"category": "materials",
+			"description": "Unlocks a new decoration for your home.",
+			"extract": "PLAN: Penguin Decorative Coin is a plan that can be obtained at Façade's Front for 1Penguin Coin. This plan unlocks the Decorative Penguin Coin decoration.",
+			"recipes": [],
+			"usedIn": [],
+			"drops": [],
+			"shops": [
+				{
+					"seller": "Fishy Facade",
+					"cost": 1,
+					"currency": "Penguin Coin"
+				}
+			],
+			"unlockedBy": [],
+			"weight": 0,
+			"power": null,
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
+				}
+			]
+		},
+		{
+			"slug": "plan-penguin-decorative-tapestry",
+			"name": "PLAN: Penguin Decorative Tapestry",
+			"wiki": "PLAN: Penguin Decorative Tapestry",
+			"icon": "PLAN: Penguin Decorative Tapestry.png",
+			"type": "Plan",
+			"category": "materials",
+			"description": "Unlocks a new decoration for your home.",
+			"extract": "PLAN: Penguin Decorative Tapestry is a plan that can be obtained at Façade's Front for 5Penguin Coins. This plan unlocks the Penguin Decorative Tapestry decoration.",
+			"recipes": [],
+			"usedIn": [],
+			"drops": [],
+			"shops": [
+				{
+					"seller": "Fishy Facade",
+					"cost": 5,
+					"currency": "Penguin Coin"
+				}
+			],
+			"unlockedBy": [],
+			"weight": 0,
+			"power": null,
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
+				}
+			]
+		},
+		{
+			"slug": "plan-penguin-statue-01",
+			"name": "PLAN: Penguin Statue 01",
+			"wiki": "PLAN: Penguin Statue 01",
+			"icon": "PLAN: Penguin Statue 01.png",
+			"type": "Plan",
+			"category": "materials",
+			"description": "Unlocks a new decoration for your home.",
+			"extract": "PLAN: Penguin Statue 01 is a plan that can be obtained at Façade's Front for 50Penguin Coins. This plan unlocks the Penguin Statue 01 decoration.",
+			"recipes": [],
+			"usedIn": [],
+			"drops": [],
+			"shops": [
+				{
+					"seller": "Fishy Facade",
+					"cost": 50,
+					"currency": "Penguin Coin"
+				}
+			],
+			"unlockedBy": [],
+			"weight": 0,
+			"power": null,
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
+				}
+			]
+		},
+		{
+			"slug": "plan-polar-bear-decorative-tapestry",
+			"name": "PLAN: Polar Bear Decorative Tapestry",
+			"wiki": "PLAN: Polar Bear Decorative Tapestry",
+			"icon": "PLAN: Polar Bear Decorative Tapestry.png",
+			"type": "Plan",
+			"category": "materials",
+			"description": "Unlocks a new decoration for your home.",
+			"extract": "PLAN: Polar Bear Decorative Tapestry is a plan that can be obtained at Façade's Front for 5Penguin Coins. This plan unlocks the Polar Bear Decorative Tapestry decoration.",
+			"recipes": [],
+			"usedIn": [],
+			"drops": [],
+			"shops": [
+				{
+					"seller": "Fishy Facade",
+					"cost": 5,
+					"currency": "Penguin Coin"
+				}
+			],
+			"unlockedBy": [],
+			"weight": 0,
+			"power": null,
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
+				}
+			]
+		},
+		{
 			"slug": "plan-potted-dwellberry-bush",
 			"name": "PLAN: Potted Dwellberry Bush",
 			"wiki": "PLAN: Potted Dwellberry Bush",
@@ -76672,6 +77761,35 @@
 			]
 		},
 		{
+			"slug": "plan-silver-penguin-miniature",
+			"name": "PLAN: Silver Penguin Miniature",
+			"wiki": "PLAN: Silver Penguin Miniature",
+			"icon": "PLAN: Silver Penguin Miniature.png",
+			"type": "Plan",
+			"category": "materials",
+			"description": "Unlocks a new decoration for your home.",
+			"extract": "PLAN: Silver Penguin Miniature is a plan that can be obtained at Façade's Front for 10Penguin Coins. This plan unlocks the Silver Penguin Miniature decoration.",
+			"recipes": [],
+			"usedIn": [],
+			"drops": [],
+			"shops": [
+				{
+					"seller": "Fishy Facade",
+					"cost": 10,
+					"currency": "Penguin Coin"
+				}
+			],
+			"unlockedBy": [],
+			"weight": 0,
+			"power": null,
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
+				}
+			]
+		},
+		{
 			"slug": "plan-spectral-book",
 			"name": "PLAN: Spectral Book",
 			"wiki": "PLAN: Spectral Book",
@@ -76804,6 +77922,151 @@
 			]
 		},
 		{
+			"slug": "plan-stone-penguin-miniature",
+			"name": "PLAN: Stone Penguin Miniature",
+			"wiki": "PLAN: Stone Penguin Miniature",
+			"icon": "PLAN: Stone Penguin Miniature.png",
+			"type": "Plan",
+			"category": "materials",
+			"description": "Unlocks a new decoration for your home.",
+			"extract": "PLAN: Stone Penguin Miniature is a plan that can be obtained at Façade's Front for 3Penguin Coins. This plan unlocks the Stone Penguin Miniature decoration.",
+			"recipes": [],
+			"usedIn": [],
+			"drops": [],
+			"shops": [
+				{
+					"seller": "Fishy Facade",
+					"cost": 3,
+					"currency": "Penguin Coin"
+				}
+			],
+			"unlockedBy": [],
+			"weight": 0,
+			"power": null,
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
+				}
+			]
+		},
+		{
+			"slug": "plan-suspicious-penguin-miniature-01",
+			"name": "PLAN: Suspicious Penguin Miniature 01",
+			"wiki": "PLAN: Suspicious Penguin Miniature 01",
+			"icon": "PLAN: Suspicious Penguin Miniature 01.png",
+			"type": "Plan",
+			"category": "materials",
+			"description": "Unlocks a new decoration for your home.",
+			"extract": "PLAN: Suspicious Penguin Miniature 01 is a plan that can be obtained at Façade's Front for 10Penguin Coins. This plan unlocks the Suspicious Penguin Miniature 01 decoration.",
+			"recipes": [],
+			"usedIn": [],
+			"drops": [],
+			"shops": [
+				{
+					"seller": "Fishy Facade",
+					"cost": 10,
+					"currency": "Penguin Coin"
+				}
+			],
+			"unlockedBy": [],
+			"weight": 0,
+			"power": null,
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
+				}
+			]
+		},
+		{
+			"slug": "plan-suspicious-penguin-miniature-02",
+			"name": "PLAN: Suspicious Penguin Miniature 02",
+			"wiki": "PLAN: Suspicious Penguin Miniature 02",
+			"icon": "PLAN: Suspicious Penguin Miniature 02.png",
+			"type": "Plan",
+			"category": "materials",
+			"description": "Unlocks a new decoration for your home.",
+			"extract": "PLAN: Suspicious Penguin Miniature 02 is a plan that can be obtained at Façade's Front for 10Penguin Coins. This plan unlocks the Suspicious Penguin Miniature 02 decoration.",
+			"recipes": [],
+			"usedIn": [],
+			"drops": [],
+			"shops": [
+				{
+					"seller": "Fishy Facade",
+					"cost": 10,
+					"currency": "Penguin Coin"
+				}
+			],
+			"unlockedBy": [],
+			"weight": 0,
+			"power": null,
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
+				}
+			]
+		},
+		{
+			"slug": "plan-suspicious-penguin-miniature-03",
+			"name": "PLAN: Suspicious Penguin Miniature 03",
+			"wiki": "PLAN: Suspicious Penguin Miniature 03",
+			"icon": "PLAN: Suspicious Penguin Miniature 03.png",
+			"type": "Plan",
+			"category": "materials",
+			"description": "Unlocks a new decoration for your home.",
+			"extract": "PLAN: Suspicious Penguin Miniature 03 is a plan that can be obtained at Façade's Front for 10Penguin Coins. This plan unlocks the Suspicious Penguin Miniature 03 decoration.",
+			"recipes": [],
+			"usedIn": [],
+			"drops": [],
+			"shops": [
+				{
+					"seller": "Fishy Facade",
+					"cost": 10,
+					"currency": "Penguin Coin"
+				}
+			],
+			"unlockedBy": [],
+			"weight": 0,
+			"power": null,
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
+				}
+			]
+		},
+		{
+			"slug": "plan-suspicious-penguin-miniature-04",
+			"name": "PLAN: Suspicious Penguin Miniature 04",
+			"wiki": "PLAN: Suspicious Penguin Miniature 04",
+			"icon": "PLAN: Suspicious Penguin Miniature 04.png",
+			"type": "Plan",
+			"category": "materials",
+			"description": "Unlocks a new decoration for your home.",
+			"extract": "PLAN: Suspicious Penguin Miniature 04 is a plan that can be obtained at Façade's Front for 10Penguin Coins. This plan unlocks the Suspicious Penguin Miniature 04 decoration.",
+			"recipes": [],
+			"usedIn": [],
+			"drops": [],
+			"shops": [
+				{
+					"seller": "Fishy Facade",
+					"cost": 10,
+					"currency": "Penguin Coin"
+				}
+			],
+			"unlockedBy": [],
+			"weight": 0,
+			"power": null,
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
+				}
+			]
+		},
+		{
 			"slug": "plan-textile-kit",
 			"name": "PLAN: Textile Kit",
 			"wiki": "PLAN: Textile Kit",
@@ -76827,6 +78090,35 @@
 				}
 			],
 			"shops": [],
+			"unlockedBy": [],
+			"weight": 0,
+			"power": null,
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
+				}
+			]
+		},
+		{
+			"slug": "plan-tin-penguin-miniature",
+			"name": "PLAN: Tin Penguin Miniature",
+			"wiki": "PLAN: Tin Penguin Miniature",
+			"icon": "PLAN: Tin Penguin Miniature.png",
+			"type": "Plan",
+			"category": "materials",
+			"description": "Unlocks a new decoration for your home.",
+			"extract": "PLAN: Tin Penguin Miniature is a plan that can be obtained at Façade's Front for 5Penguin Coins. This plan unlocks the Tin Penguin Miniature decoration.",
+			"recipes": [],
+			"usedIn": [],
+			"drops": [],
+			"shops": [
+				{
+					"seller": "Fishy Facade",
+					"cost": 5,
+					"currency": "Penguin Coin"
+				}
+			],
 			"unlockedBy": [],
 			"weight": 0,
 			"power": null,
@@ -77357,7 +78649,7 @@
 			"type": "Potion",
 			"category": "potions",
 			"description": "Used to cure diseased plants and bring them back to a healthy state.",
-			"extract": "Plant cure is a potion that cures diseased plants and provides 2 Farming experience when used. It is made with 2 weeds, animal bone, and clean water in a stone range or a cooking range (unlike the other potions made in a brewing cauldron). It is learned at level 3 Farming and requires interacting with a stone range first to learn the recipe.",
+			"extract": "Plant cure is a potion that cures diseased plants and provides 2 Farming experience when used. It is made with 2 weeds, animal bone, and clean water in a stone range or a cooking range (unlike the other potions made in a brewing cauldron). It can be learned after level 3 Farming and requires interacting with a stone range (not a cooking range) first.",
 			"recipes": [
 				{
 					"outputLabel": "Plant Cure",
@@ -78140,7 +79432,7 @@
 			"type": "Raw Ingredient",
 			"category": "food",
 			"description": "Definitely not a carrot.",
-			"extract": "Potatoes are a Power Level 2 raw ingredient, which means they can be cooked at a campfire or grill into baked potato starting at Cooking level 12, and not burnt into burnt potato at level 27. They can be gathered from potato (plant)s in Bramblemead Valley and potato (Farming) from potato seeds. Potatoes can be used to make compost.",
+			"extract": "Potatoes are a Power Level 2 raw ingredient, which means they can be cooked at a campfire or grill into baked potato starting at Cooking level 12, and not burnt into burnt potato at level 27. They can be gathered from potato (node)s in Bramblemead Valley and potato (Farming) from potato seeds. Potatoes can be used to make compost.",
 			"recipes": [],
 			"usedIn": [
 				"baked-potato",
@@ -78469,6 +79761,35 @@
 			"weight": null,
 			"power": null,
 			"stats": []
+		},
+		{
+			"slug": "prestigious-prototype",
+			"name": "Prestigious Prototype",
+			"wiki": "Prestigious Prototype",
+			"icon": "Prestigious Prototype.png",
+			"type": "Vestige",
+			"category": "vestiges",
+			"description": "",
+			"extract": "Prestigious Prototype is a vestige that unlocks the Penguin Cape.\nThe vestige can be obtained through Façade's Front for 30Penguin Coins.",
+			"recipes": [],
+			"usedIn": [],
+			"drops": [],
+			"shops": [
+				{
+					"seller": "Fishy Facade",
+					"cost": 30,
+					"currency": "Penguin Coin"
+				}
+			],
+			"unlockedBy": [],
+			"weight": null,
+			"power": null,
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
+				}
+			]
 		},
 		{
 			"slug": "primordial-heart",
@@ -79762,7 +81083,7 @@
 			"type": "Raw Ingredient",
 			"category": "food",
 			"description": "More treat than trick. Can be cooked by itself or used as an ingredient in cooking meals.",
-			"extract": "Pumpkins are a Power Level 4 raw ingredient, which means they can be cooked at a campfire or grill into roast pumpkin starting at Cooking level 41, and not burnt into burnt pumpkin at level 50. They can be gathered from pumpkin (plant)s in Fellhollow and Dowdun Reach and Farmed from Pumpkin (Farming) grown from pumpkin seeds. Pumpkins can not be used as an item in a compost bin, however can be used in a super compost bin.",
+			"extract": "Pumpkins are a Power Level 4 raw ingredient, which means they can be cooked at a campfire or grill into roast pumpkin starting at Cooking level 41, and not burnt into burnt pumpkin at level 50. They can be gathered from pumpkin (node)s in Fellhollow and Dowdun Reach and Farmed from Pumpkin (Farming) grown from pumpkin seeds. Pumpkins can not be used as an item in a compost bin, however can be used in a super compost bin.",
 			"recipes": [],
 			"usedIn": [
 				"burnt-pumpkin",
@@ -79806,7 +81127,7 @@
 			"type": "Seed",
 			"category": "seeds",
 			"description": "Pumpkin Seeds. Equip and use them to scatter these into a farming plot and start growing!<br /> <br />Best Planted in Fellhollow plots.",
-			"extract": "Pumpkin seeds are a type of Fellhollow seed, used in the Farming skill. Pumpkin seeds can be used to grow Pumpkin (farming) in a farming plot. However, it is best to plant them in Willow Farming Plot.\nPlanting pumpkin seeds in a farming plot will yield 5 experience in Farming, and can be obtained from harvesting wild pumpkin (plant)s.",
+			"extract": "Pumpkin seeds are a type of Fellhollow seed, used in the Farming skill. Pumpkin seeds can be used to grow Pumpkin (farming) in a farming plot. However, it is best to plant them in Willow Farming Plot.\nPlanting pumpkin seeds in a farming plot will yield 5 experience in Farming, and can be obtained from harvesting wild pumpkin (node)s.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [
@@ -81379,7 +82700,7 @@
 			"type": "Trinket",
 			"category": "jewellery",
 			"description": "This item loses durability over time when equipped.",
-			"extract": "Ravanna's ring is a ring that is a quest reward for completing the A Melody Remembered secondary quest. Additional copies can be crafted from a jeweler's bench. While equipped, the ring has a 15-20% chance to spawn a corpse cotton plant where enemies were slain, consuming 1,000 durability in the process.",
+			"extract": "Ravanna's ring is a ring that is a quest reward for completing the A Melody Remembered secondary quest. Additional copies can be crafted from a jeweler's bench. While equipped, the ring has a 15-20% chance to spawn a corpse cotton plant where enemies were slain, consuming 1,000 durability in the process.\nTraining dummies also trigger this effect.",
 			"recipes": [
 				{
 					"outputLabel": "Ravanna's Ring",
@@ -82116,7 +83437,8 @@
 			"usedIn": [
 				"burnt-sardine",
 				"compost",
-				"fried-sardine"
+				"fried-sardine",
+				"penguin-helmet"
 			],
 			"drops": [
 				{
@@ -83583,7 +84905,7 @@
 			"type": "Drink",
 			"category": "food",
 			"description": "A refreshing, fruity drink. Good for hydration.",
-			"extract": "Redberry infusion is a consumable drink item that provides 40 hydration and grants the perk Quenched, which reduces thirst drain by 33% for 300 seconds. It is made with clean water and redberries in a stone range or a cooking range, however a player must interact with a stone range first to learn the recipe. It is used in Victoria sponge cake.",
+			"extract": "Redberry infusion is a consumable drink item that provides 40 hydration and grants the perk Quenched, which reduces thirst drain by 33% for 300 seconds. It is made with clean water and redberries in a stone range or a cooking range. However, to learn the recipe, players must interact with a stone range (not a cooking range). It is used in Victoria sponge cake.",
 			"recipes": [
 				{
 					"outputLabel": "Redberry Infusion",
@@ -83738,7 +85060,7 @@
 			"type": "Food",
 			"category": "food",
 			"description": "A juicy piece of roasted meat with a tangy redberry glazing. Tasty!",
-			"extract": "Redberry roast rat is a consumable food item that provides 30 health and 45 sustenance. It is made with rat roast and dried redberries in a stone range or a cooking range, however a player must interact with a stone range first to learn the recipe.",
+			"extract": "Redberry roast rat is a consumable food item that provides 30 health and 45 sustenance. It is made with rat roast and dried redberries in a stone range or a cooking range. However, to learn the recipe, players must interact with a stone range (not a cooking range).",
 			"recipes": [
 				{
 					"outputLabel": "Redberry Roast Rat",
@@ -84201,7 +85523,7 @@
 			"type": "Drink",
 			"category": "food",
 			"description": "A tasty tipple that'll put a quiver in your quiver.",
-			"extract": "Relentless infusion is a consumable drink item that provides 40 hydration and grants the perk Relentless Ranger, which reduces the stamina cost of ranged attacks by 33% for 300 seconds. It is made with clean water, animal hide scraps, and harralander in a stone range or cooking range. It is learned by unlocking Teamonger at level 14 Cooking, and requires interacting with a stone range first to learn the recipe.",
+			"extract": "Relentless infusion is a consumable drink item that provides 40 hydration and grants the perk Relentless Ranger, which reduces the stamina cost of ranged attacks by 33% for 300 seconds. It is made with clean water, animal hide scraps, and harralander in a stone range or cooking range. It can be learned after unlocking Teamonger at level 14 Cooking, and requires interacting with a stone range (not a cooking range) first.",
 			"recipes": [
 				{
 					"outputLabel": "Relentless Infusion",
@@ -85587,11 +86909,16 @@
 				"fancy-rug",
 				"farmers-hat",
 				"garou-wall-banner",
+				"kgp-hat",
 				"padded-cloth",
+				"penguin-body",
+				"penguin-helmet",
+				"penguin-legs",
 				"piece-of-rough-cloth",
 				"rough-cloth-bin",
 				"rough-cloth-pile",
 				"simple-rug",
+				"suspicious-penguin-miniature-04",
 				"textile-kit",
 				"wizard-hat",
 				"wizard-robe-legs",
@@ -89161,7 +90488,7 @@
 			"type": "Food",
 			"category": "food",
 			"description": "Made by combining fried sardine and dried redberry. Grants the Sea Life perk.",
-			"extract": "Sauteed sardines are a consumable food item that provides 70 health and 25 sustenance, as well as granting the perk Sea Life, which restores 3 health every second for 600 seconds. They are made with fried sardine and dried redberries in a stone range or a cooking range; however, a player must interact with a stone range first to learn the recipe.",
+			"extract": "Sauteed sardines are a consumable food item that provides 70 health and 25 sustenance, as well as granting the perk Sea Life, which restores 3 health every second for 600 seconds. They are made with fried sardine and dried redberries in a stone range or a cooking range. However, to learn the recipe, players must interact with a stone range (not a cooking range).",
 			"recipes": [
 				{
 					"outputLabel": "Sauteed Sardines",
@@ -89614,6 +90941,35 @@
 				{
 					"label": "Stack size",
 					"value": "50"
+				}
+			]
+		},
+		{
+			"slug": "scrap-mired-in-subterfuge",
+			"name": "Scrap Mired in Subterfuge",
+			"wiki": "Scrap Mired in Subterfuge",
+			"icon": "Scrap Mired in Subterfuge.png",
+			"type": "Vestige",
+			"category": "vestiges",
+			"description": "Perhaps you could learn something from it.",
+			"extract": "Scrap mired in subterfuge is a vestige that unlocks the KGP Hat.\nThe vestige can be obtained through Façade's Front for 30Penguin Coins.",
+			"recipes": [],
+			"usedIn": [],
+			"drops": [],
+			"shops": [
+				{
+					"seller": "Fishy Facade",
+					"cost": 30,
+					"currency": "Penguin Coin"
+				}
+			],
+			"unlockedBy": [],
+			"weight": 0,
+			"power": null,
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
 				}
 			]
 		},
@@ -92525,7 +93881,7 @@
 			"type": "Food",
 			"category": "food",
 			"description": "Made by combining fried egg and sauté shrimp. Grants the Sea Legs perk.",
-			"extract": "Shrimp omelette is a consumable food item that provides 50 health and 15 sustenance as well as the perk Sea Legs, which makes you immune to the slowing effects of water for 600 seconds. It is made with fried egg and sauteed shrimp in a stone range or a cooking range, however a player must interact with a stone range first to learn the recipe.",
+			"extract": "Shrimp omelette is a consumable food item that provides 50 health and 15 sustenance as well as the perk Sea Legs, which makes you immune to the slowing effects of water for 600 seconds. It is made with fried egg and sauteed shrimp in a stone range or a cooking range. However, to learn the recipe, players must interact with a stone range (not a cooking range).",
 			"recipes": [
 				{
 					"outputLabel": "Shrimp Omelette",
@@ -92870,6 +94226,7 @@
 				"large-silver-bar-pile",
 				"moon-garou-table-02",
 				"ornate-maul-handle",
+				"pescaling-ring",
 				"ravannas-ring",
 				"ring-of-pursuit",
 				"salve-amulet",
@@ -93109,6 +94466,7 @@
 			"usedIn": [
 				"medium-silver-nugget",
 				"silver-bar",
+				"silver-penguin-miniature",
 				"small-silver-bin",
 				"small-silver-nugget",
 				"zombie-arm"
@@ -93161,6 +94519,58 @@
 					"value": "99"
 				}
 			]
+		},
+		{
+			"slug": "silver-penguin-miniature",
+			"name": "Silver Penguin Miniature",
+			"wiki": "Silver Penguin Miniature",
+			"icon": "Silver Penguin Miniature.png",
+			"type": null,
+			"category": "buildings",
+			"description": "",
+			"extract": "A Silver Penguin Miniature is a decoration that is unlocked after studying PLAN: Silver Penguin Miniature.\nThe plan can be purchased from the Façade's Front shop for 10Penguin Coins.",
+			"recipes": [
+				{
+					"outputLabel": "Silver Penguin Miniature",
+					"outputQty": 1,
+					"requires": {
+						"label": "PLAN: Silver Penguin Miniature",
+						"slug": "plan-silver-penguin-miniature"
+					},
+					"skills": [
+						{
+							"name": "Construction",
+							"xp": 20
+						}
+					],
+					"materials": [
+						{
+							"label": "Silver Ore",
+							"qty": 4,
+							"icon": "Silver Ore.png",
+							"slug": "silver-ore"
+						},
+						{
+							"label": "Clay Mould",
+							"qty": 1,
+							"icon": "Clay Mould.png",
+							"slug": "clay-mould"
+						}
+					],
+					"id": "aca2fa52b3",
+					"station": {
+						"name": "Build Menu",
+						"slug": null
+					}
+				}
+			],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": null,
+			"power": null,
+			"stats": []
 		},
 		{
 			"slug": "silver-salvage-pile",
@@ -96748,7 +98158,7 @@
 			"type": "Basic Item",
 			"category": "materials",
 			"description": "Recharges your armour with a small amount of lifeward.",
-			"extract": "A small wardstone is a wardstone that recharges a player's armour with 30 lifeward in one second, but will inflict 25 Soulscourge on the player. To unlock this wardstone, players must both create and equip any power level 2 chest.",
+			"extract": "A small wardstone was a wardstone that recharged a player's armour with 30 lifeward in one second, and would inflict 25 Soulscourge on the player. To unlock this, players needed both create and equip any power level 2 chest.",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [],
@@ -97660,7 +99070,25 @@
 			"category": "capes",
 			"description": "Ab, artistic, if unusual, cape.",
 			"extract": "The spectral chinchompa cape is a cape rewarded by Vannaka after the completion of Things That Go Boom In The Night.",
-			"recipes": [],
+			"recipes": [
+				{
+					"outputLabel": "Spectral Chinchompa Cape",
+					"outputQty": 1,
+					"requires": null,
+					"skills": [
+						{
+							"name": "Artisan",
+							"xp": 0
+						}
+					],
+					"materials": [],
+					"id": "bcf2e70667",
+					"station": {
+						"name": "Armour Bench",
+						"slug": "armour-bench"
+					}
+				}
+			],
 			"usedIn": [],
 			"drops": [],
 			"shops": [],
@@ -98215,7 +99643,7 @@
 					"materials": [
 						{
 							"label": "Hollow Bark",
-							"qty": 6,
+							"qty": 8,
 							"icon": "Hollow Bark.png",
 							"slug": "hollow-bark"
 						},
@@ -98238,7 +99666,7 @@
 							"slug": "vault-shard"
 						}
 					],
-					"id": "eb00e1094f",
+					"id": "acb7e47fd2",
 					"station": {
 						"name": "Mystic Forge",
 						"slug": "mystic-forge"
@@ -99455,7 +100883,7 @@
 			"type": "Food",
 			"category": "food",
 			"description": "A marvelous way, to start your day.",
-			"extract": "Steak 'n' eggs is a consumable food item that provides 40 health and 50 sustenance. It is made with fried egg and steak in a stone range or a cooking range, however a player must interact with a stone range first to learn the recipe.",
+			"extract": "Steak 'n' eggs is a consumable food item that provides 40 health and 50 sustenance. It is made with fried egg and steak in a stone range or a cooking range. However, to learn the recipe, players must interact with a stone range (not a cooking range).",
 			"recipes": [
 				{
 					"outputLabel": "Steak 'N' Eggs",
@@ -101861,8 +103289,13 @@
 				"stone-club",
 				"stone-dagger",
 				"stone-logging-axe",
+				"stone-penguin-miniature",
 				"stone-pickaxe",
 				"stone-range",
+				"suspicious-penguin-miniature-01",
+				"suspicious-penguin-miniature-02",
+				"suspicious-penguin-miniature-03",
+				"suspicious-penguin-miniature-04",
 				"triangular-foundation",
 				"well",
 				"whetstone"
@@ -102613,6 +104046,58 @@
 					"value": "Overhead Chop"
 				}
 			]
+		},
+		{
+			"slug": "stone-penguin-miniature",
+			"name": "Stone Penguin Miniature",
+			"wiki": "Stone Penguin Miniature",
+			"icon": "Stone Penguin Miniature.png",
+			"type": null,
+			"category": "buildings",
+			"description": "",
+			"extract": "A Stone Penguin Miniature is a decoration that is unlocked after studying PLAN: Stone Penguin Miniature.\nThe plan can be purchased from the Façade's Front shop for 3Penguin Coins.",
+			"recipes": [
+				{
+					"outputLabel": "Stone Penguin Miniature",
+					"outputQty": 1,
+					"requires": {
+						"label": "PLAN: Stone Penguin Miniature",
+						"slug": "plan-stone-penguin-miniature"
+					},
+					"skills": [
+						{
+							"name": "Construction",
+							"xp": 20
+						}
+					],
+					"materials": [
+						{
+							"label": "Stone",
+							"qty": 4,
+							"icon": "Stone.png",
+							"slug": "stone"
+						},
+						{
+							"label": "Clay Mould",
+							"qty": 1,
+							"icon": "Clay Mould.png",
+							"slug": "clay-mould"
+						}
+					],
+					"id": "9890aca9b0",
+					"station": {
+						"name": "Build Menu",
+						"slug": null
+					}
+				}
+			],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": null,
+			"power": null,
+			"stats": []
 		},
 		{
 			"slug": "stone-pickaxe",
@@ -105081,6 +106566,262 @@
 			]
 		},
 		{
+			"slug": "suspicious-penguin-miniature-01",
+			"name": "Suspicious Penguin Miniature 01",
+			"wiki": "Suspicious Penguin Miniature 01",
+			"icon": "Suspicious Penguin Miniature 01.png",
+			"type": null,
+			"category": "buildings",
+			"description": "",
+			"extract": "A Suspicious Penguin Miniature 01 is a decoration that is unlocked after studying PLAN: Suspicious Penguin Miniature 01.\nThe plan can be purchased from the Façade's Front shop for 10Penguin Coins.",
+			"recipes": [
+				{
+					"outputLabel": "Suspicious Penguin Miniature 01",
+					"outputQty": 1,
+					"requires": {
+						"label": "PLAN: Suspicious Penguin Miniature 01",
+						"slug": "plan-suspicious-penguin-miniature-01"
+					},
+					"skills": [
+						{
+							"name": "Construction",
+							"xp": 20
+						}
+					],
+					"materials": [
+						{
+							"label": "Clay Mould",
+							"qty": 1,
+							"icon": "Clay Mould.png",
+							"slug": "clay-mould"
+						},
+						{
+							"label": "Stone",
+							"qty": 4,
+							"icon": "Stone.png",
+							"slug": "stone"
+						},
+						{
+							"label": "Charcoal",
+							"qty": 1,
+							"icon": "Charcoal.png",
+							"slug": "charcoal"
+						},
+						{
+							"label": "Ash Logs",
+							"qty": 2,
+							"icon": "Ash Logs.png",
+							"slug": "ash-logs"
+						}
+					],
+					"id": "30e554b2a3",
+					"station": {
+						"name": "Build Menu",
+						"slug": null
+					}
+				}
+			],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": null,
+			"power": null,
+			"stats": []
+		},
+		{
+			"slug": "suspicious-penguin-miniature-02",
+			"name": "Suspicious Penguin Miniature 02",
+			"wiki": "Suspicious Penguin Miniature 02",
+			"icon": "Suspicious Penguin Miniature 02.png",
+			"type": null,
+			"category": "buildings",
+			"description": "",
+			"extract": "A Suspicious Penguin Miniature 02 is a decoration that is unlocked after studying PLAN: Suspicious Penguin Miniature 02.\nThe plan can be purchased from the Façade's Front shop for 10Penguin Coins.",
+			"recipes": [
+				{
+					"outputLabel": "Suspicious Penguin Miniature 02",
+					"outputQty": 1,
+					"requires": {
+						"label": "PLAN: Suspicious Penguin Miniature 02",
+						"slug": "plan-suspicious-penguin-miniature-02"
+					},
+					"skills": [
+						{
+							"name": "Construction",
+							"xp": 20
+						}
+					],
+					"materials": [
+						{
+							"label": "Clay Mould",
+							"qty": 1,
+							"icon": "Clay Mould.png",
+							"slug": "clay-mould"
+						},
+						{
+							"label": "Stone",
+							"qty": 4,
+							"icon": "Stone.png",
+							"slug": "stone"
+						},
+						{
+							"label": "Charcoal",
+							"qty": 1,
+							"icon": "Charcoal.png",
+							"slug": "charcoal"
+						},
+						{
+							"label": "Ash Logs",
+							"qty": 2,
+							"icon": "Ash Logs.png",
+							"slug": "ash-logs"
+						}
+					],
+					"id": "eb3c5860c5",
+					"station": {
+						"name": "Build Menu",
+						"slug": null
+					}
+				}
+			],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": null,
+			"power": null,
+			"stats": []
+		},
+		{
+			"slug": "suspicious-penguin-miniature-03",
+			"name": "Suspicious Penguin Miniature 03",
+			"wiki": "Suspicious Penguin Miniature 03",
+			"icon": "Suspicious Penguin Miniature 03.png",
+			"type": null,
+			"category": "buildings",
+			"description": "",
+			"extract": "A Suspicious Penguin Miniature 03 is a decoration that is unlocked after studying PLAN: Suspicious Penguin Miniature 03.\nThe plan can be purchased from the Façade's Front shop for 10Penguin Coins.",
+			"recipes": [
+				{
+					"outputLabel": "Suspicious Penguin Miniature 03",
+					"outputQty": 1,
+					"requires": {
+						"label": "PLAN: Suspicious Penguin Miniature 03",
+						"slug": "plan-suspicious-penguin-miniature-03"
+					},
+					"skills": [
+						{
+							"name": "Construction",
+							"xp": 20
+						}
+					],
+					"materials": [
+						{
+							"label": "Clay Mould",
+							"qty": 1,
+							"icon": "Clay Mould.png",
+							"slug": "clay-mould"
+						},
+						{
+							"label": "Stone",
+							"qty": 4,
+							"icon": "Stone.png",
+							"slug": "stone"
+						},
+						{
+							"label": "Charcoal",
+							"qty": 1,
+							"icon": "Charcoal.png",
+							"slug": "charcoal"
+						},
+						{
+							"label": "Tin Ore",
+							"qty": 4,
+							"icon": "Tin Ore.png",
+							"slug": "tin-ore"
+						}
+					],
+					"id": "303fb6a42e",
+					"station": {
+						"name": "Build Menu",
+						"slug": null
+					}
+				}
+			],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": null,
+			"power": null,
+			"stats": []
+		},
+		{
+			"slug": "suspicious-penguin-miniature-04",
+			"name": "Suspicious Penguin Miniature 04",
+			"wiki": "Suspicious Penguin Miniature 04",
+			"icon": "Suspicious Penguin Miniature 04.png",
+			"type": null,
+			"category": "buildings",
+			"description": "",
+			"extract": "A Suspicious Penguin Miniature 04 is a decoration that is unlocked after studying PLAN: Suspicious Penguin Miniature 04.\nThe plan can be purchased from the Façade's Front shop for 10Penguin Coins.",
+			"recipes": [
+				{
+					"outputLabel": "Suspicious Penguin Miniature 04",
+					"outputQty": 1,
+					"requires": {
+						"label": "PLAN: Suspicious Penguin Miniature 04",
+						"slug": "plan-suspicious-penguin-miniature-04"
+					},
+					"skills": [
+						{
+							"name": "Construction",
+							"xp": 20
+						}
+					],
+					"materials": [
+						{
+							"label": "Clay Mould",
+							"qty": 1,
+							"icon": "Clay Mould.png",
+							"slug": "clay-mould"
+						},
+						{
+							"label": "Stone",
+							"qty": 4,
+							"icon": "Stone.png",
+							"slug": "stone"
+						},
+						{
+							"label": "Charcoal",
+							"qty": 1,
+							"icon": "Charcoal.png",
+							"slug": "charcoal"
+						},
+						{
+							"label": "Rough Cloth",
+							"qty": 2,
+							"icon": "Rough Cloth.png",
+							"slug": "rough-cloth"
+						}
+					],
+					"id": "a4fe010eef",
+					"station": {
+						"name": "Build Menu",
+						"slug": null
+					}
+				}
+			],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": null,
+			"power": null,
+			"stats": []
+		},
+		{
 			"slug": "suspiciously-light-tattered-boots",
 			"name": "Suspiciously Light Tattered Boots",
 			"wiki": "Suspiciously Light Tattered Boots",
@@ -105205,6 +106946,8 @@
 				"chandelier",
 				"green-chandelier",
 				"naptha",
+				"penguin-body",
+				"penguin-legs",
 				"purple-chandelier",
 				"red-chandelier"
 			],
@@ -105417,7 +107160,7 @@
 			"type": "Food",
 			"category": "food",
 			"description": "A marvelous amalgamation of sweet and savoury.",
-			"extract": "Sweet veg ball is a consumable food item that provides 70 health 65 sustenance as well as the perk Knowledgable Nourishment, which increases the player's experience gain in all skills by 10% for 300 seconds. It is made with fried cabbage, baked potato, and dried redberries in a stone range or a cooking range. It is learned by unlocking Amateur Culinaromancer at level 16 Cooking, and requires interacting with a stone range first to learn the recipe.",
+			"extract": "Sweet veg ball is a consumable food item that provides 70 health 65 sustenance as well as the perk Knowledgable Nourishment, which increases the player's experience gain in all skills by 10% for 300 seconds. It is made with fried cabbage, baked potato, and dried redberries in a stone range or a cooking range. It can be learned after unlocking Amateur Culinaromancer at level 16 Cooking, and requires interacting with a stone range (not a cooking range) first.",
 			"recipes": [
 				{
 					"outputLabel": "Sweet Veg Ball",
@@ -106475,7 +108218,9 @@
 				"medium-tin-nugget",
 				"sawhorse",
 				"small-tin-bin",
-				"small-tin-nugget"
+				"small-tin-nugget",
+				"suspicious-penguin-miniature-03",
+				"tin-penguin-miniature"
 			],
 			"drops": [
 				{
@@ -106555,6 +108300,58 @@
 					"value": "99"
 				}
 			]
+		},
+		{
+			"slug": "tin-penguin-miniature",
+			"name": "Tin Penguin Miniature",
+			"wiki": "Tin Penguin Miniature",
+			"icon": "Tin Penguin Miniature.png",
+			"type": null,
+			"category": "buildings",
+			"description": "",
+			"extract": "A Tin Penguin Miniature is a decoration that is unlocked after studying PLAN: Tin Penguin Miniature.\nThe plan can be purchased from the Façade's Front shop for 5Penguin Coins.",
+			"recipes": [
+				{
+					"outputLabel": "Tin Penguin Miniature",
+					"outputQty": 1,
+					"requires": {
+						"label": "PLAN: Tin Penguin Miniature",
+						"slug": "plan-tin-penguin-miniature"
+					},
+					"skills": [
+						{
+							"name": "Construction",
+							"xp": 20
+						}
+					],
+					"materials": [
+						{
+							"label": "Tin Ore",
+							"qty": 4,
+							"icon": "Tin Ore.png",
+							"slug": "tin-ore"
+						},
+						{
+							"label": "Clay Mould",
+							"qty": 1,
+							"icon": "Clay Mould.png",
+							"slug": "clay-mould"
+						}
+					],
+					"id": "9afeca9a7b",
+					"station": {
+						"name": "Build Menu",
+						"slug": null
+					}
+				}
+			],
+			"usedIn": [],
+			"drops": [],
+			"shops": [],
+			"unlockedBy": [],
+			"weight": null,
+			"power": null,
+			"stats": []
 		},
 		{
 			"slug": "titans-wrath",
@@ -106723,7 +108520,7 @@
 			"type": "Seed",
 			"category": "seeds",
 			"description": "Toadflax seeds. Equip and use them to scatter these into a farming plot and start growing!<br /> <br />Best planted in Ghornfell plots.",
-			"extract": "Toadflax seeds are a type of Ghornfell seed, used in the Farming skill. Toadflax seeds can be obtained from harvesting wild toadflax (plant).",
+			"extract": "Toadflax seeds are a type of Ghornfell seed, used in the Farming skill. Toadflax seeds can be obtained from harvesting wild toadflax (node).",
 			"recipes": [],
 			"usedIn": [],
 			"drops": [
@@ -108088,7 +109885,7 @@
 			"name": "Tome of the Artisan - Vol 1",
 			"wiki": "Tome of the Artisan - Vol 1",
 			"icon": "Tome of the Artisan - Vol 1.png",
-			"type": "Resource",
+			"type": "Tome",
 			"category": "materials",
 			"description": "A book filled with knowledge on how to craft tools and equipment. Awards a small amount of Artisan XP.",
 			"extract": "Tome of the Artisan - Vol 1 is a skill tome that is one of four rewards given after completing the Restless Ghosts quest. It can also be received occasionally from chests. When read, the tome gives 100 Artisan experience.",
@@ -108140,7 +109937,12 @@
 			"unlockedBy": [],
 			"weight": 2,
 			"power": null,
-			"stats": []
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
+				}
+			]
 		},
 		{
 			"slug": "tome-of-the-artisan-vol-2",
@@ -108196,7 +109998,7 @@
 			"name": "Tome of the Dragon Slayer",
 			"wiki": "Tome of the Dragon Slayer",
 			"icon": "Tome of the Dragon Slayer.png",
-			"type": "Resource",
+			"type": "Tome",
 			"category": "materials",
 			"description": "A powerful tome containing ancient techniques of warfare. Grants a large amount of Attack, Magic and Ranged XP.",
 			"extract": "Tome of the Dragon Slayer is one of the rewards from completing the main quest, Dragon Slayer.\nIt rewards 500 experience each in Attack, Ranged, and Magic.",
@@ -108211,9 +110013,14 @@
 			],
 			"shops": [],
 			"unlockedBy": [],
-			"weight": 6,
+			"weight": 2,
 			"power": null,
-			"stats": []
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
+				}
+			]
 		},
 		{
 			"slug": "tome-of-the-titan",
@@ -108971,6 +110778,35 @@
 			"weight": null,
 			"power": null,
 			"stats": []
+		},
+		{
+			"slug": "tuxedo-patch",
+			"name": "Tuxedo Patch",
+			"wiki": "Tuxedo Patch",
+			"icon": "Tuxedo Patch.png",
+			"type": "Vestige",
+			"category": "vestiges",
+			"description": "Perhaps you could learn something from it.",
+			"extract": "Tuxedo Patch is a vestige that unlocks the ability to create both the Penguin Body and Penguin Legs. \nThe vestige can be obtained through Façade's Front for 15Penguin Coins.",
+			"recipes": [],
+			"usedIn": [],
+			"drops": [],
+			"shops": [
+				{
+					"seller": "Fishy Facade",
+					"cost": 15,
+					"currency": "Penguin Coin"
+				}
+			],
+			"unlockedBy": [],
+			"weight": 0,
+			"power": null,
+			"stats": [
+				{
+					"label": "Stack size",
+					"value": "99"
+				}
+			]
 		},
 		{
 			"slug": "twilight-lily",
@@ -110339,7 +112175,7 @@
 			"type": "Food",
 			"category": "food",
 			"description": "Made by combining fried grilled undead bass and grilled tomato. Grants the Sea Life perk.",
-			"extract": "Undead delight is a consumable food item that provides 180 health and 70 sustenance as well as the perk Sea Life, which restores 3 health every second for 1,200 seconds. It is made with grilled undead bass and grilled tomatoes in a stone range or a cooking range, however a player must interact with a stone range first to learn the recipe.",
+			"extract": "Undead delight is a consumable food item that provides 180 health and 70 sustenance as well as the perk Sea Life, which restores 3 health every second for 1,200 seconds. It is made with grilled undead bass and grilled tomatoes in a stone range or a cooking range. However, to learn the recipe, players must interact with a stone range (not a cooking range).",
 			"recipes": [
 				{
 					"outputLabel": "Undead Delight",
@@ -111215,7 +113051,7 @@
 			"type": "Food",
 			"category": "food",
 			"description": "All of the calories, none of the guilt.",
-			"extract": "Vegan fryup is a consumable food item that provides 70 health and 70 sustenance. It is made with baked potato, fried cabbage, and grilled tomatoes in a stone range or a cooking range; however, a player must interact with a stone range and have grilled tomatoes in their inventory first to learn the recipe.",
+			"extract": "Vegan fryup is a consumable food item that provides 70 health and 70 sustenance. It is made with baked potato, fried cabbage, and grilled tomatoes in a stone range or a cooking range. However, to learn the recipe, players must interact with a stone range (not a cooking range) and have grilled tomatoes in their inventory.",
 			"recipes": [
 				{
 					"outputLabel": "Vegan Fryup",
@@ -111376,7 +113212,7 @@
 			"type": "Food",
 			"category": "food",
 			"description": "A tasty soup, good for the soul.",
-			"extract": "Vegetable soup is a consumable food item that provides 40 health and 50 sustenance. It is made with fried cabbage and baked potato in a stone range or a cooking range, however a player must interact with a stone range first to learn the recipe.",
+			"extract": "Vegetable soup is a consumable food item that provides 40 health and 50 sustenance. It is made with fried cabbage and baked potato in a stone range or a cooking range. However, to learn the recipe, players must interact with a stone range (not a cooking range).",
 			"recipes": [
 				{
 					"outputLabel": "Vegetable Soup",
@@ -112897,6 +114733,8 @@
 			],
 			"usedIn": [
 				"enchanted-iron-bolts",
+				"pescaling-amulet",
+				"pescaling-ring",
 				"water-rune-decoration"
 			],
 			"drops": [
@@ -115149,7 +116987,7 @@
 			"name": "Whetstone",
 			"wiki": "Whetstone",
 			"icon": "Whetstone.png",
-			"type": "Basic Item",
+			"type": "Consumable",
 			"category": "materials",
 			"description": "Use this to hone your equipped melee weapon.",
 			"extract": "A whetstone can be used to give a 15% damage multiplier on a player's equipped melee weapon for 10 minutes, and can be used in conjunction with damage-boosting spells, such as Enchant Weapon: Fire. Its recipe is unlocked after reaching level 40 in the Attack skill.",
@@ -115450,7 +117288,7 @@
 						},
 						{
 							"label": "Sacred Oil",
-							"qty": 1,
+							"qty": 4,
 							"icon": "Sacred Oil.png",
 							"slug": "sacred-oil"
 						},
@@ -115461,7 +117299,7 @@
 							"slug": "vault-shard"
 						}
 					],
-					"id": "b1761883df",
+					"id": "d1da1bb97a",
 					"station": {
 						"name": "Armour Bench",
 						"slug": "armour-bench"

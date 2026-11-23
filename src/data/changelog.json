@@ -1,5 +1,193 @@
 [
 	{
+		"date": "2026-11-23",
+		"added": [
+			{
+				"slug": "brine-soaked-band",
+				"name": "Brine-Soaked Band"
+			},
+			{
+				"slug": "brine-soaked-bauble",
+				"name": "Brine-Soaked Bauble"
+			},
+			{
+				"slug": "bronze-penguin-miniature",
+				"name": "Bronze Penguin Miniature"
+			},
+			{
+				"slug": "copper-penguin-miniature",
+				"name": "Copper Penguin Miniature"
+			},
+			{
+				"slug": "coral-nubbin",
+				"name": "Coral Nubbin"
+			},
+			{
+				"slug": "gold-penguin-miniature",
+				"name": "Gold Penguin Miniature"
+			},
+			{
+				"slug": "kgp-hat",
+				"name": "KGP Hat"
+			},
+			{
+				"slug": "penguin-body",
+				"name": "Penguin Body"
+			},
+			{
+				"slug": "penguin-cape",
+				"name": "Penguin Cape"
+			},
+			{
+				"slug": "penguin-helmet",
+				"name": "Penguin Helmet"
+			},
+			{
+				"slug": "penguin-legs",
+				"name": "Penguin Legs"
+			},
+			{
+				"slug": "pescaling-amulet",
+				"name": "Pescaling Amulet"
+			},
+			{
+				"slug": "pescaling-ring",
+				"name": "Pescaling Ring"
+			},
+			{
+				"slug": "plan-bronze-penguin-miniature",
+				"name": "PLAN: Bronze Penguin Miniature"
+			},
+			{
+				"slug": "plan-copper-penguin-miniature",
+				"name": "PLAN: Copper Penguin Miniature"
+			},
+			{
+				"slug": "plan-gold-penguin-miniature",
+				"name": "PLAN: Gold Penguin Miniature"
+			},
+			{
+				"slug": "plan-penguin-decorative-coin",
+				"name": "PLAN: Penguin Decorative Coin"
+			},
+			{
+				"slug": "plan-penguin-decorative-tapestry",
+				"name": "PLAN: Penguin Decorative Tapestry"
+			},
+			{
+				"slug": "plan-penguin-statue-01",
+				"name": "PLAN: Penguin Statue 01"
+			},
+			{
+				"slug": "plan-polar-bear-decorative-tapestry",
+				"name": "PLAN: Polar Bear Decorative Tapestry"
+			},
+			{
+				"slug": "plan-silver-penguin-miniature",
+				"name": "PLAN: Silver Penguin Miniature"
+			},
+			{
+				"slug": "plan-stone-penguin-miniature",
+				"name": "PLAN: Stone Penguin Miniature"
+			},
+			{
+				"slug": "plan-suspicious-penguin-miniature-01",
+				"name": "PLAN: Suspicious Penguin Miniature 01"
+			},
+			{
+				"slug": "plan-suspicious-penguin-miniature-02",
+				"name": "PLAN: Suspicious Penguin Miniature 02"
+			},
+			{
+				"slug": "plan-suspicious-penguin-miniature-03",
+				"name": "PLAN: Suspicious Penguin Miniature 03"
+			},
+			{
+				"slug": "plan-suspicious-penguin-miniature-04",
+				"name": "PLAN: Suspicious Penguin Miniature 04"
+			},
+			{
+				"slug": "plan-tin-penguin-miniature",
+				"name": "PLAN: Tin Penguin Miniature"
+			},
+			{
+				"slug": "prestigious-prototype",
+				"name": "Prestigious Prototype"
+			},
+			{
+				"slug": "scrap-mired-in-subterfuge",
+				"name": "Scrap Mired in Subterfuge"
+			},
+			{
+				"slug": "silver-penguin-miniature",
+				"name": "Silver Penguin Miniature"
+			},
+			{
+				"slug": "stone-penguin-miniature",
+				"name": "Stone Penguin Miniature"
+			},
+			{
+				"slug": "suspicious-penguin-miniature-01",
+				"name": "Suspicious Penguin Miniature 01"
+			},
+			{
+				"slug": "suspicious-penguin-miniature-02",
+				"name": "Suspicious Penguin Miniature 02"
+			},
+			{
+				"slug": "suspicious-penguin-miniature-03",
+				"name": "Suspicious Penguin Miniature 03"
+			},
+			{
+				"slug": "suspicious-penguin-miniature-04",
+				"name": "Suspicious Penguin Miniature 04"
+			},
+			{
+				"slug": "tin-penguin-miniature",
+				"name": "Tin Penguin Miniature"
+			},
+			{
+				"slug": "tuxedo-patch",
+				"name": "Tuxedo Patch"
+			}
+		],
+		"removed": [],
+		"changed": [
+			{
+				"slug": "adamant-platebody",
+				"name": "Adamant Platebody"
+			},
+			{
+				"slug": "adamant-platelegs",
+				"name": "Adamant Platelegs"
+			},
+			{
+				"slug": "agility-cape",
+				"name": "Agility Cape"
+			},
+			{
+				"slug": "fire-cape",
+				"name": "Fire Cape"
+			},
+			{
+				"slug": "garou-highborns-cloak",
+				"name": "Garou Highborn's Cloak"
+			},
+			{
+				"slug": "spectral-chinchompa-cape",
+				"name": "Spectral Chinchompa Cape"
+			},
+			{
+				"slug": "splitbark-wand",
+				"name": "Splitbark Wand"
+			},
+			{
+				"slug": "white-full-helm",
+				"name": "White Full Helm"
+			}
+		]
+	},
+	{
 		"date": "2026-11-16",
 		"added": [
 			{
